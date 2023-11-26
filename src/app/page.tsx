@@ -1,4 +1,4 @@
-import { Header, WorldProgramming, Benefits, Testimonials } from "@/components";
+import { Header, WorldProgramming, Benefits, Testimonials, School, Projects } from "@/components";
 
 export default function Home() {
   return (
@@ -7,6 +7,8 @@ export default function Home() {
       <WorldProgramming />
       <Benefits/>
       <Testimonials/>
+      <School/>
+      <Projects/>
     </>
   );
 }
