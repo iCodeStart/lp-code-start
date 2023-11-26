@@ -23,9 +23,20 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: visible;
+}
+
 .header {
   width: 100%;
-  background: url('../../public/background-header.webp') no-repeat center;
+  background: url('../public/background-header.webp') no-repeat center;
   background-size: cover;
   height: 80vh;
 }
@@ -106,16 +117,18 @@ body {
   position: absolute;
   bottom: -20px;
   left: 50%;
-  transform: translateX(-50%); /* Centraliza horizontalmente */
+  transform: translateX(-50%);
+  /* Centraliza horizontalmente */
 }
 
-.world-programming{
+.world-programming {
   margin-bottom: 100px;
 }
 
 .world-programming__line {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr; /* Ajuste para a terceira coluna ocupar o dobro de espaço */
+  grid-template-columns: 1fr 1fr 2fr;
+  /* Ajuste para a terceira coluna ocupar o dobro de espaço */
   justify-content: center;
   align-items: center;
   margin: 50px auto;
@@ -152,72 +165,123 @@ body {
   color: #03E4DC;
 }
 
-.card-benefits{
+.card-benefits {
   border-top: 10px solid #03E4DC;
+  border-radius: 5px;
   background-color: #181b20;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px; 
+  border-top-right-radius: 10px;
   margin: 50px 0;
   padding: 20px;
   box-sizing: border-box;
   margin: 50px auto;
 }
 
-.card-benefits__title{
+.card-benefits__title {
   display: flex;
   align-items: center;
   gap: 15px;
-  font-size: 24px;
+  font-size: 12px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.card-benefits__text{
+
+.card-benefits__text {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
-.testimonials{
+.testimonials {
   margin: 50px auto;
 }
-.testimonials__content{
+
+.testimonials__content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
-.testimonials__content img{
+
+.testimonials__content img {
   transition: transform 1.5s;
   width: 80%;
   margin: 0 auto;
 }
-.testimonials__content img:hover{
+
+.testimonials__content img:hover {
   transform: scale(1.2);
 }
-.school__content{
+
+.school__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.school_content-text-title{
+.school_content-text-title {
   font-size: 24px;
   font-weight: 700;
   margin-top: 15px;
 }
-.school_content-text-item{
+
+.school_content-text-item {
   display: flex;
   gap: 10px;
   font-size: 20px;
   margin: 50px 0;
 }
-.school_content-cards{
+
+.school_content-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   margin: 15px 0;
 }
+
+.cards-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px 0
+}
+
+.card-project-active {
+  width: 300px;
+  border: 1px solid #03E4DC;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+.card-project{
+  width: 300px;
+  border: 1px solid #626262;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.images-projects{
+  display: flex;
+  justify-content: center;
+}
+.project-img{
+  display: none;
+}
 @media (max-width: 768px) {
   .header {
-    background: url('../../public/background-header-mobile.svg') no-repeat center;
+    background: url('../public/background-header-mobile.svg') no-repeat center;
     height: 90vh;
   }
 
@@ -229,13 +293,15 @@ body {
     font-size: 2rem;
     line-height: 40px;
   }
+
   .header__content-titles-subtitle {
     font-size: 1.5rem;
   }
 
-  .world-programming{
+  .world-programming {
     padding: 0 30px;
   }
+
   .world-programming__line {
     display: flex;
     flex-direction: column;
@@ -249,23 +315,27 @@ body {
     transform: rotate(90deg);
     margin: 30px 0;
   }
-  .benefits{
+
+  .benefits {
     padding: 0 30px;
   }
-  .testimonials__content{
-    display: flex;
-    flex-direction: column;
-  }
-  .school{
-    padding: 0 30px;
-  }
-  .school__content{
+
+  .testimonials__content {
     display: flex;
     flex-direction: column;
   }
 
-  .school_content_code-start img{
+  .school {
+    padding: 0 30px;
+  }
+
+  .school__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .school_content_code-start img {
     width: 90%;
   }
-  
+
 }
