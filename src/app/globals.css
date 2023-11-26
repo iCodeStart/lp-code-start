@@ -227,5 +227,9 @@ body {
   .benefits{
     padding: 0 30px;
   }
+  .testimonials__content{
+    display: flex;
+    flex-direction: column;
+  }
   
 }
