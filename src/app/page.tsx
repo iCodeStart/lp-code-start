@@ -1,6 +1,4 @@
-import { Header, WorldProgramming } from "@/components";
-import { Benefits } from "@/components/Benefits";
-import Image from "next/image";
+import { Header, WorldProgramming, Benefits, Testimonials } from "@/components";
 
 export default function Home() {
   return (
@@ -8,6 +6,7 @@ export default function Home() {
       <Header />
       <WorldProgramming />
       <Benefits/>
+      <Testimonials/>
     </>
   );
 }

@@ -176,6 +176,20 @@ body {
   font-weight: 500;
   margin-bottom: 20px;
 }
+
+.testimonials__content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.testimonials__content img{
+  transition: transform 1.5s;
+  width: 80%;
+  margin: 0 auto;
+}
+.testimonials__content img:hover{
+  transform: scale(1.2);
+}
 @media (max-width: 768px) {
   .header {
     background: url('../../public/background-header-mobile.svg') no-repeat center;
