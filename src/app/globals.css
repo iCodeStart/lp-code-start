@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +18,200 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.header {
+  width: 100%;
+  background: url('../../public/background-header.webp') no-repeat center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.header__content-logo {
+  padding-top: 40px;
+}
+
+.header__content-titles {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  width: 550px;
+}
+
+.header__content-titles-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #7FC0BD;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+.header__content-titles-subtitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header__content-titles-subtitle span {
+  color: #7FC0BD;
+}
+
+.btn-buy {
+  background: rgb(137, 189, 187);
+  background: linear-gradient(0deg, rgba(137, 189, 187, 1) 0%, rgba(3, 228, 220, 1) 100%);
+  color: #000;
+  padding: 15px 20px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2em;
+  width: fit-content;
+  text-align: center;
+
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.separate-line {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin: 20px 0 40px 0;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  height: 5px;
+  width: 100px;
+  background-color: #7FC0BD;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+}
+
+.world-programming{
+  margin-bottom: 100px;
+}
+
+.world-programming__line {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr; /* Ajuste para a terceira coluna ocupar o dobro de espaço */
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+
+.world-programming_line-card {
+  width: 300px;
+  border: 1px solid #03E4DC;
+  background-color: #181b20;
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.word-programming-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.world-programming_line-text {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.world-programming_line-text span {
+  color: #03E4DC;
+}
+
+.card-benefits{
+  border-top: 10px solid #03E4DC;
+  background-color: #181b20;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+  margin: 50px 0;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 50px auto;
+}
+
+.card-benefits__title{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.card-benefits__text{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .header {
+    background: url('../../public/background-header-mobile.svg') no-repeat center;
+    height: 90vh;
+  }
+
+  .header__content-titles {
+    width: 100%;
+  }
+
+  .header__content-titles-title {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  .header__content-titles-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .world-programming{
+    padding: 0 30px;
+  }
+  .world-programming__line {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .world-programming_line-text {
+    text-align: center;
+  }
+
+  .word-programming-icon-container img {
+    transform: rotate(90deg);
+    margin: 30px 0;
+  }
+  .benefits{
+    padding: 0 30px;
+  }
+  
 }
