@@ -1,0 +1,26 @@
+.footer{
+    padding: 50px 0;
+    text-align: center;
+}
+.footer__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    img {
+        width: 20%;
+    }
+}
+
+.copyright{
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .copyright{
+        flex-direction: column;
+    }
+}
