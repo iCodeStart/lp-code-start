@@ -20,15 +20,17 @@ export function WorldProgramming() {
     <div className="world-programming">
       <div className="container">
         <h1 className="section-title">O mundo da programação</h1>
-        {arrayTexts.map((item, index) => {
-          return (
-            <BenefitsLineProgramming
-              key={index}
-              titleCard={item.title}
-              text={item.text}
-            />
-          );
-        })}
+        <div className="world-programming-list">
+          {arrayTexts.map((item, index) => {
+            return (
+              <BenefitsLineProgramming
+                key={index}
+                titleCard={item.title}
+                text={item.text}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );

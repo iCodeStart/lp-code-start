@@ -1,3 +1,4 @@
+import { Chip } from "../Chip";
 import { LineOffer } from "./LineOffer";
 
 export function Offer() {
@@ -27,7 +28,10 @@ export function Offer() {
     <>
       <div className="offer">
         <div className="container">
-          <h1 className="section-title">Tudo o que você vai levar</h1>
+          <div className="title-container">
+            <Chip label="Investimento" />
+            <h1 className="section-title">Tudo o que você vai levar</h1>
+          </div>
           <div className="card-offer">
             {courses.map((course, index) => (
               <LineOffer

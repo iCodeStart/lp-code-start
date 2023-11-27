@@ -1,13 +1,14 @@
 import "./styles.css";
 import { questions } from "./questions";
 import { Question } from "./Question";
+import { Chip } from "../Chip";
 
 export function FAQ() {
   const lastIndex = questions.length - 1;
   return (
     <section className="container faq-container">
-      <div>
-        <span>FAQ</span>
+      <div className="title-container">
+        <Chip label="FAQ" />
         <h1 className="section-title">Perguntas Frequentes</h1>
       </div>
 

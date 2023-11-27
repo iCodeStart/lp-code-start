@@ -1,3 +1,4 @@
+import { Chip } from "../Chip";
 import { LineBonus } from "./LineBonus";
 
 export function Bonus() {
@@ -24,7 +25,10 @@ export function Bonus() {
   return (
     <div className="bonus">
       <div className="container">
-        <h1 className="section-title">Você vai ganhar</h1>
+        <div className="title-container">
+          <Chip label="Bônus" />
+          <h1 className="section-title">Você vai ganhar</h1>
+        </div>
         <div className="bonus__content">
           <div className="bonus_content_card">
             {arrayBonus.map((bonus, index) => {
