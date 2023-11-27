@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Benefits, Bonus, Header, Projects, School, Teachers, Testimonials, WorldProgramming } from './components';
+import { Benefits, Bonus, Header, Offer, Projects, School, Teachers, Testimonials, WorldProgramming } from './components';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <Teachers/>
       <Projects/>
       <Bonus/>
+      <Offer/>
     </>
   );
 }

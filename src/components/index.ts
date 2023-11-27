@@ -6,3 +6,4 @@ export * from './School'
 export * from './Projects'
 export * from './Bonus'
 export * from './Teachers';
+export * from './Offer';
