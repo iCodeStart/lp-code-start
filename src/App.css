@@ -135,7 +135,7 @@ button {
 }
 
 .world-programming {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 .world-programming__line {
@@ -588,4 +588,47 @@ button {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.world-program-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.programInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-right: 60px;
+}
+
+.programInfo__title {
+  color: #7fc0bd;
+  font-weight: bold;
+}
+
+.container__program-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 100px auto;
+}
+
+.btn-buy-info {
+  background: rgb(137, 189, 187);
+  background: linear-gradient(
+    0deg,
+    rgba(137, 189, 187, 1) 0%,
+    rgba(3, 228, 220, 1) 100%
+  );
+  color: #000;
+  padding: 15px 20px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2em;
+  width: 300px;
 }
