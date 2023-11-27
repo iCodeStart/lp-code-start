@@ -7,3 +7,4 @@ export * from './Projects'
 export * from './Bonus'
 export * from './Teachers';
 export * from './Offer';
+export * from './FAQ';
