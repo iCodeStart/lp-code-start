@@ -1,7 +1,14 @@
+import AOS from 'aos';
+import { useEffect } from "react";
 import { Chip } from "../Chip";
 import { CardBenefits } from "./ components/CardBenefits";
 
 export function Benefits() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const arrayTexts = [
     {
       title: "Do Básico ao Profissional em um Único Treinamento",
@@ -21,7 +28,7 @@ export function Benefits() {
     },
   ];
   return (
-    <div className="benefits">
+    <div className="benefits" data-aos="fade-up">
       <div className="container">
         <div className="title-container">
           <Chip label="Vantagens" />
@@ -29,7 +36,7 @@ export function Benefits() {
         </div>
         {arrayTexts.map((item, index) => {
           return (
-            <CardBenefits key={index} titleCard={item.title} text={item.text} />
+            <CardBenefits key={index} titleCard={item.title} text={item.text}/>
           );
         })}
       </div>
