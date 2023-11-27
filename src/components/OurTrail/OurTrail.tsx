@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
+import { Chip } from "../Chip";
 
 export function OurTrail() {
   const [currentPhase, setCurrentPhase] = useState(1);
@@ -68,7 +69,10 @@ export function OurTrail() {
   return (
     <div className="our-trail">
       <div className="container">
-        <h1 className="section-title">Nossa trilha</h1>
+        <div className="title-container">
+          <Chip label="Trilha" />
+          <h1 className="section-title">Nossa trilha</h1>
+        </div>
         <div className="our-trail__content">
           {arrayInfoTrail.map((info, index) => (
             <div

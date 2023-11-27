@@ -101,6 +101,10 @@ button {
   margin: 0 auto;
 }
 
+.content-container {
+  padding: 0 30px;
+}
+
 .separate-line {
   width: 80%;
   margin: 100px auto;
@@ -479,7 +483,7 @@ button {
 .connecting-line {
   position: absolute;
   top: 120px;
-  left: 26%;
+  left: 16px;
   transform: translateX(-50%);
   width: 2px;
   background-color: #3498db;
@@ -489,6 +493,9 @@ button {
 
 .our-trail__content {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
 .active .connecting-line {
@@ -500,6 +507,7 @@ button {
   border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .header {

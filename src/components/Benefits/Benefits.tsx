@@ -1,3 +1,4 @@
+import { Chip } from "../Chip";
 import { CardBenefits } from "./ components/CardBenefits";
 
 export function Benefits() {
@@ -22,7 +23,10 @@ export function Benefits() {
   return (
     <div className="benefits">
       <div className="container">
-        <h1 className="section-title">Benefícios</h1>
+        <div className="title-container">
+          <Chip label="Vantagens" />
+          <h1 className="section-title">Benefícios</h1>
+        </div>
         {arrayTexts.map((item, index) => {
           return (
             <CardBenefits key={index} titleCard={item.title} text={item.text} />
