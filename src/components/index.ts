@@ -8,3 +8,4 @@ export * from './Bonus'
 export * from './Teachers';
 export * from './Offer';
 export * from './FAQ';
+export * from './OurTrail';

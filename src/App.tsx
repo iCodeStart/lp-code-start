@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Benefits, Bonus, Header, Offer, Projects, School, Teachers, Testimonials, WorldProgramming, FAQ } from './components';
+import { Benefits, Bonus, Header, Offer, OurTrail, Projects, School, Teachers, Testimonials, WorldProgramming, FAQ } from './components';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <WorldProgramming />
       <Benefits/>
       <Testimonials/>
+      <OurTrail/>
       <School/>
       <Teachers/>
       <Projects/>

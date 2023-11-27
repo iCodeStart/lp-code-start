@@ -448,6 +448,47 @@ button {
   width: 100px;
   margin: 0 auto;
 }
+.our-trail{
+  padding: 0 30px;
+  margin: 50px auto;
+}
+.trail-step{
+  display: flex;
+  gap: 30px;
+  width: 50%;
+  margin: 50px auto;
+  position: relative;
+}
+.trail-step img{
+  position: relative;
+  z-index: 9999;
+}
+.connecting-line {
+  position: absolute;
+  top: 120px;
+  left: 26%;
+  transform: translateX(-50%);
+  width: 2px;
+  background-color: #3498db;
+  transition: height 0.5s; 
+  z-index: 1;
+}
+
+.our-trail__content {
+  position: relative;
+}
+
+
+.active .connecting-line {
+  height: 100%;
+}
+
+.card-trail{
+  background-color: #181b20;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
 @media (max-width: 768px) {
   .header {
     background: url('../public/background-header-mobile.svg') no-repeat center;
