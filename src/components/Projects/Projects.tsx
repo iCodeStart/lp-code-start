@@ -68,6 +68,7 @@ export function Projects() {
           <h3>E muito mais....</h3>
           <CardInfoProject text="Todo mês desenvolvemos juntos muitos exercícios com resolução, projetos e desafios!" />
           <CardInfoProject text="Ao finalizar, você terá um repertório de respeito e experiência para desenvolver soluções alinhadas com diversas áreas do mercado de trabalho" />
+          <CardInfoProject text="Certificado reconhecido pelas empresas" />
         </div>
       </div>
     </div>
