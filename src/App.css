@@ -18,9 +18,12 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
+  background: linear-gradient(
+      to bottom,
       transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 
 button {
@@ -36,7 +39,7 @@ button {
 
 .header {
   width: 100%;
-  background: url('../public/background-header.webp') no-repeat center;
+  background: url("../public/background-header.webp") no-repeat center;
   background-size: cover;
   height: 80vh;
 }
@@ -61,7 +64,7 @@ button {
 .header__content-titles-title {
   font-size: 3rem;
   font-weight: 700;
-  color: #7FC0BD;
+  color: #7fc0bd;
   line-height: 55px;
   margin-bottom: 20px;
 }
@@ -73,12 +76,16 @@ button {
 }
 
 .header__content-titles-subtitle span {
-  color: #7FC0BD;
+  color: #7fc0bd;
 }
 
 .btn-buy {
   background: rgb(137, 189, 187);
-  background: linear-gradient(0deg, rgba(137, 189, 187, 1) 0%, rgba(3, 228, 220, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(137, 189, 187, 1) 0%,
+    rgba(3, 228, 220, 1) 100%
+  );
   color: #000;
   padding: 15px 20px;
   border-radius: 30px;
@@ -87,7 +94,6 @@ button {
   margin-top: 2em;
   width: fit-content;
   text-align: center;
-
 }
 
 .container {
@@ -117,10 +123,10 @@ button {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   height: 5px;
   width: 100px;
-  background-color: #7FC0BD;
+  background-color: #7fc0bd;
   position: absolute;
   bottom: -20px;
   left: 50%;
@@ -141,10 +147,9 @@ button {
   margin: 50px auto;
 }
 
-
 .world-programming_line-card {
   width: 100%;
-  border: 1px solid #03E4DC;
+  border: 1px solid #03e4dc;
   background-color: #181b20;
   display: flex;
   text-align: center;
@@ -169,11 +174,11 @@ button {
 }
 
 .world-programming_line-text span {
-  color: #03E4DC;
+  color: #03e4dc;
 }
 
 .card-benefits {
-  border-top: 10px solid #03E4DC;
+  border-top: 10px solid #03e4dc;
   border-radius: 5px;
   background-color: #181b20;
   border-top-left-radius: 10px;
@@ -252,12 +257,12 @@ button {
 .cards-projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 50px 0
+  margin: 50px 0;
 }
 
 .card-project-active {
   width: 300px;
-  border: 1px solid #03E4DC;
+  border: 1px solid #03e4dc;
   border-radius: 5px;
   display: flex;
   text-align: center;
@@ -300,7 +305,7 @@ button {
 }
 
 .card-info-project {
-  border-left: 10px solid #03E4DC;
+  border-left: 10px solid #03e4dc;
   border-radius: 5px;
   background-color: #181b20;
   border-top-left-radius: 10px;
@@ -315,7 +320,7 @@ button {
 }
 
 .bonus_content_card {
-  border-top: 10px solid #03E4DC;
+  border-top: 10px solid #03e4dc;
   border-radius: 5px;
   background-color: #181b20;
   border-top-left-radius: 10px;
@@ -331,7 +336,7 @@ button {
 }
 
 .line-bonus {
-  border-bottom: 1px solid #03E4DC;
+  border-bottom: 1px solid #03e4dc;
   padding-bottom: 30px;
 }
 
@@ -347,12 +352,12 @@ button {
 
 .line-bonus_content-texts h1 {
   font-size: 26px;
-  color: #03E4DC;
+  color: #03e4dc;
 }
 
 .line-bonus_content-texts p {
   font-size: 22px;
-  color: #fff
+  color: #fff;
 }
 
 .teachers {
@@ -381,7 +386,7 @@ button {
 
 .card-offer {
   width: 80%;
-  border: 2px solid #03E4DC;
+  border: 2px solid #03e4dc;
   border-radius: 10px;
   background-color: #181b20;
   padding: 100px;
@@ -394,7 +399,7 @@ button {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  border-bottom: 2px solid #03E4DC;
+  border-bottom: 2px solid #03e4dc;
 }
 
 .line-offer:last-child {
@@ -415,51 +420,59 @@ button {
   font-weight: 700;
 }
 
+.card-offer__price {
+  color: #03e4dc;
+}
+
 .guarantee_access {
   text-align: center;
   font-size: 24px;
 }
 
 .guarantee_access span {
-  color: #03E4DC;
+  color: #03e4dc;
 }
 
 .offer_button {
   background: rgb(255, 255, 255);
-  background: linear-gradient(100deg, rgba(255, 255, 255, 1) 0%, rgba(3, 228, 220, 1) 100%);
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(3, 228, 220, 1) 100%
+  );
   padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;
   color: #000;
 }
 
-.cards-accept{
+.cards-accept {
   margin: 50px auto;
   max-width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.guarantee{
+.guarantee {
   display: flex;
   gap: 20px;
 }
-.guarantee img{
+.guarantee img {
   width: 100px;
   margin: 0 auto;
 }
-.our-trail{
+.our-trail {
   padding: 0 30px;
   margin: 50px auto;
 }
-.trail-step{
+.trail-step {
   display: flex;
   gap: 30px;
   width: 50%;
   margin: 50px auto;
   position: relative;
 }
-.trail-step img{
+.trail-step img {
   position: relative;
   z-index: 9999;
 }
@@ -470,7 +483,7 @@ button {
   transform: translateX(-50%);
   width: 2px;
   background-color: #3498db;
-  transition: height 0.5s; 
+  transition: height 0.5s;
   z-index: 1;
 }
 
@@ -478,12 +491,11 @@ button {
   position: relative;
 }
 
-
 .active .connecting-line {
   height: 100%;
 }
 
-.card-trail{
+.card-trail {
   background-color: #181b20;
   border-radius: 10px;
   padding: 20px;
@@ -491,7 +503,7 @@ button {
 }
 @media (max-width: 768px) {
   .header {
-    background: url('../public/background-header-mobile.svg') no-repeat center;
+    background: url("../public/background-header-mobile.svg") no-repeat center;
     height: 90vh;
   }
 
@@ -572,7 +584,7 @@ button {
     font-size: 15px;
     font-weight: bold;
   }
-  .guarantee{
+  .guarantee {
     flex-direction: column;
     text-align: center;
   }

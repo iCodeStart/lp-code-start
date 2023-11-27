@@ -52,11 +52,13 @@ export function Offer() {
               <span>{`R$ ${total},00`}</span>
             </div>
             <div className="guarantee_access">
-              <h2>
-                Garanta agora acesso total por <span>1 ano</span>
-              </h2>
+              <h3>
+                Aprenda do zero ao profissional e tenha acesso imediato por
+                apenas 12x de
+              </h3>
+              <h1 className="card-offer__price">R$29,90</h1>
               <button className="offer_button">
-                Acessar por 12x de R$ 24,80
+                QUERO SER UM PROGRAMADOR COMPLETO
               </button>
             </div>
             <img
