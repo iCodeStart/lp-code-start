@@ -1,9 +1,16 @@
-import './School.styles.scss';
+import AOS from "aos";
+import { useEffect } from "react";
+import "./School.styles.scss";
 
 export function School() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <div className="school">
-      <div className="container">
+      <div className="container" data-aos="zoom-in-up">
         <h1 className="section-title">A Escola Code Start</h1>
         <div className="school__content">
           <div className="school__content-text">
@@ -13,7 +20,7 @@ export function School() {
               seus primeiros passos e se tornar um profissional qualificado.
             </p>
             <div className="school_content-text-item">
-              <img src="./icon-benefits.svg" alt="Benefícios Code Start"/>
+              <img src="./icon-benefits.svg" alt="Benefícios Code Start" />
               <p>
                 Nós acreditamos em ideias e soluções criativas para te ensinar
                 da forma correta o mundo da tecnologia, através de uma
