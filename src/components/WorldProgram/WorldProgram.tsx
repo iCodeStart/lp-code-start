@@ -1,6 +1,7 @@
 //import { BenefitsLineProgramming } from "./components/BenefitsLineProgramming";
 
 import { WorldProgramInfo } from "./components";
+import './WorldProgram.style.scss';
 
 export function WorldProgram() {
   const arrayTexts = [
@@ -37,6 +38,12 @@ export function WorldProgram() {
               />
             );
           })}
+        </div>
+        <div className="world-program-list_img">
+          <img
+            src="/vagas-abertas.png"
+            alt="Vagas abertas programador Code Start"
+          />
         </div>
         <button className="btn-buy-info">Quero ser um Programador</button>
       </div>

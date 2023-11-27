@@ -11,7 +11,7 @@ export function School() {
               seus primeiros passos e se tornar um profissional qualificado.
             </p>
             <div className="school_content-text-item">
-              <img src="./icon-benefits.svg" alt="Benefícios Code Start" />
+              <img src="./icon-benefits.svg" alt="Benefícios Code Start"/>
               <p>
                 Nós acreditamos em ideias e soluções criativas para te ensinar
                 da forma correta o mundo da tecnologia, através de uma
@@ -26,15 +26,6 @@ export function School() {
                 será capaz de encontrar dentre os nossos valores:
               </p>
             </div>
-            <div className="school_content-cards">
-              <div className="world-programming_line-card">Foco no aluno</div>
-              <div className="world-programming_line-card">Integridade e Transparência</div>
-              <div className="world-programming_line-card">Empoderamento e liberdade</div>
-              <div className="world-programming_line-card">Inclusão e acesso</div>
-              <div className="world-programming_line-card">Colaboração e comunidade</div>
-              <div className="world-programming_line-card">Aprendizado contínuo</div>
-            </div>
-            <div className="world-programming_line-card">Foco na contratação</div>
           </div>
           <div className="school_content_code-start">
             <img src="./ipad-code-start.png" alt="Comunidade Code Start" />

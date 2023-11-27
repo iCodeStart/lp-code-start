@@ -11,7 +11,6 @@ import {
   Teachers,
   Testimonials,
   WorldProgram,
-  WorldProgramming,
 } from "./components";
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
     <>
       <Header />
       <WorldProgram />
-      <WorldProgramming />
       <Benefits />
       <Testimonials />
       <OurTrail />

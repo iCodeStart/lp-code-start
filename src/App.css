@@ -64,19 +64,19 @@ button {
 .header__content-titles-title {
   font-size: 3rem;
   font-weight: 700;
-  color: #7fc0bd;
+  color: #00BCD3;
   line-height: 55px;
   margin-bottom: 20px;
 }
 
 .header__content-titles-subtitle {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
 }
 
 .header__content-titles-subtitle span {
-  color: #7fc0bd;
+  color: #00BCD3;
 }
 
 .btn-buy {
@@ -126,7 +126,7 @@ button {
   content: "";
   height: 5px;
   width: 100px;
-  background-color: #7fc0bd;
+  background-color: #00BCD3;
   position: absolute;
   bottom: -20px;
   left: 50%;
@@ -149,7 +149,7 @@ button {
 
 .world-programming_line-card {
   width: 100%;
-  border: 1px solid #03e4dc;
+  border: 1px solid #00BCD3;
   background-color: #181b20;
   display: flex;
   text-align: center;
@@ -174,11 +174,11 @@ button {
 }
 
 .world-programming_line-text span {
-  color: #03e4dc;
+  color: #00BCD3;
 }
 
 .card-benefits {
-  border-top: 10px solid #03e4dc;
+  border-top: 10px solid #00BCD3;
   border-radius: 5px;
   background-color: #181b20;
   border-top-left-radius: 10px;
@@ -225,8 +225,8 @@ button {
 }
 
 .school__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
 .school_content-text-title {
@@ -262,7 +262,7 @@ button {
 
 .card-project-active {
   width: 300px;
-  border: 1px solid #03e4dc;
+  border: 1px solid #00BCD3;
   border-radius: 5px;
   display: flex;
   text-align: center;
@@ -305,7 +305,7 @@ button {
 }
 
 .card-info-project {
-  border-left: 10px solid #03e4dc;
+  border-left: 10px solid #00BCD3;
   border-radius: 5px;
   background-color: #181b20;
   border-top-left-radius: 10px;
@@ -320,7 +320,7 @@ button {
 }
 
 .bonus_content_card {
-  border-top: 10px solid #03e4dc;
+  border-top: 10px solid #00BCD3;
   border-radius: 5px;
   background-color: #181b20;
   border-top-left-radius: 10px;
@@ -336,7 +336,7 @@ button {
 }
 
 .line-bonus {
-  border-bottom: 1px solid #03e4dc;
+  border-bottom: 1px solid #00BCD3;
   padding-bottom: 30px;
 }
 
@@ -352,7 +352,7 @@ button {
 
 .line-bonus_content-texts h1 {
   font-size: 26px;
-  color: #03e4dc;
+  color: #00BCD3;
 }
 
 .line-bonus_content-texts p {
@@ -386,7 +386,7 @@ button {
 
 .card-offer {
   width: 80%;
-  border: 2px solid #03e4dc;
+  border: 2px solid #00BCD3;
   border-radius: 10px;
   background-color: #181b20;
   padding: 100px;
@@ -399,7 +399,7 @@ button {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  border-bottom: 2px solid #03e4dc;
+  border-bottom: 2px solid #00BCD3;
 }
 
 .line-offer:last-child {
@@ -421,7 +421,7 @@ button {
 }
 
 .card-offer__price {
-  color: #03e4dc;
+  color: #00BCD3;
 }
 
 .guarantee_access {
@@ -430,7 +430,7 @@ button {
 }
 
 .guarantee_access span {
-  color: #03e4dc;
+  color: #00BCD3;
 }
 
 .offer_button {
@@ -533,6 +533,10 @@ button {
     text-align: center;
   }
 
+  .opportunities-programming{
+    margin-top: 500px;
+  }
+
   .word-programming-icon-container img {
     transform: rotate(90deg);
     margin: 30px 0;
@@ -556,8 +560,9 @@ button {
     flex-direction: column;
   }
 
-  .school_content_code-start img {
+  .school_content_code-start {
     width: 90%;
+    margin: 0 auto;
   }
 
   .cards-projects {
@@ -599,12 +604,10 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
-  margin-right: 60px;
 }
 
 .programInfo__title {
-  color: #7fc0bd;
+  color: #00BCD3;
   font-weight: bold;
 }
 
