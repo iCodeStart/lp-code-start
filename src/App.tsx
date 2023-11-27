@@ -17,16 +17,18 @@ function App() {
   return (
     <>
       <Header />
-      <WorldProgram />
-      <Benefits />
-      <Testimonials />
-      <OurTrail />
-      <School />
-      <Teachers />
-      <Projects />
-      <Bonus />
-      <Offer />
-      <FAQ />
+      <div className="content-container">
+        <WorldProgram />
+        <Benefits />
+        <Testimonials />
+        <OurTrail />
+        <School />
+        <Teachers />
+        <Projects />
+        <Bonus />
+        <Offer />
+        <FAQ />
+      </div>
     </>
   );
 }

@@ -19,5 +19,12 @@
     .world-program-list{
         display: flex;
         flex-direction: column;
+
+        &_img{
+        
+            & img{
+                width: 100%;
+            }
+        }
     }
 }

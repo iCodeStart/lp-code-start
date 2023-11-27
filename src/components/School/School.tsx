@@ -1,3 +1,5 @@
+import './School.styles.scss';
+
 export function School() {
   return (
     <div className="school">

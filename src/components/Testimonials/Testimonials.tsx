@@ -1,4 +1,5 @@
 import { Chip } from "../Chip";
+import './Testimonials.styles.scss';
 
 export function Testimonials() {
   return (
