@@ -14,7 +14,7 @@ export function Teachers() {
     },
     {
       img: "./teacher-1.png",
-      name: "Davi Pires Quirino",
+      name: "Davi Quirino",
       description: "+5 anos de experiência com programação",
     },
   ];
