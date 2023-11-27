@@ -12,6 +12,7 @@ import {
   Testimonials,
   WorldProgram,
 } from "./components";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Bonus />
         <Offer />
         <FAQ />
+        <Footer/>
       </div>
     </>
   );
