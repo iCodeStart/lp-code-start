@@ -472,8 +472,6 @@ button {
 .trail-step {
   display: flex;
   gap: 30px;
-  width: 50%;
-  margin: 50px auto;
   position: relative;
 }
 .trail-step img {
@@ -483,7 +481,7 @@ button {
 .connecting-line {
   position: absolute;
   top: 120px;
-  left: 16px;
+  left: 18px;
   transform: translateX(-50%);
   width: 2px;
   background-color: #3498db;
