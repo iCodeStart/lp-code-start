@@ -1,6 +1,5 @@
 import { Chip } from "../Chip";
 import { CardBenefits } from "./CardBenefits";
-import { Range } from "./Range";
 
 export function Benefits() {
   const arrayTexts = [
@@ -36,7 +35,6 @@ export function Benefits() {
                 titleCard={item.title}
                 text={item.text}
               />
-              {index === 0 && <Range />}
             </>
           );
         })}

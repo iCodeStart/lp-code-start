@@ -1,9 +1,8 @@
-//import { BenefitsLineProgramming } from "./components/BenefitsLineProgramming";
-
 import AOS from "aos";
 import { useEffect } from "react";
 import { WorldProgramInfo } from "./components";
 import "./WorldProgram.style.scss";
+import { Range } from "../Benefits/Range";
 
 export function WorldProgram() {
   useEffect(() => {
@@ -34,7 +33,6 @@ export function WorldProgram() {
         <h1 className="section-title">A melhor profissão da década</h1>
         <div className="world-program-list">
           {arrayTexts.map((item, index) => {
-            console.log("key1", index);
             return (
               <WorldProgramInfo
                 key={index}
@@ -46,6 +44,7 @@ export function WorldProgram() {
             );
           })}
         </div>
+        <Range />
         <div className="world-program-list_img">
           <img
             src="/vagas-abertas.png"
