@@ -144,6 +144,7 @@ button {
   text-align: center;
   font-weight: 700;
   position: relative;
+  margin-bottom: 80px;
 }
 
 .section-title::after {
@@ -486,18 +487,20 @@ button {
 }
 
 .bonus_content_card {
-  padding: 20px
+  padding: 20px;
 }
 
 .world-program-list {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 .programInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .programInfo__title {
