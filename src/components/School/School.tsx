@@ -1,17 +1,14 @@
-import AOS from "aos";
-import { useEffect } from "react";
+import { Chip } from "../Chip";
 import "./School.styles.scss";
 
 export function School() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
   return (
     <div className="school">
-      <div className="container" data-aos="zoom-in-up">
-        <h1 className="section-title">A Escola Code Start</h1>
+      <div className="container">
+        <div className="title-container">
+          <Chip label="Sobre nós" />
+          <h1 className="section-title">A Escola Code Start</h1>
+        </div>
         <div className="school__content">
           <div className="school__content-text">
             <p className="school_content-text-title">
@@ -37,7 +34,7 @@ export function School() {
             </div>
           </div>
           <div className="school_content_code-start">
-            <img src="./ipad-code-start.png" alt="Escola Code Start" />
+            <img src="./ipad-code-start.png" alt="Comunidade Code Start" />
           </div>
         </div>
       </div>

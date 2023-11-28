@@ -1,3 +1,4 @@
+import { Chip } from "../Chip";
 import { Teacher } from "./Teacher/Teacher";
 
 export function Teachers() {
@@ -21,7 +22,10 @@ export function Teachers() {
   return (
     <div className="teachers">
       <div className="container">
-        <h1 className="section-title">Quem serão seus professores?</h1>
+        <div className="title-container">
+          <Chip label="Tutores" />
+          <h1 className="section-title">Quem serão seus professores?</h1>
+        </div>
         <div className="teachers__content">
           {arrayTeachers.map((teacher) => {
             return (

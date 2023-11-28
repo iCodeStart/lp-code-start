@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { CardInfoProject } from "./CardInfoProject";
+import { Chip } from "../Chip";
 
 export function Projects() {
   const [activeProject, setActiveProject] = useState(0);
@@ -12,9 +13,12 @@ export function Projects() {
   return (
     <div className="projects">
       <div className="container">
-        <h1 className="section-title">
-          Alguns dos projetos que você vai criar na Escola da Code Start
-        </h1>
+        <div className="title-container">
+          <Chip label="Projetos" />
+          <h1 className="section-title">
+            Alguns dos projetos que você vai criar na Escola da Code Start
+          </h1>
+        </div>
         <div className="projects__content">
           <div className="cards-projects">
             <div

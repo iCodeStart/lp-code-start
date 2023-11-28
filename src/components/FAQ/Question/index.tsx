@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./question.styles.scss";
 import { questions } from "../questions";
 import { useState } from "react";
 

@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./faq.styles.scss";
 import { questions } from "./questions";
 import { Question } from "./Question";
 import { Chip } from "../Chip";

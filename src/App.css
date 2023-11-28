@@ -120,6 +120,9 @@ button {
 
 .content-container {
   padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .separate-line {
@@ -233,6 +236,7 @@ button {
   font-size: 24px;
   font-weight: 700;
   margin-top: 15px;
+  text-align: center;
 }
 
 .school_content-text-item {
@@ -255,9 +259,9 @@ button {
 }
 
 .cards-projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 50px 0;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .card-project-active {
@@ -289,6 +293,7 @@ button {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
+  flex: 1;
 }
 
 .images-projects {
@@ -310,13 +315,12 @@ button {
   background-color: #181b20;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin: 50px 0;
   padding: 20px;
   box-sizing: border-box;
   margin: 50px auto;
   display: flex;
   gap: 20px;
-  width: 80%;
+  width: 100%;
 }
 
 .bonus_content_card {
@@ -360,8 +364,9 @@ button {
 }
 
 .teachers__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .teacher {
@@ -385,24 +390,7 @@ button {
   background-color: #181b20;
   padding: 100px;
   box-sizing: border-box;
-  margin: 50px auto;
-}
-
-.line-offer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-  border-bottom: 2px solid #00bcd3;
-}
-
-.line-offer:last-child {
-  border-bottom: none;
-}
-
-.line-offer p,
-.line-offer span {
-  font-size: 18px;
+  width: 100%;
 }
 
 .card-offer__total {
@@ -553,6 +541,10 @@ button {
     width: 100%;
   }
 
+  .header__content-logo button {
+    display: none;
+  }
+
   .header__content-titles-title {
     font-size: 2rem;
     line-height: 40px;
@@ -609,11 +601,6 @@ button {
     padding: 20px;
   }
 
-  .line-offer p,
-  .line-offer span {
-    font-size: 15px;
-    font-weight: bold;
-  }
   .guarantee {
     flex-direction: column;
     text-align: center;
