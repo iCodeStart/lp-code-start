@@ -6,29 +6,28 @@ export function OurTrail() {
   const arrayInfoTrail = useMemo(
     () => [
       {
-        title: "Consciência",
-        description:
-          "Conheça o mercado de trabalho, descubra se já está preparado(a), qual é a especialidade ideal para seu perfil, qual tipo de trabalho escolher, oportunidades nacionais e internacionais, toda a burocracia do programador pj e formas de ganhar dinheiro na programação.",
-      },
-      {
         title: "Preparação",
         description:
-          "Aprenda a montar um perfil atraente no Github e Linkedin que gere networking, descubra o que subir para o Github e como montar um currículo digital.",
+          "Aprenda a como estudar de verdade, como se organizar, como se manter motivado e como se preparar para o mercado de trabalho."
       },
       {
-        title: "Aplicação",
+        title: "Crescimento técnico",
         description:
-          'Descubra os melhores sites de vagas, como escolher as vagas certas e fugir das furadas, como "stalkear" empresas, enviar suas aplicações e gerenciá-las de forma organizada.',
+          'Comece a adquirir conhecimento e executar criando projetos reais. Aprenda a como pesquisar, como resolver problemas e como se tornar um programador profissional.',
       },
       {
-        title: "Testes e Entrevistas",
+        title: "Estruturação",
         description:
-          "Conheça os sites de testes técnicos e como realizá-los, como mandar bem nas entrevistas com o RH, em inglês, com o time técnico e com o CEO.",
+          "Aprenda a como estruturar seu currículo e Linkedin de forma estratégica e como abordar recrutadores para aumentar suas chances de conseguir uma entrevista.",
       },
       {
-        title: "Contratação e Especialização",
+        title: "Simulação de entrevista",
+        description: 'Tenha a chance de treinar antes de ir para o mercado de trabalho. Aprenda a como se comportar em uma entrevista, como se preparar e como se destacar no processo seletivo.'
+      },
+      {
+        title: "Certificação",
         description:
-          "Após a contratação você não pode parar, se quer escalar sua carreira do nível Júnior ao Sênior é necessário buscar especializações e aprender a como se posicionar para uma possível promoção de cargo ou para vagas melhores.",
+          "Pegue seu certificado e tenha vantagem competitiva no mercado. Aprenda a como se posicionar no mercado de trabalho e execute os conhecimentos adquiridos na Escola Code Start.",
       },
     ],
     []
@@ -71,7 +70,7 @@ export function OurTrail() {
       <div className="container">
         <div className="title-container">
           <Chip label="Trilha" />
-          <h1 className="section-title">Nossa trilha</h1>
+          <h1 className="section-title">Sua jornada até o primeiro emprego</h1>
         </div>
         <div className="our-trail__content">
           {arrayInfoTrail.map((info, index) => (

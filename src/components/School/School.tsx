@@ -37,7 +37,7 @@ export function School() {
             </div>
           </div>
           <div className="school_content_code-start">
-            <img src="./ipad-code-start.png" alt="Comunidade Code Start" />
+            <img src="./ipad-code-start.png" alt="Escola Code Start" />
           </div>
         </div>
       </div>
