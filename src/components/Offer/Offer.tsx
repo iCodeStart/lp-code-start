@@ -3,21 +3,21 @@ import { LineOffer } from "./LineOffer";
 
 export function Offer() {
   const courses = [
-    { title: "HTML/CSS", price: 1000 },
-    { title: "Bootstrap", price: 1000 },
-    { title: "Git/Github", price: 1000 },
-    { title: "Javascript", price: 1000 },
-    { title: "React JS", price: 1000 },
-    { title: "Node JS", price: 1000 },
+    { title: "HTML/CSS", price: 129 },
+    { title: "Bootstrap", price: 129 },
+    { title: "Git/Github", price: 129 },
+    { title: "Javascript", price: 147 },
+    { title: "React JS", price: 197 },
+    { title: "Node JS", price: 197 },
   ];
 
   const additionalItems = [
-    { title: "Conteúdos sobre mercado de trabalho", price: 1000 },
-    { title: "Exercícios", price: 1000 },
-    { title: "Projetos desenvolvidos na Code Start", price: 1000 },
-    { title: "Suporte exclusivo para alunos", price: 1000 },
-    { title: "Networking com pessoas da profissão", price: 1000 },
-    { title: "Simulação de entrevistas", price: 1000 },
+    { title: "Conteúdos sobre mercado de trabalho", price: 47 },
+    { title: "Exercícios", price: 97 },
+    { title: "Projetos desenvolvidos na Code Start", price: 197 },
+    { title: "Suporte exclusivo para alunos", price: 97 },
+    { title: "Networking com pessoas da profissão", price: 97 },
+    { title: "Simulação de entrevistas", price: 197 },
   ];
 
   const total =

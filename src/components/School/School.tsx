@@ -25,13 +25,6 @@ export function School() {
                 precisa seguir o que ensinamos.
               </p>
             </div>
-            <div className="school_content-text-item">
-              <img src="./icon-benefits.svg" alt="Benefícios Code Start" />
-              <p>
-                Acreditamos no básico bem feito, e na Escola Code Start você
-                será capaz de encontrar dentre os nossos valores:
-              </p>
-            </div>
           </div>
           <div className="school_content_code-start">
             <img src="./ipad-code-start.png" alt="Comunidade Code Start" />
