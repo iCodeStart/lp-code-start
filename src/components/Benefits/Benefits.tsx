@@ -25,7 +25,7 @@ export function Benefits() {
       <div className="container">
         <div className="title-container">
           <Chip label="Vantagens" />
-          <h1 className="section-title">Benefícios</h1>
+          <h1 className="section-title">Do Básico ao Avançado</h1>
         </div>
         {arrayTexts.map((item, index) => {
           return (
