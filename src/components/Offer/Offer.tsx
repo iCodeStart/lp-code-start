@@ -49,9 +49,12 @@ export function Offer() {
             ))}
             <div className="card-offer__total">
               <p>Total</p>
-              <span>{`R$ ${total},00`}</span>
+              <span>
+                <s>{`R$ ${total},00`}</s>
+              </span>
             </div>
             <div className="guarantee_access">
+              <h4>Mas hoje você não vai precisar investir isso...</h4>
               <h3>
                 Aprenda do zero ao profissional e tenha acesso imediato por
                 apenas 12x de

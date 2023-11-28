@@ -260,9 +260,9 @@ button {
 }
 
 .cards-projects {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 50px;
 }
 
 .card-project-active {

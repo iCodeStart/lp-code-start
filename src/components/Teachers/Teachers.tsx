@@ -16,7 +16,8 @@ export function Teachers() {
     {
       img: "./teacher-1.png",
       name: "Davi Quirino",
-      description: "+5 anos de experiência com programação",
+      description:
+        "Desenvolvedor Sênior na Ambev com +5 anos de experiência com programação",
     },
   ];
   return (
