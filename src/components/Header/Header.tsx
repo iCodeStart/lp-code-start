@@ -8,7 +8,9 @@ export function Header() {
           <div className="header__content-container">
             <div className="header__content-logo">
               <img src="/logo-code-start.svg" alt="logo" />
-              <button className="btn-buy">Quero trabalhar de casa</button>
+              <button className="btn-buy">
+                <a href="#offer">Quero trabalhar de casa</a>
+              </button>
             </div>
           </div>
           <div className="header__content-titles">
@@ -22,7 +24,7 @@ export function Header() {
             </h2>
           </div>
           <button className="btn-buy" style={{ marginTop: "2em" }}>
-            Quero trabalhar de casa
+            <a href="#offer">Quero trabalhar de casa</a>
           </button>
         </div>
       </div>

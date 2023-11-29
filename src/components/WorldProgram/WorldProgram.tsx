@@ -51,7 +51,11 @@ export function WorldProgram() {
             alt="Vagas abertas programador Code Start"
           />
         </div>
-        <button className="btn-buy-info">Quero ser um Programador</button>
+        <button className="btn-buy-info">
+          <a href="#offer">
+            Quero ser um Programador
+          </a>
+        </button>
       </div>
     </div>
   );

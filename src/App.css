@@ -15,6 +15,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -112,6 +115,10 @@ button {
   font-weight: 700;
   width: fit-content;
   text-align: center;
+}
+.btn-buy a{
+  text-decoration: none;
+  color: #000;
 }
 
 .container {
@@ -430,6 +437,11 @@ button {
   color: #000;
 }
 
+.offer_button a{
+  color: #000;
+  text-decoration: none;
+}
+
 .cards-accept {
   margin: 50px auto;
   max-width: 100%;
@@ -533,6 +545,10 @@ button {
   font-weight: 700;
   margin-top: 2em;
   width: 300px;
+}
+.btn-buy-info a{
+  text-decoration: none;
+  color: #000;
 }
 
 @media (max-width: 768px) {
