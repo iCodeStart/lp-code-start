@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   text-align: center;
 }
 
@@ -13,18 +12,17 @@
   background-color: #181b20;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin: 50px 0;
-  padding: 100px;
   box-sizing: border-box;
   margin: 50px auto;
-
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 32px;
+  padding: 64px;
 }
 
 @media screen and (max-width: 768px) {
   .question-list {
-    padding: 24px;
+    gap: 32px;
+    padding: 0;
   }
 }
