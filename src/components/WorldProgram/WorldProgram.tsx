@@ -5,11 +5,11 @@ import "./WorldProgram.style.scss";
 import { Range } from "../Benefits/Range";
 
 export function WorldProgram() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //   });
+  // }, []);
   const arrayTexts = [
     {
       title: "R$4.472,00",

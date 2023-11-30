@@ -12,11 +12,11 @@ export function LineBonus({
   subtitle,
   orientation,
 }: LineBonusProps) {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //   });
+  // }, []);
   return (
     <div className="line-bonus" data-aos="fade-up">
       {orientation === "left" ? (

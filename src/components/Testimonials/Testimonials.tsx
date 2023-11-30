@@ -4,11 +4,11 @@ import { Chip } from "../Chip";
 import './Testimonials.styles.scss';
 
 export function Testimonials() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //   });
+  // }, []);
   return (
     <div className="testimonials">
       <div className="container">
