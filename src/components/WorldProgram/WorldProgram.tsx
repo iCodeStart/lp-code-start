@@ -1,5 +1,5 @@
-import AOS from "aos";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import { useEffect } from "react";
 import { WorldProgramInfo } from "./components";
 import "./WorldProgram.style.scss";
 import { Range } from "../Benefits/Range";

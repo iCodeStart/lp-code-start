@@ -1,5 +1,5 @@
-import AOS from "aos";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import { useEffect } from "react";
 interface TeacherProps {
   img: string;
   name: string;

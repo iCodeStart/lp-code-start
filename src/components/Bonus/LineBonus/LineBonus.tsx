@@ -1,5 +1,5 @@
-import AOS from "aos";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import { useEffect } from "react";
 interface LineBonusProps {
   img: string;
   title: string;
