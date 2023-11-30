@@ -551,6 +551,15 @@ button {
   color: #000;
 }
 
+.fullstack-desktop{
+  display: flex;
+  justify-content: center;
+}
+
+.fullstack-mobile{
+  display: none;
+}
+
 @media (max-width: 768px) {
   .header {
     background: url("../public/background-header-mobile.svg") no-repeat center;
@@ -624,5 +633,12 @@ button {
   .guarantee {
     flex-direction: column;
     text-align: center;
+  }
+  .fullstack-desktop{
+    display: none;
+  }
+  .fullstack-mobile{
+    display: flex;
+    justify-content: center;
   }
 }

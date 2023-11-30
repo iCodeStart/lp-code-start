@@ -13,6 +13,7 @@ import {
   WorldProgram,
 } from "./components";
 import { Footer } from "./components/Footer";
+import { FullstackTrail } from "./components/FullstackTrail";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Testimonials />
         <OurTrail />
         <School />
+        <FullstackTrail/>
         <Teachers />
         <Projects />
         <Bonus />

@@ -9,12 +9,12 @@ export function Teachers() {
       description: "+10 anos de experiência com programação",
     },
     {
-      img: "./teacher-1.png",
+      img: "./teacher-2.png",
       name: "Moésio Marcelino",
       description: "+5 anos de experiência com programação",
     },
     {
-      img: "./teacher-1.png",
+      img: "./teacher-3.png",
       name: "Davi Quirino",
       description:
         "Desenvolvedor Sênior na Ambev com +5 anos de experiência com programação",
