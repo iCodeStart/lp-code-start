@@ -69,7 +69,7 @@ export function OurTrail() {
     <div className="our-trail">
       <div className="container">
         <div className="title-container">
-          <Chip label="Trilha" />
+          <Chip label="Jornada" />
           <h1 className="section-title">Sua jornada até o primeiro emprego</h1>
         </div>
         <div className="our-trail__content">

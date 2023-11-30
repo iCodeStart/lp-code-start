@@ -1,7 +1,10 @@
+import { Chip } from "../Chip";
+
 export function FullstackTrail(){
     return (
         <div className="fullstack-trail">
             <div className="container">
+                <Chip label="Trilha" />
                 <h1 className="section-title">Nossa trilha fullstack</h1>
                 <div className="fullstack-trail__content">
                     <div className="fullstack-desktop">

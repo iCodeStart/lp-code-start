@@ -567,6 +567,7 @@ button {
   }
 
   .header__content-titles {
+    margin-top: 5em;
     width: 100%;
   }
 
@@ -640,5 +641,8 @@ button {
   .fullstack-mobile{
     display: flex;
     justify-content: center;
+  }
+  .fullstack-mobile img{
+    width: 100%;
   }
 }
