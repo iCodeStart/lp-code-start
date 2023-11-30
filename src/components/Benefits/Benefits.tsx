@@ -9,10 +9,10 @@ export function Benefits() {
     },
     {
       title: "Metodologia validada: da teoria à prática",
-      text: "Nós acreditamos que a teoria aplicada à prática vai te levar para o próximo nível! Dessa forma nós estruturamos o conteúdo para que, em paralelo aos cursos, possa fazer exercícios para treinar e também executar seus conhecimentos em projetos que são realmente utilizados no mercado de trabalho.",
+      text: "Nós acreditamos que a teoria aplicada à prática vai te levar para o próximo nível! Dessa forma nós estruturamos o conteúdo para que, em paralelo aos cursos, você possa fazer exercícios para treinar e também executar seus conhecimentos em projetos que são realmente utilizados no mercado de trabalho.",
     },
     {
-      title: "Vagas Selecionadas, Currículo Profissional e LinkedIn Atraente",
+      title: "Vagas Selecionadas, Currículo Profissional e Linkedin Atraente",
       text: "Muitos programadores enfrentam desafios ao procurar emprego: não encontram vagas adequadas ou possuem currículos que não destacam suas habilidades. Na Escola Code Start, oferecemos um canal exclusivo de vagas de emprego, além de duas masterclasses sobre como criar um LinkedIn profissional e um currículo que chama a atenção dos recrutadores.",
     },
     {
