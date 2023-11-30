@@ -128,6 +128,7 @@ button {
 
 .content-container {
   padding: 0 30px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -311,11 +312,12 @@ button {
 }
 
 .project-img {
+  width: 100%;
   display: none;
 }
 
 .project-img-active {
-  max-width: 100%;
+  width: 100%;
 }
 
 .card-info-project {

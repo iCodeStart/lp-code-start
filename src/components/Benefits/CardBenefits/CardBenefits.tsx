@@ -1,5 +1,5 @@
-// import AOS from 'aos';
-// import { useEffect } from "react";
+import AOS from 'aos';
+import { useEffect } from "react";
 
 interface CardBenefitsProps {
   titleCard: string;
@@ -7,11 +7,11 @@ interface CardBenefitsProps {
 }
 
 export function CardBenefits({ titleCard, text }: CardBenefitsProps) {
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //   });
-  // }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <div className="card-benefits" data-aos="fade-right">
       <div className="card-benefits__title">

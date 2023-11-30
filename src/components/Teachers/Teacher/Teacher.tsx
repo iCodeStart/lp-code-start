@@ -1,16 +1,16 @@
-// import AOS from "aos";
-// import { useEffect } from "react";
+import AOS from "aos";
+import { useEffect } from "react";
 interface TeacherProps {
   img: string;
   name: string;
   description: string;
 }
 export function Teacher({ img, name, description }: TeacherProps) {
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //   });
-  // }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <div className="teacher" data-aos="fade-up">
       <img src={img} alt="Professor Code Start" />
