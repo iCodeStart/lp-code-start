@@ -15,7 +15,7 @@ export function Header() {
           </div>
           <div className="header__content-titles">
             <h1 className="header__content-titles-title">
-              Ganhe Salário de Médico com Programação
+              Ganhe salário de médico com programação
             </h1>
             <h2 className="header__content-titles-subtitle">
               Existem mais de <span>15.000 vagas disponíveis hoje</span> e uma

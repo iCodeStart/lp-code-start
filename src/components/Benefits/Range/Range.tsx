@@ -39,7 +39,7 @@ export function Range() {
           ))}
         </div>
       </div>
-      <div className="range-font">* Fonte: Código Fonte</div>
+      <div className="programInfo__font">* Fonte: Código Fonte</div>
     </>
   );
 }

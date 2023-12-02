@@ -1,8 +1,8 @@
 import AOS from "aos";
 import { useEffect } from "react";
+import { Range } from "../Benefits/Range";
 import { WorldProgramInfo } from "./components";
 import "./WorldProgram.style.scss";
-import { Range } from "../Benefits/Range";
 
 export function WorldProgram() {
   useEffect(() => {
@@ -13,18 +13,18 @@ export function WorldProgram() {
   const arrayTexts = [
     {
       title: "R$4.472,00",
-      text: "Média de salário para <span>Desenvolvedor.",
+      text: "Média de salário para <span>desenvolvedor",
       font: "Fonte: GlassDoor",
-    },
-    {
-      title: "+15.000 vagas no LinkedIn",
-      text: "E uma delas pode ser sua",
-      font: "Fonte: LinkedIn",
     },
     {
       title: "78,27%",
       text: "Trabalhando de casa",
       font: "Fonte: Canal Tech",
+    },
+    {
+      title: "+15.000 vagas",
+      text: "E uma delas pode ser sua",
+      font: "Fonte: LinkedIn",
     },
   ];
   return (
@@ -44,17 +44,15 @@ export function WorldProgram() {
             );
           })}
         </div>
-        <Range />
         <div className="world-program-list_img">
           <img
             src="/vagas-abertas.png"
             alt="Vagas abertas programador Code Start"
           />
         </div>
+        <Range />
         <button className="btn-buy-info">
-          <a href="#offer">
-            Quero ser um Programador
-          </a>
+          <a href="#offer">Quero ser um programador</a>
         </button>
       </div>
     </div>

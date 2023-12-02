@@ -17,7 +17,7 @@ export function Teachers() {
       img: "./teacher-3.png",
       name: "Davi Quirino",
       description:
-        "Desenvolvedor Sênior na Ambev com +5 anos de experiência com programação",
+        "Formei em Engenharia de Produção pela Universidade do Estado de Minas Gerais, fiz transição de carreira e estou atuando há mais de 5 anos como desenvolvedor de sistemas. Já participei de diversos projetos em empresas de grande porte e com sistemas com uso de milhões de pessoas. Atualmente atuo como Desenvolvedor Sênior.",
     },
   ];
   return (

@@ -21,7 +21,7 @@ export function WorldProgramInfo({
       <img src={getImage(index)} alt="Programming separator" />
       <h1 className="programInfo__title">{titleCard}</h1>
       <span dangerouslySetInnerHTML={{ __html: text }}></span>
-      <div>{font}</div>
+      <div className="programInfo__font">{font}</div>
     </div>
   );
 }

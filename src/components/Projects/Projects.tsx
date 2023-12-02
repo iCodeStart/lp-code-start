@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import { CardInfoProject } from "./CardInfoProject";
 import { Chip } from "../Chip";
+import { CardInfoProject } from "./CardInfoProject";
 
 export function Projects() {
   const [activeProject, setActiveProject] = useState(0);
