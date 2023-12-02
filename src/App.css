@@ -157,6 +157,15 @@ button {
   margin-bottom: 80px;
 }
 
+.section-subtitle {
+  font-size: 1.5rem;
+  margin: 20px 0 40px 0;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
 .section-title::after {
   content: "";
   height: 5px;
@@ -416,6 +425,7 @@ button {
 
 .card-offer__price {
   color: #00bcd3;
+  margin-bottom: 50px;
 }
 
 .guarantee_access {

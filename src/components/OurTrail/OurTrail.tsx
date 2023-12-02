@@ -8,26 +8,27 @@ export function OurTrail() {
       {
         title: "Preparação",
         description:
-          "Aprenda a como estudar de verdade, como se organizar, como se manter motivado e como se preparar para o mercado de trabalho."
+          "Aprenda a como estudar de verdade e se organizar para o mercado de trabalho.",
       },
       {
         title: "Crescimento técnico",
         description:
-          'Comece a adquirir conhecimento e executar criando projetos reais. Aprenda a como pesquisar, como resolver problemas e como se tornar um programador profissional.',
+          "Comece a adquirir conhecimento e executar criando projetos reais.",
       },
       {
         title: "Estruturação",
         description:
-          "Aprenda a como estruturar seu currículo e Linkedin de forma estratégica e como abordar recrutadores para aumentar suas chances de conseguir uma entrevista.",
+          "Aprenda a como estruturar seu currículo e Linkedin de forma estratégica.",
       },
       {
         title: "Simulação de entrevista",
-        description: 'Tenha a chance de treinar antes de ir para o mercado de trabalho. Aprenda a como se comportar em uma entrevista, como se preparar e como se destacar no processo seletivo.'
+        description:
+          "Tenha a chance de treinar antes de ir para o mercado de trabalho.",
       },
       {
         title: "Certificação",
         description:
-          "Pegue seu certificado e tenha vantagem competitiva no mercado. Aprenda a como se posicionar no mercado de trabalho e execute os conhecimentos adquiridos na Escola Code Start.",
+          "Pegue seu certificado e tenha vantagem competitiva no mercado.",
       },
     ],
     []
