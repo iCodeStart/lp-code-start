@@ -465,6 +465,7 @@ button {
 .guarantee {
   display: flex;
   gap: 20px;
+  font-size: 18px;
 }
 .guarantee img {
   width: 100px;

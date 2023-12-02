@@ -61,14 +61,13 @@ export function Offer() {
               </h3>
               <h1 className="card-offer__price">R$29,90</h1>
               <button className="offer_button">
-              <a
-                href="https://pay.kiwify.com.br/0UKSbBo"
-                target="_blank"
-                rel="noreferrer"
-                
-              >
-                QUERO SER UM PROGRAMADOR COMPLETO
-              </a>
+                <a
+                  href="https://pay.kiwify.com.br/0UKSbBo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  QUERO SER UM PROGRAMADOR COMPLETO
+                </a>
               </button>
             </div>
             <img
