@@ -21,7 +21,7 @@ export function LineBonus({
     <div className="line-bonus" data-aos="fade-up">
       {orientation === "left" ? (
         <div className="line-bonus__content">
-          <img src={img} alt="Bonus Code Start" />
+          <img src={img} alt="Bonus Code Start" className="line-bonus__image" />
           <div className="line-bonus_content-texts">
             <h1>{title}</h1>
             <p>{subtitle}</p>

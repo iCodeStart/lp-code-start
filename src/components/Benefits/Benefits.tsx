@@ -5,7 +5,7 @@ export function Benefits() {
   const arrayTexts = [
     {
       title: "Do básico ao profissional em um único treinamento",
-      text: "Se você sente que a programação é um mundo distante, sem entender por onde começar, o treinamento da Escola Code Start é a solução. Vamos te guiar desde os fundamentos até os níveis mais avançados, construindo a base sólida que você precisa para se tornar um programador profissiona",
+      text: "Se você sente que a programação é um mundo distante, sem entender por onde começar, o treinamento da Escola Code Start é a solução. Vamos te guiar desde os fundamentos até os níveis mais avançados, construindo a base sólida que você precisa para se tornar um programador profissional.",
     },
     {
       title: "Metodologia validada: da teoria à prática",

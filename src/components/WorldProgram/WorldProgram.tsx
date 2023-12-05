@@ -1,6 +1,7 @@
 import AOS from "aos";
 import { useEffect } from "react";
 import { Range } from "../Benefits/Range";
+import { Chip } from "../Chip";
 import { WorldProgramInfo } from "./components";
 import "./WorldProgram.style.scss";
 
@@ -30,6 +31,7 @@ export function WorldProgram() {
   return (
     <div className="world-programming">
       <div className="container__program-info" data-aos="zoom-in">
+        <Chip label="Carreira" />
         <h1 className="section-title">A melhor profissão da década</h1>
         <div className="world-program-list">
           {arrayTexts.map((item, index) => {

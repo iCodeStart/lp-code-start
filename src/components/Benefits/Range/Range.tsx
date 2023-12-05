@@ -1,3 +1,5 @@
+import AOS from "aos";
+import { useEffect } from "react";
 import "./range.styles.scss";
 
 const ranges = [
@@ -19,14 +21,19 @@ const ranges = [
   },
   {
     value: "R$ 16.339,29",
-    label: "Outros",
+    label: "Especialistas",
   },
 ];
 
 export function Range() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
-      <div className="range-container">
+      <div className="range-container" data-aos="fade-up">
         <hr className="range-line" />
 
         <div className="range-list">

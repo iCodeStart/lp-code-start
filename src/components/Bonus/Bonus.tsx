@@ -4,7 +4,7 @@ import { LineBonus } from "./LineBonus";
 export function Bonus() {
   const arrayBonus = [
     {
-      img: "/bonus1.png",
+      img: "/interview.png",
       title: "SIMULAÇÃO DE ENTREVISTAS TÉCNICAS",
       subtitle:
         "Oportunidade do aluno testar seus conhecimentos para tentar ser aprovado em uma vaga de emprego.",
