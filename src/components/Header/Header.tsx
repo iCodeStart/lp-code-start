@@ -18,8 +18,8 @@ export function Header() {
               Ganhe salário de médico com programação
             </h1>
             <h2 className="header__content-titles-subtitle">
-              Existem mais de <span>15.000 vagas disponíveis hoje</span> e uma
-              delas pode ser sua,{" "}
+              Existem mais de <strong>15.000 vagas</strong> disponíveis hoje e
+              uma delas pode ser sua,{" "}
               <span>mesmo que você não saiba nada de programação!</span>
             </h2>
           </div>

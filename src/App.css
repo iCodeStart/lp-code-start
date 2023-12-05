@@ -86,7 +86,7 @@ button {
 
 .header__content-titles-title {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #00bcd3;
   line-height: 55px;
   margin-bottom: 20px;
@@ -94,7 +94,7 @@ button {
 
 .header__content-titles-subtitle {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
 }
 
