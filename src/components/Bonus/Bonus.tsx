@@ -10,13 +10,13 @@ export function Bonus() {
         "Oportunidade do aluno testar seus conhecimentos para tentar ser aprovado em uma vaga de emprego.",
     },
     {
-      img: "/bonus2.png",
+      img: "/linkedin1.png",
       title: "MASTERCLASS EXCLUSIVA SOBRE O LINKEDIN",
       subtitle:
         "Uma Tech Recruiter de uma das maiores empresas do Brasil e do mundo destrinchou tudo sobre o LinkedIn e as principais dúvidas de como usar a plataforma para procurar vagas exclusivamente para os nossos alunos.",
     },
     {
-      img: "/bonus3.png",
+      img: "/projects1.png",
       title: "ACESSO AOS PROJETOS JÁ DESENVOLVIDOS",
       subtitle:
         "Acesso a todas aulas e códigos dos projetos práticos desenvolvidos em turmas anteriores.",

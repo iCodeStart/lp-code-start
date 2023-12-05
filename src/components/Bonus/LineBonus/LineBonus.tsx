@@ -33,7 +33,7 @@ export function LineBonus({
             <h1>{title}</h1>
             <p>{subtitle}</p>
           </div>
-          <img src={img} alt="Bonus Code Start" />
+          <img src={img} alt="Bonus Code Start" className="line-bonus__image" />
         </div>
       )}
     </div>
