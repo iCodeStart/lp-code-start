@@ -1,7 +1,14 @@
+import AOS from "aos";
+import { useEffect } from "react";
 import { Chip } from "../Chip";
 import { LineOffer } from "./LineOffer";
 
 export function Offer() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const courses = [
     { title: "HTML/CSS", price: 129 },
     { title: "Bootstrap", price: 129 },
@@ -60,7 +67,7 @@ export function Offer() {
                 apenas 12x de
               </h3>
               <h1 className="card-offer__price">R$29,90</h1>
-              <button className="offer_button">
+              <button className="offer_button" data-aos="fade-up">
                 <a
                   href="https://pay.kiwify.com.br/0UKSbBo"
                   target="_blank"
