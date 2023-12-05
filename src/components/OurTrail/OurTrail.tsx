@@ -66,6 +66,14 @@ export function OurTrail() {
     }
   }, [currentPhase, arrayInfoTrail]);
 
+  const getIcon = (index: number) => {
+    if (index === 0) return "/rocket.svg";
+    if (index === 1) return "/growth.svg";
+    if (index === 2) return "/resume.svg";
+    if (index === 3) return "/interview1.svg";
+    return "./certificate.svg";
+  };
+
   return (
     <div className="our-trail">
       <div className="container">
@@ -82,7 +90,7 @@ export function OurTrail() {
               }`}
             >
               <img
-                src="./icon-benefits.svg"
+                src={getIcon(index)}
                 alt={`Benefícios Code Start - ${info.title}`}
               />
               <div className="card-trail">
