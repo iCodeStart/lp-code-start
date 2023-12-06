@@ -12,7 +12,8 @@ export function Teachers() {
     {
       img: "./teacher-2.png",
       name: "Moésio Marcelino",
-      description: "+5 anos de experiência com programação",
+      description:
+        "Formei em Análise e Desenvolvimento de Sistemas pela UniFAP Ceará, com mais de 5 anos de experiência, agregadas como QA e Desenvolvedor Frontend. Ocupei papéis de liderança, trabalhos com desenvolvimento ágil, mentoria de carreira de pessoas iniciantes, visto como referência técnica pelos pares. Atualmente atua como desenvolvedor Sênior.",
     },
     {
       img: "./teacher-3.png",
