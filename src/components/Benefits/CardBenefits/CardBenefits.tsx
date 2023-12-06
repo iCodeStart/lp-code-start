@@ -15,6 +15,7 @@ export function CardBenefits({ titleCard, text, index }: CardBenefitsProps) {
   }, []);
 
   const getIcon = (index: number) => {
+    if (index === 0) return "./icon-benefits.svg";
     if (index === 1) return "./check.svg";
     if (index === 2) return "./recruitment.svg";
     if (index === 3) return "./question-mark.svg";
