@@ -6,7 +6,8 @@ export function Teachers() {
     {
       img: "./teacher-1.png",
       name: "Alan Costa Braulio",
-      description: "+10 anos de experiência com programação",
+      description:
+        "Formei em Engenharia de Computação pela PUC Minas. Sou desenvolvedor Web a mais de 10 anos ocupando posições de liderança e destaque nos times que atuei ajudando a gerir e organizar as equipes de desenvolvimento. Atualmente atuo como Desenvolvedor Sênior.",
     },
     {
       img: "./teacher-2.png",
