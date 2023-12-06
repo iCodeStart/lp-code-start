@@ -14,6 +14,7 @@ import {
 } from "./components";
 import { Footer } from "./components/Footer";
 import { FullstackTrail } from "./components/FullstackTrail";
+import { Whatsapp } from "./components/Whatsapp";
 
 function App() {
   return (
@@ -25,13 +26,14 @@ function App() {
         <Testimonials />
         <OurTrail />
         <School />
-        <FullstackTrail/>
+        <FullstackTrail />
         <Teachers />
         <Projects />
         <Bonus />
         <Offer />
         <FAQ />
-        <Footer/>
+        <Footer />
+        <Whatsapp />
       </div>
     </>
   );

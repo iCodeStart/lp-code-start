@@ -598,6 +598,17 @@ button {
   display: none;
 }
 
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.whatsapp-image {
+  width: 50px !important;
+}
+
 @media (max-width: 768px) {
   .header {
     background: url("../public/background-header-mobile.svg") no-repeat center;
