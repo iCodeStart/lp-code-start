@@ -13,16 +13,14 @@ export function School() {
           <div className="school__content-text">
             <p className="school_content-text-title">
               A Code Start é uma escola completa de programação, onde vamos te
-              pegar pelas mãos e te entregar o passo a passo para você dar os
-              seus primeiros passos e se tornar um profissional qualificado.
+              pegar pelas mãos e te ensinar tudo que você precisa saber, mesmo
+              que você não tenha muito tempo para estudar.
             </p>
             <div className="school_content-text-item">
               <img src="./icon-benefits.svg" alt="Benefícios Code Start" />
               <p>
-                Nós acreditamos em ideias e soluções criativas para te ensinar
-                da forma correta o mundo da tecnologia, através de uma
-                metodologia única, e uma trilha de estudos em que você só
-                precisa seguir o que ensinamos.
+                Metodologia única, e uma trilha de estudos em que você só
+                precisa seguir o passo a passo.
               </p>
             </div>
           </div>

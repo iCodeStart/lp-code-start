@@ -5,19 +5,19 @@ export function Benefits() {
   const arrayTexts = [
     {
       title: "Do básico ao profissional em um único treinamento",
-      text: "Se você sente que a programação é um mundo distante, sem entender por onde começar, o treinamento da Escola Code Start é a solução. Vamos te guiar desde os fundamentos até os níveis mais avançados, construindo a base sólida que você precisa para se tornar um programador profissional.",
+      text: "Você vai ter o guia desde os fundamentos até a excelência na programação.",
     },
     {
       title: "Metodologia validada: da teoria à prática",
-      text: "Nós acreditamos que a teoria aplicada à prática vai te levar para o próximo nível! Dessa forma nós estruturamos o conteúdo para que, em paralelo aos cursos, você possa fazer exercícios para treinar e também executar seus conhecimentos em projetos que são realmente utilizados no mercado de trabalho.",
+      text: "Treinamento com exercícios e projetos reais para te levar ao sucesso profissional.",
     },
     {
-      title: "Vagas selecionadas, currículo profissional e Linkedin atraente",
-      text: "Muitos programadores enfrentam desafios ao procurar emprego: não encontram vagas adequadas ou possuem currículos que não destacam suas habilidades. Na Escola Code Start, oferecemos um canal exclusivo de vagas de emprego, além de duas masterclasses sobre como criar um LinkedIn profissional e um currículo que chama a atenção dos recrutadores.",
+      title: "Vagas selecionadas e Linkedin atraente",
+      text: "Na Escola Code Start, oferecemos um canal exclusivo de vagas de emprego, além de duas masterclasses sobre como criar um LinkedIn profissional que chama a atenção dos recrutadores.",
     },
     {
       title: "Tire dúvidas e faça escolhas certas para sua carreira",
-      text: "Não fique perdido na jornada de aprendizado. Nossa escola oferece suporte especializado, pronto para responder suas dúvidas sobre programação e orientar suas escolhas de carreira. Conte com um apoio valioso para alcançar seus objetivos.",
+      text: "Nossa escola oferece suporte especializado, pronto para responder suas dúvidas sobre programação e orientar suas escolhas de carreira.",
     },
   ];
   return (
