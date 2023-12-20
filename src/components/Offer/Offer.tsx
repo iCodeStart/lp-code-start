@@ -66,10 +66,10 @@ export function Offer() {
                 Aprenda do zero ao profissional e tenha acesso imediato por
                 apenas 12x de
               </h3>
-              <h1 className="card-offer__price">R$29,90</h1>
+              <h1 className="card-offer__price">R$19,90</h1>
               <button className="offer_button" data-aos="fade-up">
                 <a
-                  href="https://pay.kiwify.com.br/0UKSbBo"
+                  href="https://pay.kiwify.com.br/LF7QPTu"
                   target="_blank"
                   rel="noreferrer"
                 >
