@@ -63,8 +63,8 @@ export function Offer() {
             <div className="guarantee_access">
               <h4>Mas hoje você não vai precisar investir isso...</h4>
               <h3>
-                Aprenda do zero ao profissional e tenha acesso imediato por
-                apenas 12x de
+                Aprenda do zero ao profissional, em um treinamento 100% online e
+                tenha acesso imediato por apenas 12x de
               </h3>
               <h1 className="card-offer__price">R$19,90</h1>
               <button className="offer_button" data-aos="fade-up">
