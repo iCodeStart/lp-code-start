@@ -13,11 +13,11 @@ export function Benefits() {
     },
     {
       title: "Vagas selecionadas e Linkedin atraente",
-      text: "Na Escola Code Start, oferecemos um canal exclusivo de vagas de emprego, além de duas masterclasses sobre como criar um LinkedIn profissional que chama a atenção dos recrutadores.",
+      text: "Na Code Start, oferecemos um canal exclusivo de vagas de emprego, além de duas masterclasses sobre como criar um LinkedIn profissional que chama a atenção dos recrutadores.",
     },
     {
       title: "Tire dúvidas e faça escolhas certas para sua carreira",
-      text: "Nossa escola oferece suporte especializado, pronto para responder suas dúvidas sobre programação e orientar suas escolhas de carreira.",
+      text: "Nosso treinamento oferece suporte especializado, pronto para responder suas dúvidas sobre programação e orientar suas escolhas de carreira.",
     },
   ];
   return (

@@ -8,9 +8,9 @@ export function Header() {
           <div className="header__content-container">
             <div className="header__content-logo">
               <img src="/logo-code-start.svg" alt="logo" />
-              <button className="btn-buy">
-                <a href="#offer">Quero trabalhar de casa</a>
-              </button>
+              <a href="#offer" className="btn-buy">
+                <button>Quero trabalhar de casa</button>
+              </a>
             </div>
           </div>
           <div className="header__content-titles">
@@ -23,9 +23,11 @@ export function Header() {
               <span>mesmo que você não saiba nada de programação!</span>
             </h2>
           </div>
-          <button className="btn-buy" style={{ marginTop: "2em" }}>
-            <a href="#offer">Quero trabalhar de casa</a>
-          </button>
+          <a href="#offer" className="btn-buy" style={{ marginTop: "2em" }}>
+            <button>
+              Quero trabalhar de casa
+            </button>
+          </a>
         </div>
       </div>
     </div>

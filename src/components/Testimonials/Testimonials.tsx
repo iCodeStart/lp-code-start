@@ -15,7 +15,7 @@ export function Testimonials() {
         <div className="title-container">
           <Chip label="Depoimentos" />
           <h1 className="section-title">
-            Veja o que nossos alunos acham da nossa escola!
+            Veja o que nossos alunos acham da Code Start!
           </h1>
         </div>
         <div className="testimonials__content">

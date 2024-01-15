@@ -15,7 +15,7 @@ export function Projects() {
         <div className="title-container">
           <Chip label="Projetos" />
           <h1 className="section-title">
-            Alguns dos projetos que você vai criar na Escola da Code Start
+            Alguns dos projetos que você vai desenvolver na Code Start
           </h1>
           <p className="section-subtitle">
             Todo mês desenvolvemos juntos muitos exercícios com resolução,

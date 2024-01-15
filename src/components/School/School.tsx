@@ -7,12 +7,12 @@ export function School() {
       <div className="container">
         <div className="title-container">
           <Chip label="Sobre nós" />
-          <h1 className="section-title">A Escola Code Start</h1>
+          <h1 className="section-title">A Code Start</h1>
         </div>
         <div className="school__content">
           <div className="school__content-text">
             <p className="school_content-text-title">
-              A Code Start é uma escola completa de programação, onde vamos te
+              A Code Start possui um treinamento completo de programação, onde vamos te
               pegar pelas mãos e te ensinar tudo que você precisa saber,{" "}
               <strong>
                 mesmo que você não tenha muito tempo para estudar.
