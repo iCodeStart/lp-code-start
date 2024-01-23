@@ -67,15 +67,15 @@ export function Offer() {
                 tenha acesso imediato por apenas 12x de
               </h3>
               <h1 className="card-offer__price">R$19,90</h1>
-              <button className="offer_button" data-aos="fade-up">
-                <a
-                  href="https://pay.kiwify.com.br/LF7QPTu"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+              <a
+                href="https://pay.kiwify.com.br/LF7QPTu"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="offer_button" data-aos="fade-up">
                   QUERO SER UM PROGRAMADOR COMPLETO
-                </a>
-              </button>
+                </button>
+              </a>
             </div>
             <img
               className="cards-accept"

@@ -53,9 +53,9 @@ export function WorldProgram() {
           />
         </div>
         <Range />
-        <button className="btn-buy-info">
-          <a href="#offer">Quero ser um programador</a>
-        </button>
+        <a href="#offer" className="btn-buy">
+          <button>Quero ser um programador</button>
+        </a>
       </div>
     </div>
   );
