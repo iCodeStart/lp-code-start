@@ -2,8 +2,12 @@ import AOS from "aos";
 import { useEffect } from "react";
 import { Chip } from "../Chip";
 import { LineOffer } from "./LineOffer";
+import { useLocation } from "react-router-dom";
 
 export function Offer() {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const srcParam = params.get("src");
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -68,7 +72,9 @@ export function Offer() {
               </h3>
               <h1 className="card-offer__price">R$19,90</h1>
               <a
-                href="https://pay.kiwify.com.br/LF7QPTu"
+                href={`https://pay.kiwify.com.br/LF7QPTu${
+                  srcParam ? `?src=${srcParam}` : ""
+                }`}
                 target="_blank"
                 rel="noreferrer"
               >

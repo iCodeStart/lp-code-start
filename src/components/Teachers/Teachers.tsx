@@ -30,9 +30,10 @@ export function Teachers() {
           <h1 className="section-title">Quem serão seus professores?</h1>
         </div>
         <div className="teachers__content">
-          {arrayTeachers.map((teacher) => {
+          {arrayTeachers.map((teacher, index) => {
             return (
               <Teacher
+                key={index + teacher.name}
                 img={teacher.img}
                 name={teacher.name}
                 description={teacher.description}

@@ -17,6 +17,7 @@ import { FullstackTrail } from "./components/FullstackTrail";
 import { Whatsapp } from "./components/Whatsapp";
 
 function App() {
+
   return (
     <>
       <Header />
