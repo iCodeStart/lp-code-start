@@ -18,15 +18,13 @@ export function Header() {
               Ganhe acima da média com programação
             </h1>
             <h2 className="header__content-titles-subtitle">
-              Existem mais de <strong>15.000 vagas</strong> disponíveis hoje e
-              uma delas pode ser sua,{" "}
+              Existem <strong>centenas de milhares de vagas</strong> disponíveis
+              hoje e uma delas pode ser sua,{" "}
               <span>mesmo que você não saiba nada de programação!</span>
             </h2>
           </div>
           <a href="#offer" className="btn-buy" style={{ marginTop: "2em" }}>
-            <button>
-              Quero trabalhar de casa
-            </button>
+            <button>Quero trabalhar de casa</button>
           </a>
         </div>
       </div>
