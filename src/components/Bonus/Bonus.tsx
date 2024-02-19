@@ -34,6 +34,7 @@ export function Bonus() {
             {arrayBonus.map((bonus, index) => {
               return (
                 <LineBonus
+                  key={index}
                   img={bonus.img}
                   title={bonus.title}
                   subtitle={bonus.subtitle}

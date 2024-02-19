@@ -31,7 +31,7 @@ export function Benefits() {
           return (
             <>
               <CardBenefits
-                key={index}
+                key={index + item.title}
                 index={index}
                 titleCard={item.title}
                 text={item.text}
