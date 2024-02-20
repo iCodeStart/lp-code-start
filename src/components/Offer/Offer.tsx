@@ -1,8 +1,8 @@
 import AOS from "aos";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Chip } from "../Chip";
 import { LineOffer } from "./LineOffer";
-import { useLocation } from "react-router-dom";
 
 export function Offer() {
   const location = useLocation();
@@ -41,7 +41,9 @@ export function Offer() {
         <div className="container">
           <div className="title-container">
             <Chip label="Investimento" />
-            <h1 className="section-title">Tudo o que você vai levar</h1>
+            <h1 className="section-title">
+              <strong>TUDO O QUE VOCÊ PRECISA</strong>EM UM LUGAR SÓ
+            </h1>
           </div>
           <div className="card-offer">
             {courses.map((course, index) => (
