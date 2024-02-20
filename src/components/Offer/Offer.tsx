@@ -42,7 +42,7 @@ export function Offer() {
           <div className="title-container">
             <Chip label="Investimento" />
             <h1 className="section-title">
-              <strong>TUDO O QUE VOCÊ PRECISA</strong>EM UM LUGAR SÓ
+              <strong>TUDO O QUE VOCÊ PRECISA</strong> EM UM LUGAR SÓ
             </h1>
           </div>
           <div className="card-offer">
