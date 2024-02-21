@@ -63,7 +63,7 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  width: calc(100vw - 75px);
+  width: calc(100vw - 65px);
   z-index: 9999;
   margin: 0;
   padding: 20px;
