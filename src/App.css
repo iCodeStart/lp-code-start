@@ -63,7 +63,7 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  width: calc(100vw - 65px);
+  width: calc(100vw - 75px);
   z-index: 9999;
   margin: 0;
   padding: 20px;
@@ -616,8 +616,9 @@ button {
   }
 
   .header__content-logo{
-     flex-direction: column;
-     gap: 10px;
+     a {
+        display: none;
+     }
   }
   .header__content-titles {
     margin-top: 5em;
