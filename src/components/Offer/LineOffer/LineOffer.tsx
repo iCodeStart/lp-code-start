@@ -8,7 +8,7 @@ export function LineOffer({ title, price }: LineOfferProps) {
   return (
     <div className="line-offer">
       <p>{title}</p>
-      <span>{price}</span>
+      <span><s>{price}</s></span>
     </div>
   );
 }

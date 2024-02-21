@@ -615,13 +615,13 @@ button {
     height: 90vh;
   }
 
+  .header__content-logo{
+     flex-direction: column;
+     gap: 10px;
+  }
   .header__content-titles {
     margin-top: 5em;
     width: 100%;
-  }
-
-  .header__content-logo button {
-    display: none;
   }
 
   .header__content-titles-title {
