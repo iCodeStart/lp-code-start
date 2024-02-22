@@ -615,10 +615,8 @@ button {
     height: 90vh;
   }
 
-  .header__content-logo{
-     a {
-        display: none;
-     }
+  .hidden-mobile{
+    display: none;
   }
   .header__content-titles {
     margin-top: 5em;
