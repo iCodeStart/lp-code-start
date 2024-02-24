@@ -14,6 +14,13 @@ export function Header() {
             </div>
           </div>
           <div className="header__content-titles">
+            <div className="header__content_image">
+              <img
+                className="header__content_image"
+                src="/integrantes.jpeg"
+                alt="integrantes"
+              />
+            </div>
             <h1 className="header__content-titles-title">
               Aprenda a programar com quem está no mercado e conquiste sua vaga
               como programador ainda esse ano!

@@ -181,6 +181,7 @@ button {
 
 .world-programming {
   margin-bottom: 50px;
+  margin-top: 300px;
 }
 
 .world-programming__line {
@@ -613,6 +614,10 @@ button {
   width: 50px !important;
 }
 
+.header__content_image {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .header {
     background: url("../public/background-header-mobile.svg") no-repeat center;
@@ -628,8 +633,9 @@ button {
   }
 
   .header__content-titles-title {
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 40px;
+    margin-top: 0px;
   }
 
   .header__content-titles-subtitle {
@@ -695,6 +701,11 @@ button {
     justify-content: center;
   }
   .fullstack-mobile img {
+    width: 100%;
+  }
+  .header__content_image {
+    display: block;
+    height: 230px;
     width: 100%;
   }
 }
