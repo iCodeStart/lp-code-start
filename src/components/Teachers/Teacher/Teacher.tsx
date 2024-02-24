@@ -15,7 +15,7 @@ export function Teacher({ img, name, description }: TeacherProps) {
     <div className="teacher" data-aos="fade-up">
       <img src={img} alt="Professor Code Start" />
       <h1>{name}</h1>
-      <h2>{description}</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: description }} />
     </div>
   );
 }

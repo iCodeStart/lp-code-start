@@ -39,14 +39,18 @@ export function WorldProgram() {
           />
         </div>
         <p className="school_content-text-title">
-          A verdade é que faltam profissionais no mercado. Com a globalização e
-          com o avanço das Inteligências Artificiais o mercado está cada vez
-          mais precisando de profissionais capacitados.
+          A verdade é que faltam profissionais no mercado.
+        </p>
+        <p className="school_content-text-title">
+          Com a globalização e com o avanço das Inteligências Artificiais o
+          mercado está cada vez mais precisando de profissionais capacitados.
         </p>
         <p className="school_content-text-title">
           Com a alta procura e falta de profissionais para ocupar essas vagas no
           mercado, os salários e o trabalho remoto fazem essa profissão ser
-          considerada por muitos a profissão do futuro.{" "}
+          considerada por muitos a profissão do futuro.
+        </p>
+        <p className="school_content-text-title">
           <strong>
             Com muitas oportunidades de crescimento, reconhecimento e tempo para
             curtir sua vida e sua família.

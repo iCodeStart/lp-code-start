@@ -268,7 +268,7 @@ button {
   font-size: 15px;
   font-weight: 400;
   margin-top: 15px;
-  text-align: center;
+  text-align: left;
 }
 
 .school_content-text-item {
@@ -419,6 +419,7 @@ button {
 .teacher h2 {
   font-size: 18px;
   font-weight: normal;
+  text-align: left;
 }
 
 .card-offer {
