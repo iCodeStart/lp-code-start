@@ -265,7 +265,7 @@ button {
 }
 
 .school_content-text-title {
-  font-size: 24px;
+  font-size: 15px;
   font-weight: 400;
   margin-top: 15px;
   text-align: center;
@@ -617,7 +617,7 @@ button {
     height: 90vh;
   }
 
-  .hidden-mobile{
+  .hidden-mobile {
     display: none;
   }
   .header__content-titles {
