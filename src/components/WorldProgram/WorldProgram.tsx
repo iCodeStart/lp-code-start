@@ -1,6 +1,5 @@
 import AOS from "aos";
 import { useEffect } from "react";
-import { Range } from "../Benefits/Range";
 import { Chip } from "../Chip";
 import { WorldProgramInfo } from "./components";
 import "./WorldProgram.style.scss";
@@ -13,9 +12,9 @@ export function WorldProgram() {
   }, []);
   const arrayTexts = [
     {
-      title: "R$4.472,00",
-      text: "Média de salário para <span>desenvolvedor",
-      font: "Fonte: GlassDoor",
+      title: "R$16.339,29",
+      text: "Média de salário para <span>especialistas em programação",
+      font: "Fonte: Código Fonte",
     },
     {
       title: "78,27%",
@@ -23,9 +22,9 @@ export function WorldProgram() {
       font: "Fonte: Canal Tech",
     },
     {
-      title: "+15.000 vagas",
-      text: "E uma delas pode ser sua",
-      font: "Fonte: LinkedIn",
+      title: "+420.000 vagas",
+      text: "E falta de profissionais para ocuparem essas vagas",
+      font: "Fonte: G1",
     },
   ];
   return (
@@ -33,6 +32,26 @@ export function WorldProgram() {
       <div className="container__program-info" data-aos="zoom-in">
         <Chip label="Carreira" />
         <h1 className="section-title">A melhor profissão da década</h1>
+        <div className="world-program-list_img">
+          <img
+            src="/vagas-abertas1.jpeg"
+            alt="Vagas abertas programador Code Start"
+          />
+        </div>
+        <p className="school_content-text-title">
+          A verdade é que faltam profissionais no mercado. Com a globalização e
+          com o avanço das Inteligências Artificiais o mercado está cada vez
+          mais precisando de profissionais capacitados.
+        </p>
+        <p className="school_content-text-title">
+          Com a alta procura e falta de profissionais para ocupar essas vagas no
+          mercado, os salários e o trabalho remoto fazem essa profissão ser
+          considerada por muitos a profissão do futuro.{" "}
+          <strong>
+            Com muitas oportunidades de crescimento, reconhecimento e tempo para
+            curtir sua vida e sua família.
+          </strong>
+        </p>
         <div className="world-program-list">
           {arrayTexts.map((item, index) => {
             return (
@@ -46,15 +65,9 @@ export function WorldProgram() {
             );
           })}
         </div>
-        <div className="world-program-list_img">
-          <img
-            src="/vagas-abertas.png"
-            alt="Vagas abertas programador Code Start"
-          />
-        </div>
-        <Range />
+        {/* <Range /> */}
         <a href="#offer" className="btn-buy">
-          <button>Quero ser um programador</button>
+          <button>Quero garantir minha vaga</button>
         </a>
       </div>
     </div>

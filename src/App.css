@@ -537,7 +537,8 @@ button {
 .world-program-list {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
+  margin-top: 50px;
 }
 
 .programInfo {
@@ -554,6 +555,7 @@ button {
 
 .world-program-list_img {
   margin-bottom: 80px;
+  margin-top: 0px;
 }
 
 .programInfo__font {

@@ -62,17 +62,22 @@ export function Offer() {
             ))}
             <div className="card-offer__total">
               <p>Total</p>
-              <span>
-                <s>{`R$ ${total},00`}</s>
+              <span style={{ color: "red" }}>
+                <s
+                  style={{
+                    textDecorationColor: "white",
+                  }}
+                >{`R$ ${total},00`}</s>
               </span>
             </div>
             <div className="guarantee_access">
               <h4>Mas hoje você não vai precisar investir isso...</h4>
               <h3>
                 Aprenda do zero ao profissional, em um treinamento 100% online e
-                tenha acesso imediato por apenas 12x de
+                tenha acesso imediato por apenas:
               </h3>
-              <h1 className="card-offer__price">R$19,90</h1>
+              <h1 className="card-offer__price">12x de $19,90</h1>
+              <p> ou 197 à vista</p>
               <a
                 href={`https://pay.kiwify.com.br/LF7QPTu${
                   srcParam ? `?src=${srcParam}` : ""

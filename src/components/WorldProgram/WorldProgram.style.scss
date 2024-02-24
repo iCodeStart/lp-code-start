@@ -1,31 +1,29 @@
-.world-program-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    margin-bottom: 30px;
-    &_img{
-        display: flex;
-        justify-content: center;
-        justify-content: center;
-        margin-top: 80px;
-    
-        & img{
-            width: 60%;
-        }
+.world-program-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+  &_img {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    & img {
+      width: 60%;
     }
+  }
 }
 
-
 @media screen and (max-width: 768px) {
-    .world-program-list{
-        display: flex;
-        flex-direction: column;
+  .world-program-list {
+    display: flex;
+    flex-direction: column;
 
-        &_img{
-        
-            & img{
-                width: 100%;
-            }
-        }
+    &_img {
+      & img {
+        width: 100%;
+      }
     }
+  }
 }
