@@ -8,7 +8,7 @@ export function Header() {
           <div className="header__content-container">
             <div className="header__content-logo">
               <img src="/logo-code-start.svg" alt="logo" />
-              <a href="#offer" className="btn-buy">
+              <a href="#offer" className="btn-buy hidden-mobile">
                 <button>Quero trabalhar de casa</button>
               </a>
             </div>
