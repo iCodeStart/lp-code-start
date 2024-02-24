@@ -15,7 +15,8 @@ export function Header() {
           </div>
           <div className="header__content-titles">
             <h1 className="header__content-titles-title">
-              Ganhe acima da média com programação
+              Crie seus primeiros 3 projetos reais em 6 Meses – Mesmo com tempo
+              limitado
             </h1>
             <h2 className="header__content-titles-subtitle">
               Existem <strong>centenas de milhares de vagas</strong> disponíveis
