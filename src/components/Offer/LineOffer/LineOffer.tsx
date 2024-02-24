@@ -11,7 +11,7 @@ export function LineOffer({ title, price }: LineOfferProps) {
       <span style={{ color: "red" }}>
         <s
           style={{
-            textDecorationColor: "white",
+            textDecorationColor: "#D8D8D8",
           }}
         >
           {price}

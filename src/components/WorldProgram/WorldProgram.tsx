@@ -53,7 +53,7 @@ export function WorldProgram() {
         <p className="school_content-text-title">
           <strong>
             Com muitas oportunidades de crescimento, reconhecimento e tempo para
-            curtir sua vida e sua família.
+            curtir a sua vida e sua família.
           </strong>
         </p>
         <div className="world-program-list">

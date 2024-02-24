@@ -76,8 +76,13 @@ export function Offer() {
                 Aprenda do zero ao profissional, em um treinamento 100% online e
                 tenha acesso imediato por apenas:
               </h3>
-              <h1 className="card-offer__price">12x de $19,90</h1>
-              <p> ou 197 à vista</p>
+              <h1 className="card-offer__price">
+                <p style={{ fontSize: "24px" }}>12x de</p>R$19,90
+              </h1>
+              <p style={{ letterSpacing: "7.4px", color: "#D8D8D8" }}>
+                {" "}
+                ou 197 à vista
+              </p>
               <a
                 href={`https://pay.kiwify.com.br/LF7QPTu${
                   srcParam ? `?src=${srcParam}` : ""
@@ -86,7 +91,7 @@ export function Offer() {
                 rel="noreferrer"
               >
                 <button className="offer_button" data-aos="fade-up">
-                  QUERO SER UM PROGRAMADOR COMPLETO
+                  QUERO ME INSCREVER
                 </button>
               </a>
             </div>
