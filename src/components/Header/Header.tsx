@@ -15,8 +15,8 @@ export function Header() {
           </div>
           <div className="header__content-titles">
             <h1 className="header__content-titles-title">
-              Crie seus primeiros 3 projetos reais em 6 Meses – Mesmo com tempo
-              limitado
+              Aprenda a programar com quem está no mercado e conquiste sua vaga
+              como programador ainda esse ano!
             </h1>
             <h2 className="header__content-titles-subtitle">
               Existem <strong>centenas de milhares de vagas</strong> disponíveis
@@ -25,7 +25,7 @@ export function Header() {
             </h2>
           </div>
           <a href="#offer" className="btn-buy" style={{ marginTop: "2em" }}>
-            <button>Quero trabalhar de casa</button>
+            <button>Quero me inscrever</button>
           </a>
         </div>
       </div>
