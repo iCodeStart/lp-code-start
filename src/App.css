@@ -635,7 +635,7 @@ button {
   .header__content-titles-title {
     font-size: 1.9rem;
     line-height: 40px;
-    margin-top: 0px;
+    margin-top: -15px;
   }
 
   .header__content-titles-subtitle {

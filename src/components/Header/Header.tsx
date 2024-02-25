@@ -17,7 +17,7 @@ export function Header() {
             <div className="header__content_image">
               <img
                 className="header__content_image"
-                src="/integrantes.jpeg"
+                src="/integrantes.png"
                 alt="integrantes"
               />
             </div>
