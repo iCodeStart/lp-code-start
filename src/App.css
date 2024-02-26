@@ -278,6 +278,7 @@ button {
   gap: 10px;
   font-size: 20px;
   margin: 50px 0;
+  justify-content: center;
 }
 
 .school_content-cards {
