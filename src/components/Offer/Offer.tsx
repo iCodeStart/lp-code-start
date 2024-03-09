@@ -105,7 +105,7 @@ export function Offer() {
               <p>
                 Você tem até 07 dias para solicitar o cancelamento e receber seu
                 investimento de volta. Basta solicitar o seu reembolso enviando
-                um simples e-mail para o nosso suporte (contato@icodestart.com)
+                um simples e-mail para o nosso suporte (32 99857 - 3527)
                 dentro do prazo estabelecido.
               </p>
             </div>
