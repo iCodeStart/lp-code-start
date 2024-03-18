@@ -1,0 +1,40 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+.content-how-it-works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-intern{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-left {
+        display: flex;
+        flex-direction: column;
+
+        & h2 {
+            color: #FFFFFF;
+            font-family: "Hanken Grotesk", Sans-serif;
+            font-size: 43px;
+            font-weight: 800;
+            line-height: 41px;
+        }
+
+        & img{
+            max-width: 400px;
+        }
+    }
+
+    &-legend {
+        color: #007EFF;
+        font-family: "Hanken Grotesk", Sans-serif;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 41px;
+    }
+}

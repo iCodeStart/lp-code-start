@@ -9,3 +9,4 @@ export * from "./School";
 export * from "./Teachers";
 export * from "./Testimonials";
 export * from "./WorldProgram";
+export * from './LPProjects';
