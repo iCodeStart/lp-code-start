@@ -52,7 +52,7 @@ function App() {
           </div>
         </>
       } />
-      <Route path="/projects-code-start" element={
+      <Route path="/projects" element={
         <>
           <Apresentation />
           <div className="content-container">
