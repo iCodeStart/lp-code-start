@@ -13,7 +13,47 @@ export function HowItWorks() {
           />
         </div>
         <div className="content-how-it-works-right">
-          <div className="content-how-it-works-right-card">
+          <div className="card-info-works">
+            <span>Mentalidade</span>
+            <h3>ALINHE A SUA MENTALIDADE</h3>
+            <h4>
+              Aqui está a base de tudo. Todos os grandes empreendedores tem algo
+              em comum: A sua mentalidade de sucesso. Você precisa antes de tudo
+              entender como mapear comportamentos sabotadores e se preparar
+              mentalmente para fechar qualquer negócio.
+            </h4>
+          </div>
+          <div className="card-info-works">
+            <span>Mentalidade</span>
+            <h3>ALINHE A SUA MENTALIDADE</h3>
+            <h4>
+              Aqui está a base de tudo. Todos os grandes empreendedores tem algo
+              em comum: A sua mentalidade de sucesso. Você precisa antes de tudo
+              entender como mapear comportamentos sabotadores e se preparar
+              mentalmente para fechar qualquer negócio.
+            </h4>
+          </div>
+          <div className="card-info-works">
+            <span>Mentalidade</span>
+            <h3>ALINHE A SUA MENTALIDADE</h3>
+            <h4>
+              Aqui está a base de tudo. Todos os grandes empreendedores tem algo
+              em comum: A sua mentalidade de sucesso. Você precisa antes de tudo
+              entender como mapear comportamentos sabotadores e se preparar
+              mentalmente para fechar qualquer negócio.
+            </h4>
+          </div>
+          <div className="card-info-works">
+            <span>Mentalidade</span>
+            <h3>ALINHE A SUA MENTALIDADE</h3>
+            <h4>
+              Aqui está a base de tudo. Todos os grandes empreendedores tem algo
+              em comum: A sua mentalidade de sucesso. Você precisa antes de tudo
+              entender como mapear comportamentos sabotadores e se preparar
+              mentalmente para fechar qualquer negócio.
+            </h4>
+          </div>
+          <div className="card-info-works">
             <span>Mentalidade</span>
             <h3>ALINHE A SUA MENTALIDADE</h3>
             <h4>

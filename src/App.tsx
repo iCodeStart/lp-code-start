@@ -1,4 +1,16 @@
+import React from 'react';
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import {
+  Apresentation,
+  HowItWorks,
+  TheProduct,
+  MethodItems,
+  IsForYou,
+  ExclusiveBonus,
+  RiskIsMine,
+} from "./components/LPProjects";
+import { ProjectsOffer } from "./components/LPProjects/ProjectsOffer";
 import {
   Benefits,
   Bonus,
@@ -16,27 +28,45 @@ import { Footer } from "./components/Footer";
 import { FullstackTrail } from "./components/FullstackTrail";
 import { Whatsapp } from "./components/Whatsapp";
 
-function App() {
 
+function App() {
   return (
-    <>
-      <Header />
-      <div className="content-container">
-        <WorldProgram />
-        <Benefits />
-        <Testimonials />
-        <OurTrail />
-        <School />
-        <FullstackTrail />
-        <Teachers />
-        <Projects />
-        <Bonus />
-        <Offer />
-        <FAQ />
-        <Footer />
-        <Whatsapp />
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={
+        <>
+          <Header />
+          <div className="content-container">
+            <WorldProgram />
+            <Benefits />
+            <Testimonials />
+            <OurTrail />
+            <School />
+            <FullstackTrail />
+            <Teachers />
+            <Projects />
+            <Bonus />
+            <Offer />
+            <FAQ />
+            <Footer />
+            <Whatsapp />
+          </div>
+        </>
+      } />
+      <Route path="/projects-code-start" element={
+        <>
+          <Apresentation />
+          <div className="content-container">
+            <TheProduct />
+            <HowItWorks />
+            <IsForYou />
+            <MethodItems />
+            <ExclusiveBonus />
+            <RiskIsMine />
+            <ProjectsOffer />
+          </div>
+        </>
+      } />
+    </Routes>
   );
 }
 

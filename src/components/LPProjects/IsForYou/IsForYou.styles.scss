@@ -1,0 +1,66 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.content-is-for-you {
+  &-intern {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    & h2 {
+      color: #ffffff;
+      font-family: "Hanken Grotesk", Sans-serif;
+      font-size: 43px;
+      font-weight: 800;
+      line-height: 1.2em;
+    }
+  }
+  &-legend {
+    color: #007eff;
+    font-family: "Hanken Grotesk", Sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 41px;
+  }
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: solid;
+    border-style: solid;
+    border-color: #ffffff50;
+    border-width: 1px 1px 1px 1px;
+    border-block-start-width: 1px;
+    border-inline-end-width: 1px;
+    border-block-end-width: 1px;
+    border-inline-start-width: 1px;
+    border-radius: 10px 10px 10px 10px;
+    padding-block-start: 50px;
+    padding-block-end: 50px;
+    padding-inline-start: 50px;
+    padding-inline-end: 50px;
+    transition: transform 1s ease;
+    & img {
+      width: 60px;
+    }
+    & h3 {
+      color: #cccccc;
+      font-family: "Hanken Grotesk", Sans-serif;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 1.4em;
+    }
+
+    &:hover{
+        transform: scale(1.1);
+        background-color: #ffffff40;
+    }
+  }
+}

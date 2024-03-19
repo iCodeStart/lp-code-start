@@ -1,0 +1,42 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.projects-offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+
+  & h1 {
+    color: #ffffff;
+    font-family: "Hanken Grotesk", Sans-serif;
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 1.2em;
+  }
+  & h2 {
+    color: #ffffff;
+    font-family: "Hanken Grotesk", Sans-serif;
+    font-weight: 500;
+    line-height: 41px;
+    margin-bottom: 50px;
+  }
+  & a {
+    background-color: #fff;
+    padding: 10px 20px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px;
+    box-sizing: border-box;
+  }
+
+  &-guarantee{
+    margin-top: 150px;
+  }
+}

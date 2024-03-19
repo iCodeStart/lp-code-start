@@ -14,17 +14,27 @@ import {
 } from "./components";
 import { Footer } from "./components/Footer";
 import { FullstackTrail } from "./components/FullstackTrail";
-import { Apresentation, HowItWorks, TheProduct } from "./components/LPProjects";
 import { Whatsapp } from "./components/Whatsapp";
 
 function App() {
 
   return (
     <>
-      <Apresentation/>
+      <Header />
       <div className="content-container">
-      <TheProduct/>
-      <HowItWorks/>
+        <WorldProgram />
+        <Benefits />
+        <Testimonials />
+        <OurTrail />
+        <School />
+        <FullstackTrail />
+        <Teachers />
+        <Projects />
+        <Bonus />
+        <Offer />
+        <FAQ />
+        <Footer />
+        <Whatsapp />
       </div>
     </>
   );

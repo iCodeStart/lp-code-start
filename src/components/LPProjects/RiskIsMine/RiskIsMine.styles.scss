@@ -1,0 +1,49 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+
+.risk-is-mine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+  &-tag {
+    color: #fff;
+    border: 2px solid #a5a5a5;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: #121212;
+
+  }
+
+  & h1 {
+    color: #ffffff;
+    font-family: "Hanken Grotesk", Sans-serif;
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 1.2em;
+  }
+  & h2 {
+    color: #cccccc;
+    font-family: "Hanken Grotesk", Sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.3em;
+    margin-bottom: 50px;
+  }
+
+  & a {
+      background-color: #fff;
+      padding: 10px 20px;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 24px;
+      box-sizing: border-box;
+  }
+}
