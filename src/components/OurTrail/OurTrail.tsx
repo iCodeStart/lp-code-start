@@ -8,27 +8,27 @@ export function OurTrail() {
       {
         title: "Preparação",
         description:
-          "Aprenda a como estudar de verdade e se organizar para o mercado de trabalho.",
+          "Nessa fase você já terá seus primeiros projetos feitos e publicados.",
       },
       {
         title: "Crescimento técnico",
         description:
-          "Comece a adquirir conhecimento e executar criando projetos reais.",
+          "Nessa fase 2 você terá criado projetos mais robustos e aprendido a criar seus próprios projetos sozinho!",
       },
       {
         title: "Estruturação",
         description:
-          "Aprenda a como estruturar seu currículo e Linkedin de forma estratégica.",
+          "Você terá estruturado o seu currículo e Linkedin de forma estratégica.",
       },
       {
-        title: "Simulação de entrevista",
+        title: "Aplicação nas empresas",
         description:
-          "Tenha a chance de treinar antes de ir para o mercado de trabalho.",
+          "Nessa etapa, você usará o nosso método A.A.P. para aplicar para entrevistas nas melhores empresas de tecnologia.",
       },
       {
-        title: "Certificação",
+        title: "Certificado",
         description:
-          "Pegue seu certificado e tenha vantagem competitiva no mercado.",
+          "Nessa fase, você terá o seu certificado validado, que comprova todo o seu conhecimento adquirido.",
       },
     ],
     []
@@ -95,7 +95,9 @@ export function OurTrail() {
                 alt={`Benefícios Code Start - ${info.title}`}
               />
               <div className="card-trail">
-                <span className="trail_legend">Fase {index + 1}</span>
+                <span className="trail_legend" style={{ color: "#00bcd3" }}>
+                  <strong>Fase {index + 1}</strong>
+                </span>
                 <h1>{info.title}</h1>
                 <p>{info.description}</p>
               </div>
