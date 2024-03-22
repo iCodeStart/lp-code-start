@@ -267,7 +267,7 @@ button {
 }
 
 .school_content-text-title {
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 400;
   margin-top: 15px;
   text-align: center;
@@ -543,6 +543,8 @@ button {
   justify-content: space-around;
   margin-bottom: 150px;
   margin-top: 50px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .programInfo {

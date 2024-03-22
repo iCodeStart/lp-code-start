@@ -67,10 +67,11 @@ export function OurTrail() {
   }, [currentPhase, arrayInfoTrail]);
 
   const getIcon = (index: number) => {
-    if (index === 0) return "/rocket.svg";
-    if (index === 1) return "/growth.svg";
-    if (index === 2) return "/resume.svg";
-    if (index === 3) return "/interview1.svg";
+    if (index === 0) return "/number1.svg";
+    if (index === 1) return "/number2.svg";
+    if (index === 2) return "/number3.svg";
+    if (index === 3) return "/number4.svg";
+    //return "./number1.svg";
     return "./certificate.svg";
   };
 

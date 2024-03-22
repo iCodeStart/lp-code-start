@@ -23,7 +23,7 @@ export function WorldProgram() {
     },
     {
       title: "+420.000 vagas",
-      text: "E falta de profissionais para ocuparem essas vagas",
+      text: "E falta de profissionais para ocuparem essas vagas...",
       font: "Fonte: G1",
     },
   ];
@@ -39,9 +39,11 @@ export function WorldProgram() {
           />
         </div>
         <p className="school_content-text-title">
-          A matemática é bastante simples. Existem muito mais vagas disponíveis
-          para poucas pessoas para ocupar elas. E a tendência é que isso ainda
-          aconteça por muito tempo
+          A matemática é bastante simples. <br />
+          <br />
+          Existem muito mais vagas disponíveis para poucas pessoas para ocupar
+          elas. <br />
+          <br />E a tendência é que isso ainda aconteça por muito tempo...
         </p>
         {/* <p className="school_content-text-title">
           Com a globalização e com o avanço das Inteligências Artificiais o
