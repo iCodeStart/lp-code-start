@@ -103,10 +103,21 @@ export function Offer() {
             <div className="guarantee">
               <img src="./seven-days.png" alt="Garantia de 7 dias" />
               <p>
-                Você tem até 07 dias para solicitar o cancelamento e receber seu
-                investimento de volta. Basta solicitar o seu reembolso enviando
-                um simples e-mail para o nosso suporte (32 99857 - 3527)
-                dentro do prazo estabelecido.
+                Eu não quero que você se sinta pressionado para tomar essa
+                decisão, por isso eu mesmo vamou tomar todo o risco por você.
+              </p>
+              <p>
+                Você terá sete dias para experimentar o treinamento sem nenhum
+                compromisso. Se nesse período você achar que tudo isso não vale
+                pelo menos o dobro do que você pagou, então basta entrar em
+                contato com nossa equipe de suporte 24 horas que devolveremos
+                todo o seu dinheiro, sem perguntinhas ou questionamentos.
+              </p>
+              <p>
+                O que significa que você não tem nada a perder aqui. Mas deixa
+                eu só repetir, em até 7 dias é o tempo que levará para você já
+                começar a ver resultados com essa metodologia… Caso isso não
+                aconteça você pede o reembolso e não gasta 1 centavo!
               </p>
             </div>
           </div>

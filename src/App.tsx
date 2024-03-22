@@ -1,18 +1,6 @@
-import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import {
-  Apresentation,
-  HowItWorks,
-  TheProduct,
-  MethodItems,
-  IsForYou,
-  ExclusiveBonus,
-  RiskIsMine,
-} from "./components/LPProjects";
-import { ProjectsOffer } from "./components/LPProjects/ProjectsOffer";
-import {
-  Benefits,
   Bonus,
   FAQ,
   Header,
@@ -26,46 +14,61 @@ import {
 } from "./components";
 import { Footer } from "./components/Footer";
 import { FullstackTrail } from "./components/FullstackTrail";
+import {
+  Apresentation,
+  ExclusiveBonus,
+  HowItWorks,
+  IsForYou,
+  MethodItems,
+  RiskIsMine,
+  TheProduct,
+} from "./components/LPProjects";
+import { ProjectsOffer } from "./components/LPProjects/ProjectsOffer";
 import { Whatsapp } from "./components/Whatsapp";
-
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={
-        <>
-          <Header />
-          <div className="content-container">
-            <WorldProgram />
-            <Benefits />
-            <Testimonials />
-            <OurTrail />
-            <School />
-            <FullstackTrail />
-            <Teachers />
-            <Projects />
-            <Bonus />
-            <Offer />
-            <FAQ />
-            <Footer />
-            <Whatsapp />
-          </div>
-        </>
-      } />
-      <Route path="/projects" element={
-        <>
-          <Apresentation />
-          <div className="content-container">
-            <TheProduct />
-            <HowItWorks />
-            <IsForYou />
-            <MethodItems />
-            <ExclusiveBonus />
-            <RiskIsMine />
-            <ProjectsOffer />
-          </div>
-        </>
-      } />
+      <Route
+        path="/"
+        element={
+          <>
+            <Header />
+            <div className="content-container">
+              <WorldProgram />
+              {/* <Benefits /> */}
+              <Testimonials />
+              <OurTrail />
+              <School />
+              <FullstackTrail />
+              <Projects />
+              <Bonus />
+              <Offer />
+              <Teachers />
+              <FAQ />
+              <Footer />
+              <Whatsapp />
+            </div>
+          </>
+        }
+      />
+      <Route
+        path="/projects"
+        element={
+          <>
+            <Apresentation />
+            <div className="content-container">
+              <TheProduct />
+              <HowItWorks />
+              <IsForYou />
+              <MethodItems />
+              <ExclusiveBonus />
+              <RiskIsMine />
+              <ProjectsOffer />
+            </div>
+          </>
+        }
+      />
     </Routes>
   );
 }

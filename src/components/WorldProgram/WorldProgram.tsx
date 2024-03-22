@@ -31,7 +31,7 @@ export function WorldProgram() {
     <div className="world-programming">
       <div className="container__program-info" data-aos="zoom-in">
         <Chip label="Carreira" />
-        <h1 className="section-title">A melhor profissão da década</h1>
+        <h1 className="section-title">A profissão do futuro</h1>
         <div className="world-program-list_img">
           <img
             src="/vagas-abertas1.jpeg"
@@ -39,9 +39,11 @@ export function WorldProgram() {
           />
         </div>
         <p className="school_content-text-title">
-          A verdade é que faltam profissionais no mercado.
+          A matemática é bastante simples. Existem muito mais vagas disponíveis
+          para poucas pessoas para ocupar elas. E a tendência é que isso ainda
+          aconteça por muito tempo
         </p>
-        <p className="school_content-text-title">
+        {/* <p className="school_content-text-title">
           Com a globalização e com o avanço das Inteligências Artificiais o
           mercado está cada vez mais precisando de profissionais capacitados.
         </p>
@@ -49,13 +51,13 @@ export function WorldProgram() {
           Com a alta procura e falta de profissionais para ocupar essas vagas no
           mercado, os salários e o trabalho remoto fazem essa profissão ser
           considerada por muitos a profissão do futuro.
-        </p>
-        <p className="school_content-text-title">
+        </p> */}
+        {/* <p className="school_content-text-title">
           <strong>
             Com muitas oportunidades de crescimento, reconhecimento e tempo para
             curtir a sua vida e sua família.
           </strong>
-        </p>
+        </p> */}
         <div className="world-program-list">
           {arrayTexts.map((item, index) => {
             return (

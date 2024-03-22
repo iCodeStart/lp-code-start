@@ -15,13 +15,15 @@ export function Header() {
           </div>
           <div className="header__content-titles">
             <h1 className="header__content-titles-title">
-              Aprenda a programar com quem está no mercado e conquiste sua vaga
-              como programador!
+              <strong>
+                Você nunca mais vai se sentir perdido e desmotivado para estudar
+                programação
+              </strong>
             </h1>
             <h2 className="header__content-titles-subtitle">
-              Existem <strong>centenas de milhares de vagas</strong> disponíveis
-              hoje e uma delas pode ser sua,{" "}
-              <span>mesmo que você não saiba nada de programação!</span>
+              Com o método <strong>APP</strong> você vai aprender de vez por
+              todas a programar e conquistar a sua vaga de emprego de forma
+              acelerada ainda esse ano
             </h2>
           </div>
           <a href="#offer" className="btn-buy" style={{ marginTop: "2em" }}>
