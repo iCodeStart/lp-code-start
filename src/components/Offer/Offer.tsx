@@ -77,7 +77,7 @@ export function Offer() {
                 tenha acesso imediato por apenas:
               </h3>
               <h1 className="card-offer__price">
-                <p style={{ fontSize: "24px" }}>12x de</p>R$59,90
+                <p style={{ fontSize: "24px" }}>12x de</p>59,90
               </h1>
               <p style={{ letterSpacing: "7.4px", color: "#D8D8D8" }}>
                 {" "}

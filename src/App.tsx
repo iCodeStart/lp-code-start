@@ -37,6 +37,7 @@ function App() {
             <div className="content-container">
               <WorldProgram />
               {/* <Benefits /> */}
+              <IsForYou />
               <Testimonials />
               <OurTrail />
               <School />
