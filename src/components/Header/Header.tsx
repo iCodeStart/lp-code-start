@@ -21,7 +21,7 @@ export function Header() {
               </strong>
             </h1>
             <h2 className="header__content-titles-subtitle">
-              Com o método <strong>A.P.P.</strong> você vai aprender de vez por
+              Com o método <strong>A.A.P.</strong> você vai aprender de vez por
               todas a programar e conquistar a sua vaga de emprego de forma
               acelerada ainda esse ano
             </h2>
