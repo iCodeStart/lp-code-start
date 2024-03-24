@@ -41,8 +41,8 @@ export function WorldProgram() {
         <p className="school_content-text-title">
           A matemática é bastante simples. <br />
           <br />
-          Existem muito mais vagas disponíveis para poucas pessoas para ocupar
-          elas. <br />
+          Existem muito <strong>mais vagas disponíveis </strong>para poucas
+          pessoas para ocupar elas. <br />
           <br />E a tendência é que isso ainda aconteça por muito tempo...
         </p>
         {/* <p className="school_content-text-title">

@@ -11,9 +11,9 @@ export function WorldProgramInfo({
   font,
 }: WorldProgramInfoProps) {
   const getImage = (index: number) => {
-    if (index === 0) return "./wallet1.svg";
-    if (index === 1) return "./real-estate.svg";
-    return "./finance1.svg";
+    if (index === 0) return "./wallet2.svg";
+    if (index === 1) return "./home-office.svg";
+    return "./jobs.svg";
   };
 
   return (
