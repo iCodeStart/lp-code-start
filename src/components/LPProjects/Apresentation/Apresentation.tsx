@@ -6,13 +6,17 @@ export function Apresentation() {
       <div className="overlay"></div>
       <div className="content-lp-project-apresentation-container">
         <span className="content-lp-project-apresentation-product-name">
-          MÉTODO PNE
+          MÉTODO AAP
         </span>
         <div className="content-lp-project-apresentation-box-texts">
-          <h1>Clientes nunca mais serão um problema para sua empresa</h1>
+          <h1>
+            Você nunca mais vai se sentir perdido e desmotivado para estudar
+            programação
+          </h1>
           <p>
-            O caminho comprovado para você dominar o PNE, conquistar clientes e
-            fechar trabalhos de 5 dígitos todos os meses.
+            Com o método <strong>A.A.P.</strong> você vai aprender de uma vez
+            por todas a programar e conquistar a sua vaga de emprego de forma
+            acelerada ainda esse ano
           </p>
         </div>
         <svg

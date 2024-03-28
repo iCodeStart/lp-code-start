@@ -92,23 +92,29 @@ export function TheProduct() {
         </svg>
         <div className="content-the-product-box-texts">
           <h2 className="content-the-product-title">
-            Quantas vezes você já viu profissionais piores que você, tendo uma
-            cartela de clientes muito maior que a sua?
+            Quantas vezes você já se sentiu confuso tentando aprender
+            programação?
           </h2>
           <h3 className="content-the-product-subtitle">
-            Ser um bom profissional não basta para se destacar e ter sucesso
-            dentro do mercado digital. Você precisa dar adeus ao sentimento de
-            finalizar um curso empolgado com tudo que aprendeu mas continuando
-            com o mesmo problema de sempre:{" "}
+            Você sabe o quão frustrante é se sentir perdido no mundo da
+            programação. Você se dedica, mas as vagas para trabalhar nas
+            empresas parecem exigir o impossível. As horas de estudo se tornam
+            um fardo enquanto você luta para equilibrar a sua vida pessoal com o
+            seu aprendizado. Cada tentativa falha de dominar uma nova habilidade
+            só aumenta a sua sensação de desânimo. Você não está só.{" "}
             <span>
-              <strong>NÃO CONSEGUIR FECHAR BONS CLIENTES</strong>
+              <strong>
+                Nós entendemos essas dores porque já estivemos lá.
+              </strong>
             </span>
             <br />
-            <br />
-            Você precisa aprender a se posicionar, prospectar, negociar e por
-            fim escalar a sua operação. Aí sim, toda suas habilidades técnicas
-            serão úteis. Caso contrário estará sempre jogando horas de estudo e
-            conhecimento no lixo.
+            <br />A culpa por se sentir assim não é sua. A grande maioria dos
+            cursos só colocam as aulas lá e querem que quase que milagrosamente
+            você tenha foco e motivação para estudar. Não é assim que nosso
+            cérebro funciona. Você só precisa de uma didática diferente, uma
+            forma de aprender que não seja cansativa e que você veja evolução
+            todo santo dia. Chega de ficar comprando cursos e mais cursos
+            cansativos que você nunca termina.
           </h3>
           <img
             src="https://tyvo.com.br/wp-content/webp-express/webp-images/uploads/2024/03/Agrupar-3.png.webp"

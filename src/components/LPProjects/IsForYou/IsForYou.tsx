@@ -36,7 +36,7 @@ export function IsForYou() {
             <h3>
               Já está na jornada há algum tempo e precisa de direção,
               inspiração, e técnicas para levar seus projetos e carreira para o
-              próximo nível."
+              próximo nível.
             </h3>
           </div>
         </div>

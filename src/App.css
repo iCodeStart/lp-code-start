@@ -149,7 +149,7 @@ button {
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 30px;
   margin: 20px 0 40px 0;
   color: #fff;
   text-align: center;
@@ -204,7 +204,7 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -216,7 +216,7 @@ button {
 
 .world-programming_line-text {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .world-programming_line-text span {
@@ -486,7 +486,7 @@ button {
 .guarantee {
   display: flex;
   gap: 20px;
-  font-size: 18px;
+  font-size: 15px;
 }
 .guarantee img {
   width: 100px;
@@ -566,7 +566,7 @@ button {
 }
 
 .programInfo__font {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .container__program-info {
