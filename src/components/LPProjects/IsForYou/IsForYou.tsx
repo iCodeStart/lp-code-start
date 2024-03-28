@@ -16,7 +16,9 @@ export function IsForYou() {
               src="https://tyvo.com.br/wp-content/webp-express/webp-images/uploads/2024/03/icons8-clientes-64.png.webp"
               alt="Code Start"
             />
-            <h3>Não sabe nada e nunca digitou uma linha de código.</h3>
+            <h3>
+              Está querendo começar a programar, e não sabe por onde começar.
+            </h3>
           </div>
           <div className="content-is-for-you-card">
             <img
@@ -24,8 +26,8 @@ export function IsForYou() {
               alt="Code Start"
             />
             <h3>
-              Está começando agora, mas se sente sobrecarregado com tantas
-              opções e incertezas.
+              Está começando agora, mas a falta de foco te prejudica para
+              continuar.
             </h3>
           </div>
           <div className="content-is-for-you-card">
@@ -34,9 +36,8 @@ export function IsForYou() {
               alt="Code Start"
             />
             <h3>
-              Já está na jornada há algum tempo e precisa de direção,
-              inspiração, e técnicas para levar seus projetos e carreira para o
-              próximo nível.
+              Quer fazer transição de carreira e precisa conciliar o seu
+              trabalho com os estudos
             </h3>
           </div>
         </div>

@@ -71,10 +71,11 @@ export function Offer() {
               </span>
             </div>
             <div className="guarantee_access">
-              <h4>Mas hoje você não vai precisar investir isso...</h4>
+              {/* <h4>Mas hoje você não vai precisar investir isso...</h4> */}
+              <h4>Esse é o preço original, mas investindo agora você vai...</h4>
               <h3>
-                Aprenda do zero ao profissional, em um treinamento 100% online e
-                tenha acesso imediato por apenas:
+                Aprender do zero ao profissional, em um só treinamento, 100%
+                online e com acesso imediato, por apenas:
               </h3>
               <h1 className="card-offer__price">
                 <p style={{ fontSize: "24px" }}>12x de</p>59,90
@@ -104,14 +105,15 @@ export function Offer() {
               <img src="./seven-days.png" alt="Garantia de 7 dias" />
               <p>
                 Eu não quero que você se sinta pressionado para tomar essa
-                decisão, por isso eu mesmo vamou tomar todo o risco por você.
+                decisão, por isso eu mesmo vou tomar todo o risco por você.
               </p>
               <p>
                 Você terá sete dias para experimentar o treinamento sem nenhum
                 compromisso. Se nesse período você achar que tudo isso não vale
-                pelo menos o dobro do que você pagou, então basta entrar em
-                contato com nossa equipe de suporte 24 horas que devolveremos
-                todo o seu dinheiro, sem perguntinhas ou questionamentos.
+                <strong> pelo menos o dobro do que você pagou</strong>, então
+                basta entrar em contato com nossa equipe de suporte 24 horas que
+                devolveremos todo o seu dinheiro, sem perguntinhas ou
+                questionamentos.
               </p>
               <p>
                 O que significa que você não tem nada a perder aqui. Mas deixa

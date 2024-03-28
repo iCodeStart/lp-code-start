@@ -10,7 +10,7 @@ export function Apresentation() {
         </span>
         <div className="content-lp-project-apresentation-box-texts">
           <h1>
-            Você nunca mais vai se sentir perdido e desmotivado para estudar
+            Você nunca mais vai pensar em desistir e se sentir perdido na
             programação
           </h1>
           <p>
