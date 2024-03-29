@@ -1,75 +1,105 @@
 .content-lp-project-apresentation {
-    position: relative;
-    background-color: #000000;
-    background-image: url('https://tyvo.com.br/wp-content/uploads/2024/03/Matiz_Saturacao-1.png');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+  position: relative;
+  background-color: #000000;
+  background-image: url("../../../../public/teachers9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  container-widget-width: 100%;
+  container-widget-height: initial;
+  container-widget-flex-grow: 0;
+  container-widget-align-self: initial;
+  background-transition: 0.3s;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-block-start: 0px;
+  padding-block-end: 0px;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    //background-color: #00000050;
+    z-index: 1; /* Garante que a overlay fique acima do conteúdo */
+  }
+
+  &-container {
+    margin-top: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    container-widget-width: 100%;
-    container-widget-height: initial;
-    container-widget-flex-grow: 0;
-    container-widget-align-self: initial;
-    background-transition: 0.3s;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-block-start: 0px;
-    padding-block-end: 236px;
-    padding-inline-start: 0px;
-    padding-inline-end: 0px;
+    text-align: center;
+  }
 
+  &-product-name {
+    padding: 10px 40px 10px 40px;
+    background-color: #ffffff12;
+    border-style: solid;
+    border-color: #a5a5a5;
+    border-radius: 5px 5px 5px 5px;
+  }
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #00000050;
-        z-index: 1; /* Garante que a overlay fique acima do conteúdo */
+  &-box-texts {
+    max-width: 800px;
+    text-align: center;
+
+    & h1 {
+      color: #ffffff;
+      font-family: "Hanken Grotesk", Sans-serif;
+      font-size: 55px;
+      font-weight: 800;
+      line-height: 1.1em;
     }
 
-    &-container{
-        margin-top: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    & p {
+      color: #cccccc;
+      font-family: "Hanken Grotesk", Sans-serif;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.3em;
     }
+  }
+}
 
+@media (max-width: 768px) {
+  .content-lp-project-apresentation {
+    background-position: top center;
+    padding: 0px 30px;
+    min-height: 70vh;
     &-product-name {
-        padding: 10px 40px 10px 40px;
-        background-color: #FFFFFF12;
-        border-style: solid;
-        border-color: #A5A5A5;
-        border-radius: 5px 5px 5px 5px
+      padding: 10px 40px 10px 40px;
+      background-color: #ffffff12;
+      border-style: solid;
+      border-color: #a5a5a5;
+      border-radius: 5px 5px 5px 5px;
+      margin-top: -350px;
+    }
+    & h1 {
+      color: #ffffff;
+      font-family: "Hanken Grotesk", Sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.1em;
     }
 
-    &-box-texts {
-        max-width: 800px;
-        text-align: center;
-
-        & h1 {
-            color: #FFFFFF;
-            font-family: "Hanken Grotesk", Sans-serif;
-            font-size: 55px;
-            font-weight: 800;
-            line-height: 1.1em;
-        }
-
-        & p {
-            color: #CCCCCC;
-            font-family: "Hanken Grotesk", Sans-serif;
-            font-size: 25px;
-            font-weight: 500;
-            line-height: 1.3em;
-        }
+    & p {
+      color: #fff;
+      font-family: "Hanken Grotesk", Sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.3em;
     }
+  }
 }

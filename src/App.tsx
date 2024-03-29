@@ -3,7 +3,6 @@ import "./App.css";
 import {
   Bonus,
   FAQ,
-  Header,
   Offer,
   OurTrail,
   Projects,
@@ -17,6 +16,7 @@ import { FullstackTrail } from "./components/FullstackTrail";
 import {
   Apresentation,
   ExclusiveBonus,
+  Guarantee,
   HowItWorks,
   IsForYou,
   MethodItems,
@@ -33,7 +33,8 @@ function App() {
         path="/"
         element={
           <>
-            <Header />
+            {/* <Header /> */}
+            <Apresentation />
             <div className="content-container">
               {/* <TheProduct /> */}
               <WorldProgram />
@@ -61,6 +62,7 @@ function App() {
             <Apresentation />
             <div className="content-container">
               <TheProduct />
+              <Guarantee />
               <HowItWorks />
               <IsForYou />
               <MethodItems />

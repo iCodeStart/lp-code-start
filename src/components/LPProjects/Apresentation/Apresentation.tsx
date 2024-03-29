@@ -14,8 +14,8 @@ export function Apresentation() {
             programação
           </h1>
           <p>
-            Com o método <strong>A.A.P.</strong> você vai aprender de uma vez
-            por todas a programar e conquistar a sua vaga de emprego de forma
+            Com o método <strong>AAP</strong> você vai aprender de uma vez por
+            todas a programar e conquistar a sua vaga de emprego de forma
             acelerada ainda esse ano
           </p>
         </div>
@@ -46,7 +46,7 @@ export function Apresentation() {
                 <path
                   stroke-linecap="butt"
                   stroke-linejoin="miter"
-                  fill-opacity="0"
+                  fill-opacity="1"
                   stroke-miterlimit="4"
                   stroke="rgb(249,249,249)"
                   stroke-opacity="1"
@@ -64,7 +64,7 @@ export function Apresentation() {
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  fill-opacity="0"
+                  fill-opacity="1"
                   stroke="rgb(249,249,249)"
                   stroke-opacity="1"
                   stroke-width="2"
@@ -81,7 +81,7 @@ export function Apresentation() {
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  fill-opacity="0"
+                  fill-opacity="1"
                   stroke="rgb(249,249,249)"
                   stroke-opacity="1"
                   stroke-width="2"

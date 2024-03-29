@@ -22,8 +22,10 @@ export function Teacher({ img, name, description }: TeacherProps) {
           height: "600px",
           margin: "30px auto",
           borderRadius: "10px",
-          boxShadow: "0 8px 24px rgba(0, 0, 0, 0.2)",
+          boxShadow: "inset 0 0 10px #000, inset 0 0 20px #000",
           transition: "transform 0.3s ease, boxShadow 0.3s ease",
+          mixBlendMode: "multiply",
+          objectFit: "inherit",
         }}
         onMouseOver={(e) => {
           e.currentTarget.style.transform = "scale(1.03)";
