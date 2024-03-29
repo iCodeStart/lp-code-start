@@ -75,10 +75,12 @@ export function Offer() {
               <h4>Esse é o preço original, mas investindo agora você vai...</h4>
               <h3>
                 Aprender do zero ao profissional, em um só treinamento, 100%
-                online e com acesso imediato, por apenas:
+                online e com{" "}
+                <span style={{ color: "white" }}>acesso imediato,</span> por
+                apenas:
               </h3>
               <h1 className="card-offer__price">
-                <p style={{ fontSize: "24px" }}>12x de</p>59,90
+                <p style={{ fontSize: "15px" }}>12x de</p>59,90
               </h1>
               <p style={{ letterSpacing: "7.4px", color: "#D8D8D8" }}>
                 {" "}

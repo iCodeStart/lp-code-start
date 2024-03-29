@@ -12,8 +12,7 @@ export function School() {
         <div className="school__content">
           <div className="school__content-text">
             <p className="school_content-text-title">
-              A Code Start possui um treinamento completo de programação, onde
-              vamos te pegar pelas mãos e te ensinar tudo que você precisa
+              Vamos te pegar pelas mãos e te ensinar tudo que você precisa
               saber,{" "}
               <strong>
                 mesmo que você não tenha muito tempo para estudar.

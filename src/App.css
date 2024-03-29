@@ -406,8 +406,8 @@ button {
 
 .teachers__content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  gap: 250px;
 }
 
 .teacher {
@@ -710,5 +710,47 @@ button {
     display: block;
     height: 230px;
     width: 100%;
+  }
+  .school_content-text-title {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .world-program-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+    margin-top: 50px;
+    font-size: 15px;
+    line-height: 32px;
+  }
+  .our-trail__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    font-size: 15px;
+  }
+  .school_content-text-item {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    margin: 50px 0;
+    justify-content: center;
+  }
+  .line-bonus_content-texts p {
+    font-size: 15px;
+    color: #cccccc;
+  }
+  .guarantee_access {
+    text-align: center;
+    font-size: 15px;
+    color: #cccccc;
+  }
+  .card-offer__price {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 30px;
   }
 }
