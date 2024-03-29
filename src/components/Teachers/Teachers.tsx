@@ -4,7 +4,7 @@ import { Teacher } from "./Teacher/Teacher";
 export function Teachers() {
   const arrayTeachers = [
     {
-      img: "./teacherAlan.jpeg",
+      img: "./teacherAlan1.jpeg",
       name: "Alan Braulio",
       description:
         "<p>Formei em Engenharia de Computação pela PUC Minas.</p> <p>Sou desenvolvedor Web a mais de 10 anos ocupando posições de liderança e destaque nos times que atuei ajudando a gerir e organizar as equipes de desenvolvimento.</p><p>Atualmente atuo como Desenvolvedor Sênior.</p>",
