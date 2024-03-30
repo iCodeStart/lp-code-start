@@ -393,6 +393,7 @@ button {
 .line-bonus_content-texts h1 {
   font-size: 26px;
   color: #fff;
+  line-height: 35px;
 }
 
 .line-bonus_content-texts p {
@@ -680,6 +681,8 @@ button {
   }
 
   .line-bonus__content {
+    display: flex;
+    align-items: center;
     flex-direction: column;
   }
 
@@ -738,6 +741,11 @@ button {
     font-size: 15px;
     margin: 50px 0;
     justify-content: center;
+  }
+  .line-bonus_content-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .line-bonus_content-texts p {
     font-size: 15px;

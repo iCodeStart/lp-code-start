@@ -5,7 +5,7 @@ export function Bonus() {
   const arrayBonus = [
     {
       img: "/closeFriends.png",
-      title: "CLOSE FRIENDS",
+      title: "Close friends",
       subtitle:
         "Acesso a 1 ano de conteúdos exclusivos e valiosos para você acelerar o seu aprendizado ainda mais.",
     },
@@ -16,10 +16,10 @@ export function Bonus() {
         "Oportunidade do aluno testar seus conhecimentos para tentar ser aprovado em uma vaga de emprego.",
     },
     {
-      img: "/linkedin1.png",
-      title: "MASTERCLASS EXCLUSIVA SOBRE O LINKEDIN",
+      img: "/posicionamento.png",
+      title: "Posicionamento de excelência",
       subtitle:
-        "Uma Tech Recruiter de uma das maiores empresas do Brasil e do mundo destrinchou tudo sobre o LinkedIn e as principais dúvidas de como usar a plataforma para procurar vagas exclusivamente para os nossos alunos.",
+        "Todos os segredos de como se posicionar e se destacar dos concorrentes com uma especialista no LinkedIn",
     },
     {
       img: "/projects1.png",
