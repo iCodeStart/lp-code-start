@@ -16,7 +16,7 @@ export function Bonus() {
         "Oportunidade do aluno testar seus conhecimentos para tentar ser aprovado em uma vaga de emprego.",
     },
     {
-      img: "/posicionamento.png",
+      img: "/posicionamento1.png",
       title: "Posicionamento de excelência",
       subtitle:
         "Todos os segredos de como se posicionar e se destacar dos concorrentes com uma especialista no LinkedIn",
