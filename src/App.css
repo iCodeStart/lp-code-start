@@ -392,12 +392,12 @@ button {
 
 .line-bonus_content-texts h1 {
   font-size: 26px;
-  color: #00bcd3;
+  color: #fff;
 }
 
 .line-bonus_content-texts p {
   font-size: 22px;
-  color: #fff;
+  color: #ccc;
 }
 
 .teachers {

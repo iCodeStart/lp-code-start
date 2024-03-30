@@ -4,6 +4,12 @@ import { LineBonus } from "./LineBonus";
 export function Bonus() {
   const arrayBonus = [
     {
+      img: "/closeFriends.png",
+      title: "CLOSE FRIENDS",
+      subtitle:
+        "Acesso a 1 ano de conteúdos exclusivos e valiosos para você acelerar o seu aprendizado ainda mais.",
+    },
+    {
       img: "/interview.png",
       title: "SIMULAÇÃO DE ENTREVISTAS TÉCNICAS",
       subtitle:
