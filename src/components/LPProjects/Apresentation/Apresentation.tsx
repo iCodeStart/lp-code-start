@@ -36,7 +36,7 @@ export function Apresentation() {
               <rect width="28" height="60" x="0" y="0"></rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#__lottie_element_3)">
+          <g clipPath="url(#__lottie_element_3)">
             <g
               transform="matrix(0.9139999747276306,0,0,0.9139999747276306,14,34)"
               opacity="1"
@@ -44,13 +44,13 @@ export function Apresentation() {
             >
               <g opacity="1" transform="matrix(1,0,0,1,0,-0.16699999570846558)">
                 <path
-                  stroke-linecap="butt"
-                  stroke-linejoin="miter"
-                  fill-opacity="1"
-                  stroke-miterlimit="4"
+                  strokeLinecap="butt"
+                  strokeLinejoin="miter"
+                  fillOpacity="1"
+                  strokeMiterlimit="4"
                   stroke="rgb(249,249,249)"
-                  stroke-opacity="1"
-                  stroke-width="2"
+                  strokeOpacity="1"
+                  strokeWidth="2"
                   d=" M14.083499908447266,-8.166500091552734 C14.083499908447266,-8.166500091552734 14.083499908447266,8.166500091552734 14.083499908447266,8.166500091552734 C14.083499908447266,15.939183235168457 7.772683620452881,22.25 0,22.25 C0,22.25 0,22.25 0,22.25 C-7.772683620452881,22.25 -14.083499908447266,15.939183235168457 -14.083499908447266,8.166500091552734 C-14.083499908447266,8.166500091552734 -14.083499908447266,-8.166500091552734 -14.083499908447266,-8.166500091552734 C-14.083499908447266,-15.939183235168457 -7.772683620452881,-22.25 0,-22.25 C0,-22.25 0,-22.25 0,-22.25 C7.772683620452881,-22.25 14.083499908447266,-15.939183235168457 14.083499908447266,-8.166500091552734z"
                 ></path>
               </g>
@@ -62,12 +62,12 @@ export function Apresentation() {
             >
               <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  fill-opacity="1"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fillOpacity="1"
                   stroke="rgb(249,249,249)"
-                  stroke-opacity="1"
-                  stroke-width="2"
+                  strokeOpacity="1"
+                  strokeWidth="2"
                   d=" M-0.27300000190734863,-15.218779563903809 C-0.27300000190734863,-15.218779563903809 -0.27300000190734863,-12.152581214904785 -0.27300000190734863,-12.152581214904785"
                 ></path>
               </g>
@@ -79,12 +79,12 @@ export function Apresentation() {
             >
               <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  fill-opacity="1"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fillOpacity="1"
                   stroke="rgb(249,249,249)"
-                  stroke-opacity="1"
-                  stroke-width="2"
+                  strokeOpacity="1"
+                  strokeWidth="2"
                   d=" M-0.27300000190734863,-15.13599967956543 C-0.27300000190734863,-15.13599967956543 -0.27300000190734863,-5.863999843597412 -0.27300000190734863,-5.863999843597412"
                 ></path>
               </g>

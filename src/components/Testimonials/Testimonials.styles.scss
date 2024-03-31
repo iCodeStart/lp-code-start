@@ -1,12 +1,19 @@
-
-.slide-image-carousel-testimonial-items{
+.slide-image-carousel-testimonial-items {
     border-radius: 20px;
-    height: 600px;
+    height: 500px;
 }
-.testimonials-container{
-    & button{
+
+.testimonials-container {
+    & button {
         display: none !important;
     }
 }
 
 
+
+@media (max-width: 968px) {
+
+    .slide-image-carousel-testimonial-items {
+        height: 400px;
+    }
+}

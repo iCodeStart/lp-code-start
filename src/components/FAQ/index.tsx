@@ -14,14 +14,14 @@ export function FAQ() {
 
       <div className="question-list">
         {questions.map((question, idx) => (
-          <>
+          <div key={idx}>
             <Question key={idx} {...question} open={idx === 0} />
             {lastIndex !== idx && (
               <div
                 style={{ height: 1, width: "100%", background: "#03E4DC" }}
               />
             )}
-          </>
+          </div>
         ))}
       </div>
     </section>

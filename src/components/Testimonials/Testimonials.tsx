@@ -14,6 +14,15 @@ export function Testimonials() {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   };
 
   const imagesTestimonials = [
@@ -39,9 +48,8 @@ export function Testimonials() {
           <Slider {...settings}>
             {imagesTestimonials.map((item, index) => {
               return (
-                <div>
+                <div key={index + item}>
                   <img
-                    key={index + item}
                     src={item}
                     alt="img"
                     className="slide-image-carousel-testimonial-items"
