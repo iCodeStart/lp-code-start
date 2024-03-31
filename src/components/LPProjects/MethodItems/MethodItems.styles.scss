@@ -4,9 +4,10 @@
 }
 
 .content-method-items {
-  & button{
+  & button {
     display: none !important;
   }
+
   &-intern {
     width: 100vw;
     display: flex;
@@ -44,5 +45,11 @@
         font-size: 30px;
       }
     }
+  }
+
+  .slick-slider {
+    max-width: 100% !important;
+    overflow: hidden !important;
+    /* Isso também pode ser necessário */
   }
 }
