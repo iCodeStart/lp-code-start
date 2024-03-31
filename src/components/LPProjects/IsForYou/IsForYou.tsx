@@ -1,15 +1,23 @@
+import { Chip } from "../../Chip";
 import "./IsForYou.styles.scss";
 
 export function IsForYou() {
   return (
     <div className="container content-is-for-you">
       <div className="content-is-for-you-intern">
+        <div className="title-container">
+          <Chip label="AAP é para você" />
+          <h1 className="section-title">
+            Não importa qual a sua situação atual
+          </h1>
+        </div>
+        {/* <Chip label="" />
         <span className="content-is-for-you-legend">AAP é para você</span>
         <h2>
           Não importa qual a sua
           <br />
           situação atual
-        </h2>
+        </h2> */}
         <div className="content-is-for-you-cards">
           <div className="content-is-for-you-card">
             <img

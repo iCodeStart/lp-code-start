@@ -10,6 +10,8 @@
     justify-content: flex-start;
 
     & h2 {
+      display: flex;
+      justify-content: center;
       color: #ffffff;
       font-family: "Hanken Grotesk", Sans-serif;
       font-size: 30px;
@@ -27,6 +29,7 @@
   &-cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     //grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     //width: 100%;

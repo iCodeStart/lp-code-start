@@ -10,7 +10,7 @@
 
   &-intern {
     display: grid;
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 100px;
   }
 
@@ -43,7 +43,7 @@
     line-height: 41px;
   }
 
-  &-right{
+  &-right {
     overflow-y: auto;
   }
 }

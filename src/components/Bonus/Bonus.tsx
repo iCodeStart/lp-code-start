@@ -7,19 +7,31 @@ export function Bonus() {
       img: "/closeFriends.png",
       title: "Close friends",
       subtitle:
-        "Acesso a 1 ano de conteúdos exclusivos e valiosos para você acelerar o seu aprendizado ainda mais.",
+        "Acesso a 3 meses de conteúdos exclusivos e valiosos para você acelerar o seu aprendizado ainda mais.",
     },
     {
-      img: "/interview.png",
-      title: "SIMULAÇÃO DE ENTREVISTAS TÉCNICAS",
+      img: "/devCodeStart.png",
+      title: "Programador Code Start",
       subtitle:
-        "Oportunidade do aluno testar seus conhecimentos para tentar ser aprovado em uma vaga de emprego.",
+        "Tudo que você precisa saber para se destacar no seu primeiro mês na empresa.",
     },
+    // {
+    //   img: "/codeMoney.png",
+    //   title: "Recupere o seu investimento",
+    //   subtitle:
+    //     "Ganhe dinheiro como programador mesmo sendo um completo iniciante.",
+    // },
+    // {
+    //   img: "/interview.png",
+    //   title: "SIMULAÇÃO DE ENTREVISTAS TÉCNICAS",
+    //   subtitle:
+    //     "Oportunidade do aluno testar seus conhecimentos para tentar ser aprovado em uma vaga de emprego.",
+    // },
     {
       img: "/posicionamento1.png",
       title: "Posicionamento de excelência",
       subtitle:
-        "Todos os segredos de como se posicionar e se destacar dos concorrentes com uma especialista no LinkedIn",
+        "Descubra todos os segredos e tenha grande vantagem sobre os seus concorrentes com um posicionamento de excelência com a especialista em LinkedIn",
     },
     {
       img: "/projects1.png",
@@ -44,7 +56,7 @@ export function Bonus() {
                   img={bonus.img}
                   title={bonus.title}
                   subtitle={bonus.subtitle}
-                  orientation={index % 2 === 0 ? "left" : "right"}
+                  //orientation={index % 2 === 0 ? "left" : "right"}
                 />
               );
             })}
