@@ -28,7 +28,6 @@
 
 .slider-container {
   overflow: hidden;
-  position: relative;
 }
 
 .slides {
@@ -38,15 +37,13 @@
 
 .slide {
   flex: 0 0 auto;
-  width: 20%; // Ajuste de acordo com o número de slides que você deseja mostrar ao mesmo tempo
+  width: 20%; /* Ajuste conforme necessário */
   padding: 10px;
-  box-sizing: border-box;
+}
 
-  img {
-    width: 100%;
-    border-radius: 20px;
-    display: block;
-  }
+.slide img {
+  width: 100%;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 768px) {

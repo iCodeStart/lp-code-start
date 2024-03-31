@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import "./MethodItems.styles.scss";
 
 export function MethodItems() {
-  const images = [
+  const initialImages = [
     "./SEMANA-1.png",
     "./SEMANA-2.png",
     "./SEMANA-3.png",
@@ -13,39 +13,16 @@ export function MethodItems() {
     "./SEMANA-8.png",
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const sliderRef = useRef(null);
-
-  const slidesToShow = 5;
-  const slideWidth = 100 / slidesToShow; // Por exemplo, se slidesToShow for 5, cada slide tem 20% da largura do contêiner
-  const translateX = currentIndex * slideWidth;
-  const autoplaySpeed = 2000;
+  const [images, setImages] = useState(initialImages);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, autoplaySpeed);
+    const interval = setInterval(() => {
+      // Rotaciona a primeira imagem para o final do array
+      setImages((prevImages) => [...prevImages.slice(1), prevImages[0]]);
+    }, 2000); // Ajuste para a velocidade desejada do autoplay
 
-    return () => clearTimeout(timer);
-  }, [currentIndex, images.length]);
-
-  const getSlides = () => {
-    let slides = [];
-    const startIndex = currentIndex;
-    const endIndex = startIndex + slidesToShow;
-
-    for (let i = startIndex; i < endIndex; i++) {
-      slides.push(
-        <div key={i} className="slide">
-          <img src={images[i % images.length]} alt={`Slide ${i}`} />
-        </div>
-      );
-    }
-
-    return slides;
-  };
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="container content-method-items">
@@ -57,17 +34,86 @@ export function MethodItems() {
           ter acesso no AAP:
         </h2>
       </div>
-      <div className="slider-container" ref={sliderRef}>
-        <div
-          className="slides"
-          style={{ transform: `translateX(-${translateX}%)` }}
-        >
-          {getSlides()}
+      <div className="slider-container">
+        <div className="slides">
+          {images.map((src, index) => (
+            <div key={index} className="slide">
+              <img src={src} alt={`Slide ${index}`} />
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 }
+
+// export function MethodItems() {
+//   const images = [
+//     "./SEMANA-1.png",
+//     "./SEMANA-2.png",
+//     "./SEMANA-3.png",
+//     "./SEMANA-4.png",
+//     "./SEMANA-5.png",
+//     "./SEMANA-6.png",
+//     "./SEMANA-7.png",
+//     "./SEMANA-8.png",
+//   ];
+
+//   const [currentIndex, setCurrentIndex] = useState(0);
+//   const sliderRef = useRef(null);
+
+//   const slidesToShow = 5;
+//   const slideWidth = 100 / slidesToShow; // Por exemplo, se slidesToShow for 5, cada slide tem 20% da largura do contêiner
+//   const translateX = currentIndex * slideWidth;
+//   const autoplaySpeed = 2000;
+
+//   useEffect(() => {
+//     const timer = setTimeout(() => {
+//       setCurrentIndex((prevIndex) =>
+//         prevIndex === images.length - 1 ? 0 : prevIndex + 1
+//       );
+//     }, autoplaySpeed);
+
+//     return () => clearTimeout(timer);
+//   }, [currentIndex, images.length]);
+
+//   const getSlides = () => {
+//     let slides = [];
+//     const startIndex = currentIndex;
+//     const endIndex = startIndex + slidesToShow;
+
+//     for (let i = startIndex; i < endIndex; i++) {
+//       slides.push(
+//         <div key={i} className="slide">
+//           <img src={images[i % images.length]} alt={`Slide ${i}`} />
+//         </div>
+//       );
+//     }
+
+//     return slides;
+//   };
+
+//   return (
+//     <div className="container content-method-items">
+//       <div className="content-method-items-intern">
+//         <span className="content-method-items-legend">Módulos</span>
+//         <h2>
+//           Veja tudo que você vai
+//           <br />
+//           ter acesso no AAP:
+//         </h2>
+//       </div>
+//       <div className="slider-container" ref={sliderRef}>
+//         <div
+//           className="slides"
+//           style={{ transform: `translateX(-${translateX}%)` }}
+//         >
+//           {getSlides()}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 // import "./MethodItems.styles.scss";
 // import Slider from "react-slick";
