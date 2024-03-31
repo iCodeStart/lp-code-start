@@ -12,11 +12,19 @@
   font-size: 21px;
   font-weight: 500;
   line-height: 1.5em;
-  padding: 0px 30px;
+  height: 1150px;
+}
+
+.image {
+  width: 85%;
 }
 
 @media (max-width: 768px) {
   .content-guarantee {
     width: 100%;
+  }
+  .image {
+    width: 85%;
+    //height: 950px;
   }
 }
