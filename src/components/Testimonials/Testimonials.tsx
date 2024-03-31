@@ -1,7 +1,6 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Chip } from "../Chip";
 import "./Testimonials.styles.scss";
 
 export function Testimonials() {
@@ -25,30 +24,31 @@ export function Testimonials() {
     "./depoimento-3.jpeg",
   ];
   return (
-    <div className="testimonials">
-      <div className="container">
-        <div className="title-container">
-          <Chip label="Depoimentos" />
-          <h1 className="section-title">
-            Veja o que nossos alunos acham da Code Start!
-          </h1>
-        </div>
-        <div className="slider-container">
-          <Slider {...settings}>
-            {imagesTestimonials.map((item) => {
-              return (
-                <div>
-                  <img
-                    src={item}
-                    alt="img"
-                    className="slide-image-carousel-testimonial-items"
-                  />
-                </div>
-              );
-            })}
-          </Slider>
-        </div>
-      </div>
+    <div className="slider-container">
+      <Slider {...settings}>
+        {imagesTestimonials.map((item) => {
+          return (
+            <div>
+              <img
+                src={item}
+                alt="img"
+                className="slide-image-carousel-testimonial-items"
+              />
+            </div>
+          );
+        })}
+      </Slider>
     </div>
+    // <div className="testimonials">
+    //   <div className="container">
+    //     {/* <div className="title-container">
+    //       <Chip label="Depoimentos" />
+    //       <h1 className="section-title">
+    //         Veja o que nossos alunos acham da Code Start!
+    //       </h1>
+    //     </div> */}
+
+    //   </div>
+    // </div>
   );
 }
