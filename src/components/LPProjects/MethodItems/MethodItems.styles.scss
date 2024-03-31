@@ -33,7 +33,7 @@
 
 .slides {
   display: flex;
-  transition: transform 2s ease;
+  transition: transform 0.5s ease-out;
 }
 
 .slide {
@@ -46,6 +46,12 @@
     width: 100%;
     border-radius: 20px;
     display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide {
+    width: 50%; /* Mostra 2 slides por vez em dispositivos móveis */
   }
 }
 
