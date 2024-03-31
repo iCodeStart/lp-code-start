@@ -17,6 +17,8 @@ export function MethodItems() {
   const sliderRef = useRef(null);
 
   const slidesToShow = 5;
+  const slideWidth = 100 / slidesToShow; // Por exemplo, se slidesToShow for 5, cada slide tem 20% da largura do contêiner
+  const translateX = currentIndex * slideWidth;
   const autoplaySpeed = 2000;
 
   useEffect(() => {
@@ -56,7 +58,12 @@ export function MethodItems() {
         </h2>
       </div>
       <div className="slider-container" ref={sliderRef}>
-        <div className="slides">{getSlides()}</div>
+        <div
+          className="slides"
+          style={{ transform: `translateX(-${translateX}%)` }}
+        >
+          {getSlides()}
+        </div>
       </div>
     </div>
   );
