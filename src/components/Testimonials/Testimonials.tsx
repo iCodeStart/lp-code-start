@@ -7,7 +7,7 @@ export function Testimonials() {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
@@ -24,20 +24,22 @@ export function Testimonials() {
     "./depoimento-3.jpeg",
   ];
   return (
-    <div className="slider-container">
-      <Slider {...settings}>
-        {imagesTestimonials.map((item) => {
-          return (
-            <div>
-              <img
-                src={item}
-                alt="img"
-                className="slide-image-carousel-testimonial-items"
-              />
-            </div>
-          );
-        })}
-      </Slider>
+    <div className="container">
+      <div className="slider-container">
+        <Slider {...settings}>
+          {imagesTestimonials.map((item) => {
+            return (
+              <div>
+                <img
+                  src={item}
+                  alt="img"
+                  className="slide-image-carousel-testimonial-items"
+                />
+              </div>
+            );
+          })}
+        </Slider>
+      </div>
     </div>
     // <div className="testimonials">
     //   <div className="container">
