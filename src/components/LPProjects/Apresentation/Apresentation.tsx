@@ -15,7 +15,8 @@ export function Apresentation() {
           </h1>
           <p>
             Domine a programação com o método <strong>AAP</strong> e conquiste a
-            sua vaga de emprego de forma acelerada ainda esse ano
+            sua vaga de emprego de forma acelerada ainda esse ano - Estudando
+            apenas 1 hora por dia
           </p>
         </div>
         <svg
