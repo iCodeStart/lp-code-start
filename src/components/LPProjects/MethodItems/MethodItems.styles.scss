@@ -4,6 +4,9 @@
 }
 
 .content-method-items {
+  & button{
+    display: none !important;
+  }
   &-intern {
     width: 100vw;
     display: flex;
