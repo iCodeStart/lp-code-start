@@ -8,7 +8,7 @@ export function Testimonials() {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
@@ -34,7 +34,7 @@ export function Testimonials() {
           </h1>
         </div>
       </div>
-      <div className="container">
+      <div className="testimonials-container">
         <div className="slider-container">
           <Slider {...settings}>
             {imagesTestimonials.map((item, index) => {
