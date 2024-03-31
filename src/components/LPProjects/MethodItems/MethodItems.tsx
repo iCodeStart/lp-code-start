@@ -24,17 +24,6 @@ export function MethodItems() {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          speed: 3000,
-          autoPlaySpeed: 3000,
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-    ],
   };
 
   return (
