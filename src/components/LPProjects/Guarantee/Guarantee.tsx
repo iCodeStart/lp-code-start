@@ -3,7 +3,7 @@ import "./Guarantee.styles.scss";
 export function Guarantee() {
   return (
     <div className="content-guarantee">
-      <img src="./promessa.jpg" alt="promise" style={{ width: "140%" }} />
+      <img src="./promessa.jpg" alt="promise" style={{ width: "100%" }} />
     </div>
   );
 }
