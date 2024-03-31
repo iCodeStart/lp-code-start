@@ -1,7 +1,11 @@
+import { useLocation } from "react-router-dom";
 import { Chip } from "../Chip";
 import { Teacher } from "./Teacher/Teacher";
 
 export function Teachers() {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const srcParam = params.get("src");
   const arrayTeachers = [
     {
       img: "./teacherAlan1.jpeg",
@@ -9,12 +13,6 @@ export function Teachers() {
       description:
         "<p>Formei em Engenharia de Computação pela PUC Minas.</p> <p>Sou desenvolvedor Web a mais de 10 anos ocupando posições de liderança e destaque nos times que atuei ajudando a gerir e organizar as equipes de desenvolvimento.</p><p>Atualmente atuo como Desenvolvedor Sênior.</p>",
     },
-    // {
-    //   img: "./teacher-2.png",
-    //   name: "Moésio Marcelino",
-    //   description:
-    //     "<p>Formei em Análise e Desenvolvimento de Sistemas pela UniFAP Ceará, com mais de 5 anos de experiência, agregadas como QA e Desenvolvedor Frontend.</p><p> Ocupei papéis de liderança, trabalhos com desenvolvimento ágil, mentoria de carreira de pessoas iniciantes, visto como referência técnica pelos pares.</p><p> Atualmente atua como desenvolvedor Sênior.</p>",
-    // },
     {
       img: "./teacherDavi.jpeg",
       name: "Davi Quirino",
@@ -41,6 +39,19 @@ export function Teachers() {
             );
           })}
         </div>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <a
+          href={`https://pay.kiwify.com.br/orBxsQS${
+            srcParam ? `?src=${srcParam}` : ""
+          }`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="offer_button" data-aos="fade-up">
+            Quero ser programador
+          </button>
+        </a>
       </div>
     </div>
   );
