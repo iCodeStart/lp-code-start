@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import {
+  Benefits,
   Bonus,
   FAQ,
   Offer,
@@ -40,6 +41,7 @@ function App() {
               <WorldProgram />
               {/* <Benefits /> */}
               <IsForYou />
+              <MethodItems/>
               <Testimonials />
               <OurTrail />
               <School />

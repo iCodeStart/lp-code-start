@@ -2,8 +2,8 @@
   max-width: 1440px;
   margin: 0 auto;
 }
-.content-method-items {
 
+.content-method-items {
   &-intern {
     width: 100vw;
     display: flex;
@@ -19,6 +19,7 @@
       line-height: 1.2em;
     }
   }
+
   &-legend {
     color: #007eff;
     font-family: "Hanken Grotesk", Sans-serif;
@@ -28,13 +29,17 @@
   }
 }
 
-.content-slider{
-    width: 100%;
-
-    & img{
-        max-width: 100%;
-    }
+.slide-image-carousel-method-items {
+  border-radius: 20px;
+  height: 400px;
 }
-.swiper-slide-image{
-    border-radius: 20px 20px 20px 20px;
+
+@media (max-width: 600px) {
+  .content-method-items {
+    &-intern {
+      & h2 {
+        font-size: 36px;
+      }
+    }
+  }
 }

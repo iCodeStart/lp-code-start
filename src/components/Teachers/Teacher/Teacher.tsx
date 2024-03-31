@@ -18,8 +18,7 @@ export function Teacher({ img, name, description }: TeacherProps) {
         alt="Professor Code Start"
         style={{
           display: "block",
-          width: "100%",
-          height: "600px",
+          maxWidth:"400px",
           margin: "30px auto",
           borderRadius: "10px",
           boxShadow: "inset 0 0 10px #000, inset 0 0 20px #000",
@@ -38,15 +37,12 @@ export function Teacher({ img, name, description }: TeacherProps) {
       />
       <h1
         style={{
-          marginTop: "-45px",
-          width: "100%",
-          zIndex: 99,
           textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
         }}
       >
         {name}
       </h1>
-      <h2 dangerouslySetInnerHTML={{ __html: description }} />
+      <h2 dangerouslySetInnerHTML={{ __html: description }} style={{ textAlign: 'center'}} />
     </div>
   );
 }

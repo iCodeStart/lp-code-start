@@ -401,15 +401,7 @@ button {
   color: #ccc;
 }
 
-.teachers {
-  margin: 50px auto;
-}
 
-.teachers__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 250px;
-}
 
 .teacher {
   display: flex;
@@ -686,11 +678,6 @@ button {
     flex-direction: column;
   }
 
-  .teachers__content {
-    display: flex;
-    flex-direction: column;
-  }
-
   .card-offer {
     padding: 20px;
   }
@@ -761,4 +748,6 @@ button {
     margin-bottom: 30px;
     font-size: 30px;
   }
+
+  
 }

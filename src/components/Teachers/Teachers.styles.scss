@@ -1,0 +1,20 @@
+.teachers {
+    margin: 50px auto;
+}
+
+.teachers__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    & img{
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px){
+    .teachers__content {
+        display: flex;
+        flex-direction: column;
+      }
+}
