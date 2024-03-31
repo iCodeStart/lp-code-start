@@ -24,6 +24,15 @@ export function MethodItems() {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    responsive:[
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (
