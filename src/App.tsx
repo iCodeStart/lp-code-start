@@ -46,6 +46,7 @@ function App() {
               <FullstackTrail />
               <Projects />
               <Bonus />
+              <Guarantee />
               <Offer />
               <Teachers />
               <FAQ />
