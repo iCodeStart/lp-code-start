@@ -18,7 +18,7 @@ export function Testimonials() {
       {
         breakpoint: 980,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         }
       },
