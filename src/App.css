@@ -21,7 +21,7 @@ html {
 
 body {
   color: rgb(var(--foreground-rgb));
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background: linear-gradient(
       to bottom,
       transparent,
