@@ -38,9 +38,9 @@ export function MethodItems() {
       </div>
       <div className="slider-container">
         <Slider {...settings}>
-          {images.map((item) => {
+          {images.map((item, index) => {
             return (
-              <div>
+              <div key={index + item}>
                 <img src={item} alt="img" className="slide-image-carousel-method-items" />
               </div>
             );

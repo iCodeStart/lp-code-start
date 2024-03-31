@@ -8,6 +8,7 @@ import {
   Projects,
   School,
   Teachers,
+  Testimonials,
   WorldProgram,
 } from "./components";
 import { Footer } from "./components/Footer";
@@ -40,7 +41,7 @@ function App() {
               {/* <Benefits /> */}
               <IsForYou />
               <MethodItems/>
-              {/* <Testimonials /> */}
+              <Testimonials />
               <OurTrail />
               <School />
               <FullstackTrail />
