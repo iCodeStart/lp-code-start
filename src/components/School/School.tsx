@@ -1,4 +1,5 @@
 import { Chip } from "../Chip";
+import { MethodItems } from "../LPProjects";
 import "./School.styles.scss";
 
 export function School() {
@@ -30,10 +31,10 @@ export function School() {
               </p>
             </div>
           </div>
-          {/* {MethodItems()} */}
-          <div className="school_content_code-start">
+          <MethodItems />
+          {/* <div className="school_content_code-start">
             <img src="./ipad-code-start.png" alt="Comunidade Code Start" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -1,56 +1,107 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .content-method-items {
-  & button {
-    display: none !important;
-  }
+  color: #fff;
+  margin-bottom: 20px;
 
   &-intern {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 100px;
-
-    & h2 {
-      color: #ffffff;
-      font-family: "Hanken Grotesk", Sans-serif;
-      font-size: 43px;
-      font-weight: 800;
-      line-height: 1.2em;
-    }
+    margin-top: 20px;
   }
 
   &-legend {
     color: #007eff;
-    font-family: "Hanken Grotesk", Sans-serif;
     font-size: 19px;
     font-weight: 500;
     line-height: 41px;
   }
-}
 
-.slide-image-carousel-method-items {
-  border-radius: 20px;
-  height: 400px;
-  margin: 0 auto;
-}
-
-@media (max-width: 600px) {
-  .content-method-items {
-    &-intern {
-      & h2 {
-        font-size: 30px;
-      }
-    }
-  }
-
-  .slick-slider {
-    max-width: 100% !important;
-    overflow: hidden !important;
-    /* Isso também pode ser necessário */
+  h2 {
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 1.2em;
   }
 }
+
+.slider-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 2s ease;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 20%; // Ajuste de acordo com o número de slides que você deseja mostrar ao mesmo tempo
+  padding: 10px;
+  box-sizing: border-box;
+
+  img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+  }
+}
+
+// .container {
+//   max-width: 1440px;
+//   margin: 0 auto;
+// }
+
+// .content-method-items {
+//   & button {
+//     display: none !important;
+//   }
+
+//   &-intern {
+//     width: 100vw;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     margin-top: 100px;
+
+//     & h2 {
+//       color: #ffffff;
+//       font-family: "Hanken Grotesk", Sans-serif;
+//       font-size: 43px;
+//       font-weight: 800;
+//       line-height: 1.2em;
+//     }
+//   }
+
+//   &-legend {
+//     color: #007eff;
+//     font-family: "Hanken Grotesk", Sans-serif;
+//     font-size: 19px;
+//     font-weight: 500;
+//     line-height: 41px;
+//   }
+// }
+
+// .slide-image-carousel-method-items {
+//   border-radius: 20px;
+//   height: 400px;
+//   margin: 0 auto;
+// }
+
+// @media (max-width: 600px) {
+//   .content-method-items {
+//     &-intern {
+//       & h2 {
+//         font-size: 30px;
+//       }
+//     }
+//   }
+
+//   .slick-slider {
+//     max-width: 100% !important;
+//     overflow: hidden !important;
+//     /* Isso também pode ser necessário */
+//   }
+// }

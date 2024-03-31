@@ -15,12 +15,12 @@ export function Bonus() {
       subtitle:
         "Tudo que você precisa saber para se destacar no seu primeiro mês na empresa.",
     },
-    // {
-    //   img: "/codeMoney.png",
-    //   title: "Recupere o seu investimento",
-    //   subtitle:
-    //     "Ganhe dinheiro como programador mesmo sendo um completo iniciante.",
-    // },
+    {
+      img: "/codeMoney.png",
+      title: "Recupere o seu investimento",
+      subtitle:
+        "Ganhe dinheiro como programador mesmo sendo um completo iniciante.",
+    },
     // {
     //   img: "/interview.png",
     //   title: "SIMULAÇÃO DE ENTREVISTAS TÉCNICAS",

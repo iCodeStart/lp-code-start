@@ -40,7 +40,7 @@ function App() {
               <WorldProgram />
               {/* <Benefits /> */}
               <IsForYou />
-              {/* <MethodItems/> */}
+              {/* <MethodItems /> */}
               <Testimonials />
               <OurTrail />
               <School />
