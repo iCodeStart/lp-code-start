@@ -4,7 +4,7 @@ export function TheProduct() {
   return (
     <div className="content-the-product">
       <div className="content-the-product-iframe">
-        <iframe
+        {/* <iframe
           width="800"
           height="450"
           src="https://www.youtube.com/embed/Pjz38aOIHQE?si=GPc764mN-WUHvOEi"
@@ -12,13 +12,13 @@ export function TheProduct() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
           frameBorder="0"
-        ></iframe>
+        ></iframe> */}
       </div>
       <div className="content-the-product-box-container">
         <a className="content-the-product-button" href="#teste">
           Fazer parte
         </a>
-        <svg
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 28 60"
           width="28"
@@ -89,7 +89,7 @@ export function TheProduct() {
               </g>
             </g>
           </g>
-        </svg>
+        </svg> */}
         <div className="content-the-product-box-texts">
           <h2 className="content-the-product-title">
             Você sabe porque a grande maioria das pessoas que começam a aprender
@@ -121,7 +121,7 @@ export function TheProduct() {
             cursos e mais cursos cansativos que você nunca termina.
           </h3>
           <img
-            src="https://tyvo.com.br/wp-content/webp-express/webp-images/uploads/2024/03/Agrupar-3.png.webp"
+            src="./jobOffer.png"
             alt="Produto Code Start"
           />
         </div>

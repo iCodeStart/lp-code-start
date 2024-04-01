@@ -1,11 +1,9 @@
 .content-the-product {
     background-color: #000;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    grid-gap: 30px;
     position: relative;
 
     &-iframe{
@@ -14,14 +12,14 @@
     }
 
     &-box-container{
-        margin-top: 260px;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         & img{
-            margin-top: 50px;
+            max-width: 100%;
         }
     }
 
