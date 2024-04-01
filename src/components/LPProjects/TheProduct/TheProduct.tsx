@@ -15,9 +15,9 @@ export function TheProduct() {
         ></iframe> */}
       </div>
       <div className="content-the-product-box-container">
-        <a className="content-the-product-button" href="#teste">
+        {/* <a className="content-the-product-button" href="#teste">
           Fazer parte
-        </a>
+        </a> */}
         {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 28 60"
@@ -92,19 +92,20 @@ export function TheProduct() {
         </svg> */}
         <div className="content-the-product-box-texts">
           <h2 className="content-the-product-title">
-            Você sabe porque a grande maioria das pessoas que começam a aprender
-            programação desistem nas primeiras semanas?
+            Você sabe porque as pessoas desistem nas primeiras semanas?
             {/* Quantas vezes você já
             pensou em desistir tentando aprender programação? */}
           </h2>
           <h3 className="content-the-product-subtitle">
             Você sabe o quão frustrante é se sentir perdido no mundo da
             programação. Você se dedica, mas as vagas para trabalhar nas
-            empresas parecem exigir o impossível. As horas de estudo se tornam
-            um fardo enquanto você luta para equilibrar a sua vida pessoal com o
-            seu aprendizado. Cada tentativa falha de dominar uma nova habilidade
-            só aumenta a sua sensação de desânimo. E a ideia de desistir se
-            torna cada vez mais presente. Você não está só.{" "}
+            empresas parecem exigir o impossível. <br />
+            <br />
+            As horas de estudo se tornam um fardo enquanto você luta para
+            equilibrar a sua vida pessoal com o seu aprendizado. Cada tentativa
+            falha de dominar uma nova habilidade só aumenta a sua sensação de
+            desânimo. E a ideia de desistir se torna cada vez mais presente.
+            Você não está só.{" "}
             <span>
               <strong>Nós entendemos suas dores porque já estivemos ai.</strong>
             </span>
@@ -115,15 +116,16 @@ export function TheProduct() {
             </strong>
             A grande maioria dos cursos só colocam as aulas lá e querem que
             quase que milagrosamente você tenha foco e motivação para estudar.
-            Não é assim que nosso cérebro funciona. Você só precisa de uma
-            didática diferente, uma forma de aprender que não seja cansativa e
-            que você veja evolução todo santo dia. Chega de ficar comprando
-            cursos e mais cursos cansativos que você nunca termina.
+            Não é assim que nosso cérebro funciona. <br />
+            <br /> Você só precisa de uma didática diferente, uma forma de
+            aprender que não seja cansativa e que você veja evolução todo santo
+            dia.{" "}
+            <strong style={{ color: "white" }}>
+              Chega de ficar comprando cursos e mais cursos cansativos que você
+              nunca termina.
+            </strong>
           </h3>
-          <img
-            src="./jobOffer.png"
-            alt="Produto Code Start"
-          />
+          <img src="./jobOffer.png" alt="Produto Code Start" />
         </div>
       </div>
     </div>
