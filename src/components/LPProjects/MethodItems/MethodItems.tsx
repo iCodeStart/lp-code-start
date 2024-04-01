@@ -3,14 +3,18 @@ import "./MethodItems.styles.scss";
 
 export function MethodItems() {
   const initialImages = [
-    "./SEMANA-1.png",
-    "./SEMANA-2.png",
-    "./SEMANA-3.png",
-    "./SEMANA-4.png",
-    "./SEMANA-5.png",
-    "./SEMANA-6.png",
-    "./SEMANA-7.png",
-    "./SEMANA-8.png",
+    "./1.jpg",
+    "./2.jpg",
+    "./3.jpg",
+    "./4.jpg",
+    "./10.jpg",
+    "./5.jpg",
+    "./6.jpg",
+    "./11.jpg",
+    "./7.jpg",
+    "./8.jpg",
+    "./12.jpg",
+    "./9.jpg",
   ];
 
   const [images, setImages] = useState(initialImages);
