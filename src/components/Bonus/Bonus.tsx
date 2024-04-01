@@ -7,11 +7,11 @@ export function Bonus() {
       img: "/closeFriends.png",
       title: "Close friends",
       subtitle:
-        "Acesso a 3 meses de conteúdos exclusivos e valiosos para você acelerar o seu aprendizado ainda mais.",
+        "Acesso a 12 meses de conteúdos exclusivos e valiosos para você acelerar o seu aprendizado ainda mais.",
     },
     {
       img: "/devCodeStart.png",
-      title: "Programador Code Start",
+      title: "Seu primeiro mês",
       subtitle:
         "Tudo que você precisa saber para se destacar no seu primeiro mês na empresa.",
     },
@@ -33,12 +33,12 @@ export function Bonus() {
       subtitle:
         "Descubra todos os segredos e tenha grande vantagem sobre os seus concorrentes com um posicionamento de excelência com a especialista em LinkedIn",
     },
-    {
-      img: "/projects1.png",
-      title: "ACESSO AOS PROJETOS JÁ DESENVOLVIDOS",
-      subtitle:
-        "Acesso a todas aulas e códigos dos projetos práticos desenvolvidos em turmas anteriores.",
-    },
+    // {
+    //   img: "/projects1.png",
+    //   title: "ACESSO AOS PROJETOS JÁ DESENVOLVIDOS",
+    //   subtitle:
+    //     "Acesso a todas aulas e códigos dos projetos práticos desenvolvidos em turmas anteriores.",
+    // },
   ];
   return (
     <div className="bonus">
