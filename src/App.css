@@ -401,8 +401,6 @@ button {
   color: #ccc;
 }
 
-
-
 .teacher {
   display: flex;
   flex-direction: column;
@@ -748,6 +746,7 @@ button {
     margin-bottom: 30px;
     font-size: 30px;
   }
-
-  
+  .section-title {
+    font-size: 26px;
+  }
 }

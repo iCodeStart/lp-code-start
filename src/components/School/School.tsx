@@ -7,8 +7,10 @@ export function School() {
     <div className="school">
       <div className="container">
         <div className="title-container">
-          <Chip label="Sobre nós" />
-          <h1 className="section-title">A Code Start</h1>
+          <Chip label="Módulos" />
+          <h1 className="section-title">
+            Veja tudo que você vai ter acesso no APP
+          </h1>
         </div>
         <div className="school__content">
           <div className="school__content-text">

@@ -27,14 +27,14 @@ export function MethodItems() {
   return (
     <>
       <div className="container content-method-items">
-        <div className="content-method-items-intern">
+        {/* <div className="content-method-items-intern">
           <span className="content-method-items-legend">Módulos</span>
           <h2>
             Veja tudo que você vai
             <br />
             ter acesso no AAP:
           </h2>
-        </div>
+        </div> */}
       </div>
       <div className="slider-container">
         <div className="slides">
