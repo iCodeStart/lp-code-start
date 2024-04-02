@@ -101,11 +101,12 @@ export function TheProduct() {
             programação. Você se dedica, mas as vagas para trabalhar nas
             empresas parecem exigir o impossível. <br />
             <br />
-            As horas de estudo se tornam um fardo enquanto você luta para
-            equilibrar a sua vida pessoal com o seu aprendizado. Cada tentativa
-            falha de dominar uma nova habilidade só aumenta a sua sensação de
-            desânimo. E a ideia de desistir se torna cada vez mais presente.
-            Você não está só.{" "}
+            As horas de estudo se tornam um fardo enquanto você luta para tentar
+            equilibrar a sua vida pessoal com o seu aprendizado. <br />
+            <br />
+            Cada tentativa falha de dominar uma nova habilidade só aumenta a sua
+            sensação de desânimo. E a ideia de desistir se torna cada vez mais
+            presente. Você não está só.{" "}
             <span>
               <strong>Nós entendemos suas dores porque já estivemos ai.</strong>
             </span>
