@@ -10,7 +10,7 @@ export function Bonus() {
         "Acesso a 12 meses de conteúdos exclusivos e valiosos para você acelerar o seu aprendizado ainda mais.",
     },
     {
-      img: "/first.png",
+      img: "/first1.png",
       title: "Seu primeiro mês",
       subtitle:
         "Tudo que você precisa saber para se destacar no seu primeiro mês na empresa.",
