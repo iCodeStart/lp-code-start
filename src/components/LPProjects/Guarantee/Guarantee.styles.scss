@@ -2,7 +2,7 @@
   background-color: #000;
   height: fit-content;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   grid-gap: 30px;
   position: relative;
@@ -11,7 +11,6 @@
   font-size: 21px;
   font-weight: 500;
   line-height: 1.5em;
-  height: 1150px;
 }
 
 .image {
@@ -23,7 +22,8 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 110%;
+    // width: 100%;
+    padding: 0px 30px;
   }
   .image {
     width: 100%;

@@ -5,15 +5,17 @@ export function Guarantee() {
     <div className="content-guarantee">
       <div>
         <img
-          src="./100method.png"
+          src="./jobOffer1.png"
           alt="method"
           style={{ width: "100%", height: "600px" }}
         />
       </div>
       <div>
         <div className="content-text">
-          A nossa promessa é forte, mas é totalmente baseada nos resultados
-          desse método nos nossos alunos.
+          A nossa promessa é forte, mas é{" "}
+          <span style={{ color: "white" }}>
+            totalmente baseada nos resultados desse método nos nossos alunos.
+          </span>
         </div>
         <br />
         <div className="content-text">
@@ -23,8 +25,10 @@ export function Guarantee() {
         </div>
         <br />
         <div className="content-text">
-          Mas se mesmo assim, você ainda nao conseguir o seu objetivo, nada mais
-          justo que devolvermos 100% do que você investiu.
+          Mas se mesmo assim, você ainda nao conseguir o seu objetivo,{" "}
+          <span style={{ color: "white" }}>
+            nada mais justo que devolvermos 100% do que você investiu.
+          </span>
         </div>
         <br />
 
@@ -35,7 +39,7 @@ export function Guarantee() {
         </div>
         <br />
 
-        <div className="content-text">
+        <div className="content-text" style={{ color: "white" }}>
           Me responde com a maior sinceridade que puder. O que você tem a
           perder?
         </div>
