@@ -4,11 +4,7 @@ export function Guarantee() {
   return (
     <div className="content-guarantee">
       <div>
-        <img
-          src="./jobOffer1.png"
-          alt="method"
-          style={{ width: "100%", height: "600px" }}
-        />
+        <img src="./jobOffer1.png" alt="method" className="image" />
       </div>
       <div>
         <div className="content-text">
