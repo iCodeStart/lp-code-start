@@ -106,27 +106,12 @@ export function Offer() {
             <div className="guarantee">
               <img src="./seven-days.png" alt="Garantia de 7 dias" />
               <p>
-                Eu não quero que você se sinta pressionado para tomar essa
-                decisão, por isso eu mesmo{" "}
-                <strong>vou tomar todo o risco por você.</strong>
-              </p>
-              <p>
                 Você terá sete dias para experimentar o treinamento sem nenhum
                 compromisso. Se nesse período você achar que tudo isso não vale
                 <strong> pelo menos o dobro do que você pagou</strong>, então
                 basta entrar em contato com nossa equipe de suporte 24 horas que
                 devolveremos todo o seu dinheiro, sem perguntinhas ou
                 questionamentos.
-              </p>
-              <p>
-                O que significa que você não tem nada a perder aqui. Mas deixa
-                eu só repetir,{" "}
-                <strong>
-                  em até 7 dias é o tempo que levará para você já começar a ver
-                  resultados com essa metodologia…
-                </strong>{" "}
-                Caso isso não aconteça você pede o reembolso e não gasta 1
-                centavo!
               </p>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { Chip } from "../Chip";
 import { Teacher } from "./Teacher/Teacher";
-import './Teachers.styles.scss';
+import "./Teachers.styles.scss";
 
 export function Teachers() {
   const location = useLocation();
@@ -12,13 +12,13 @@ export function Teachers() {
       img: "./teacherAlan1.jpeg",
       name: "Alan Braulio",
       description:
-        "<p>Formei em Engenharia de Computação pela PUC Minas.</p> <p>Sou desenvolvedor Web a mais de 10 anos ocupando posições de liderança e destaque nos times que atuei ajudando a gerir e organizar as equipes de desenvolvimento.</p><p>Atualmente atuo como Desenvolvedor Sênior.</p>",
+        "<p>Formado em Engenharia de Computação pela PUC Minas.</p> <p>É desenvolvedor Web a mais de 10 anos ocupando posições de liderança e destaque nos times que atuou ajudando a gerir e organizar as equipes de desenvolvimento.</p><p>Atualmente atua como Desenvolvedor Sênior.</p>",
     },
     {
       img: "./teacherDavi.jpeg",
       name: "Davi Quirino",
       description:
-        "<p>Formei em Engenharia de Produção pela Universidade do Estado de Minas Gerais, fiz transição de carreira e estou atuando há mais de 5 anos como desenvolvedor de sistemas.</p><p> Já participei de diversos projetos em empresas de grande porte e com sistemas com uso de milhões de pessoas.</p><p> Atualmente atuo como Desenvolvedor Sênior.</p>",
+        "<p>Formado em Engenharia de Produção pela Universidade do Estado de Minas Gerais, fez transição de carreira e está atuando há mais de 5 anos como desenvolvedor de sistemas.</p><p> Já participou de diversos projetos em empresas de grande porte e com sistemas com uso de milhões de pessoas.</p><p> Atualmente atua como Desenvolvedor Sênior na AMBEV.</p>",
     },
   ];
   return (

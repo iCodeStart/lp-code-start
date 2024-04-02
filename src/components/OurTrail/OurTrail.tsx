@@ -6,22 +6,24 @@ export function OurTrail() {
   const arrayInfoTrail = useMemo(
     () => [
       {
-        title: "Preparação",
+        // title: "Preparação",
+        title: "Fase Start",
         description:
           "Nessa fase você já terá seus primeiros projetos feitos e publicados.",
       },
       {
-        title: "Crescimento técnico",
+        // title: "Crescimento técnico",
+        title: "Fase Alicerce",
         description:
           "Nessa fase 2 você terá criado projetos mais robustos e aprendido a criar seus próprios projetos sozinho!",
       },
       {
-        title: "Estruturação",
+        title: "Fase de Expansão",
         description:
           "Você terá estruturado o seu currículo e Linkedin de forma estratégica.",
       },
       {
-        title: "Aplicação nas empresas",
+        title: "Fase Mestre",
         description:
           "Nessa etapa, você usará o nosso método A.A.P. para aplicar para entrevistas nas melhores empresas de tecnologia.",
       },

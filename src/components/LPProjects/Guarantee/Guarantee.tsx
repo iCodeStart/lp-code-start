@@ -7,13 +7,26 @@ export function Guarantee() {
         <img src="./jobOffer1.png" alt="method" className="image" />
       </div>
       <div>
+        <h1 style={{ color: "white" }}>A responsabilidade é toda nossa!</h1>
+        <br />
         <div className="content-text">
-          A nossa promessa é forte, mas é{" "}
-          <span style={{ color: "white" }}>
-            totalmente baseada nos resultados desse método nos nossos alunos.
-          </span>
+          Se dentro de 1 ano você não conseguir o seu resultado, basta preencher
+          um formulário e nós devolveremos 100% do seu investimento.
         </div>
         <br />
+        <br />
+        <div>
+          Você tem tudo para conquistar a vaga dos seus sonhos seguindo o nosso
+          método.
+        </div>
+        <div>
+          {" "}
+          <br />
+          <br />
+          Aqui você terá um suporte único e diferenciado para que você passe com
+          certeza, ou nós perdemos dinheiro.
+        </div>
+        {/* <br />
         <div className="content-text">
           É bem simples. Se você fizer todo o treinamento dentro de 1 ano e não
           conseguir a sua vaga de emprego, vamos te dar uma mentoria individual
@@ -25,8 +38,8 @@ export function Guarantee() {
           <span style={{ color: "white" }}>
             nada mais justo que devolvermos 100% do que você investiu.
           </span>
-        </div>
-        <br />
+        </div> */}
+        {/* <br />
 
         <div className="content-text">
           Resumindo, você tem a garantia de que se fizer o treinamento completo
@@ -38,7 +51,7 @@ export function Guarantee() {
         <div className="content-text" style={{ color: "white" }}>
           Me responde com a maior sinceridade que puder. O que você tem a
           perder?
-        </div>
+        </div> */}
       </div>
     </div>
   );

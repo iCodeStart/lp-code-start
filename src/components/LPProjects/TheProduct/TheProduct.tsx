@@ -107,12 +107,15 @@ export function TheProduct() {
             Cada tentativa falha de dominar uma nova habilidade só aumenta a sua
             sensação de desânimo. E a ideia de desistir se torna cada vez mais
             presente. Você não está só.{" "}
-            <span>
-              <strong>Nós entendemos suas dores porque já estivemos ai.</strong>
+            <span>Nós entendemos suas dores porque já estivemos ai.</span>
+            <br />
+            <br />
+            <span style={{ color: "white" }}>
+              <strong style={{ color: "white" }}>
+                Chegou a hora de você NUNCA mais se sentir perdido!
+              </strong>
             </span>
-            <br />
-            <br />
-            <strong style={{ color: "white" }}>
+            {/* <strong style={{ color: "white" }}>
               A culpa por se sentir assim não é sua.{" "}
             </strong>
             A grande maioria dos cursos só colocam as aulas lá e querem que
@@ -124,7 +127,7 @@ export function TheProduct() {
             <strong style={{ color: "white" }}>
               Chega de ficar comprando cursos e mais cursos cansativos que você
               nunca termina.
-            </strong>
+            </strong> */}
           </h3>
           <img src="./jobOffer.png" alt="Produto Code Start" />
         </div>

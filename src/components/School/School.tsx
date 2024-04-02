@@ -24,8 +24,7 @@ export function School() {
             <div className="school_content-text-item">
               <img src="./icon-benefits.svg" alt="Benefícios Code Start" />
               <p>
-                Já imaginou você na frente do computador sem se preocupar com o
-                que vai estudar hoje?
+                Não fique mais preocupado com o que você vai estudar.
                 <br /> <br /> É simples, já validamos e deixamos EXATAMENTE o
                 que você precisa assistir <strong>todos os dias.</strong> <br />
                 <br />A sua produtividade vai aumentar de uma forma que você
