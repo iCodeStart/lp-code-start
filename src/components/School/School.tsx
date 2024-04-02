@@ -26,10 +26,10 @@ export function School() {
               <p>
                 Já imaginou você na frente do computador sem se preocupar com o
                 que vai estudar hoje?
-                <br /> É simples, já validamos e deixamos exatamente o que você
-                precisa assistir todos os dias. <br />
-                Imagina o quanto a sua produtividade e o seu tempo livre vão
-                aumentar.
+                <br /> <br /> É simples, já validamos e deixamos EXATAMENTE o
+                que você precisa assistir <strong>todos os dias.</strong> <br />
+                <br />A sua produtividade vai aumentar de uma forma que você
+                nunca imaginou!
               </p>
             </div>
           </div>
