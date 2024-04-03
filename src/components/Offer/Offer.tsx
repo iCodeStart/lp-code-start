@@ -97,6 +97,7 @@ export function Offer() {
                   QUERO ME INSCREVER
                 </button>
               </a>
+              <p>(VAGAS LIMITADAS)</p>
             </div>
             <img
               className="cards-accept"
