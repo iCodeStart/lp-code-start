@@ -7,7 +7,10 @@ export function Guarantee() {
         <img src="./jobOffer1.png" alt="method" className="image" />
       </div>
       <div>
-        <h1 style={{ color: "white" }}>A responsabilidade é toda nossa!</h1>
+        <h1 style={{ color: "white", textAlign: "center" }}>
+          A responsabilidade é toda nossa!
+        </h1>
+
         <br />
         <div className="content-text">
           Se dentro de 1 ano você não conseguir o seu resultado, basta preencher
