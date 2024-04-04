@@ -25,7 +25,7 @@ export function OurTrail() {
       {
         title: "Fase Mestre",
         description:
-          "Nessa etapa, você usará o nosso método A.A.P. para aplicar para entrevistas nas melhores empresas de tecnologia.",
+          "Nessa etapa, você usará o nosso método AAP para aplicar para entrevistas nas melhores empresas de tecnologia.",
       },
       {
         title: "Certificado",
