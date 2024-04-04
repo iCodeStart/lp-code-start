@@ -19,6 +19,7 @@ export function MethodItems() {
     "./103.jpg",
   ];
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [images, setImages] = useState([...initialImages, initialImages[0]]);
   const slideRef = useRef<HTMLDivElement>(null);
 
