@@ -6,7 +6,7 @@ export function Guarantee() {
       <div>
         <img src="./jobOffer1.png" alt="method" className="image" />
       </div>
-      <div>
+      <div className="content-context">
         <h1 style={{ color: "white", textAlign: "center" }}>
           A responsabilidade é toda nossa!
         </h1>
@@ -14,7 +14,10 @@ export function Guarantee() {
         <br />
         <div className="content-text">
           Se dentro de 1 ano você não conseguir o seu resultado, basta preencher
-          um formulário e nós devolveremos 100% do seu investimento.
+          um formulário e nós{" "}
+          <span style={{ color: "white" }}>
+            devolveremos 100% do seu investimento.
+          </span>
         </div>
         <br />
         <br />
