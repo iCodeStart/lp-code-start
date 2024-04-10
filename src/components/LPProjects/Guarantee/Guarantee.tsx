@@ -7,7 +7,7 @@ export function Guarantee() {
         <img src="./jobOffer1.png" alt="method" className="image" />
       </div>
       <div className="content-context">
-        <h1 style={{ color: "white", textAlign: "center" }}>
+        <h1 style={{ color: "white", textAlign: "center", lineHeight: "50px" }}>
           A responsabilidade é toda nossa!
         </h1>
 
