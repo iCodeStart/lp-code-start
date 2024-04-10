@@ -77,6 +77,7 @@ export function MethodItems() {
   ];
 
   // Adicionando a primeira imagem no final para suavizar o ciclo de reset
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [images, setImages] = useState([...initialImages, ...initialImages]);
   const slideRef = useRef<HTMLDivElement>(null);
 
