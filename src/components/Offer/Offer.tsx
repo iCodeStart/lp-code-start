@@ -80,14 +80,14 @@ export function Offer() {
                 apenas:
               </h3>
               <h1 className="card-offer__price">
-                <p style={{ fontSize: "15px" }}>12x de</p>59,90
+                <p style={{ fontSize: "15px" }}>12x de</p>29,90
               </h1>
               <p style={{ letterSpacing: "7.4px", color: "#D8D8D8" }}>
                 {" "}
-                ou 597 à vista
+                ou 297 à vista
               </p>
               <a
-                href={`https://pay.kiwify.com.br/orBxsQS${
+                href={`https://pay.kiwify.com.br/0UKSbBo${
                   srcParam ? `?src=${srcParam}` : ""
                 }`}
                 target="_blank"
@@ -97,7 +97,7 @@ export function Offer() {
                   QUERO ME INSCREVER
                 </button>
               </a>
-              <p>(ÚLTIMAS 7 VAGAS)</p>
+              <p>(ÚLTIMAS VAGAS)</p>
             </div>
             <img
               className="cards-accept"

@@ -43,7 +43,7 @@ export function Teachers() {
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <a
-          href={`https://pay.kiwify.com.br/orBxsQS${
+          href={`https://pay.kiwify.com.br/0UKSbBo${
             srcParam ? `?src=${srcParam}` : ""
           }`}
           target="_blank"
