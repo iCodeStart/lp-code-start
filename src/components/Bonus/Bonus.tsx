@@ -46,7 +46,7 @@ export function Bonus() {
       <div className="container">
         <div className="title-container">
           <Chip label="Bônus" />
-          <h1 className="section-title">Você vai ganhar</h1>
+          <h1 className="section-title">Você ainda vai ganhar</h1>
         </div>
         <div className="bonus__content">
           <div className="bonus_content_card">
