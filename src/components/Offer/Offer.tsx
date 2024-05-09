@@ -39,7 +39,7 @@ export function Offer() {
     function trackingClickButton(){
       ReactGA.event({
         category: "offer",
-        action: "clique-botao",
+        action: "clique-botao-offer",
         label: "quero-me-inscrever-inferior"
       });
     }

@@ -15,7 +15,7 @@ export function WorldProgram() {
   function trackingClickButton(){
     ReactGA.event({
       category: "world-program",
-      action: "clique-botao",
+      action: "clique-botao-wp",
       label: "quero-garantir-minha-vaga"
     });
   }
