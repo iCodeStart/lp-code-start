@@ -84,7 +84,7 @@ export function WorldProgram() {
         </div>
         {/* <Range /> */}
         <a href="#offer" className="btn-buy" onClick={trackingClickButton}>
-          <button onClick={trackingClickButton}>Quero garantir minha vaga 2</button>
+          <button onClick={trackingClickButton}>Quero garantir minha vaga</button>
         </a>
       </div>
     </div>
