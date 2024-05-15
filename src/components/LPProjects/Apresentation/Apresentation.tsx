@@ -31,11 +31,13 @@ export function Apresentation() {
             sua aprovação.
           </p>
           <p>
-          <a href="#offer" className="btn-buy" onClick={trackingClickButton}>
-            <button>
-              Quero ser programador
-            </button>
-          </a>
+          <div className="action-offer-apresentation">
+            <a href="#offer" className="btn-buy" onClick={trackingClickButton}>
+              <button>
+                Quero ser programador
+              </button>
+            </a>
+          </div>
           </p>
         </div>
         <svg
