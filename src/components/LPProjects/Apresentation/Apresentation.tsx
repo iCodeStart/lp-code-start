@@ -22,6 +22,9 @@ export function Apresentation() {
             Aqui nós <strong style={{ color: "white" }}>GARANTIMOS</strong> a
             sua aprovação.
           </p>
+          <p>
+            <button className="offer_button">Quero ser programador</button>
+          </p>
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"

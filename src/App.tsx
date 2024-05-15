@@ -36,7 +36,7 @@ function App() {
             {/* <Header /> */}
             <Apresentation />
             <div className="content-container">
-              <TheProduct />
+              {/* <TheProduct /> */}
               <WorldProgram />
               {/* <Benefits /> */}
               <IsForYou />

@@ -19,10 +19,7 @@ export function IsForYou() {
             </h3>
           </div>
           <div className="content-is-for-you-card">
-            <img
-              src="https://tyvo.com.br/wp-content/webp-express/webp-images/uploads/2024/03/icons8-digital-100.png.webp"
-              alt="Code Start"
-            />
+            <img src="availability-svgrepo-com.svg" alt="Code Start" />
             <h3>
               Está começando agora, mas a falta de foco te prejudica para
               continuar.
