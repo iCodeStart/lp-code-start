@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Chip } from "../Chip";
 import { LineOffer } from "./LineOffer";
+import ReactGA from "react-ga4";
 
 export function Offer() {
   const location = useLocation();
@@ -35,6 +36,13 @@ export function Offer() {
     courses.reduce((acc, course) => acc + course.price, 0) +
     additionalItems.reduce((acc, item) => acc + item.price, 0);
 
+    function trackingClickButton(){
+      ReactGA.event({
+        category: "offer",
+        action: "clique-botao-offer",
+        label: "quero-me-inscrever-inferior"
+      });
+    }
   return (
     <>
       <div className="offer" id="offer">
@@ -93,7 +101,7 @@ export function Offer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="offer_button" data-aos="fade-up">
+                <button className="offer_button" onClick={trackingClickButton}data-aos="fade-up">
                   QUERO ME INSCREVER
                 </button>
               </a>
