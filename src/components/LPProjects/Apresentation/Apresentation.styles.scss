@@ -23,7 +23,7 @@
   padding-block-end: 0px;
   padding-inline-start: 0px;
   padding-inline-end: 0px;
-
+  
   .overlay {
     position: absolute;
     top: 0;
@@ -35,6 +35,8 @@
   }
 
   &-container {
+    position: relative;
+    z-index: 2;
     margin-top: 400px;
     display: flex;
     flex-direction: column;

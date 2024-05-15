@@ -1,6 +1,14 @@
 import "./Apresentation.styles.scss";
+import ReactGA from "react-ga4";
 
 export function Apresentation() {
+  function trackingClickButton() {
+    ReactGA.event({
+      category: "apresentation",
+      action: "clique-botao-apresentation",
+      label: "quero-ser-programador",
+    });
+  }
   return (
     <div className="content-lp-project-apresentation">
       <div className="overlay"></div>
@@ -23,7 +31,11 @@ export function Apresentation() {
             sua aprovação.
           </p>
           <p>
-            <button className="offer_button">Quero ser programador</button>
+          <a href="#offer" className="btn-buy" onClick={trackingClickButton}>
+            <button>
+              Quero ser programador
+            </button>
+          </a>
           </p>
         </div>
         <svg
