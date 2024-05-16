@@ -618,6 +618,7 @@ button {
   padding: 20px;
   width: 90%;
   margin: 0 auto;
+  line-height: 35px;
 }
 
 @media (max-width: 768px) {
