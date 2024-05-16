@@ -25,7 +25,9 @@ export function Projects() {
       <div className="container">
         <div className="title-container">
           <Chip label="Projetos" />
-          <h1 className="section-title">Alguns dos projetos do método APP</h1>
+          <h1 className="section-title">
+            Alguns dos projetos que você vai desenvolver no método APP
+          </h1>
           <p className="section-subtitle">
             Projetos impossíveis de serem ignorados pelos recrutadores!
           </p>
