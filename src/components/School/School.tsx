@@ -22,14 +22,24 @@ export function School() {
               </strong>
             </p>
             <div className="school_content-text-item">
-              <img src="./icon-benefits.svg" alt="Benefícios Code Start" />
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/6rORoSMq17I?si=SmllzS9xiA6yHPOB"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              {/* <img src="./icon-benefits.svg" alt="Benefícios Code Start" />
               <p>
                 Não fique mais preocupado com o que você vai estudar.
                 <br /> <br /> É simples, já validamos e deixamos EXATAMENTE o
                 que você precisa assistir <strong>todos os dias.</strong> <br />
                 <br />A sua produtividade vai aumentar de uma forma que você
                 nunca imaginou!
-              </p>
+              </p> */}
             </div>
           </div>
           <MethodItems />
