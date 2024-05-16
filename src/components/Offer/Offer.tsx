@@ -1,9 +1,9 @@
 import AOS from "aos";
 import { useEffect } from "react";
+import ReactGA from "react-ga4";
 import { useLocation } from "react-router-dom";
 import { Chip } from "../Chip";
 import { LineOffer } from "./LineOffer";
-import ReactGA from "react-ga4";
 
 export function Offer() {
   const location = useLocation();
@@ -36,13 +36,44 @@ export function Offer() {
     courses.reduce((acc, course) => acc + course.price, 0) +
     additionalItems.reduce((acc, item) => acc + item.price, 0);
 
-    function trackingClickButton(){
-      ReactGA.event({
-        category: "offer",
-        action: "clique-botao-offer",
-        label: "quero-me-inscrever-inferior"
-      });
-    }
+  function trackingClickButton() {
+    ReactGA.event({
+      category: "offer",
+      action: "clique-botao-offer",
+      label: "quero-me-inscrever-inferior",
+    });
+  }
+
+  const obterDatas = () => {
+    const hoje = new Date();
+    const ontem = new Date(hoje);
+    const anteontem = new Date(hoje);
+
+    ontem.setDate(hoje.getDate() - 1);
+    anteontem.setDate(hoje.getDate() - 2);
+
+    const diaHoje = hoje.getDate();
+    const diaOntem = ontem.getDate();
+    const diaAnteontem = anteontem.getDate();
+
+    const meses = [
+      "janeiro",
+      "fevereiro",
+      "março",
+      "abril",
+      "maio",
+      "junho",
+      "julho",
+      "agosto",
+      "setembro",
+      "outubro",
+      "novembro",
+      "dezembro",
+    ];
+    const mesAtual = meses[hoje.getMonth()];
+
+    return `${diaAnteontem}, ${diaOntem} e ${diaHoje} de ${mesAtual}`;
+  };
   return (
     <>
       <div className="offer" id="offer">
@@ -101,11 +132,13 @@ export function Offer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="offer_button" onClick={trackingClickButton}data-aos="fade-up">
+                <button className="offer_button" onClick={trackingClickButton}>
                   QUERO ME INSCREVER
                 </button>
               </a>
-              <p>(ÚLTIMAS VAGAS)</p>
+              <p>
+                *Válido para os dias: <strong>{obterDatas()}</strong>
+              </p>
             </div>
             <img
               className="cards-accept"

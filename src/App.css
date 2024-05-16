@@ -613,6 +613,13 @@ button {
   display: none;
 }
 
+.retangulo {
+  border: 2px solid white;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   .header {
     background: url("../public/background-header-mobile.svg") no-repeat center;
@@ -748,5 +755,9 @@ button {
   }
   .section-title {
     font-size: 26px;
+  }
+  .section-title1 {
+    font-size: 22px;
+    text-align: center;
   }
 }
