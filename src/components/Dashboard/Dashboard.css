@@ -1,0 +1,43 @@
+.container {
+  margin-top: 5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  flex: 1 0 100%;
+  max-width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .col {
+    flex: 1 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.count {
+  font-size: 2rem;
+  font-weight: bold;
+}
