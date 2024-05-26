@@ -1,4 +1,5 @@
 import { Chip } from "../Chip";
+import Dashboard from "../Dashboard/Dashboard";
 import { MethodItems } from "../LPProjects";
 import "./School.styles.scss";
 
@@ -21,6 +22,9 @@ export function School() {
                 mesmo que você não tenha muito tempo para estudar.
               </strong>
             </p>
+            <h2 className="school_content-text-title">
+              Assista o vídeo para conhecer a plataforma!
+            </h2>
             <div className="school_content-text-item">
               <iframe
                 width="560"
@@ -41,6 +45,7 @@ export function School() {
                 nunca imaginou!
               </p> */}
             </div>
+            <Dashboard />
           </div>
           <MethodItems />
           {/* <div className="school_content_code-start">
