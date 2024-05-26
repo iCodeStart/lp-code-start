@@ -1,6 +1,6 @@
 import { Chip } from "../Chip";
-import Dashboard from "../Dashboard/Dashboard";
 import { MethodItems } from "../LPProjects";
+import { Dashboard } from "../LPProjects/Dashboard";
 import "./School.styles.scss";
 
 export function School() {
