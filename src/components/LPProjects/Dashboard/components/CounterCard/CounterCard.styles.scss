@@ -1,0 +1,17 @@
+.counter-card {
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+
+    &-body{
+        padding: 2rem;
+    }
+    &-icon{
+        font-size: 3rem;
+    }
+    &-count{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
