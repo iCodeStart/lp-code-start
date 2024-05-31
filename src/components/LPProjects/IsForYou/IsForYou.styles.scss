@@ -53,6 +53,7 @@
     padding-inline-end: 50px;
     transition: transform 1s ease;
     width: 200px;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
     & img {
       width: 60px;
     }
