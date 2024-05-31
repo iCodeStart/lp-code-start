@@ -1,5 +1,6 @@
 import AOS from "aos";
 import { useEffect } from "react";
+import "./Teacher.styles.scss";
 interface TeacherProps {
   img: string;
   name: string;
@@ -18,7 +19,7 @@ export function Teacher({ img, name, description }: TeacherProps) {
         alt="Professor Code Start"
         style={{
           display: "block",
-          maxWidth:"400px",
+          maxWidth: "400px",
           margin: "30px auto",
           borderRadius: "10px",
           boxShadow: "inset 0 0 10px #000, inset 0 0 20px #000",
@@ -35,14 +36,11 @@ export function Teacher({ img, name, description }: TeacherProps) {
           e.currentTarget.style.boxShadow = "0 8px 24px rgba(0, 0, 0, 0.2)";
         }}
       />
-      <h1
-        style={{
-          textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
-        }}
-      >
-        {name}
-      </h1>
-      <h2 dangerouslySetInnerHTML={{ __html: description }} style={{ textAlign: 'center'}} />
+      <h1 className="btn-shine">{name}</h1>
+      <h2
+        dangerouslySetInnerHTML={{ __html: description }}
+        style={{ textAlign: "center" }}
+      />
     </div>
   );
 }
