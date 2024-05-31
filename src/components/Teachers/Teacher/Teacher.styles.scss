@@ -1,3 +1,28 @@
+.teacher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.teacher img {
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px #000, inset 0 0 20px #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+}
+
+.teacher img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
 .btn-shine {
   display: inline-block;
   padding: 12px 48px;
@@ -8,7 +33,6 @@
   -webkit-text-fill-color: transparent;
   animation: shine 5s infinite linear;
   animation-fill-mode: forwards;
-  -webkit-text-size-adjust: none;
   font-weight: 600;
   font-size: 36px;
   text-decoration: none;
@@ -30,58 +54,27 @@
   }
 }
 
-.teacher {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.teacher img {
-  display: block;
-  max-width: 100%;
-  margin: 30px auto;
-  border-radius: 10px;
-  box-shadow: inset 0 0 10px #000, inset 0 0 20px #000;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  mix-blend-mode: multiply;
-  object-fit: cover;
-}
-
-.teacher img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-}
-
-.teacher h1 {
-  margin-top: 20px;
-}
-
-.teacher h2 {
-  text-align: center;
-  margin: 10px 0;
-}
-
-// Responsividade
 @media (max-width: 768px) {
-  .btn-shine {
-    font-size: 36px;
-    padding: 10px 36px;
-    animation: shine 5s infinite linear;
+  .teacher img {
+    width: 100%;
+    max-width: none;
+    border-radius: 0;
   }
 
-  .teacher img {
-    max-width: 90%;
+  .btn-shine {
+    font-size: 30px;
+    padding: 10px 36px;
   }
+
   @keyframes shine {
     0% {
       background-position: 0;
     }
     60% {
-      background-position: 160px;
+      background-position: 170px;
     }
     100% {
-      background-position: 160px;
+      background-position: 170px;
     }
   }
 }
@@ -93,6 +86,6 @@
   }
 
   .teacher img {
-    max-width: 80%;
+    max-width: 100%;
   }
 }

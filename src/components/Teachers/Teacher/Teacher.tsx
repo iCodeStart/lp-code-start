@@ -1,17 +1,20 @@
 import AOS from "aos";
 import { useEffect } from "react";
 import "./Teacher.styles.scss";
+
 interface TeacherProps {
   img: string;
   name: string;
   description: string;
 }
+
 export function Teacher({ img, name, description }: TeacherProps) {
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
   }, []);
+
   return (
     <div className="teacher" data-aos="fade-up">
       <img
@@ -19,13 +22,13 @@ export function Teacher({ img, name, description }: TeacherProps) {
         alt="Professor Code Start"
         style={{
           display: "block",
-          maxWidth: "400px",
-          margin: "30px auto",
+          width: "500px",
+          margin: "10px auto",
           borderRadius: "10px",
           boxShadow: "inset 0 0 10px #000, inset 0 0 20px #000",
           transition: "transform 0.3s ease, boxShadow 0.3s ease",
           mixBlendMode: "multiply",
-          objectFit: "inherit",
+          objectFit: "cover",
         }}
         onMouseOver={(e) => {
           e.currentTarget.style.transform = "scale(1.03)";
