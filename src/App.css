@@ -509,10 +509,10 @@ button {
 .connecting-line {
   position: absolute;
   top: 120px;
-  left: 18px;
+  left: 25px;
   transform: translateX(-50%);
   width: 2px;
-  background-color: #3498db;
+  background-color: #00bcd3;
   transition: height 0.5s;
   z-index: 1;
 }

@@ -6,13 +6,11 @@ export function OurTrail() {
   const arrayInfoTrail = useMemo(
     () => [
       {
-        // title: "Preparação",
         title: "Fase Start",
         description:
           "Nessa fase você já terá seus primeiros projetos feitos e publicados.",
       },
       {
-        // title: "Crescimento técnico",
         title: "Fase Alicerce",
         description:
           "Nessa fase 2 você terá criado projetos mais robustos e aprendido a criar seus próprios projetos sozinho!",

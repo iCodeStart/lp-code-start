@@ -36,21 +36,10 @@ export function School() {
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
-              {/* <img src="./icon-benefits.svg" alt="Benefícios Code Start" />
-              <p>
-                Não fique mais preocupado com o que você vai estudar.
-                <br /> <br /> É simples, já validamos e deixamos EXATAMENTE o
-                que você precisa assistir <strong>todos os dias.</strong> <br />
-                <br />A sua produtividade vai aumentar de uma forma que você
-                nunca imaginou!
-              </p> */}
             </div>
             <Dashboard />
           </div>
           <MethodItems />
-          {/* <div className="school_content_code-start">
-            <img src="./ipad-code-start.png" alt="Comunidade Code Start" />
-          </div> */}
         </div>
       </div>
     </div>
