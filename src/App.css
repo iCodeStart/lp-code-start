@@ -508,7 +508,7 @@ button {
 }
 .connecting-line {
   position: absolute;
-  top: 120px;
+  top: 150px;
   left: 25px;
   transform: translateX(-50%);
   width: 2px;
