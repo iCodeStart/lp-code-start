@@ -31,7 +31,7 @@ export function Bonus() {
       img: "/posicionamento1.png",
       title: "Posicionamento de excelência",
       subtitle:
-        "Tenha um posicionamento estratégico, com a especilista em LinkedIn, e acelere em até 2x a conquista do seu primeiro emprego",
+        "Tenha um posicionamento estratégico, com a especialista em LinkedIn, e acelere em até 2x a conquista do seu primeiro emprego",
       // "Descubra todos os segredos e tenha grande vantagem sobre os seus concorrentes com um posicionamento de excelência com a especialista em LinkedIn",
     },
     // {

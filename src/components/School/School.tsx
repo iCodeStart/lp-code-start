@@ -10,7 +10,7 @@ export function School() {
         <div className="title-container">
           <Chip label="Módulos" />
           <h1 className="section-title">
-            Veja tudo que você vai ter acesso no APP
+            Veja tudo que você vai ter acesso no AAP
           </h1>
         </div>
         <div className="school__content">
