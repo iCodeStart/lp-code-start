@@ -627,9 +627,13 @@ button {
 .retangulo {
   border: 2px solid white;
   padding: 20px;
-  width: 90%;
+  text-align: center;
   margin: 0 auto;
   line-height: 35px;
+}
+.guarantee-img{
+  width: 100px;
+  margin: 10px 0;
 }
 
 @media (max-width: 768px) {
