@@ -631,6 +631,10 @@ button {
   margin: 0 auto;
   line-height: 35px;
 }
+.guarantee-img{
+  width: 100px;
+  margin: 10px 0;
+}
 
 @media (max-width: 768px) {
   .header {

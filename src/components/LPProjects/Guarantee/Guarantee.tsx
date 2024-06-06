@@ -14,6 +14,7 @@ export function Guarantee() {
       <div className="retangulo">
         <h1 style={{ color: "#D8D8D8" }}>
           NOSSA PROPOSTA: <br />
+          <img className="guarantee-img" src="https://i.imgur.com/r29LD5Y.png" alt="Code Start"/>
           <br />
           <span style={{ color: "#fff" }}>UMA GARANTIA DE</span>{" "}
           <span style={{ color: "#00bcd3" }}>365 DIAS</span>
