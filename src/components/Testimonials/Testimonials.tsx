@@ -62,22 +62,22 @@ export function Testimonials() {
   const testimonials = [
     {
       icon: "💰",
-      text: "Ah, tenho medo de gastar meu dinheiro atoa...",
+      text: "Ah, tenho medo de gastar meu dinheiro atoa",
       img: "./novo-depoimento-code-start-1.jpeg",
     },
     {
       icon: "🎯",
-      text: "Ah, tenho medo de não conseguir um emprego...",
+      text: "Ah, tenho medo de não conseguir um emprego",
       img: "./novo-depoimento-code-start-2.jpeg",
     },
     {
       icon: "📚",
-      text: "Ah, eu já sou mais velho e não consigo aprender programação...",
+      text: "Ah, eu já sou mais velho e não consigo aprender programação",
       img: "./novo-depoimento-code-start-3.jpeg",
     },
     {
       icon: "🧑‍💻",
-      text: "Ah, mas eu não sei se vou ter suporte no meu aprendizado...",
+      text: "Ah, mas eu não sei se vou ter suporte no meu aprendizado",
       videoUrl: "https://www.youtube.com/embed/OO_ZbZ_s_ac",
     },
   ];
