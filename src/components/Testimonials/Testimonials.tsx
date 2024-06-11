@@ -1,18 +1,18 @@
 // import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Testimonials.styles.scss";
+import "slick-carousel/slick/slick.css";
 import { Chip } from "../Chip";
+import "./Testimonials.styles.scss";
 
 const TestimonialCard = ({ icon, text, img, videoUrl }: any) => (
   <div className="alan-card">
     <div className="alan-intern-card">
       <div className="alan-icon">{icon}</div>
-      <div className="alan-text">{text}</div>
+      <div className="alan-text">"{text}..."</div>
     </div>
 
     {img ? (
-      <img src={img} className="alan-img" alt="depoimento-code-start"/>
+      <img src={img} className="alan-img" alt="depoimento-code-start" />
     ) : (
       <div className="alan-video">
         <iframe
