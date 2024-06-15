@@ -85,8 +85,8 @@ export function Testimonials() {
     <>
       <div className="container">
         <div className="title-container">
-          <Chip label="Depoimentos" />
-          <h1 className="section-title">Depoimentos Code Start</h1>
+          <Chip label="Chega de desculpas" />
+          <h1 className="section-title">"Ah, mas eu..."</h1>
         </div>
       </div>
       <div className="alan-testimonials">
