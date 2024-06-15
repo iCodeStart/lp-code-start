@@ -77,7 +77,7 @@ export function Testimonials() {
     },
     {
       icon: "🧑‍💻",
-      text: "Ah, mas eu não sei se vou ter suporte no meu aprendizado",
+      text: "Ah, eu estou fazendo transição de carreira e não sei se vou conseguir aprender",
       videoUrl: "https://www.youtube.com/embed/OO_ZbZ_s_ac",
     },
   ];
