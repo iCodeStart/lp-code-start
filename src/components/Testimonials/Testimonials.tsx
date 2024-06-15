@@ -1,4 +1,3 @@
-// import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { Chip } from "../Chip";
@@ -30,35 +29,6 @@ const TestimonialCard = ({ icon, text, img, videoUrl }: any) => (
 );
 
 export function Testimonials() {
-  // const settings = {
-  //   dots: false,
-  //   infinite: true,
-  //   slidesToShow: 5,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   speed: 2000,
-  //   autoplaySpeed: 2000,
-  //   cssEase: "linear",
-  //   responsive: [
-  //     {
-  //       breakpoint: 980,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //   ],
-  // };
-
-  // const imagesTestimonials = [
-  //   "./depoimento-6.jpeg",
-  //   "./depoimento-5.jpeg",
-  //   "./depoimento-4.jpeg",
-  //   "./depoimento-1.jpeg",
-  //   "./depoimento-2.jpeg",
-  //   "./depoimento-3.jpeg",
-  // ];
-
   const testimonials = [
     {
       icon: "💰",
@@ -94,33 +64,6 @@ export function Testimonials() {
           <TestimonialCard key={index} {...testimonial} />
         ))}
       </div>
-      {/* <div className="testimonials-container">
-        <div className="slider-container">
-          <Slider {...settings}>
-            {imagesTestimonials.map((item, index) => {
-              return (
-                <div key={index + item}>
-                  <img
-                    src={item}
-                    alt="img"
-                    className="slide-image-carousel-testimonial-items"
-                  />
-                </div>
-              );
-            })}
-          </Slider>
-        </div>
-      </div> */}
     </>
   );
-  // return (
-  //   <div className="alan-container">
-  //     <h2 className="alan-header">Ah Bia, mas..."</h2>
-  //     <div className="alan-testimonials">
-  //       {testimonials.map((testimonial, index) => (
-  //         <TestimonialCard key={index} {...testimonial} />
-  //       ))}
-  //     </div>
-  //   </div>
-  // );
 }
