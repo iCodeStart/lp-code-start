@@ -46,9 +46,9 @@ export function Testimonials() {
       img: "./novo-depoimento-code-start-3.jpeg",
     },
     {
-      icon: "🧑‍💻",
-      text: "Ah, eu estou fazendo transição de carreira e não sei se vou conseguir aprender",
-      videoUrl: "https://www.youtube.com/embed/OO_ZbZ_s_ac",
+      icon: "👨‍👩‍👧‍👦",
+      text: "Ah, eu tenho filho e trabalho fora, não dá mais tempo de estudar",
+      videoUrl: "https://www.youtube.com/embed/s7fjP6fY2NI",
     },
   ];
   return (
