@@ -7,6 +7,10 @@ export function Teachers() {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const srcParam = params.get("src");
+  const utmSource = params.get("utm_source");
+  const utmMedium = params.get("utm_medium");
+  const utmCampaign = params.get("utm_campaign");
+  const utmContent = params.get("utm_content");
   const arrayTeachers = [
     {
       img: "./teacherAlan1.jpeg",
@@ -43,9 +47,7 @@ export function Teachers() {
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <a
-          href={`https://pay.kiwify.com.br/0UKSbBo${
-            srcParam ? `?src=${srcParam}` : ""
-          }`}
+          href={`https://pay.kiwify.com.br/0UKSbBo?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
           target="_blank"
           rel="noreferrer"
         >
