@@ -1,18 +1,17 @@
-// import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Testimonials.styles.scss";
+import "slick-carousel/slick/slick.css";
 import { Chip } from "../Chip";
+import "./Testimonials.styles.scss";
 
 const TestimonialCard = ({ icon, text, img, videoUrl }: any) => (
   <div className="alan-card">
     <div className="alan-intern-card">
       <div className="alan-icon">{icon}</div>
-      <div className="alan-text">{text}</div>
+      <div className="alan-text">"{text}..."</div>
     </div>
 
     {img ? (
-      <img src={img} className="alan-img" alt="depoimento-code-start"/>
+      <img src={img} className="alan-img" alt="depoimento-code-start" />
     ) : (
       <div className="alan-video">
         <iframe
@@ -30,43 +29,14 @@ const TestimonialCard = ({ icon, text, img, videoUrl }: any) => (
 );
 
 export function Testimonials() {
-  // const settings = {
-  //   dots: false,
-  //   infinite: true,
-  //   slidesToShow: 5,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   speed: 2000,
-  //   autoplaySpeed: 2000,
-  //   cssEase: "linear",
-  //   responsive: [
-  //     {
-  //       breakpoint: 980,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //   ],
-  // };
-
-  // const imagesTestimonials = [
-  //   "./depoimento-6.jpeg",
-  //   "./depoimento-5.jpeg",
-  //   "./depoimento-4.jpeg",
-  //   "./depoimento-1.jpeg",
-  //   "./depoimento-2.jpeg",
-  //   "./depoimento-3.jpeg",
-  // ];
-
   const testimonials = [
     {
-      icon: "🎯",
+      icon: "💰",
       text: "Ah, tenho medo de gastar meu dinheiro atoa",
       img: "./novo-depoimento-code-start-1.jpeg",
     },
     {
-      icon: "💰",
+      icon: "🎯",
       text: "Ah, tenho medo de não conseguir um emprego",
       img: "./novo-depoimento-code-start-2.jpeg",
     },
@@ -78,15 +48,15 @@ export function Testimonials() {
     {
       icon: "👨‍👩‍👧‍👦",
       text: "Ah, eu tenho filho e trabalho fora, não dá mais tempo de estudar",
-      videoUrl: "https://www.youtube.com/embed/Ofd8NcR0Y2c?si=hmjGEbYyI3xf6Hne",
+      videoUrl: "https://www.youtube.com/embed/s7fjP6fY2NI",
     },
   ];
   return (
     <>
       <div className="container">
         <div className="title-container">
-          <Chip label="Depoimentos" />
-          <h1 className="section-title">Depoimentos Code Start</h1>
+          <Chip label="Chega de desculpas" />
+          <h1 className="section-title">"Ah, mas eu..."</h1>
         </div>
       </div>
       <div className="alan-testimonials">
@@ -94,33 +64,6 @@ export function Testimonials() {
           <TestimonialCard key={index} {...testimonial} />
         ))}
       </div>
-      {/* <div className="testimonials-container">
-        <div className="slider-container">
-          <Slider {...settings}>
-            {imagesTestimonials.map((item, index) => {
-              return (
-                <div key={index + item}>
-                  <img
-                    src={item}
-                    alt="img"
-                    className="slide-image-carousel-testimonial-items"
-                  />
-                </div>
-              );
-            })}
-          </Slider>
-        </div>
-      </div> */}
     </>
   );
-  // return (
-  //   <div className="alan-container">
-  //     <h2 className="alan-header">Ah Bia, mas..."</h2>
-  //     <div className="alan-testimonials">
-  //       {testimonials.map((testimonial, index) => (
-  //         <TestimonialCard key={index} {...testimonial} />
-  //       ))}
-  //     </div>
-  //   </div>
-  // );
 }

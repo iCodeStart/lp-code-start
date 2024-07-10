@@ -25,6 +25,7 @@ import {
 } from "./components/LPProjects";
 import { ProjectsOffer } from "./components/LPProjects/ProjectsOffer";
 import { Whatsapp } from "./components/Whatsapp";
+import { Reviews } from "./components/Reviews";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
               <Guarantee />
               <Offer />
               <Bonus />
+              <Reviews/>
               <Teachers />
               <FAQ />
               <Footer />
