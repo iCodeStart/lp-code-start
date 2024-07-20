@@ -1,8 +1,7 @@
-import React from 'react';
 import { Chip } from "../Chip";
+import LazyLoadVideo from "../LazyLoadVideo/LazyLoadVideo";
 import { MethodItems } from "../LPProjects";
 import { Dashboard } from "../LPProjects/Dashboard";
-import LazyLoadVideo from '../LazyLoadVideo/LazyLoadVideo';
 import "./School.styles.scss";
 
 export function School() {
