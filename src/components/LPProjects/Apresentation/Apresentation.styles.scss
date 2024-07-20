@@ -1,6 +1,6 @@
 .content-lp-project-apresentation {
   position: relative;
-  background-color: #000000;
+  background-color: #000;
   background-image: url("../../../../public/teachers10.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -10,28 +10,18 @@
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
-  container-widget-width: 100%;
-  container-widget-height: initial;
-  container-widget-flex-grow: 0;
-  container-widget-align-self: initial;
-  background-transition: 0.3s;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-block-start: 0px;
-  padding-block-end: 0px;
-  padding-inline-start: 0px;
-  padding-inline-end: 0px;
-  
+  width: 100%;
+  transition: background 0.3s;
+  margin: 0;
+  padding: 0;
+
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    //background-color: #00000050;
-    z-index: 1; /* Garante que a overlay fique acima do conteúdo */
+    z-index: 1;
   }
 
   &-container {
@@ -46,27 +36,26 @@
   }
 
   &-product-name {
-    padding: 10px 40px 10px 40px;
+    padding: 10px 40px;
     background-color: #ffffff12;
-    border-style: solid;
-    border-color: #a5a5a5;
-    border-radius: 25px 25px 25px 25px;
+    border: solid 1px #a5a5a5;
+    border-radius: 25px;
   }
 
   &-box-texts {
     max-width: 800px;
     text-align: center;
 
-    & h1 {
-      color: #ffffff;
+    h1 {
+      color: #fff;
       font-family: "Hanken Grotesk", Sans-serif;
       font-size: 55px;
       font-weight: 800;
       line-height: 1.1em;
     }
 
-    & p {
-      color: #cccccc;
+    p {
+      color: #ccc;
       font-family: "Hanken Grotesk", Sans-serif;
       font-size: 25px;
       font-weight: 500;
@@ -76,37 +65,33 @@
 }
 
 @media (max-width: 768px) {
-
-  .action-offer-apresentation{
+  .action-offer-apresentation {
     margin-top: 3rem;
   }
   .content-lp-project-apresentation {
     background-position: top center;
-    padding: 0px 30px;
+    padding: 0 30px;
     min-height: 70vh;
+
     &-product-name {
-      padding: 8px 25px 8px 25px;
-      background-color: #ffffff12;
-      border-style: solid;
-      border-color: #a5a5a5;
-      border-radius: 25px 25px 25px 25px;
+      padding: 8px 25px;
       margin-top: -300px;
       border-width: 1px;
     }
-    & h1 {
-      color: #ffffff;
-      font-family: "Hanken Grotesk", Sans-serif;
+
+    h1 {
       font-size: 24px;
-      font-weight: 800;
-      line-height: 1.1em;
     }
 
-    & p {
+    p {
       color: #fff;
-      font-family: "Hanken Grotesk", Sans-serif;
       font-size: 14px;
-      font-weight: 500;
-      line-height: 1.3em;
     }
   }
+}
+
+.optimized-svg {
+  width: 70px;
+  height: 70px;
+  transform: translate3d(0, 0, 0);
 }
