@@ -22,7 +22,7 @@ export function Bonus() {
         "Ganhe dinheiro como programador mesmo sendo um completo iniciante.",
     },
     {
-      img: "/posicionamento1.png",
+      img: "/posicionamento1.webp",
       title: "Posicionamento de excelência",
       subtitle:
         "Tenha um posicionamento estratégico, com a especialista em LinkedIn, e acelere em até 2x a conquista do seu primeiro emprego",

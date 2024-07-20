@@ -149,7 +149,7 @@ export function Offer() {
               alt="Cartões aceitos Code Start"
             />
             <div className="guarantee">
-              <img src="./seven-days.png" alt="Garantia de 7 dias" />
+              <img src="./seven-days.webp" alt="Garantia de 7 dias" />
               <p>
                 Você terá sete dias para experimentar o treinamento sem nenhum
                 compromisso. Se nesse período você achar que tudo isso não vale
