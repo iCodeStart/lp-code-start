@@ -11,13 +11,13 @@ export function FullstackTrail() {
         <div className="fullstack-trail__content">
           <div className="fullstack-desktop">
             <img
-              src="/our-trail-fullstack.png"
+              src="/our-trail-fullstack.webp"
               alt="Trilha fullstack Code Start"
             />
           </div>
           <div className="fullstack-mobile">
             <img
-              src="/our-trail-fullstack-mobile.png"
+              src="/our-trail-fullstack-mobile.webp"
               alt="Trilha fullstack Code Start"
             />
           </div>
