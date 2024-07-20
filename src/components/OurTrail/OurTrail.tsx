@@ -71,7 +71,6 @@ export function OurTrail() {
     if (index === 1) return "/number2.svg";
     if (index === 2) return "/number3.svg";
     if (index === 3) return "/number4.svg";
-    //return "./number1.svg";
     return "./certificate.svg";
   };
 

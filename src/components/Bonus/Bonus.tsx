@@ -21,25 +21,12 @@ export function Bonus() {
       subtitle:
         "Ganhe dinheiro como programador mesmo sendo um completo iniciante.",
     },
-    // {
-    //   img: "/interview.png",
-    //   title: "SIMULAÇÃO DE ENTREVISTAS TÉCNICAS",
-    //   subtitle:
-    //     "Oportunidade do aluno testar seus conhecimentos para tentar ser aprovado em uma vaga de emprego.",
-    // },
     {
       img: "/posicionamento1.png",
       title: "Posicionamento de excelência",
       subtitle:
         "Tenha um posicionamento estratégico, com a especialista em LinkedIn, e acelere em até 2x a conquista do seu primeiro emprego",
-      // "Descubra todos os segredos e tenha grande vantagem sobre os seus concorrentes com um posicionamento de excelência com a especialista em LinkedIn",
     },
-    // {
-    //   img: "/projects1.png",
-    //   title: "ACESSO AOS PROJETOS JÁ DESENVOLVIDOS",
-    //   subtitle:
-    //     "Acesso a todas aulas e códigos dos projetos práticos desenvolvidos em turmas anteriores.",
-    // },
   ];
   return (
     <div className="bonus">

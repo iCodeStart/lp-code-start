@@ -575,11 +575,6 @@ button {
 }
 
 @media (max-width: 768px) {
-  .header {
-    background: url("../public/background-header-mobile.svg") no-repeat center;
-    height: 90vh;
-  }
-
   .hidden-mobile {
     display: none;
   }
