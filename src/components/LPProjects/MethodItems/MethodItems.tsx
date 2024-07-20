@@ -3,20 +3,20 @@ import "./MethodItems.styles.scss";
 
 export function MethodItems() {
   const initialImages = [
-    "./1.jpg",
-    "./3.jpg",
-    "./4.jpg",
-    "./5.jpg",
-    "./6.jpg",
-    "./88.jpg",
-    "./90.jpg",
-    "./89.jpg",
-    "./95.jpg",
-    "./96.jpg",
-    "./97.jpg",
-    "./98.jpg",
-    "./102.jpg",
-    "./103.jpg",
+    "./1.webp",
+    "./3.webp",
+    "./4.webp",
+    "./5.webp",
+    "./6.webp",
+    "./88.webp",
+    "./90.webp",
+    "./89.webp",
+    "./95.webp",
+    "./96.webp",
+    "./97.webp",
+    "./98.webp",
+    "./102.webp",
+    "./103.webp",
   ];
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -30,7 +30,6 @@ export function MethodItems() {
         const totalWidth =
           slideRef.current.scrollWidth - slideRef.current.clientWidth;
         currentIndex += 1;
-
 
         if (currentIndex >= totalWidth) {
           currentIndex = 0;
