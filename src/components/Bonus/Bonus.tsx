@@ -10,13 +10,13 @@ export function Bonus() {
         "Acesso a 12 meses de conteúdos exclusivos e valiosos para você acelerar o seu aprendizado ainda mais.",
     },
     {
-      img: "/first1.png",
+      img: "/first1.webp",
       title: "Seu primeiro mês",
       subtitle:
         "Tudo que você precisa saber para se destacar no seu primeiro mês na empresa.",
     },
     {
-      img: "/codeMoney.png",
+      img: "/codeMoney.webp",
       title: "Recupere o seu investimento",
       subtitle:
         "Ganhe dinheiro como programador mesmo sendo um completo iniciante.",

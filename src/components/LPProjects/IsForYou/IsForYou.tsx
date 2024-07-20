@@ -13,7 +13,7 @@ export function IsForYou() {
         </div>
         <div className="content-is-for-you-cards">
           <div className="content-is-for-you-card">
-            <img src="./lampada.png" alt="Code Start" />
+            <img src="./lampada.webp" alt="Code Start" />
             <h3>
               Está querendo começar a programar, e não sabe por onde começar.
             </h3>
@@ -26,7 +26,7 @@ export function IsForYou() {
             </h3>
           </div>
           <div className="content-is-for-you-card">
-            <img src="./transicao.png" alt="Code Start" />
+            <img src="./transicao.webp" alt="Code Start" />
             <h3>
               Quer fazer transição de carreira e precisa conciliar o seu
               trabalho com os estudos
