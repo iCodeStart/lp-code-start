@@ -4,7 +4,7 @@ import { LineBonus } from "./LineBonus";
 export function Bonus() {
   const arrayBonus = [
     {
-      img: "/closeFriends.png",
+      img: "/closeFriends.webp",
       title: "Close friends",
       subtitle:
         "Acesso a 12 meses de conteúdos exclusivos e valiosos para você acelerar o seu aprendizado ainda mais.",

@@ -10,7 +10,7 @@ export function Whatsapp() {
   };
   return (
     <div className="whatsapp-icon" onClick={handleButtonClick}>
-      <img className="whatsapp-image" src="/whatsapp1.png" alt="WhatsApp" />
+      <img className="whatsapp-image" src="/whatsapp1.webp" alt="WhatsApp" />
     </div>
   );
 }

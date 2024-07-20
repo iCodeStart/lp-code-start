@@ -1,9 +1,9 @@
 import AOS from "aos";
 import { useEffect } from "react";
+import ReactGA from "react-ga4";
 import { Chip } from "../Chip";
 import { WorldProgramInfo } from "./components";
 import "./WorldProgram.style.scss";
-import ReactGA from "react-ga4";
 
 export function WorldProgram() {
   useEffect(() => {
@@ -12,11 +12,11 @@ export function WorldProgram() {
     });
   }, []);
 
-  function trackingClickButton(){
+  function trackingClickButton() {
     ReactGA.event({
       category: "world-program",
       action: "clique-botao-wp",
-      label: "quero-garantir-minha-vaga"
+      label: "quero-garantir-minha-vaga",
     });
   }
   const arrayTexts = [
@@ -43,7 +43,7 @@ export function WorldProgram() {
         <h1 className="section-title">A profissão do futuro</h1>
         <div className="world-program-list_img">
           <img
-            src="/vagas-abertas1.jpeg"
+            src="/vagas-abertas1.webp"
             alt="Vagas abertas programador Code Start"
           />
         </div>
@@ -84,7 +84,9 @@ export function WorldProgram() {
         </div>
         {/* <Range /> */}
         <a href="#offer" className="btn-buy" onClick={trackingClickButton}>
-          <button onClick={trackingClickButton}>Quero garantir minha vaga</button>
+          <button onClick={trackingClickButton}>
+            Quero garantir minha vaga
+          </button>
         </a>
       </div>
     </div>
