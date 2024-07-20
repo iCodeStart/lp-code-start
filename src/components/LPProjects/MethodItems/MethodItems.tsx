@@ -19,6 +19,7 @@ export function MethodItems() {
     "./103.jpg",
   ];
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [images, setImages] = useState([...initialImages, ...initialImages]);
   const slideRef = useRef<HTMLDivElement>(null);
 
@@ -29,6 +30,7 @@ export function MethodItems() {
         const totalWidth =
           slideRef.current.scrollWidth - slideRef.current.clientWidth;
         currentIndex += 1;
+
 
         if (currentIndex >= totalWidth) {
           currentIndex = 0;
