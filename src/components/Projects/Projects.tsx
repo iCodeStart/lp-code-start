@@ -64,21 +64,21 @@ export function Projects() {
               className={
                 activeProject === 0 ? "project-img-active" : "project-img"
               }
-              src="./project-controle-financeiro.png"
+              src="./project-controle-financeiro.webp"
               alt="Controle financeiro"
             />
             <img
               className={
                 activeProject === 1 ? "project-img-active" : "project-img"
               }
-              src="./project-loja-informatica.png"
+              src="./project-loja-informatica.webp"
               alt="Loja de informática"
             />
             <img
               className={
                 activeProject === 2 ? "project-img-active" : "project-img"
               }
-              src="./project-portfolio-pessoal.png"
+              src="./project-portfolio-pessoal.webp"
               alt="Portfólio Pessoal"
             />
           </div>
