@@ -15,15 +15,9 @@ import { Footer } from "./components/Footer";
 import { FullstackTrail } from "./components/FullstackTrail";
 import {
   Apresentation,
-  ExclusiveBonus,
   Guarantee,
-  HowItWorks,
   IsForYou,
-  MethodItems,
-  RiskIsMine,
-  TheProduct,
 } from "./components/LPProjects";
-import { ProjectsOffer } from "./components/LPProjects/ProjectsOffer";
 import { Whatsapp } from "./components/Whatsapp";
 import { Reviews } from "./components/Reviews";
 
@@ -34,14 +28,10 @@ function App() {
         path="/"
         element={
           <>
-            {/* <Header /> */}
             <Apresentation />
             <div className="content-container">
-              {/* <TheProduct /> */}
               <WorldProgram />
-              {/* <Benefits /> */}
               <IsForYou />
-              {/* <MethodItems /> */}
               <Testimonials />
               <OurTrail />
               <School />
@@ -55,24 +45,6 @@ function App() {
               <FAQ />
               <Footer />
               <Whatsapp />
-            </div>
-          </>
-        }
-      />
-      <Route
-        path="/projects"
-        element={
-          <>
-            <Apresentation />
-            <div className="content-container">
-              <TheProduct />
-              <Guarantee />
-              <HowItWorks />
-              <IsForYou />
-              <MethodItems />
-              <ExclusiveBonus />
-              <RiskIsMine />
-              <ProjectsOffer />
             </div>
           </>
         }
