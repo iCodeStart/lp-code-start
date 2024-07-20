@@ -45,6 +45,8 @@ export function Reviews() {
             return (
               <div key={index + item}>
                 <img
+                  width="70%"
+                  height="600px"
                   src={item}
                   alt="img"
                   className="slide-image-carousel-testimonial-items"
