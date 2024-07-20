@@ -2,7 +2,6 @@ export * from "./Benefits";
 export * from "./Bonus";
 export * from "./Dashboard";
 export * from "./FAQ";
-export * from "./Header";
 export * from "./LPProjects";
 export * from "./Offer";
 export * from "./OurTrail";

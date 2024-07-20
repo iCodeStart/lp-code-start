@@ -43,65 +43,6 @@ button {
   overflow: visible;
 }
 
-.header {
-  width: 100%;
-  background: url("../public/background-header.webp") no-repeat center;
-  background-size: cover;
-  height: 80vh;
-}
-
-.header__content {
-  padding: 0 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-.header__content-container {
-  margin-left: -20px;
-  margin-right: -20px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: calc(100vw - 75px);
-  z-index: 9999;
-  margin: 0;
-  padding: 20px;
-}
-
-.header__content-logo {
-  max-width: 1440px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.header__content-titles {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10em;
-  width: 550px;
-}
-
-.header__content-titles-title {
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: #00bcd3;
-  line-height: 55px;
-  margin-bottom: 20px;
-}
-
-.header__content-titles-subtitle {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #fff;
-}
-
-.header__content-titles-subtitle span {
-  color: #00bcd3;
-}
 
 .btn-buy {
   background: rgb(0, 255, 208);
@@ -620,9 +561,6 @@ button {
   width: 50px !important;
 }
 
-.header__content_image {
-  display: none;
-}
 
 .retangulo {
   border: 2px solid white;
@@ -645,20 +583,7 @@ button {
   .hidden-mobile {
     display: none;
   }
-  .header__content-titles {
-    margin-top: 5em;
-    width: 100%;
-  }
-
-  .header__content-titles-title {
-    font-size: 1.9rem;
-    line-height: 40px;
-  }
-
-  .header__content-titles-subtitle {
-    font-size: 1.5rem;
-  }
-
+  
   .world-programming__line {
     display: flex;
     flex-direction: column;
@@ -717,11 +642,7 @@ button {
   .fullstack-mobile img {
     width: 100%;
   }
-  .header__content_image {
-    display: block;
-    height: 230px;
-    width: 100%;
-  }
+
   .school_content-text-title {
     font-size: 15px;
     font-weight: 400;

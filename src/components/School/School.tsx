@@ -1,6 +1,8 @@
+import React from 'react';
 import { Chip } from "../Chip";
 import { MethodItems } from "../LPProjects";
 import { Dashboard } from "../LPProjects/Dashboard";
+import LazyLoadVideo from '../LazyLoadVideo/LazyLoadVideo';
 import "./School.styles.scss";
 
 export function School() {
@@ -26,16 +28,7 @@ export function School() {
               Assista o vídeo para conhecer a plataforma!
             </h2>
             <div className="school_content-text-item">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/6rORoSMq17I?si=SmllzS9xiA6yHPOB"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+              <LazyLoadVideo videoId="6rORoSMq17I" />
             </div>
             <Dashboard />
           </div>

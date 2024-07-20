@@ -21,7 +21,6 @@ import {
   IsForYou,
   MethodItems,
   RiskIsMine,
-  TheProduct,
 } from "./components/LPProjects";
 import { ProjectsOffer } from "./components/LPProjects/ProjectsOffer";
 import { Whatsapp } from "./components/Whatsapp";
@@ -34,10 +33,8 @@ function App() {
         path="/"
         element={
           <>
-            {/* <Header /> */}
             <Apresentation />
             <div className="content-container">
-              {/* <TheProduct /> */}
               <WorldProgram />
               {/* <Benefits /> */}
               <IsForYou />
@@ -65,7 +62,6 @@ function App() {
           <>
             <Apresentation />
             <div className="content-container">
-              <TheProduct />
               <Guarantee />
               <HowItWorks />
               <IsForYou />

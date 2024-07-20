@@ -3,7 +3,6 @@ import {
   Benefits,
   Bonus,
   FAQ,
-  Header,
   Offer,
   OurTrail,
   Projects,
@@ -20,7 +19,6 @@ function App() {
 
   return (
     <>
-      <Header />
       <div className="content-container">
         <WorldProgram />
         <Benefits />

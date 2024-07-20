@@ -5,4 +5,3 @@ export * from "./HowItWorks";
 export * from "./IsForYou";
 export * from "./MethodItems";
 export * from "./RiskIsMine";
-export * from "./TheProduct";
