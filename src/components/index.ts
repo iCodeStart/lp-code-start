@@ -1,4 +1,3 @@
-export * from "./Benefits";
 export * from "./Bonus";
 export * from "./Dashboard";
 export * from "./FAQ";
