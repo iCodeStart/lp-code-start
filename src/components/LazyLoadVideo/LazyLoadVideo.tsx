@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import "./LazyLoadVideo.scss";
+import useIsMobile from "../../utils/useIsMobile";
 
 interface LazyLoadVideoProps {
   videoId: string;
 }
 const LazyLoadVideo = ({ videoId }: LazyLoadVideoProps) => {
   const [isInView, setIsInView] = useState(false);
+  const isMobile = useIsMobile();
+
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -22,12 +25,12 @@ const LazyLoadVideo = ({ videoId }: LazyLoadVideoProps) => {
     <div ref={ref} className="video-container">
       {isInView ? (
         <iframe
-          width="560"
+          width={`${isMobile ? "300" : "560"}`}
           height="315"
           src={`https://www.youtube.com/embed/${videoId}`}
           title="YouTube video player"
           frameBorder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
