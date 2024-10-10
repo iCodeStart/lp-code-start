@@ -124,14 +124,14 @@ export function Offer() {
                 apenas:
               </h3>
               <h1 className="card-offer__price">
-                <p style={{ fontSize: "15px" }}>12x de</p>29,70
+                <p style={{ fontSize: "15px" }}>12x de</p>59,94
               </h1>
               <p style={{ letterSpacing: "7.4px", color: "#D8D8D8" }}>
                 {" "}
-                ou 297 à vista
+                ou 597 à vista
               </p>
               <a
-                href={`https://pay.kiwify.com.br/0UKSbBo?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
+                href={`https://pay.kiwify.com.br/orBxsQS?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -141,6 +141,10 @@ export function Offer() {
               </a>
               <p>
                 *Válido para os dias: <strong>{obterDatas()}</strong>
+              </p>
+              <p style={{ color: "green" }}>
+                Próximos 10 alunos ganham um kit de boas vindas exclusivo da
+                Code Start!
               </p>
             </div>
             <img
