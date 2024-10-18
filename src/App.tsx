@@ -13,13 +13,10 @@ import {
 } from "./components";
 import { Footer } from "./components/Footer";
 import { FullstackTrail } from "./components/FullstackTrail";
-import {
-  Apresentation,
-  Guarantee,
-  IsForYou,
-} from "./components/LPProjects";
+import { Apresentation, Guarantee, IsForYou } from "./components/LPProjects";
 import { Whatsapp } from "./components/Whatsapp";
 import { Reviews } from "./components/Reviews";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -40,9 +37,10 @@ function App() {
               <Guarantee />
               <Offer />
               <Bonus />
-              <Reviews/>
+              <Reviews />
               <Teachers />
               <FAQ />
+              <Contact />
               <Footer />
               <Whatsapp />
             </div>
