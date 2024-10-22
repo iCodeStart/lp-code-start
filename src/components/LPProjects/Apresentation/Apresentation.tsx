@@ -23,8 +23,7 @@ export function Apresentation() {
           </h1>
           <p>
             Domine a programação com o método <strong>AAP</strong> e coloque seu
-            primeiro projeto no ar ainda nesse ano - estudando apenas 1 hora por
-            dia!
+            primeiro projeto no ar em menos de 30 dias!
             {/* e conquiste a
             sua vaga de emprego de forma acelerada ainda esse ano - Estudando
             apenas 1 hora por dia! */}

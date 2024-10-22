@@ -21,19 +21,19 @@ export function Offer() {
   }, []);
 
   const courses = [
-    { title: "HTML", price: 129 },
-    { title: "CSS", price: 129 },
-    { title: "Git/Github", price: 129 },
-    { title: "Javascript", price: 197 },
+    { title: "HTML", price: 97 },
+    { title: "CSS", price: 97 },
+    { title: "Git/Github", price: 67 },
+    { title: "Javascript", price: 117 },
   ];
 
   const additionalItems = [
     { title: "Conteúdos sobre mercado de trabalho", price: 47 },
-    { title: "Exercícios", price: 97 },
-    { title: "Projetos desenvolvidos na Code Start", price: 297 },
-    { title: "Suporte exclusivo para alunos", price: 97 },
+    { title: "Exercícios", price: 47 },
+    { title: "Projetos desenvolvidos na Code Start", price: 127 },
+    { title: "Suporte exclusivo para alunos", price: 47 },
     //{ title: "Grupo Vip", price: 97 },
-    { title: "Simulação de entrevistas", price: 197 },
+    { title: "Simulação de entrevistas", price: 47 },
   ];
 
   const itemsWithDescription = [
