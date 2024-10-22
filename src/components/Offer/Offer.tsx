@@ -145,16 +145,7 @@ export function Offer() {
               <h1 className="card-offer__price">
                 <p style={{ fontSize: "20px" }}>12x de</p>19,78
               </h1>
-              <p
-                style={{
-                  letterSpacing: "7.4px",
-                  color: "#D8D8D8",
-                  fontSize: "16px",
-                }}
-              >
-                {" "}
-                ou 197 à vista
-              </p>
+              <p className="card-offer__price__all"> ou 197 à vista</p>
               <a
                 href={`https://pay.kiwify.com.br/m3ACjDa?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
                 target="_blank"
