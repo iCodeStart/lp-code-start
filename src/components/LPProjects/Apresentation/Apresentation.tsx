@@ -22,22 +22,31 @@ export function Apresentation() {
             programação
           </h1>
           <p>
-            Domine a programação com o método <strong>AAP</strong> e conquiste a
+            Domine a programação com o método <strong>AAP</strong> e coloque seu
+            primeiro projeto no ar ainda nesse ano - estudando apenas 1 hora por
+            dia!
+            {/* e conquiste a
             sua vaga de emprego de forma acelerada ainda esse ano - Estudando
-            apenas 1 hora por dia!
+            apenas 1 hora por dia! */}
           </p>
-          <p>
+          {/* <p>
             Aqui nós <strong style={{ color: "white" }}>GARANTIMOS</strong> a
             sua aprovação.
+          </p> */}
+          <p>
+            Aqui nós <strong style={{ color: "white" }}>GARANTIMOS</strong> o
+            seu aprendizado.
           </p>
           <p>
-          <div className="action-offer-apresentation">
-            <a href="#offer" className="btn-buy" onClick={trackingClickButton}>
-              <button>
-                Quero ser programador
-              </button>
-            </a>
-          </div>
+            <div className="action-offer-apresentation">
+              <a
+                href="#offer"
+                className="btn-buy"
+                onClick={trackingClickButton}
+              >
+                <button>Quero ser programador</button>
+              </a>
+            </div>
           </p>
         </div>
         <svg

@@ -1,10 +1,10 @@
 import { FaWhatsapp } from "react-icons/fa";
-import "./Contact.styles.scss"; // Importando o arquivo de estilos
+import "./Contact.styles.scss";
 
 const Contact = () => {
   const handleButtonClick = () => {
     const defaultMessage = encodeURIComponent(
-      "Olá, gostaria de saber mais sobre o Treinamento da Code Start!"
+      "Olá, gostaria de saber mais sobre o Treinamento da Code Start!!!"
     );
     window.open(
       `https://api.whatsapp.com/send?phone=32998573527&text=${defaultMessage}`,

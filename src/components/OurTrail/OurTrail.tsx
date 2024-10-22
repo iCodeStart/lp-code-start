@@ -15,11 +15,11 @@ export function OurTrail() {
         description:
           "Nessa fase 2 você terá criado projetos mais robustos e aprendido a criar seus próprios projetos sozinho!",
       },
-      {
-        title: "Fase de Expansão",
-        description:
-          "Você terá estruturado o seu currículo e Linkedin de forma estratégica.",
-      },
+      // {
+      //   title: "Fase de Expansão",
+      //   description:
+      //     "Você terá estruturado o seu currículo e Linkedin de forma estratégica.",
+      // },
       {
         title: "Fase Mestre",
         description:

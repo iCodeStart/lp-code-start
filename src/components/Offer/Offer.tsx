@@ -19,22 +19,32 @@ export function Offer() {
       duration: 1000,
     });
   }, []);
+
   const courses = [
-    { title: "HTML/CSS", price: 129 },
-    { title: "Bootstrap", price: 129 },
+    { title: "HTML", price: 129 },
+    { title: "CSS", price: 129 },
     { title: "Git/Github", price: 129 },
-    { title: "Javascript", price: 147 },
-    { title: "React JS", price: 197 },
-    { title: "Node JS", price: 197 },
+    { title: "Javascript", price: 197 },
   ];
 
   const additionalItems = [
     { title: "Conteúdos sobre mercado de trabalho", price: 47 },
     { title: "Exercícios", price: 97 },
-    { title: "Projetos desenvolvidos na Code Start", price: 197 },
+    { title: "Projetos desenvolvidos na Code Start", price: 297 },
     { title: "Suporte exclusivo para alunos", price: 97 },
-    { title: "Networking com pessoas da profissão", price: 97 },
+    //{ title: "Grupo Vip", price: 97 },
     { title: "Simulação de entrevistas", price: 197 },
+  ];
+
+  const itemsWithDescription = [
+    {
+      title: "Grupo Vip",
+      description: "Incalculável",
+    },
+    {
+      title: "Certificado validado",
+      description: "Incalculável",
+    },
   ];
 
   const total =
@@ -79,6 +89,7 @@ export function Offer() {
 
     return `${diaAnteontem}, ${diaOntem} e ${diaHoje} de ${mesAtual}`;
   };
+
   return (
     <>
       <div className="offer" id="offer">
@@ -104,6 +115,15 @@ export function Offer() {
                 price={`R$ ${item.price},00`}
               />
             ))}
+
+            {itemsWithDescription.map((item, index) => (
+              <LineOffer
+                key={index}
+                title={`Acesso a ${item.title}`}
+                description={item.description} // Usando a descrição
+              />
+            ))}
+
             <div className="card-offer__total">
               <p>Total</p>
               <span style={{ color: "red" }}>
@@ -115,7 +135,6 @@ export function Offer() {
               </span>
             </div>
             <div className="guarantee_access">
-              {/* <h4>Mas hoje você não vai precisar investir isso...</h4> */}
               <h4>Esse é o preço original, mas investindo agora você vai...</h4>
               <h3>
                 Aprender do zero ao profissional, em um só treinamento, 100%
@@ -124,14 +143,20 @@ export function Offer() {
                 apenas:
               </h3>
               <h1 className="card-offer__price">
-                <p style={{ fontSize: "15px" }}>12x de</p>59,94
+                <p style={{ fontSize: "20px" }}>12x de</p>19,78
               </h1>
-              <p style={{ letterSpacing: "7.4px", color: "#D8D8D8" }}>
+              <p
+                style={{
+                  letterSpacing: "7.4px",
+                  color: "#D8D8D8",
+                  fontSize: "16px",
+                }}
+              >
                 {" "}
-                ou 597 à vista
+                ou 197 à vista
               </p>
               <a
-                href={`https://pay.kiwify.com.br/orBxsQS?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
+                href={`https://pay.kiwify.com.br/m3ACjDa?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -141,10 +166,6 @@ export function Offer() {
               </a>
               <p>
                 *Válido para os dias: <strong>{obterDatas()}</strong>
-              </p>
-              <p style={{ color: "green" }}>
-                Próximos 10 alunos ganham um kit de boas vindas exclusivo da
-                Code Start!
               </p>
             </div>
             <img

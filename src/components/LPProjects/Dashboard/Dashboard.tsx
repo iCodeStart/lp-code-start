@@ -2,14 +2,14 @@ import { FaBook, FaCheckCircle, FaUserGraduate } from "react-icons/fa";
 import "./Dashboard.styles.scss";
 import { CounterCard } from "./components";
 
-
 export function Dashboard() {
   return (
     <div className="container">
       <div className="dashboard-container">
         <CounterCard
           title="Aulas"
-          endValue={303}
+          endValue={223}
+          //endValue={303}
           icon={<FaBook size={50} color="#007bff" />}
           showPlus={true}
         />

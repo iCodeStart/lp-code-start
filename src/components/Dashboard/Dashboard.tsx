@@ -44,7 +44,8 @@ const Dashboard: React.FC = () => {
         <div className="col">
           <CounterCard
             title="Aulas"
-            endValue={303}
+            //endValue={303}
+            endValue={223}
             icon={<FaBook size={50} color="#007bff" />}
             showPlus={true}
           />

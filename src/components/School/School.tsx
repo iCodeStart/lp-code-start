@@ -26,9 +26,13 @@ export function School() {
             <h2 className="school_content-text-title">
               Assista o vídeo para conhecer a plataforma!
             </h2>
-            <div className="school_content-text-item">
+            {/* <div className="school_content-text-item">
               <LazyLoadVideo videoId="6rORoSMq17I" />
+            </div> */}
+            <div className="school_content-text-item">
+              <LazyLoadVideo videoId="zKopbM8BJgk" />
             </div>
+
             <Dashboard />
           </div>
           <MethodItems />

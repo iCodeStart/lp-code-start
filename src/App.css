@@ -378,6 +378,7 @@ button {
 .card-offer__price {
   color: #00bcd3;
   margin-bottom: 50px;
+  font-size: 56px;
 }
 
 .guarantee_access {
@@ -681,7 +682,7 @@ button {
   .card-offer__price {
     color: #ffffff;
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 32px;
   }
   .section-title {
     font-size: 26px;

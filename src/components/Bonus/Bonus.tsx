@@ -3,12 +3,12 @@ import { LineBonus } from "./LineBonus";
 
 export function Bonus() {
   const arrayBonus = [
-    {
-      img: "/closeFriends.webp",
-      title: "Close friends",
-      subtitle:
-        "Acesso a 12 meses de conteúdos exclusivos e valiosos para você acelerar o seu aprendizado ainda mais.",
-    },
+    // {
+    //   img: "/closeFriends.webp",
+    //   title: "Close friends",
+    //   subtitle:
+    //     "Acesso a 12 meses de conteúdos exclusivos e valiosos para você acelerar o seu aprendizado ainda mais.",
+    // },
     {
       img: "/first1.webp",
       title: "Seu primeiro mês",
@@ -21,11 +21,17 @@ export function Bonus() {
       subtitle:
         "Ganhe dinheiro como programador mesmo sendo um completo iniciante.",
     },
+    // {
+    //   img: "/posicionamento1.webp",
+    //   title: "Posicionamento de excelência",
+    //   subtitle:
+    //     "Tenha um posicionamento estratégico, com a especialista em LinkedIn, e acelere em até 2x a conquista do seu primeiro emprego",
+    // },
     {
-      img: "/posicionamento1.webp",
-      title: "Posicionamento de excelência",
+      img: "/vip.png",
+      title: "Grupo Vip",
       subtitle:
-        "Tenha um posicionamento estratégico, com a especialista em LinkedIn, e acelere em até 2x a conquista do seu primeiro emprego",
+        "Participe de uma comunidade de pessoas com o mesmo objetivo, onde compartilhamos dificuldades, ajudamos uns aos outros e crescemos juntos!",
     },
   ];
   return (
