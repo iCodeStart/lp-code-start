@@ -1,81 +1,78 @@
 .slide-image-carousel-testimonial-items {
-    border-radius: 20px;
-    height: 500px;
+  border-radius: 20px;
+  height: 500px;
 }
 
 .testimonials-container {
-    & button {
-        display: none !important;
-    }
+  & button {
+    display: none !important;
+  }
 }
 
 .alan-container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .alan-header {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .alan-testimonials {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(4, 1fr);
-    flex-wrap: wrap;
-    gap: 50px;
-    @media screen and (max-width: 968px){
-        grid-template-columns: repeat(2, 1fr);
-    }
+  text-align: center;
+  padding: 20px;
+}
 
-    @media screen and (max-width: 680px){
-        grid-template-columns: 1fr;
-    }
-  }
-  
-  .alan-card {
-    
-    padding: 10px;
-    margin: 10px;
-    max-width: 400px;
-    text-align: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 0 auto;
-  }
-  .alan-intern-card{
-    border: 1px solid #00bcd3;
-    border-radius: 10px;
-    padding: 10px;
-  }
-  
-  .alan-icon {
-    font-size: 2em;
-    margin-bottom: 10px;
-    position: absolute;
-    top: -20px;
-    left: 0;
-    right: 0;
-  }
-  
-  .alan-text {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .alan-video, .alan-img {
-    width: 100%;
-  }
-  
+.alan-header {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 
+.alan-testimonials {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: wrap;
+  gap: 50px;
+  @media screen and (max-width: 968px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  @media screen and (max-width: 680px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.alan-card {
+  padding: 10px;
+  margin: 10px;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+}
+.alan-intern-card {
+  border: 1px solid #00bcd3;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.alan-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+}
+
+.alan-text {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.alan-video,
+.alan-img {
+  width: 100%;
+}
 
 @media (max-width: 968px) {
-
-    .slide-image-carousel-testimonial-items {
-        height: 400px;
-    }
+  .slide-image-carousel-testimonial-items {
+    width: 100%;
+    height: auto;
+  }
 }

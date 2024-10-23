@@ -36,9 +36,11 @@ export function Reviews() {
   return (
     <div className="testimonials-container">
       <div className="title-container">
-          <Chip label="Depoimentos" />
-          <h1 className="section-title">Veja o que nossos alunos acham da Code Start!</h1>
-        </div>
+        <Chip label="Depoimentos" />
+        <h1 className="section-title">
+          Veja o que nossos alunos acham da Code Start!
+        </h1>
+      </div>
       <div className="slider-container">
         <Slider {...settings}>
           {imagesTestimonials.map((item, index) => {
