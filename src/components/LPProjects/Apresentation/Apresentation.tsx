@@ -1,7 +1,17 @@
+import { useEffect, useState } from "react";
 import "./Apresentation.styles.scss";
 import ReactGA from "react-ga4";
 
 export function Apresentation() {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowButton(true); // Exibe o botão após 2 minutos (120000 milissegundos)
+    }, 60000); // 2 minutos
+
+    return () => clearTimeout(timer); // Limpa o timer se o componente desmontar
+  }, []);
   function trackingClickButton() {
     ReactGA.event({
       category: "apresentation",
@@ -37,15 +47,17 @@ export function Apresentation() {
             seu aprendizado.
           </p>
           <p>
-            <div className="action-offer-apresentation">
-              <a
-                href="#offer"
-                className="btn-buy"
-                onClick={trackingClickButton}
-              >
-                <button>Quero ser programador</button>
-              </a>
-            </div>
+            {showButton && (
+              <div className="action-offer-apresentation">
+                <a
+                  href="#offer"
+                  className="btn-buy"
+                  onClick={trackingClickButton}
+                >
+                  <button>Quero ser programador</button>
+                </a>
+              </div>
+            )}
           </p>
         </div>
         <svg
