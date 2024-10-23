@@ -8,23 +8,37 @@ export function OurTrail() {
       {
         title: "Fase Start",
         description:
-          "Nessa fase você já terá seus primeiros projetos feitos e publicados.",
+          "Nos primeiros 10 dias você vai estudar os fundamentos para a criação de sistemas.",
       },
       {
         title: "Fase Alicerce",
-        description:
-          "Nessa fase 2 você terá criado projetos mais robustos e aprendido a criar seus próprios projetos sozinho!",
+        description: "Até o dia 20 você terá seus primeiros projetos feitos.",
       },
+      {
+        title: "Fase Mestre",
+        description:
+          "Você terá estruturado o seu projeto e vai aprender a como colocar ele no ar.",
+      },
+      // {
+      //   title: "Fase Start",
+      //   description:
+      //     "Nessa fase você já terá seus primeiros projetos feitos e publicados.",
+      // },
+      // {
+      //   title: "Fase Alicerce",
+      //   description:
+      //     "Nessa fase 2 você terá criado projetos mais robustos e aprendido a criar seus próprios projetos sozinho!",
+      // },
       // {
       //   title: "Fase de Expansão",
       //   description:
       //     "Você terá estruturado o seu currículo e Linkedin de forma estratégica.",
       // },
-      {
-        title: "Fase Mestre",
-        description:
-          "Nessa etapa, você usará o nosso método AAP para aplicar para entrevistas nas melhores empresas de tecnologia.",
-      },
+      // {
+      //   title: "Fase Mestre",
+      //   description:
+      //     "Nessa etapa, você usará o nosso método AAP para aplicar para entrevistas nas melhores empresas de tecnologia.",
+      // },
       {
         title: "Certificado",
         description:
