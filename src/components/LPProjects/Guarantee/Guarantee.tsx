@@ -23,25 +23,25 @@ export function Guarantee() {
           <span style={{ color: "#fff" }}>UMA GARANTIA DE</span>{" "}
           <span style={{ color: "#00bcd3" }}>365 DIAS</span>
         </h1>
-        {/* <p>
-          Simples: se dentro de 1 ano você assistir nossas aulas e não conseguir
-          a sua vaga de programador...
-        </p> */}
         <p>
           Simples: se dentro de 1 ano você assistir nossas aulas e não conseguir
-          criar um projeto e colocar ele no ar sozinho...
+          a sua vaga de programador...
         </p>
+        {/* <p>
+          Simples: se dentro de 1 ano você assistir nossas aulas e não conseguir
+          criar um projeto e colocar ele no ar sozinho...
+        </p> */}
         <p>
           <strong>...Nós devolvemos todo o seu dinheiro...</strong>
         </p>
-        {/* <p>
+        <p>
           ...Aqui você terá um suporte único e diferenciado para que você passe
           com certeza, ou nós perdemos dinheiro.
-        </p> */}
-        <p>
+        </p>
+        {/* <p>
           ...Aqui você terá um suporte único e diferenciado para que você veja o
           seu progresso, ou nós perdemos dinheiro.
-        </p>
+        </p> */}
       </div>
     </>
   );

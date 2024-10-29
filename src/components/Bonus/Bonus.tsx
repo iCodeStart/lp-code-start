@@ -21,18 +21,18 @@ export function Bonus() {
       subtitle:
         "Ganhe dinheiro como programador mesmo sendo um completo iniciante.",
     },
-    // {
-    //   img: "/posicionamento1.webp",
-    //   title: "Posicionamento de excelência",
-    //   subtitle:
-    //     "Tenha um posicionamento estratégico, com a especialista em LinkedIn, e acelere em até 2x a conquista do seu primeiro emprego",
-    // },
     {
-      img: "/vip.png",
-      title: "Grupo Vip",
+      img: "/posicionamento1.webp",
+      title: "Posicionamento de excelência",
       subtitle:
-        "Participe de uma comunidade de pessoas com o mesmo objetivo, onde compartilhamos dificuldades, ajudamos uns aos outros e crescemos juntos!",
+        "Tenha um posicionamento estratégico, com a especialista em LinkedIn, e acelere em até 2x a conquista do seu primeiro emprego",
     },
+    // {
+    //   img: "/vip.png",
+    //   title: "Grupo Vip",
+    //   subtitle:
+    //     "Participe de uma comunidade de pessoas com o mesmo objetivo, onde compartilhamos dificuldades, ajudamos uns aos outros e crescemos juntos!",
+    // },
   ];
   return (
     <div className="bonus">

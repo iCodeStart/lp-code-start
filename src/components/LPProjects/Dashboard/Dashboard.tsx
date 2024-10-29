@@ -8,8 +8,8 @@ export function Dashboard() {
       <div className="dashboard-container">
         <CounterCard
           title="Aulas"
-          endValue={223}
-          //endValue={303}
+          //endValue={223}
+          endValue={303}
           icon={<FaBook size={50} color="#007bff" />}
           showPlus={true}
         />

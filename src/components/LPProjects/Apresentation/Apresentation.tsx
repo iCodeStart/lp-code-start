@@ -32,20 +32,20 @@ export function Apresentation() {
             programação
           </h1>
           <p>
-            Domine a programação com o método <strong>AAP</strong> e coloque seu
-            primeiro projeto no ar em menos de 30 dias!
-            {/* e conquiste a
-            sua vaga de emprego de forma acelerada ainda esse ano - Estudando
-            apenas 1 hora por dia! */}
+            Domine a programação com o método <strong>AAP </strong>
+            {/* e coloque seu
+            primeiro projeto no ar em menos de 30 dias! */}
+            e conquiste a sua vaga de emprego de forma acelerada ainda esse ano
+            - Estudando apenas 1 hora por dia!
           </p>
-          {/* <p>
+          <p>
             Aqui nós <strong style={{ color: "white" }}>GARANTIMOS</strong> a
             sua aprovação.
-          </p> */}
-          <p>
+          </p>
+          {/* <p>
             Aqui nós <strong style={{ color: "white" }}>GARANTIMOS</strong> o
             seu aprendizado.
-          </p>
+          </p> */}
           <p>
             {showButton && (
               <div className="action-offer-apresentation">

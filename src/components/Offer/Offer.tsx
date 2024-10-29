@@ -24,23 +24,26 @@ export function Offer() {
     { title: "HTML", price: 97 },
     { title: "CSS", price: 97 },
     { title: "Git/Github", price: 67 },
+    { title: "Bootstrap", price: 67 },
     { title: "Javascript", price: 117 },
+    { title: "React", price: 117 },
+    { title: "Node", price: 117 },
   ];
 
   const additionalItems = [
     { title: "Conteúdos sobre mercado de trabalho", price: 47 },
     { title: "Exercícios", price: 47 },
     { title: "Projetos desenvolvidos na Code Start", price: 127 },
-    { title: "Suporte exclusivo para alunos", price: 47 },
+    { title: "Suporte exclusivo para alunos", price: 97 },
     //{ title: "Grupo Vip", price: 97 },
     { title: "Simulação de entrevistas", price: 47 },
   ];
 
   const itemsWithDescription = [
-    {
-      title: "Grupo Vip",
-      description: "Incalculável",
-    },
+    // {
+    //   title: "Grupo Vip",
+    //   description: "Incalculável",
+    // },
     {
       title: "Certificado validado",
       description: "Incalculável",
@@ -143,11 +146,11 @@ export function Offer() {
                 apenas:
               </h3>
               <h1 className="card-offer__price">
-                <p style={{ fontSize: "20px" }}>12x de</p>19,78
+                <p style={{ fontSize: "22px" }}>12x de</p>29,82
               </h1>
-              <p className="card-offer__price__all"> ou 197 à vista</p>
+              <p className="card-offer__price__all"> ou 297 à vista</p>
               <a
-                href={`https://pay.kiwify.com.br/m3ACjDa?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
+                href={`https://pay.kiwify.com.br/0UKSbBo?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
                 target="_blank"
                 rel="noreferrer"
               >
