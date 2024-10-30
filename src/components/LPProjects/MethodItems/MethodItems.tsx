@@ -4,11 +4,11 @@ import "./MethodItems.styles.scss";
 export function MethodItems() {
   const initialImages = [
     "./1.webp",
-    "./69.png",
-    "./70.png",
-    "./71.png",
-    "./95.png",
-    "./28.png",
+    "./69.webp",
+    "./70.webp",
+    "./71.webp",
+    "./95.webp",
+    "./28.webp",
     // "./3.webp",
     // "./4.webp",
     // "./5.webp",
