@@ -28,16 +28,23 @@ export function Apresentation() {
         </span>
         <div className="content-lp-project-apresentation-box-texts">
           <h1>
-            Você nunca mais vai pensar em desistir e se sentir perdido na
-            programação
+            Estudando apenas 1 hora por dia - Domine a programação com o método{" "}
+            <strong>AAP </strong> e conquiste a sua vaga de emprego ainda esse
+            ano
+            {/* Você nunca mais vai pensar em desistir e se sentir perdido na
+            programação */}
           </h1>
           <p>
+            Você nunca mais vai pensar em desistir e se sentir perdido na
+            programação
+          </p>
+          {/* <p>
             Domine a programação com o método <strong>AAP </strong>
-            {/* e coloque seu
-            primeiro projeto no ar em menos de 30 dias! */}
+            e coloque seu
+            primeiro projeto no ar em menos de 30 dias!
             e conquiste a sua vaga de emprego de forma acelerada ainda esse ano
             - Estudando apenas 1 hora por dia!
-          </p>
+          </p> */}
           <p>
             Aqui nós <strong style={{ color: "white" }}>GARANTIMOS</strong> a
             sua aprovação.
