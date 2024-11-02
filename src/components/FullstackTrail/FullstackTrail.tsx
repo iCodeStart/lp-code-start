@@ -9,8 +9,8 @@ export function FullstackTrail() {
           <h1 className="section-title">Nossa trilha fullstack</h1>
         </div>
         <p className="fullstack-trail__text">
-          Você vai aprender a linguagem mais utilizada pelas empresas, que é o
-          Javascript{" "}
+          Você vai aprender tudo sobre a linguagem mais utilizada pelas
+          empresas, que é o Javascript{" "}
         </p>
         <div className="fullstack-trail__content">
           <div className="fullstack-desktop">
