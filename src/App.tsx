@@ -29,8 +29,8 @@ function App() {
             <div className="content-container">
               <WorldProgram />
               <IsForYou />
-              <Testimonials />
               <OurTrail />
+              <Testimonials />
               <School />
               <FullstackTrail />
               <Projects />

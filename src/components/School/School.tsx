@@ -16,6 +16,9 @@ export function School() {
         </div>
         <div className="school__content">
           <div className="school__content-text">
+            <div className="school_content-text-item">
+              <LazyLoadVideo videoId="6rORoSMq17I" />
+            </div>
             <p className="school_content-text-title">
               Vamos te pegar pelas mãos e te ensinar tudo que você precisa
               saber,{" "}
@@ -23,15 +26,6 @@ export function School() {
                 mesmo que você não tenha muito tempo para estudar.
               </strong>
             </p>
-            <h2 className="school_content-text-title">
-              Assista o vídeo para conhecer a plataforma!
-            </h2>
-            <div className="school_content-text-item">
-              <LazyLoadVideo videoId="6rORoSMq17I" />
-            </div>
-            {/* <div className="school_content-text-item">
-              <LazyLoadVideo videoId="zKopbM8BJgk" />
-            </div> */}
 
             <Dashboard />
           </div>

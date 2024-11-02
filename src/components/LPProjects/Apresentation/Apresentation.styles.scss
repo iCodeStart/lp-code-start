@@ -73,19 +73,26 @@
     padding: 0;
     min-height: 70vh;
 
+    &-container {
+      margin-top: 700px;
+    }
+
     &-product-name {
       padding: 8px 25px;
       margin-top: -300px;
       border-width: 1px;
+      margin-bottom: 28px;
     }
 
     h1 {
       font-size: 24px;
+      margin-bottom: 48px;
     }
 
     p {
       color: #fff;
-      font-size: 14px;
+      font-size: 18px;
+      margin-bottom: 48px;
     }
   }
 }

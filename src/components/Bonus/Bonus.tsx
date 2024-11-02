@@ -3,12 +3,6 @@ import { LineBonus } from "./LineBonus";
 
 export function Bonus() {
   const arrayBonus = [
-    // {
-    //   img: "/closeFriends.webp",
-    //   title: "Close friends",
-    //   subtitle:
-    //     "Acesso a 12 meses de conteúdos exclusivos e valiosos para você acelerar o seu aprendizado ainda mais.",
-    // },
     {
       img: "/first1.webp",
       title: "Seu primeiro mês",
@@ -27,12 +21,12 @@ export function Bonus() {
       subtitle:
         "Tenha um posicionamento estratégico, com a especialista em LinkedIn, e acelere em até 2x a conquista do seu primeiro emprego",
     },
-    // {
-    //   img: "/vip.png",
-    //   title: "Grupo Vip",
-    //   subtitle:
-    //     "Participe de uma comunidade de pessoas com o mesmo objetivo, onde compartilhamos dificuldades, ajudamos uns aos outros e crescemos juntos!",
-    // },
+    {
+      img: "/vip.png",
+      title: "Grupo Vip",
+      subtitle:
+        "Participe de uma comunidade de pessoas com o mesmo objetivo, onde compartilhamos dificuldades, ajudamos uns aos outros e crescemos juntos!",
+    },
   ];
   return (
     <div className="bonus">
@@ -50,7 +44,6 @@ export function Bonus() {
                   img={bonus.img}
                   title={bonus.title}
                   subtitle={bonus.subtitle}
-                  //orientation={index % 2 === 0 ? "left" : "right"}
                 />
               );
             })}

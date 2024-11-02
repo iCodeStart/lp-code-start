@@ -27,21 +27,13 @@ export function Guarantee() {
           Simples: se dentro de 1 ano você assistir nossas aulas e não conseguir
           a sua vaga de programador...
         </p>
-        {/* <p>
-          Simples: se dentro de 1 ano você assistir nossas aulas e não conseguir
-          criar um projeto e colocar ele no ar sozinho...
-        </p> */}
-        <p>
+        <p style={{ fontSize: "24px" }}>
           <strong>...Nós devolvemos todo o seu dinheiro...</strong>
         </p>
         <p>
           ...Aqui você terá um suporte único e diferenciado para que você passe
           com certeza, ou nós perdemos dinheiro.
         </p>
-        {/* <p>
-          ...Aqui você terá um suporte único e diferenciado para que você veja o
-          seu progresso, ou nós perdemos dinheiro.
-        </p> */}
       </div>
     </>
   );

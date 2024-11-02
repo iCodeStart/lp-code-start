@@ -5,44 +5,30 @@ export function OurTrail() {
   const [currentPhase, setCurrentPhase] = useState(1);
   const arrayInfoTrail = useMemo(
     () => [
-      // {
-      //   title: "Fase Start",
-      //   description:
-      //     "Nos primeiros 10 dias você vai estudar os fundamentos para a criação de sistemas.",
-      // },
-      // {
-      //   title: "Fase Alicerce",
-      //   description: "Até o dia 20 você terá seus primeiros projetos feitos.",
-      // },
-      // {
-      //   title: "Fase Mestre",
-      //   description:
-      //     "Você terá estruturado o seu projeto e vai aprender a como colocar ele no ar.",
-      // },
       {
         title: "Fase Start",
         description:
-          "Nessa fase você já terá seus primeiros projetos feitos e publicados.",
+          "Construa e publique os seus primeiros projetos e comece a criar um portfólio.",
       },
       {
         title: "Fase Alicerce",
         description:
-          "Nessa fase 2 você terá criado projetos mais robustos e aprendido a criar seus próprios projetos sozinho!",
+          "onsolide o seu conhecimento deixando seus projetos mais robustos, sendo capaz de fazê-los sozinho.",
       },
       {
         title: "Fase de Expansão",
         description:
-          "Você terá estruturado o seu currículo e Linkedin de forma estratégica.",
+          "Com seu portfólio, aprenda a aparecer para as empresas de forma estratégica. Aqui você monta seu currículo e Linkedin.",
       },
       {
         title: "Fase Mestre",
         description:
-          "Nessa etapa, você usará o nosso método AAP para aplicar para entrevistas nas melhores empresas de tecnologia.",
+          "Aplique o método AAP nas entrevistas de emprego e seja destaque nos processos seletivos.",
       },
       {
         title: "Certificado",
         description:
-          "Nessa fase, você terá o seu certificado validado, que comprova todo o seu conhecimento adquirido.",
+          "Comprove o seu conhecimento com as horas que você investiu no método AAP.",
       },
     ],
     []
@@ -92,8 +78,10 @@ export function OurTrail() {
     <div className="our-trail">
       <div className="container">
         <div className="title-container">
-          <Chip label="Jornada" />
-          <h1 className="section-title">Sua jornada até o primeiro emprego</h1>
+          <Chip label="O método AAP" />
+          <h1 className="section-title">
+            Sua jornada até o primeiro emprego...
+          </h1>
         </div>
         <div className="our-trail__content">
           {arrayInfoTrail.map((info, index) => (

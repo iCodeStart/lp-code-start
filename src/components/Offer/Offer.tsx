@@ -21,13 +21,13 @@ export function Offer() {
   }, []);
 
   const courses = [
-    { title: "HTML", price: 97 },
-    { title: "CSS", price: 97 },
-    { title: "Git/Github", price: 67 },
-    { title: "Bootstrap", price: 67 },
-    { title: "Javascript", price: 117 },
-    { title: "React", price: 117 },
-    { title: "Node", price: 117 },
+    { title: "Curso de HTML", price: 97 },
+    { title: "Curso de CSS", price: 97 },
+    { title: "Curso de Git/Github", price: 67 },
+    { title: "Curso de Bootstrap", price: 67 },
+    { title: "Curso de Javascript", price: 117 },
+    { title: "Curso de React", price: 117 },
+    { title: "Curso de Node", price: 117 },
   ];
 
   const additionalItems = [
@@ -35,15 +35,14 @@ export function Offer() {
     { title: "Exercícios", price: 47 },
     { title: "Projetos desenvolvidos na Code Start", price: 127 },
     { title: "Suporte exclusivo para alunos", price: 97 },
-    //{ title: "Grupo Vip", price: 97 },
     { title: "Simulação de entrevistas", price: 47 },
   ];
 
   const itemsWithDescription = [
-    // {
-    //   title: "Grupo Vip",
-    //   description: "Incalculável",
-    // },
+    {
+      title: "Grupo Vip Code Start",
+      description: "Incalculável",
+    },
     {
       title: "Certificado validado",
       description: "Incalculável",
@@ -107,14 +106,14 @@ export function Offer() {
             {courses.map((course, index) => (
               <LineOffer
                 key={index}
-                title={`Acesso ao curso de ${course.title}`}
+                title={`${course.title}`}
                 price={`R$ ${course.price},00`}
               />
             ))}
             {additionalItems.map((item, index) => (
               <LineOffer
                 key={index}
-                title={`Acesso a ${item.title}`}
+                title={`${item.title}`}
                 price={`R$ ${item.price},00`}
               />
             ))}
@@ -122,8 +121,8 @@ export function Offer() {
             {itemsWithDescription.map((item, index) => (
               <LineOffer
                 key={index}
-                title={`Acesso a ${item.title}`}
-                description={item.description} // Usando a descrição
+                title={`${item.title}`}
+                description={item.description}
               />
             ))}
 
@@ -148,14 +147,21 @@ export function Offer() {
               <h1 className="card-offer__price">
                 <p style={{ fontSize: "22px" }}>12x de</p>29,82
               </h1>
-              <p className="card-offer__price__all"> ou 297 à vista</p>
+              <p className="card-offer__price__all">
+                {" "}
+                ou{" "}
+                <span style={{ fontWeight: "bold", color: "white" }}>
+                  297
+                </span>{" "}
+                à vista
+              </p>
               <a
                 href={`https://pay.kiwify.com.br/0UKSbBo?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
                 target="_blank"
                 rel="noreferrer"
               >
                 <button className="offer_button" onClick={trackingClickButton}>
-                  QUERO ME INSCREVER
+                  GARANTIR MEU ACESSO
                 </button>
               </a>
               <p>
