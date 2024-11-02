@@ -14,7 +14,10 @@ export function FullstackTrail() {
             {/* <img src="/roadmapCodedesk.png" alt="Trilha fullstack Code Start" /> */}
           </div>
           <div className="fullstack-mobile">
-            <img src="/roadmapCode.webp" alt="Trilha fullstack Code Start" />
+            <img
+              src="/roadmapCodeMobile.webp"
+              alt="Trilha fullstack Code Start"
+            />
             {/* <img src="/roadmapCode.png" alt="Trilha fullstack Code Start" /> */}
           </div>
         </div>
