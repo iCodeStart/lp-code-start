@@ -8,17 +8,19 @@ export function FullstackTrail() {
           <Chip label="Trilha" />
           <h1 className="section-title">Nossa trilha fullstack</h1>
         </div>
+        <p className="fullstack-trail__text">
+          Você vai aprender a linguagem mais utilizada pelas empresas, que é o
+          Javascript{" "}
+        </p>
         <div className="fullstack-trail__content">
           <div className="fullstack-desktop">
             <img src="/roadmapCode.webp" alt="Trilha fullstack Code Start" />
-            {/* <img src="/roadmapCodedesk.png" alt="Trilha fullstack Code Start" /> */}
           </div>
           <div className="fullstack-mobile">
             <img
               src="/roadmapCodeMobile.webp"
               alt="Trilha fullstack Code Start"
             />
-            {/* <img src="/roadmapCode.png" alt="Trilha fullstack Code Start" /> */}
           </div>
         </div>
       </div>
