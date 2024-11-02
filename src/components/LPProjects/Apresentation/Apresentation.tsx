@@ -16,7 +16,7 @@ export function Apresentation() {
           </h1>
           <p>
             Só por seguir um método, você já aumenta em 90% as chances de não
-            desistir de mais um projeto na sua vida
+            desistir de mais um projeto na sua vida...
           </p>
           <p>Calma, vamos te mostrar como funciona 👇🏻</p>
         </div>
