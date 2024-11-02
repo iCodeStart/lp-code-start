@@ -46,7 +46,7 @@ export function WorldProgram() {
           <br />E por isso essa é a sua maior vantagem.
         </p>
         <p className="school_content-text-title">
-          As empresas estão dispostas a te contratar, mesmo que você tem pouca
+          As empresas estão dispostas a te contratar, mesmo que você tenha pouca
           experiência
         </p>
         <div className="world-program-list_img">

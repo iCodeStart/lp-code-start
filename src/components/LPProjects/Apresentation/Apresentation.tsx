@@ -10,7 +10,7 @@ export function Apresentation() {
         </span>
         <div className="content-lp-project-apresentation-box-texts">
           <h1>
-            Se você seguir 1 hora por dia para seguir o método{" "}
+            Se você investir 1 hora por dia para seguir o método{" "}
             <strong>AAP </strong>, em 90 dias estará pronto para ser contratado
             como programador
           </h1>

@@ -13,7 +13,7 @@ export function OurTrail() {
       {
         title: "Fase Alicerce",
         description:
-          "onsolide o seu conhecimento deixando seus projetos mais robustos, sendo capaz de fazê-los sozinho.",
+          "Consolide o seu conhecimento deixando seus projetos mais robustos, sendo capaz de fazê-los sozinho.",
       },
       {
         title: "Fase de Expansão",
