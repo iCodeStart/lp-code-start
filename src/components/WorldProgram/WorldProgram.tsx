@@ -55,7 +55,7 @@ export function WorldProgram() {
             alt="Oportunidades de vagas para iniciantes na programação"
           />
         </div>
-        <h1 className="section-title">Como é a vida de um programador</h1>
+        <h1 className="section-title">Como é a vida de um programador?</h1>
         <div className="world-program-list">
           {arrayTexts.map((item, index) => {
             return (
