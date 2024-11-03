@@ -7,7 +7,7 @@ export const questions = [
   {
     question: "O acesso é vitalício?",
     answer:
-      "Sim! Você vai poder assistir quando e onde quiser. Além disso, terá sempre atualizações e você naão precisará pagar a mais por tudo a mais que vier a ter no treinamento!",
+      "Sim! Você vai poder assistir quando e onde quiser. Além disso, terá sempre atualizações e você não precisará pagar a mais por tudo que vier a ter no treinamento!",
   },
   {
     question: "Como funciona os projetos que são desenvolvidos na Code Start?",
