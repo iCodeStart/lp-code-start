@@ -141,7 +141,7 @@ export function Offer() {
               <h3>
                 Aprender do zero ao profissional, em um só treinamento, 100%
                 online e com{" "}
-                <span style={{ color: "white" }}>acesso imediato,</span> por
+                <span style={{ color: "white" }}>acesso VITALÍCIO,</span> por
                 apenas:
               </h3>
               <h1 className="card-offer__price">
@@ -156,7 +156,7 @@ export function Offer() {
                 à vista
               </p>
               <a
-                href={`https://pay.kiwify.com.br/0UKSbBo?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
+                href={`https://pay.kiwify.com.br/bnm9Pid?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
                 target="_blank"
                 rel="noreferrer"
               >
