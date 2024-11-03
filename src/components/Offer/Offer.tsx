@@ -47,6 +47,10 @@ export function Offer() {
       title: "Certificado validado",
       description: "Incalculável",
     },
+    {
+      title: "Acesso Vitalício",
+      description: "Incalculável",
+    },
   ];
 
   const total =
