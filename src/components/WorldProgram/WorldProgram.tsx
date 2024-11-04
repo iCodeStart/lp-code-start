@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Chip } from "../Chip";
 import { WorldProgramInfo } from "./components";
 import "./WorldProgram.style.scss";
+import ReactGA from "react-ga4";
 
 export function WorldProgram() {
   useEffect(() => {
@@ -10,28 +11,36 @@ export function WorldProgram() {
       duration: 1000,
     });
   }, []);
+
+  function trackingClickButton() {
+    ReactGA.event({
+      category: "world-program",
+      action: "clique-botao-wp",
+      label: "quero-garantir-minha-vaga",
+    });
+  }
   const arrayTexts = [
     {
-      title: "+420.000 vagas",
-      text: "A busca por novos profissionais é infinita",
-      primaryTitle: "Oportunidade",
+      title: "R$16.339,29",
+      text: "Média de salário para <span>especialistas em programação",
+      font: "Fonte: Código Fonte",
     },
     {
       title: "78,27%",
-      text: "Trabalhe de onde quiser, faça sua rotina e seja dono das suas horas.",
-      primaryTitle: "Liberdade",
+      text: "Trabalhando de casa",
+      font: "Fonte: Canal Tech",
     },
     {
-      title: "R$16.339,29",
-      text: "Ganhe um salário maior que 95% das profissões",
-      primaryTitle: "Dinheiro",
+      title: "+420.000 vagas",
+      text: "E falta de profissionais para ocuparem essas vagas...",
+      font: "Fonte: G1",
     },
   ];
   return (
     <div className="world-programming">
       <div className="container__program-info" data-aos="zoom-in">
-        <Chip label="Oportunidade" />
-        <h1 className="section-title">Empresas estão desesperadas</h1>
+        <Chip label="Carreira" />
+        <h1 className="section-title">A profissão do futuro</h1>
         <div className="world-program-list_img">
           <img
             src="/vagas-abertas1.webp"
@@ -41,21 +50,10 @@ export function WorldProgram() {
         <p className="school_content-text-title">
           A matemática é bastante simples: <br />
           <br />
-          Existe muito mais vagas para serem preenchidas do que profissionais
-          para serem contratados <br />
-          <br />E por isso essa é a sua maior vantagem.
+          Existem muito <strong>mais vagas disponíveis </strong>para poucas
+          pessoas para ocupar elas. <br />
+          <br />E a tendência é que isso ainda aconteça por muito tempo...
         </p>
-        <p className="school_content-text-title">
-          As empresas estão dispostas a te contratar, mesmo que você tenha pouca
-          experiência
-        </p>
-        <div className="world-program-list_img">
-          <img
-            src="/oportunidade.webp"
-            alt="Oportunidades de vagas para iniciantes na programação"
-          />
-        </div>
-        <h1 className="section-title">Como é a vida de um programador?</h1>
         <div className="world-program-list">
           {arrayTexts.map((item, index) => {
             return (
@@ -64,7 +62,7 @@ export function WorldProgram() {
                 index={index}
                 titleCard={item.title}
                 text={item.text}
-                primaryTitle={item.primaryTitle}
+                font={item.font}
               />
             );
           })}

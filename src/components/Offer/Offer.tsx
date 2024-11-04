@@ -21,21 +21,21 @@ export function Offer() {
   }, []);
 
   const courses = [
-    { title: "Curso de HTML", price: 97 },
-    { title: "Curso de CSS", price: 97 },
-    { title: "Curso de Git/Github", price: 67 },
-    { title: "Curso de Bootstrap", price: 67 },
-    { title: "Curso de Javascript", price: 117 },
-    { title: "Curso de React", price: 117 },
-    { title: "Curso de Node", price: 117 },
+    { title: "HTML/CSS", price: 129 },
+    { title: "Bootstrap", price: 129 },
+    { title: "Git/Github", price: 129 },
+    { title: "Javascript", price: 147 },
+    { title: "React JS", price: 197 },
+    { title: "Node JS", price: 197 },
   ];
 
   const additionalItems = [
     { title: "Conteúdos sobre mercado de trabalho", price: 47 },
-    { title: "Exercícios", price: 47 },
-    { title: "Projetos desenvolvidos na Code Start", price: 127 },
+    { title: "Exercícios", price: 97 },
+    { title: "Projetos desenvolvidos na Code Start", price: 197 },
     { title: "Suporte exclusivo para alunos", price: 97 },
-    { title: "Simulação de entrevistas", price: 47 },
+    { title: "Networking com pessoas da profissão", price: 97 },
+    { title: "Simulação de entrevistas", price: 197 },
   ];
 
   const itemsWithDescription = [

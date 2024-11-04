@@ -10,15 +10,18 @@ export function Apresentation() {
         </span>
         <div className="content-lp-project-apresentation-box-texts">
           <h1>
-            Se você investir 1 hora por dia para seguir o método{" "}
-            <strong>AAP </strong>, em 90 dias estará pronto para ser contratado
-            como programador
+            Você nunca mais vai pensar em desistir e se sentir perdido na
+            programação
           </h1>
           <p>
-            Só por seguir um método, você já aumenta em 90% as chances de não
-            desistir de mais um projeto na sua vida...
+            Domine a programação com o método <strong>AAP</strong> e conquiste a
+            sua vaga de emprego de forma acelerada ainda esse ano - Estudando
+            apenas 1 hora por dia!
           </p>
-          <p>Calma, vamos te mostrar como funciona 👇🏻</p>
+          <p>
+            Aqui nós <strong style={{ color: "white" }}>GARANTIMOS</strong> a
+            sua aprovação.
+          </p>
         </div>
       </div>
     </div>
