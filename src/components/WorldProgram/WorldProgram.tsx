@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { Chip } from "../Chip";
 import { WorldProgramInfo } from "./components";
 import "./WorldProgram.style.scss";
-import ReactGA from "react-ga4";
 
 export function WorldProgram() {
   useEffect(() => {
@@ -11,14 +10,6 @@ export function WorldProgram() {
       duration: 1000,
     });
   }, []);
-
-  function trackingClickButton() {
-    ReactGA.event({
-      category: "world-program",
-      action: "clique-botao-wp",
-      label: "quero-garantir-minha-vaga",
-    });
-  }
   const arrayTexts = [
     {
       title: "R$16.339,29",
