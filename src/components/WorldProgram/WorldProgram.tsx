@@ -30,7 +30,7 @@ export function WorldProgram() {
   return (
     <div className="world-programming">
       <div className="container__program-info" data-aos="zoom-in">
-        <Chip label="Carreira" />
+        <Chip label="Oportunidade" />
         <h1 className="section-title">A profissão do futuro</h1>
         <div className="world-program-list_img">
           <img
@@ -41,8 +41,8 @@ export function WorldProgram() {
         <p className="school_content-text-title">
           A matemática é bastante simples: <br />
           <br />
-          Existem muito <strong>mais vagas disponíveis </strong>para poucas
-          pessoas para ocupar elas. <br />
+          Existem muito <strong>mais vagas </strong>para serem preenchidas do
+          que profissionais para serem contratados <br />
           <br />E a tendência é que isso ainda aconteça por muito tempo...
         </p>
         <div className="world-program-list">
