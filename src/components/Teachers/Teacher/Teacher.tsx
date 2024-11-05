@@ -1,5 +1,3 @@
-import AOS from "aos";
-import { useEffect } from "react";
 import "./Teacher.styles.scss";
 
 interface TeacherProps {
@@ -9,14 +7,9 @@ interface TeacherProps {
 }
 
 export function Teacher({ img, name, description }: TeacherProps) {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
 
   return (
-    <div className="teacher" data-aos="fade-up">
+    <div className="teacher">
       <img
         src={img}
         alt="Professor Code Start"

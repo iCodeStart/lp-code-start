@@ -1,24 +1,16 @@
-import AOS from "aos";
-import { useEffect } from "react";
 interface LineBonusProps {
   img: string;
   title: string;
   subtitle: string;
-  //orientation: "left" | "right";
 }
 export function LineBonus({
   img,
   title,
   subtitle,
-}: //orientation,
+}:
 LineBonusProps) {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
   return (
-    <div className="line-bonus" data-aos="fade-up">
+    <div className="line-bonus">
       <div className="line-bonus__content">
         <img src={img} alt="Bonus Code Start" className="line-bonus__image" />
         <div className="line-bonus_content-texts">

@@ -2,13 +2,13 @@ import React from "react";
 import CountUp from "react-countup";
 import { FaBook, FaCheckCircle, FaUserGraduate } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
-import "./Dashboard.css"; // Import custom CSS for additional styling
+import "./Dashboard.css";
 
 interface CounterCardProps {
   title: string;
   endValue: number;
   icon: React.ReactNode;
-  showPlus?: boolean; // Optional prop to show the plus sign
+  showPlus?: boolean;
 }
 
 const CounterCard: React.FC<CounterCardProps> = ({
@@ -18,8 +18,8 @@ const CounterCard: React.FC<CounterCardProps> = ({
   showPlus,
 }) => {
   const { ref, inView } = useInView({
-    triggerOnce: false, // Ensure animation triggers every time in view
-    threshold: 0.5, // Trigger when 50% of the element is in view
+    triggerOnce: false,
+    threshold: 0.5,
   });
 
   return (

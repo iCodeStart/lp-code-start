@@ -1,15 +1,8 @@
-import AOS from "aos";
-import { useEffect } from "react";
 import { Chip } from "../Chip";
 import { WorldProgramInfo } from "./components";
 import "./WorldProgram.style.scss";
 
 export function WorldProgram() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
   const arrayTexts = [
     {
       title: "R$16.339,29",
@@ -29,7 +22,7 @@ export function WorldProgram() {
   ];
   return (
     <div className="world-programming">
-      <div className="container__program-info" data-aos="zoom-in">
+      <div className="container__program-info">
         <Chip label="Oportunidade" />
         <h1 className="section-title">A profissão do futuro</h1>
         <div className="world-program-list_img">

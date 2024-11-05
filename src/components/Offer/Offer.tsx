@@ -1,5 +1,3 @@
-import AOS from "aos";
-import { useEffect } from "react";
 import ReactGA from "react-ga4";
 import { useLocation } from "react-router-dom";
 import { Chip } from "../Chip";
@@ -13,12 +11,6 @@ export function Offer() {
   const utmMedium = params.get("utm_medium");
   const utmCampaign = params.get("utm_campaign");
   const utmContent = params.get("utm_content");
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
 
   const courses = [
     { title: "HTML/CSS", price: 129 },

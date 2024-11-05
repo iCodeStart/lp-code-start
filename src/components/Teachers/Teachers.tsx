@@ -13,13 +13,13 @@ export function Teachers() {
   const utmContent = params.get("utm_content");
   const arrayTeachers = [
     {
-      img: "./DavieAlan-108.webp",
+      img: "./DavieAlan-108.jpg",
       name: "Alan Braulio",
       description:
         "<p>Programador Full Stack Sênior</p><p>Formado em Engenharia de Computação pela PUC Minas.</p> <p>É desenvolvedor a mais de 10 anos ocupando posições de liderança e destaque nos times que atuou ajudando a gerir e organizar as equipes de desenvolvimento.</p>",
     },
     {
-      img: "./DavieAlan-078.webp",
+      img: "./DavieAlan-078.jpg",
       name: "Davi Quirino",
       description:
         "<p>Programador Sênior na Ambev</p></p><p>Formado em Engenharia de Produção pela Universidade do Estado de Minas Gerais, fez transição de carreira e está atuando há mais de 5 anos como desenvolvedor de sistemas.</p><p> Já participou de diversos projetos em empresas de grande porte e com sistemas com uso de milhões de pessoas.</p>",
@@ -51,7 +51,7 @@ export function Teachers() {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="offer_button" data-aos="fade-up">
+          <button className="offer_button">
             Quero ser programador
           </button>
         </a>
