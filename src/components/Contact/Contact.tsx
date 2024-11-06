@@ -29,7 +29,7 @@ const Contact = () => {
       </div>
       <div className="contact-image-section">
         <img
-          src="/whatsappImage.svg"
+          src="/whatsappImage.png"
           alt="Imagem de Contato"
           className="contact-image"
         />
