@@ -16,7 +16,6 @@ export function LineOffer({ title, price, description }: LineOfferProps) {
             textDecorationColor: "#D8D8D8",
           }}
         >
-          {/* Renderiza o preço se existir, caso contrário renderiza a descrição */}
           {price ? price : description}
         </s>
       </span>

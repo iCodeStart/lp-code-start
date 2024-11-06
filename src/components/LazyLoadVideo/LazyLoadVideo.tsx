@@ -41,7 +41,6 @@ const LazyLoadVideo = ({ videoId }: LazyLoadVideoProps) => {
             alt="Video Thumbnail"
             className="thumbnail-image"
           />
-          {/* <div className="play-button"></div> */}
         </div>
       )}
     </div>
