@@ -4,16 +4,16 @@ import { LineBonus } from "./LineBonus";
 export function Bonus() {
   const arrayBonus = [
     {
-      img: "/first1.webp",
-      title: "Seu primeiro mês",
-      subtitle:
-        "Tudo que você precisa saber para se destacar no seu primeiro mês na empresa.",
-    },
-    {
       img: "/codeMoney.webp",
       title: "Recupere o seu investimento",
       subtitle:
         "Ganhe dinheiro como programador mesmo sendo um completo iniciante.",
+    },
+    {
+      img: "/first1.webp",
+      title: "Seu primeiro mês",
+      subtitle:
+        "Tudo que você precisa saber para se destacar no seu primeiro mês na empresa.",
     },
     {
       img: "/posicionamento1.webp",
