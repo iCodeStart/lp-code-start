@@ -141,15 +141,20 @@ export function Offer() {
                 apenas:
               </h3>
               <h1 className="card-offer__price">
-                <p style={{ fontSize: "22px" }}>12x de</p>29,82
+                <p style={{ fontSize: "22px" }}>12x de</p>59,72
               </h1>
               <p className="card-offer__price__all">
                 {" "}
                 ou{" "}
                 <span style={{ fontWeight: "bold", color: "white" }}>
-                  297
+                  597
                 </span>{" "}
                 à vista
+              </p>
+              <p>MAS CALMA QUE TEM MAIS!</p>
+              <p>
+                Estamos no mês da BLACK FRIDAY e preparamos um PRESENTE ESPECIAL
+                para VOCÊ!
               </p>
               <a
                 href={`https://pay.kiwify.com.br/bnm9Pid?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
@@ -157,7 +162,7 @@ export function Offer() {
                 rel="noreferrer"
               >
                 <button className="offer_button" onClick={trackingClickButton}>
-                  GARANTIR MEU ACESSO
+                  QUERO VER MEU PRESENTE
                 </button>
               </a>
               <p>
