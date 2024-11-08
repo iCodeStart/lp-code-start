@@ -152,7 +152,7 @@ export function Offer() {
                 à vista
               </p>
               <a
-                href={`https://pay.kiwify.com.br/bnm9Pid?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
+                href={`https://pay.kiwify.com.br/TABlI0t?coupon=CODESTART50?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
                 target="_blank"
                 rel="noreferrer"
               >

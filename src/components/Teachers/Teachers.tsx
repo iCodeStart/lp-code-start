@@ -47,13 +47,11 @@ export function Teachers() {
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <a
-          href={`https://pay.kiwify.com.br/bnm9Pid?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
+          href={`https://pay.kiwify.com.br/TABlI0t?coupon=CODESTART50?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
           target="_blank"
           rel="noreferrer"
         >
-          <button className="offer_button">
-            Quero ser programador
-          </button>
+          <button className="offer_button">Quero ser programador</button>
         </a>
       </div>
     </div>
