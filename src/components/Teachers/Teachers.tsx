@@ -1,4 +1,3 @@
-import { useLocation } from "react-router-dom";
 import { Chip } from "../Chip";
 import { Teacher } from "./Teacher/Teacher";
 import "./Teachers.styles.scss";
