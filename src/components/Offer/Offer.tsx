@@ -7,8 +7,10 @@ import { LineOffer } from "./LineOffer";
 import "./Offer.styles.scss";
 import { DataExcel, useSendDataToExcel } from "../../queries";
 import { useState } from "react";
+import useIsMobile from "../../utils/useIsMobile";
 
 export function Offer() {
+  const isMobile = useIsMobile();
   const location = useLocation();
   const { mutate } = useSendDataToExcel();
   const [isModalOpen, setModalOpen] = useState(false);
@@ -76,7 +78,7 @@ export function Offer() {
     }&email=${formData.email}&phone=${getCleanedPhone(
       formData.telefone
     )}&src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`;
-    window.open(url, "_blank", "noreferrer");
+    window.open(url, `${isMobile ? "_self" : "_blank"}`, "noreferrer");
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
