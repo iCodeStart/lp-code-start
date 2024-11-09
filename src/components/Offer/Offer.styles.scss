@@ -1,52 +1,76 @@
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
-  
-  .modal-content {
-    background: black;
-    padding: 20px;
-    border: 2px solid gray;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    width: 400px;
-    border-radius: 5px;
-    color: black;
-  
-    h2, h4 {
-      line-height: 45px;
-      color: orange; 
-    }
-  
-    @media (max-width: 600px) {
-      width: 100%;
-      margin: 0 10px;
-    }
-  }
-  
-  input {
-    display: block;
-    margin: 10px auto;
-    padding: 20px;
-    font-size: 18px;
-    width: 90%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button[type="submit"] {
-    margin-top: 10px;
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.9) 9%,
+    rgba(18, 18, 18, 0.8) 40%,
+    rgba(36, 228, 221, 0.8) 97%
+  );
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  width: 420px;
+  max-width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 1010;
+}
+
+.modal-content h2,
+.modal-content h4 {
+  color: #fff;
+  margin-bottom: 15px;
+  line-height: 38px;
+}
+
+.input-box {
+  position: relative;
+  width: 90%;
+  margin: 15px 0;
+}
+
+.input-box input {
+  width: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px;
+  outline: none;
+}
+
+.input-box input::placeholder {
+  color: #ccc;
+}
+
+button[type="submit"] {
+  width: 50%;
+  height: 45px;
+  background: #24e4dd;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background: #1ec2b5;
+}

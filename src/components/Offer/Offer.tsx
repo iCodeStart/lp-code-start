@@ -228,42 +228,49 @@ export function Offer() {
                 QUERO VER MEU PRESENTE
               </button>
               {isModalOpen && (
-                <div className="modal">
+                <div className="modal-backdrop">
                   <div className="modal-content">
                     <h2>Seu presente é: UM CUPOM DE 50% DE DESCONTO</h2>
                     <h4>Preencha os dados e receba seu cupom!</h4>
                     <form onSubmit={handleSubmit}>
-                      <input
-                        type="text"
-                        name="nome"
-                        placeholder="Nome"
-                        value={formData.nome}
-                        onChange={handleInputChange}
-                        required
-                      />
-                      <input
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                      />
-                      <InputMask
-                        mask="(99) 99999-9999"
-                        name="telefone"
-                        placeholder="Telefone"
-                        value={formData.telefone}
-                        onChange={handleInputChange}
-                        required
-                      />
+                      <div className="input-box">
+                        <input
+                          type="text"
+                          name="nome"
+                          placeholder="Nome"
+                          value={formData.nome}
+                          onChange={handleInputChange}
+                          required
+                        />
+                      </div>
+                      <div className="input-box">
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="Email"
+                          value={formData.email}
+                          onChange={handleInputChange}
+                          required
+                        />
+                      </div>
+                      <div className="input-box">
+                        <InputMask
+                          mask="(99) 99999-9999"
+                          name="telefone"
+                          placeholder="Telefone"
+                          value={formData.telefone}
+                          onChange={handleInputChange}
+                          required
+                        />
+                      </div>
                       <button type="submit" disabled={isLoading}>
-                        {isLoading ? "Enviando..." : "Receber Cupom"}
+                        {isLoading ? "Aplicando cupom..." : "Receber Cupom"}
                       </button>
                     </form>
                   </div>
                 </div>
               )}
+
               <p>
                 *Válido para os dias: <strong>{obterDatas()}</strong>
               </p>
