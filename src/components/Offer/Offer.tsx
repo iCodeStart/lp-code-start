@@ -114,7 +114,9 @@ export function Offer() {
         openPaymentLink();
         setModalOpen(false);
         setFormData({ nome: "", email: "", telefone: "" });
-        setIsLoading(false);
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 3000);
       },
       onError: () => {
         alert("Erro ao enviar o cupom.");
