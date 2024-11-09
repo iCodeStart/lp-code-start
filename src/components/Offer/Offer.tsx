@@ -45,14 +45,6 @@ export function Offer() {
     courses.reduce((acc, course) => acc + course.price, 0) +
     additionalItems.reduce((acc, item) => acc + item.price, 0);
 
-  function trackingClickButton() {
-    ReactGA.event({
-      category: "offer",
-      action: "clique-botao-offer",
-      label: "quero-me-inscrever-inferior",
-    });
-  }
-
   const obterDatas = () => {
     const hoje = new Date();
     const ontem = new Date(hoje);
