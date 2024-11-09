@@ -1,10 +1,23 @@
 import ReactGA from "react-ga4";
 import { useLocation } from "react-router-dom";
+import InputMask from "react-input-mask";
+
 import { Chip } from "../Chip";
 import { LineOffer } from "./LineOffer";
+import "./Offer.styles.scss";
+import { DataExcel, useSendDataToExcel } from "../../queries";
+import { useState } from "react";
 
 export function Offer() {
   const location = useLocation();
+  const { mutate } = useSendDataToExcel();
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [formData, setFormData] = useState<DataExcel>({
+    nome: "",
+    email: "",
+    telefone: "",
+  });
   const params = new URLSearchParams(location.search);
   const srcParam = params.get("src");
   const utmSource = params.get("utm_source");
@@ -56,6 +69,57 @@ export function Offer() {
       label: "quero-me-inscrever-inferior",
     });
   }
+
+  const openPaymentLink = () => {
+    const url = `https://pay.kiwify.com.br/TABlI0t?coupon=CODESTART50&name=${
+      formData.nome
+    }&email=${formData.email}&phone=${getCleanedPhone(
+      formData.telefone
+    )}&src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`;
+    window.open(url, "_blank", "noreferrer");
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+
+    if (name === "telefone") {
+      const formattedValue = formatPhone(value);
+      setFormData((prevData) => ({ ...prevData, [name]: formattedValue }));
+    } else {
+      setFormData((prevData) => ({ ...prevData, [name]: value }));
+    }
+  };
+
+  const formatPhone = (value: string) => {
+    return value
+      .replace(/\D/g, "")
+      .replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3")
+      .replace(/(\d)(\d{4})$/, "$1-$2");
+  };
+
+  const getCleanedPhone = (phone: string) => {
+    return phone.replace(/\D/g, "");
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    setIsLoading(true);
+    e.preventDefault();
+    const cleanedPhone = getCleanedPhone(formData.telefone);
+    const dataToSend = { ...formData, telefone: cleanedPhone };
+    mutate(dataToSend, {
+      onSuccess: () => {
+        trackingClickButton();
+        openPaymentLink();
+        setModalOpen(false);
+        setFormData({ nome: "", email: "", telefone: "" });
+        setIsLoading(false);
+      },
+      onError: () => {
+        alert("Erro ao enviar o cupom.");
+        setIsLoading(false);
+      },
+    });
+  };
 
   const obterDatas = () => {
     const hoje = new Date();
@@ -156,15 +220,50 @@ export function Offer() {
                 Estamos no mês da BLACK FRIDAY e preparamos um PRESENTE ESPECIAL
                 para VOCÊ!
               </p>
-              <a
-                href={`https://pay.kiwify.com.br/bnm9Pid?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
-                target="_blank"
-                rel="noreferrer"
+
+              <button
+                className="offer_button"
+                onClick={() => setModalOpen(true)}
               >
-                <button className="offer_button" onClick={trackingClickButton}>
-                  QUERO VER MEU PRESENTE
-                </button>
-              </a>
+                QUERO VER MEU PRESENTE
+              </button>
+              {isModalOpen && (
+                <div className="modal">
+                  <div className="modal-content">
+                    <h2>Seu presente é: UM CUPOM DE 50% DE DESCONTO</h2>
+                    <h4>Preencha os dados e receba seu cupom!</h4>
+                    <form onSubmit={handleSubmit}>
+                      <input
+                        type="text"
+                        name="nome"
+                        placeholder="Nome"
+                        value={formData.nome}
+                        onChange={handleInputChange}
+                        required
+                      />
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        required
+                      />
+                      <InputMask
+                        mask="(99) 99999-9999"
+                        name="telefone"
+                        placeholder="Telefone"
+                        value={formData.telefone}
+                        onChange={handleInputChange}
+                        required
+                      />
+                      <button type="submit" disabled={isLoading}>
+                        {isLoading ? "Enviando..." : "Receber Cupom"}
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              )}
               <p>
                 *Válido para os dias: <strong>{obterDatas()}</strong>
               </p>
