@@ -2,15 +2,11 @@ import { useLocation } from "react-router-dom";
 import { Chip } from "../Chip";
 import { Teacher } from "./Teacher/Teacher";
 import "./Teachers.styles.scss";
+import ModalOffer from "../ModalOffer/ModalOffer";
+import { useState } from "react";
 
 export function Teachers() {
-  const location = useLocation();
-  const params = new URLSearchParams(location.search);
-  const srcParam = params.get("src");
-  const utmSource = params.get("utm_source");
-  const utmMedium = params.get("utm_medium");
-  const utmCampaign = params.get("utm_campaign");
-  const utmContent = params.get("utm_content");
+  const [isModalOpen, setModalOpen] = useState(false);
   const arrayTeachers = [
     {
       img: "./AlanFoto.jpg",
@@ -46,14 +42,14 @@ export function Teachers() {
         </div>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <a
-          href={`https://pay.kiwify.com.br/TABlI0t?coupon=CODESTART50&src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
-          target="_blank"
-          rel="noreferrer"
+        <button
+          className="offer_button"
+          onClick={() => setModalOpen(!isModalOpen)}
         >
-          <button className="offer_button">Quero ser programador</button>
-        </a>
+          Quero ser programador
+        </button>
       </div>
+      {isModalOpen && <ModalOffer />}
     </div>
   );
 }
