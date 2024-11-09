@@ -1,5 +1,3 @@
-import ReactGA from "react-ga4";
-
 import { Chip } from "../Chip";
 import { LineOffer } from "./LineOffer";
 import { useState } from "react";
