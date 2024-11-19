@@ -107,7 +107,7 @@ export function Offer2() {
           </div>
 
           <div className="card-offer">
-            <p className="title">Oferta Básica</p>
+            <p className="title-card-offer">Oferta Básica</p>
             {courses.map((course, index) => (
               <LineOffer
                 key={index}

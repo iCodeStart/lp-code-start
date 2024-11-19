@@ -1,18 +1,15 @@
 .container {
   border-radius: 16px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Sombra ajustada para melhor visibilidade em fundo preto */
-
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
   width: 90%;
-  //padding: 20px;
-  //margin: 20px;
-  position: relative; /* Necessário para posicionar corretamente o .pricing */
+  position: relative;
 }
 
 .container .pricing {
   position: absolute;
-  top: 200px; /* Ajusta para aparecer na borda superior do .inner */
+  top: 200px;
   right: 20px;
-  background-color: #00bcd3; /* Cor de destaque para o preço */
+  background-color: #00bcd3;
   color: #fff;
   border-radius: 12px;
   padding: 5px 10px;
@@ -32,10 +29,14 @@
   }
 }
 
-.container .title {
-  font-size: 1.2rem;
+.title-card-offer {
+  font-size: 3rem;
   font-weight: bold;
-  color: #00bcd3; /* Cor de destaque para o título */
-  text-align: center; /* Centraliza o título */
+  color: #00bcd3;
+  text-align: center;
   margin-top: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 }

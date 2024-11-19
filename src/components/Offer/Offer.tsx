@@ -79,18 +79,12 @@ export function Offer() {
     <>
       <div className="offer" id="offer">
         <div className="container">
-          {/* <div className="title-container">
-            <Chip label="Investimento" />
-            <h1 className="section-title">
-              <strong>TUDO O QUE VOCÊ PRECISA</strong> EM UM LUGAR SÓ
-            </h1>
-          </div> */}
           <span className="pricing1">
             <span>Oferta Completa</span>
           </span>
 
           <div className="card-offer">
-            <p className="title">Especial BLACK FRIDAY</p>
+            <p className="title-card-offer">Especial BLACK FRIDAY</p>
             {courses.map((course, index) => (
               <LineOffer
                 key={index}
