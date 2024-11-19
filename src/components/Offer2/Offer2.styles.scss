@@ -1,0 +1,41 @@
+.container {
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Sombra ajustada para melhor visibilidade em fundo preto */
+
+  width: 90%;
+  //padding: 20px;
+  //margin: 20px;
+  position: relative; /* Necessário para posicionar corretamente o .pricing */
+}
+
+.container .pricing {
+  position: absolute;
+  top: 200px; /* Ajusta para aparecer na borda superior do .inner */
+  right: 20px;
+  background-color: #00bcd3; /* Cor de destaque para o preço */
+  color: #fff;
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-weight: bold;
+  width: 200px;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    top: 297px;
+    width: 7rem;
+    font-size: 16px;
+    height: 1.5rem;
+  }
+}
+
+.container .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00bcd3; /* Cor de destaque para o título */
+  text-align: center; /* Centraliza o título */
+  margin-top: 10px;
+}
