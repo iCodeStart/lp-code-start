@@ -98,7 +98,7 @@ export function Offer2() {
   return (
     <>
       <div className="offer" id="offer">
-        <div className="container">
+        <div className="container2">
           <div className="title-container">
             <Chip label="Investimento" />
             <h1 className="section-title">

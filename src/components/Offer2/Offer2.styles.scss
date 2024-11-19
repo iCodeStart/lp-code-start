@@ -1,11 +1,14 @@
-.container {
+.container2 {
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  width: 90%;
+  width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.container .pricing {
+.container2 .pricing {
   position: absolute;
   top: 200px;
   right: 20px;

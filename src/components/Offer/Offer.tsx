@@ -78,7 +78,7 @@ export function Offer() {
   return (
     <>
       <div className="offer" id="offer">
-        <div className="container">
+        <div className="container1">
           <span className="pricing1">
             <span>Oferta Completa</span>
           </span>
