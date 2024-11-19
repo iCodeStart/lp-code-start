@@ -362,7 +362,7 @@ button {
   background-color: #181b20;
   padding: 100px;
   box-sizing: border-box;
-  width: 50%;
+  width: 100%;
 
   @media (max-width: 768px) {
     width: 100%;
