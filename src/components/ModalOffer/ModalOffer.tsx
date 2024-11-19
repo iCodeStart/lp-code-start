@@ -22,7 +22,7 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
     telefone: "",
   });
   const [isLoading, setIsLoading] = useState(false);
-
+  const numberForm = isPrincipalOffer ? "1" : "2";
   const params = new URLSearchParams(location.search);
   const srcParam = params.get("src");
   const utmSource = params.get("utm_source");
@@ -84,6 +84,11 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+
+    if (name === "nome") {
+      const formattedName = `${numberForm}-${formData.nome}`;
+      setFormData((prevData) => ({ ...prevData, [name]: formattedName }));
+    }
 
     if (name === "telefone") {
       const formattedValue = formatPhone(value);
