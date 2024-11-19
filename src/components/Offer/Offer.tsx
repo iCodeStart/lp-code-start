@@ -84,7 +84,8 @@ export function Offer() {
           </span>
 
           <div className="card-offer">
-            <p className="title-card-offer">Especial BLACK FRIDAY</p>
+            <p className="title-card-offer">Especial BLACK FRIDAY:</p>
+            <p className="title-card-offer">ACESSO VITALÍCIO</p>
             {courses.map((course, index) => (
               <LineOffer
                 key={index}
