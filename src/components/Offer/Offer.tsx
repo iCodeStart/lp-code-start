@@ -149,7 +149,12 @@ export function Offer() {
               >
                 QUERO VER MEU PRESENTE
               </button>
-              {isModalOpen && <ModalOffer isPrincipalOffer={true} />}
+              {isModalOpen && (
+                <ModalOffer
+                  isPrincipalOffer={true}
+                  onClose={() => setModalOpen(!isModalOpen)}
+                />
+              )}
 
               <p>
                 *Válido para os dias: <strong>{obterDatas()}</strong>

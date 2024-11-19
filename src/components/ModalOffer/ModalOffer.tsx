@@ -9,9 +9,10 @@ import "./ModalOffer.styles.scss";
 
 interface ModalOfferProps {
   isPrincipalOffer: boolean;
+  onClose?: () => void;
 }
 
-const ModalOffer = ({ isPrincipalOffer }: ModalOfferProps) => {
+const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
   const { mutate } = useSendDataToExcel();
   const isMobile = useIsMobile();
   const location = useLocation();
@@ -45,7 +46,6 @@ const ModalOffer = ({ isPrincipalOffer }: ModalOfferProps) => {
     console.log("dataToSend", dataToSend);
     mutate(dataToSend, {
       onSuccess: () => {
-        console.log("entrou");
         trackingClickButton();
         openPaymentLink();
         setFormData({ nome: "", email: "", telefone: "" });
@@ -54,7 +54,6 @@ const ModalOffer = ({ isPrincipalOffer }: ModalOfferProps) => {
         }, 3000);
       },
       onError: () => {
-        console.log("saiu");
         alert("Erro ao enviar o cupom.");
         setIsLoading(false);
       },
@@ -104,6 +103,9 @@ const ModalOffer = ({ isPrincipalOffer }: ModalOfferProps) => {
   return (
     <div className="modal-backdrop">
       <div className="modal-content">
+        <button className="close-button" onClick={onClose}>
+          X
+        </button>
         <h2>Seu presente é: UM CUPOM DE 50% DE DESCONTO</h2>
         <h4>Preencha os dados e receba seu cupom!</h4>
         <form onSubmit={handleSubmit}>

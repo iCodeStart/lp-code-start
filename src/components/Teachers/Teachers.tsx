@@ -48,7 +48,12 @@ export function Teachers() {
           Quero ser programador
         </button>
       </div>
-      {isModalOpen && <ModalOffer isPrincipalOffer={true} />}
+      {isModalOpen && (
+        <ModalOffer
+          isPrincipalOffer={true}
+          onClose={() => setModalOpen(!isModalOpen)}
+        />
+      )}
     </div>
   );
 }
