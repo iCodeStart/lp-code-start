@@ -1,48 +1,68 @@
+import { Chip } from "../Chip";
 import { LineOffer } from "./LineOffer";
 import { useState } from "react";
 import ModalOffer from "../ModalOffer/ModalOffer";
 
-import "./Offer.styles.scss";
+import "./Offer2.styles.scss";
 
-export function Offer() {
+export function Offer2() {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const courses = [
-    { title: "HTML/CSS", price: 129 },
-    { title: "Bootstrap", price: 129 },
-    { title: "Git/Github", price: 129 },
-    { title: "Javascript", price: 147 },
-    { title: "React JS", price: 197 },
-    { title: "Node JS", price: 197 },
+    { title: "HTML/CSS", price: 129, isActive: true },
+    { title: "Git/Github", price: 129, isActive: true },
+    { title: "Javascript", price: 147, isActive: true },
+    { title: "Bootstrap", price: 129, isActive: false },
+    { title: "React JS", price: 197, isActive: false },
+    { title: "Node JS", price: 197, isActive: false },
   ];
 
   const additionalItems = [
-    { title: "Conteúdos sobre mercado de trabalho", price: 47 },
-    { title: "Exercícios", price: 97 },
-    { title: "Projetos reais", price: 197 },
-    { title: "Suporte exclusivo para alunos", price: 97 },
-    { title: "Networking com pessoas da profissão", price: 97 },
-    { title: "Simulação de entrevistas", price: 197 },
+    {
+      title: "Conteúdos sobre mercado de trabalho",
+      price: 47,
+      isActive: false,
+    },
+    { title: "Exercícios", price: 97, isActive: true },
+    {
+      title: "Projetos reais",
+      price: 197,
+      isActive: false,
+    },
+    { title: "Suporte exclusivo para alunos", price: 97, isActive: true },
+    {
+      title: "Networking com pessoas da profissão",
+      price: 97,
+      isActive: false,
+    },
+    { title: "Simulação de entrevistas", price: 197, isActive: false },
   ];
 
   const itemsWithDescription = [
     {
       title: "Grupo Vip Code Start",
       description: "Incalculável",
+      isActive: false,
     },
     {
       title: "Certificado validado",
       description: "Incalculável",
+      isActive: true,
     },
     {
       title: "Acesso Vitalício",
       description: "Incalculável",
+      isActive: false,
     },
   ];
 
   const total =
-    courses.reduce((acc, course) => acc + course.price, 0) +
-    additionalItems.reduce((acc, item) => acc + item.price, 0);
+    courses.reduce((acc, course) => {
+      return course.isActive ? acc + course.price : acc;
+    }, 0) +
+    additionalItems.reduce((acc, item) => {
+      return item.isActive ? acc + item.price : acc;
+    }, 0);
 
   const obterDatas = () => {
     const hoje = new Date();
@@ -79,17 +99,21 @@ export function Offer() {
     <>
       <div className="offer" id="offer">
         <div className="container">
-          <span className="pricing1">
-            <span>Oferta Completa</span>
-          </span>
+          <div className="title-container">
+            <Chip label="Investimento" />
+            <h1 className="section-title">
+              <strong>TUDO O QUE VOCÊ PRECISA</strong> EM UM LUGAR SÓ
+            </h1>
+          </div>
 
           <div className="card-offer">
-            <p className="title-card-offer">Especial BLACK FRIDAY</p>
+            <p className="title-card-offer">Oferta Básica</p>
             {courses.map((course, index) => (
               <LineOffer
                 key={index}
                 title={`${course.title}`}
                 price={`R$ ${course.price},00`}
+                isActive={course.isActive}
               />
             ))}
             {additionalItems.map((item, index) => (
@@ -97,6 +121,7 @@ export function Offer() {
                 key={index}
                 title={`${item.title}`}
                 price={`R$ ${item.price},00`}
+                isActive={item.isActive}
               />
             ))}
 
@@ -105,6 +130,7 @@ export function Offer() {
                 key={index}
                 title={`${item.title}`}
                 description={item.description}
+                isActive={item.isActive}
               />
             ))}
 
@@ -119,21 +145,14 @@ export function Offer() {
               </span>
             </div>
             <div className="guarantee_access">
-              <h4>Esse é o preço original, mas investindo agora você vai...</h4>
-              <h3>
-                Aprender do zero ao profissional, em um só treinamento, 100%
-                online e com{" "}
-                <span style={{ color: "white" }}>acesso VITALÍCIO,</span> por
-                apenas:
-              </h3>
               <h1 className="card-offer__price">
-                <p style={{ fontSize: "22px" }}>12x de</p>59,72
+                <p style={{ fontSize: "22px" }}>12x de</p>39,72
               </h1>
               <p className="card-offer__price__all">
                 {" "}
                 ou{" "}
                 <span style={{ fontWeight: "bold", color: "white" }}>
-                  597
+                  397
                 </span>{" "}
                 à vista
               </p>
@@ -149,7 +168,7 @@ export function Offer() {
               >
                 QUERO VER MEU PRESENTE
               </button>
-              {isModalOpen && <ModalOffer isPrincipalOffer={true} />}
+              {isModalOpen && <ModalOffer isPrincipalOffer={false} />}
 
               <p>
                 *Válido para os dias: <strong>{obterDatas()}</strong>
@@ -160,17 +179,6 @@ export function Offer() {
               src="./cartoons.png"
               alt="Cartões aceitos Code Start"
             />
-            <div className="guarantee">
-              <img src="./seven-days.webp" alt="Garantia de 7 dias" />
-              <p>
-                Você terá sete dias para experimentar o treinamento sem nenhum
-                compromisso. Se nesse período você achar que tudo isso não vale
-                <strong> pelo menos o dobro do que você pagou</strong>, então
-                basta entrar em contato com nossa equipe de suporte 24 horas que
-                devolveremos todo o seu dinheiro, sem perguntinhas ou
-                questionamentos.
-              </p>
-            </div>
           </div>
         </div>
       </div>

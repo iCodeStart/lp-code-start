@@ -48,7 +48,7 @@ export function Teachers() {
           Quero ser programador
         </button>
       </div>
-      {isModalOpen && <ModalOffer />}
+      {isModalOpen && <ModalOffer isPrincipalOffer={true} />}
     </div>
   );
 }

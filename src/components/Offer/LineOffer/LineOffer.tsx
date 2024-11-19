@@ -9,7 +9,10 @@ interface LineOfferProps {
 export function LineOffer({ title, price, description }: LineOfferProps) {
   return (
     <div className="line-offer">
-      <p>{title}</p>
+      <p>
+        {" "}
+        <span style={{ color: "green", marginRight: "5px" }}> ✓</span> {title}
+      </p>
       <span style={{ color: "red" }}>
         <s
           style={{

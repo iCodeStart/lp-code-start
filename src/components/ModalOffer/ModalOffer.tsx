@@ -7,7 +7,11 @@ import { useLocation } from "react-router-dom";
 
 import "./ModalOffer.styles.scss";
 
-const ModalOffer = () => {
+interface ModalOfferProps {
+  isPrincipalOffer: boolean;
+}
+
+const ModalOffer = ({ isPrincipalOffer }: ModalOfferProps) => {
   const { mutate } = useSendDataToExcel();
   const isMobile = useIsMobile();
   const location = useLocation();
@@ -38,8 +42,10 @@ const ModalOffer = () => {
     e.preventDefault();
     const cleanedPhone = getCleanedPhone(formData.telefone);
     const dataToSend = { ...formData, telefone: cleanedPhone };
+    console.log("dataToSend", dataToSend);
     mutate(dataToSend, {
       onSuccess: () => {
+        console.log("entrou");
         trackingClickButton();
         openPaymentLink();
         setFormData({ nome: "", email: "", telefone: "" });
@@ -48,6 +54,7 @@ const ModalOffer = () => {
         }, 3000);
       },
       onError: () => {
+        console.log("saiu");
         alert("Erro ao enviar o cupom.");
         setIsLoading(false);
       },
@@ -59,11 +66,20 @@ const ModalOffer = () => {
   };
 
   const openPaymentLink = () => {
-    const url = `https://pay.kiwify.com.br/TABlI0t?coupon=CODESTART50&name=${
-      formData.nome
-    }&email=${formData.email}&phone=${getCleanedPhone(
-      formData.telefone
-    )}&src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`;
+    let url = "";
+    if (isPrincipalOffer) {
+      url = `https://pay.kiwify.com.br/TABlI0t?coupon=CODESTART50&name=${
+        formData.nome
+      }&email=${formData.email}&phone=${getCleanedPhone(
+        formData.telefone
+      )}&src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`;
+    } else {
+      url = `https://pay.kiwify.com.br/vhZP9Nm?coupon=CODESTART50&name=${
+        formData.nome
+      }&email=${formData.email}&phone=${getCleanedPhone(
+        formData.telefone
+      )}&src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`;
+    }
     window.open(url, `${isMobile ? "_self" : "_blank"}`, "noreferrer");
   };
 
@@ -129,5 +145,4 @@ const ModalOffer = () => {
     </div>
   );
 };
-
 export default ModalOffer;

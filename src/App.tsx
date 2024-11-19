@@ -4,6 +4,7 @@ import {
   Bonus,
   FAQ,
   Offer,
+  Offer2,
   OurTrail,
   Projects,
   School,
@@ -36,6 +37,7 @@ function App() {
               <Projects />
               <Bonus />
               <Guarantee />
+              <Offer2 />
               <Offer />
               <Reviews />
               <Teachers />

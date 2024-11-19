@@ -1,5 +1,5 @@
-import { useMutation } from '@tanstack/react-query';
-import axios, { AxiosError } from 'axios';
+import { useMutation } from "@tanstack/react-query";
+import axios, { AxiosError } from "axios";
 
 export interface DataExcel {
   nome: string;
@@ -8,16 +8,19 @@ export interface DataExcel {
 }
 
 const sendDataToExcel = async (data: DataExcel): Promise<void> => {
-  return await axios.post('https://api-code-start.netlify.app/.netlify/functions/api/sendData', data, {
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
+  return await axios.post(
+    "https://api-code-start.netlify.app/.netlify/functions/api/sendData",
+    data,
+    {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
 };
 
-
 export const useSendDataToExcel = () => {
-  return useMutation<void, AxiosError, DataExcel>(({
-    mutationFn: sendDataToExcel
-  }));
+  return useMutation<void, AxiosError, DataExcel>({
+    mutationFn: sendDataToExcel,
+  });
 };
