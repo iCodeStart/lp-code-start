@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //padding: 5px 0;
 }
 
 .line-offer:last-child {
@@ -17,7 +16,7 @@
 @media (max-width: 768px) {
   .line-offer p,
   .line-offer span {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
     max-width: 160px;
   }

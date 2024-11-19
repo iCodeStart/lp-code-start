@@ -10,3 +10,4 @@ export * from "./Teachers";
 export * from "./Testimonials";
 export * from "./WorldProgram";
 export * from "./Contact";
+export * from "./Offer2";

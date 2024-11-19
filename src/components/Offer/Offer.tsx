@@ -1,7 +1,8 @@
-import { Chip } from "../Chip";
 import { LineOffer } from "./LineOffer";
 import { useState } from "react";
 import ModalOffer from "../ModalOffer/ModalOffer";
+
+import "./Offer.styles.scss";
 
 export function Offer() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -18,7 +19,7 @@ export function Offer() {
   const additionalItems = [
     { title: "Conteúdos sobre mercado de trabalho", price: 47 },
     { title: "Exercícios", price: 97 },
-    { title: "Projetos desenvolvidos na Code Start", price: 197 },
+    { title: "Projetos reais", price: 197 },
     { title: "Suporte exclusivo para alunos", price: 97 },
     { title: "Networking com pessoas da profissão", price: 97 },
     { title: "Simulação de entrevistas", price: 197 },
@@ -78,13 +79,18 @@ export function Offer() {
     <>
       <div className="offer" id="offer">
         <div className="container">
-          <div className="title-container">
+          {/* <div className="title-container">
             <Chip label="Investimento" />
             <h1 className="section-title">
               <strong>TUDO O QUE VOCÊ PRECISA</strong> EM UM LUGAR SÓ
             </h1>
-          </div>
+          </div> */}
+          <span className="pricing1">
+            <span>Oferta Completa</span>
+          </span>
+
           <div className="card-offer">
+            <p className="title">Especial BLACK FRIDAY</p>
             {courses.map((course, index) => (
               <LineOffer
                 key={index}
@@ -137,7 +143,7 @@ export function Offer() {
                 </span>{" "}
                 à vista
               </p>
-              <p>MAS CALMA QUE TEM MAIS!</p>
+              <p style={{ fontWeight: "bold", color: "white" }}>MAS CALMA...</p>
               <p>
                 Estamos no mês da BLACK FRIDAY e preparamos um PRESENTE ESPECIAL
                 para VOCÊ!
@@ -149,7 +155,7 @@ export function Offer() {
               >
                 QUERO VER MEU PRESENTE
               </button>
-              {isModalOpen && <ModalOffer />}
+              {isModalOpen && <ModalOffer isPrincipalOffer={true} />}
 
               <p>
                 *Válido para os dias: <strong>{obterDatas()}</strong>
