@@ -42,7 +42,12 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
     setIsLoading(true);
     e.preventDefault();
     const cleanedPhone = getCleanedPhone(formData.telefone);
-    const dataToSend = { ...formData, telefone: cleanedPhone };
+    const formattedName = `${numberForm}-${formData.nome}`;
+    const dataToSend = {
+      ...formData,
+      nome: formattedName,
+      telefone: cleanedPhone,
+    };
     console.log("dataToSend", dataToSend);
     mutate(dataToSend, {
       onSuccess: () => {
@@ -84,11 +89,6 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-
-    if (name === "nome") {
-      const formattedName = `${numberForm}-${formData.nome}`;
-      setFormData((prevData) => ({ ...prevData, [name]: formattedName }));
-    }
 
     if (name === "telefone") {
       const formattedValue = formatPhone(value);
