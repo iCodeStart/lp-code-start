@@ -1,4 +1,3 @@
-import { Chip } from "../Chip";
 import { LineOffer } from "./LineOffer";
 import { useState } from "react";
 import ModalOffer from "../ModalOffer/ModalOffer";
@@ -99,13 +98,6 @@ export function Offer2() {
     <>
       <div className="offer" id="offer">
         <div className="container2">
-          <div className="title-container">
-            <Chip label="Investimento" />
-            <h1 className="section-title">
-              <strong>TUDO O QUE VOCÊ PRECISA</strong> EM UM LUGAR SÓ
-            </h1>
-          </div>
-
           <div className="card-offer">
             <p className="title-card-offer">Oferta Básica</p>
             {courses.map((course, index) => (

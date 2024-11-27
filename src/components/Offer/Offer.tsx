@@ -3,6 +3,7 @@ import { useState } from "react";
 import ModalOffer from "../ModalOffer/ModalOffer";
 
 import "./Offer.styles.scss";
+import { Chip } from "../Chip";
 
 export function Offer() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -78,6 +79,12 @@ export function Offer() {
   return (
     <>
       <div className="offer" id="offer">
+        <div className="title-container">
+          <Chip label="Investimento" />
+          <h1 className="section-title">
+            <strong>TUDO O QUE VOCÊ PRECISA</strong> EM UM LUGAR SÓ
+          </h1>
+        </div>
         <div className="container1">
           <span className="pricing1">
             <span>Oferta Completa</span>
