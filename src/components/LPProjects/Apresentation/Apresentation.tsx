@@ -10,13 +10,10 @@ export function Apresentation() {
         </span>
         <div className="content-lp-project-apresentation-box-texts">
           <h1>
-            Você nunca mais vai pensar em desistir e se sentir perdido na
-            programação
+           Não fique mais perdido e alcance o sucesso profissional no mundo da tecnologia
           </h1>
           <p>
-            Domine a programação com o método <strong>AAP</strong> e conquiste a
-            sua vaga de emprego de forma acelerada ainda esse ano - Estudando
-            apenas 1 hora por dia!
+            Criamos o Método <strong>AAP</strong> para ser o seu guia de estudos. Com 1 hora por dia, em 3 meses, você estará pronto para a sua primeira vaga de emprego como programador.
           </p>
           <p>
             Aqui nós <strong style={{ color: "white" }}>GARANTIMOS</strong> a

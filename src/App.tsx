@@ -37,8 +37,8 @@ function App() {
               <Projects />
               <Bonus />
               <Guarantee />
-              <Offer2 />
               <Offer />
+              <Offer2 />
               <Reviews />
               <Teachers />
               <FAQ />
