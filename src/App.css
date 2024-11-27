@@ -551,6 +551,10 @@ button {
   justify-content: center;
 }
 
+.fullstack-desktop img {
+  width: 85%;
+}
+
 .fullstack-mobile {
   display: none;
 }
