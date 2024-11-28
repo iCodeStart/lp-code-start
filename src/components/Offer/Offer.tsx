@@ -88,7 +88,6 @@ export function Offer() {
 
           <div className="card-offer">
             <p className="title-card-offer">Especial BLACK FRIDAY:</p>
-            <p className="title-card-offer">ACESSO VITALÍCIO</p>
             {courses.map((course, index) => (
               <LineOffer
                 key={index}
@@ -126,9 +125,7 @@ export function Offer() {
               <h4>Esse é o preço original, mas investindo agora você vai...</h4>
               <h3>
                 Aprender do zero ao profissional, em um só treinamento, 100%
-                online e com{" "}
-                <span style={{ color: "white" }}>acesso VITALÍCIO,</span> por
-                apenas:
+                online:
               </h3>
               <h1 className="card-offer__price">
                 <p style={{ fontSize: "22px" }}>12x de</p>29,72
