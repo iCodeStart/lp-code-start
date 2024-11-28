@@ -4,7 +4,6 @@ import {
   Bonus,
   FAQ,
   Offer,
-  Offer2,
   OurTrail,
   Projects,
   School,
