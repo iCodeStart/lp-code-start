@@ -15,10 +15,10 @@ export function Apresentation() {
           <p>
            Tudo que você precisa é de um <strong>passo a passo simples e fácil</strong> de ser aplicado para começar a ganhar dinheiro com programação
           </p>
-          <p>
+          {/* <p>
             Aqui nós <strong style={{ color: "white" }}>GARANTIMOS</strong> a
             sua aprovação.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
