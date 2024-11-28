@@ -28,9 +28,9 @@ function App() {
           <>
             <Apresentation />
             <div className="content-container">
+              <OurTrail />
               <WorldProgram />
               <IsForYou />
-              <OurTrail />
               <Testimonials />
               <School />
               <FullstackTrail />
@@ -38,7 +38,7 @@ function App() {
               <Bonus />
               <Guarantee />
               <Offer />
-              <Offer2 />
+              {/* <Offer2 /> */}
               <Reviews />
               <Teachers />
               <FAQ />

@@ -135,13 +135,13 @@ export function Offer() {
                 apenas:
               </h3>
               <h1 className="card-offer__price">
-                <p style={{ fontSize: "22px" }}>12x de</p>59,72
+                <p style={{ fontSize: "22px" }}>12x de</p>29,72
               </h1>
               <p className="card-offer__price__all">
                 {" "}
                 ou{" "}
                 <span style={{ fontWeight: "bold", color: "white" }}>
-                  597
+                  297
                 </span>{" "}
                 à vista
               </p>

@@ -111,8 +111,8 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
         <button className="close-button" onClick={onClose}>
           X
         </button>
-        <h2>Seu presente é: UM CUPOM DE 50% DE DESCONTO</h2>
-        <h4>Preencha os dados e receba seu cupom!</h4>
+        <h2>Seu presente é:<br/><br/> ACESSO VITALÍCIO AO TREINAMENTO</h2>
+        <h4>Preencha os dados e receba seu presente!</h4>
         <form onSubmit={handleSubmit}>
           <div className="input-box">
             <input
@@ -145,7 +145,7 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
             />
           </div>
           <button type="submit" disabled={isLoading}>
-            {isLoading ? "Aplicando cupom..." : "Receber Cupom"}
+            {isLoading ? "Aplicando presente..." : "Garantir meu acesso"}
           </button>
         </form>
       </div>
