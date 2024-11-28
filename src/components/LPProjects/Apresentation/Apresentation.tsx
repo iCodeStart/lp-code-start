@@ -10,10 +10,10 @@ export function Apresentation() {
         </span>
         <div className="content-lp-project-apresentation-box-texts">
           <h1>
-           Sem saber nada de programação construa seu primeiro projeto em 30 dias
+           O Guia para qualquer pessoa conseguir seu primeiro emprego na área de programação
           </h1>
           <p>
-           Tudo que você precisa é de um <strong>passo a passo simples e fácil</strong> de ser aplicado para começar a ganhar dinheiro com programação
+          Aprenda o que é realmente cobrado <strong>pelas maiores empresas do mercado</strong> e tudo que você precisa saber com um passo a passo simples e fácil de ser aplicado
           </p>
           {/* <p>
             Aqui nós <strong style={{ color: "white" }}>GARANTIMOS</strong> a
