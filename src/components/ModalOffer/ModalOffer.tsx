@@ -111,8 +111,15 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
         <button className="close-button" onClick={onClose}>
           X
         </button>
-        <h2>Seu presente é:<br/><br/> ACESSO VITALÍCIO AO TREINAMENTO</h2>
-        <h4>Preencha seus dados, finalize sua compra e garanta enquanto o presente está ativo!</h4>
+        <h2>
+          Seu presente é:
+          <br />
+          <br /> ACESSO VITALÍCIO AO TREINAMENTO
+        </h2>
+        <h4>
+          Preencha seus dados, finalize sua compra nos próximos 10 minutos e
+          garanta acesso vitalício!
+        </h4>
         <form onSubmit={handleSubmit}>
           <div className="input-box">
             <input
