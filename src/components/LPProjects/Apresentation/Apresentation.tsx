@@ -10,10 +10,10 @@ export function Apresentation() {
         </span>
         <div className="content-lp-project-apresentation-box-texts">
           <h1>
-           Não fique mais perdido e alcance o sucesso profissional no mundo da tecnologia
+           Sem saber nada de programação construa seu primeiro projeto em 30 dias
           </h1>
           <p>
-            Criamos o Método <strong>AAP</strong> para ser o seu guia de estudos. Com 1 hora por dia, em 3 meses, você estará pronto para a sua primeira vaga de emprego como programador.
+           Tudo que você precisa é de um <strong>passo a passo simples e fácil</strong> de ser aplicado para começar a ganhar dinheiro com programação
           </p>
           <p>
             Aqui nós <strong style={{ color: "white" }}>GARANTIMOS</strong> a
