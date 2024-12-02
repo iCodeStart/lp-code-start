@@ -25,12 +25,7 @@ export function WorldProgram() {
       <div className="container__program-info">
         <Chip label="Oportunidade" />
         <h1 className="section-title">A profissão do futuro</h1>
-        <div className="world-program-list_img">
-          <img
-            src="/vagas-abertas1.webp"
-            alt="Vagas abertas programador Code Start"
-          />
-        </div>
+
         <p className="school_content-text-title">
           A matemática é bastante simples: <br />
           <br />
@@ -50,6 +45,12 @@ export function WorldProgram() {
               />
             );
           })}
+        </div>
+        <div className="world-program-list_img">
+          <img
+            src="/vagas-abertas1.webp"
+            alt="Vagas abertas programador Code Start"
+          />
         </div>
       </div>
     </div>

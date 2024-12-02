@@ -27,10 +27,10 @@ function App() {
           <>
             <Apresentation />
             <div className="content-container">
-              <OurTrail />
               <WorldProgram />
               <IsForYou />
               <Testimonials />
+              <OurTrail />
               <School />
               <FullstackTrail />
               <Projects />

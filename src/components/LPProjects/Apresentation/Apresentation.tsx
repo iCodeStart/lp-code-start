@@ -10,15 +10,18 @@ export function Apresentation() {
         </span>
         <div className="content-lp-project-apresentation-box-texts">
           <h1>
-           O guia para qualquer pessoa conseguir seu primeiro emprego na área de programação
+            Você nunca mais vai pensar em desistir e se sentir perdido na
+            programação
           </h1>
           <p>
-          Aprenda o que é realmente cobrado <strong>pelas maiores empresas do mercado</strong> e tudo que você precisa saber com um passo a passo simples e fácil de ser aplicado
+            Domine a programação com o método <strong>AAP</strong> e conquiste a
+            sua vaga de emprego de forma acelerada - Estudando apenas 1 hora por
+            dia!
           </p>
-          {/* <p>
+          <p>
             Aqui nós <strong style={{ color: "white" }}>GARANTIMOS</strong> a
             sua aprovação.
-          </p> */}
+          </p>
         </div>
       </div>
     </div>
