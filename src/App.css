@@ -119,11 +119,6 @@ button {
   transform: translateX(-50%);
 }
 
-.world-programming {
-  margin-bottom: 50px;
-  /* margin-top: 100px; */
-}
-
 .world-programming__line {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;

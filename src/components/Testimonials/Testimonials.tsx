@@ -53,7 +53,7 @@ export function Testimonials() {
   ];
   return (
     <>
-      <div className="container">
+      <div>
         <div className="title-container">
           <Chip label="Chega de desculpas" />
           <h1 className="section-title">"Ah, mas eu..."</h1>
