@@ -44,7 +44,7 @@ export function VSLAula() {
       <img src="./logo-code-start.svg" alt="Logo Code Start" width="120px"/>
       <div
         id="vid_6754c15c07d9af4244e95c93"
-        style={{ position: "relative", width: "80%" }}
+        style={{ position: "relative", width: "100%" }}
       >
         <img
           id="thumb_6754c15c07d9af4244e95c93"
@@ -53,7 +53,7 @@ export function VSLAula() {
             position: "absolute",
             top: 0,
             left: 0,
-            width: "80%",
+            width: "100%",
             height: "100%",
             objectFit: "cover",
             display: "block",
@@ -68,7 +68,7 @@ export function VSLAula() {
             position: "absolute",
             top: 0,
             height: "100%",
-            width: "80%",
+            width: "100%",
           }}
         ></div>
       </div>
