@@ -87,7 +87,7 @@ export function Offer() {
           </span>
 
           <div className="card-offer">
-            <p className="title-card-offer">Especial BLACK FRIDAY:</p>
+            <p className="title-card-offer">Especial Natal:</p>
             {courses.map((course, index) => (
               <LineOffer
                 key={index}
@@ -152,7 +152,7 @@ export function Offer() {
               </button>
               {isModalOpen && (
                 <ModalOffer
-                  isPrincipalOffer={true}
+                  isPrincipalOffer={"1"}
                   onClose={() => setModalOpen(!isModalOpen)}
                 />
               )}

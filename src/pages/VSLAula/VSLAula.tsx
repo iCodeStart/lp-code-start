@@ -1,11 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./VSLAula.styles.scss";
+import ModalOffer from "../../components/ModalOffer/ModalOffer";
 
 export function VSLAula() {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [showButton, setShowButton] = useState(false);
 
-    useEffect(() => {
-        document.body.style.overflow = 'hidden'
-    })
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+  });
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src =
@@ -38,13 +42,30 @@ export function VSLAula() {
     };
   }, []);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowButton(true); // Mostra o botão após 5 segundos
+    }, 5000);
+
+    return () => clearTimeout(timer); // Limpa o timer se o componente for desmontado
+  }, []);
+
   return (
     <div className="container vsl-page">
-      <h2 style={{ fontSize: '20px'}}>Vídeo Liberado por tempo limitado!</h2> 
-      <img src="./logo-code-start.svg" alt="Logo Code Start" width="120px"/>
+      <span
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          textAlign: "center",
+        }}
+      >
+        <h2>Como aprendi a programar em 3 meses e consegui meu emprego</h2>
+        <p>(mesmo sem faculdade na área de TI)</p>
+      </span>
+
       <div
         id="vid_6754c15c07d9af4244e95c93"
-        style={{ position: "relative", width: "100%" }}
+        //style={{ position: "relative", width: "100%" }}
       >
         <img
           id="thumb_6754c15c07d9af4244e95c93"
@@ -72,6 +93,22 @@ export function VSLAula() {
           }}
         ></div>
       </div>
+      {showButton && (
+        <button
+          className="offer_button"
+          style={{ marginTop: "1rem" }}
+          onClick={() => setModalOpen(true)}
+        >
+          QUERO FAZER PARTE
+        </button>
+      )}
+      {isModalOpen && (
+        <ModalOffer
+          isPrincipalOffer={"3"}
+          onClose={() => setModalOpen(!isModalOpen)}
+        />
+      )}
+      <img src="./logo-code-start.svg" alt="Logo Code Start" width="120px" />
     </div>
   );
 }

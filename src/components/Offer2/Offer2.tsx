@@ -162,7 +162,7 @@ export function Offer2() {
               </button>
               {isModalOpen && (
                 <ModalOffer
-                  isPrincipalOffer={false}
+                  isPrincipalOffer={"2"}
                   onClose={() => setModalOpen(!isModalOpen)}
                 />
               )}

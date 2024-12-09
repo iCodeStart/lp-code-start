@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 import "./ModalOffer.styles.scss";
 
 interface ModalOfferProps {
-  isPrincipalOffer: boolean;
+  isPrincipalOffer: "1" | "2" | "3";
   onClose?: () => void;
 }
 
@@ -22,7 +22,7 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
     telefone: "",
   });
   const [isLoading, setIsLoading] = useState(false);
-  const numberForm = isPrincipalOffer ? "1" : "2";
+  const numberForm = isPrincipalOffer;
   const params = new URLSearchParams(location.search);
   const srcParam = params.get("src");
   const utmSource = params.get("utm_source");
@@ -112,13 +112,13 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
           X
         </button>
         <h2>
-          Seu presente é:
+          Você ganhou:
           <br />
           <br /> ACESSO VITALÍCIO AO TREINAMENTO
         </h2>
         <h4>
           Preencha seus dados, finalize sua compra nos próximos 10 minutos e
-          garanta acesso vitalício!
+          garanta seu acesso vitalício!
         </h4>
         <form onSubmit={handleSubmit}>
           <div className="input-box">

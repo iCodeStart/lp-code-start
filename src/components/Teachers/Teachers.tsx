@@ -50,7 +50,7 @@ export function Teachers() {
       </div>
       {isModalOpen && (
         <ModalOffer
-          isPrincipalOffer={true}
+          isPrincipalOffer={"1"}
           onClose={() => setModalOpen(!isModalOpen)}
         />
       )}

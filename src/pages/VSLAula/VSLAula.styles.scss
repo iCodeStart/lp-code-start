@@ -1,10 +1,35 @@
-.vsl-page{
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
+/* Estilos base para a página */
+.vsl-page {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
 }
 
-.elementor-element:has(#smartplayer) { width: 100%; }
+/* Ajustes para telas maiores (por exemplo, PCs) */
+@media (min-width: 768px) {
+  .vsl-page h2 {
+    font-size: 28px; /* Aumenta o tamanho do texto para telas maiores */
+  }
+  .vsl-page p {
+    font-size: 16px; /* Aumenta o tamanho do parágrafo para melhor legibilidade */
+  }
+  .elementor-element:has(#smartplayer) {
+    width: 80%; /* Ajusta a largura do player para ocupar mais espaço */
+  }
+}
+
+/* Ajustes adicionais para telas ainda maiores */
+@media (min-width: 1024px) {
+  .vsl-page h2 {
+    font-size: 32px; /* Aumenta ainda mais o tamanho do texto para telas grandes */
+  }
+  .vsl-page p {
+    font-size: 18px; /* Aumenta o tamanho do parágrafo para melhor legibilidade */
+  }
+  .elementor-element:has(#smartplayer) {
+    width: 70%; /* Ajusta a largura do player para ocupar uma proporção ideal */
+  }
+}
