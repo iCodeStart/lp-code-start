@@ -24,7 +24,7 @@ export function Teachers() {
     <div className="teachers">
       <div className="container">
         <div className="title-container">
-          <Chip label="Tutores" />
+          <Chip label="Professores" />
           <h1 className="section-title">Quem serão seus professores?</h1>
         </div>
         <div className="teachers__content">

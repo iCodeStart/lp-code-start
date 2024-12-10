@@ -71,7 +71,7 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
 
   const openPaymentLink = () => {
     let url = "";
-    if (isPrincipalOffer) {
+    if (isPrincipalOffer === "2") {
       url = `https://pay.kiwify.com.br/TABlI0t?coupon=CODESTART50&name=${
         formData.nome
       }&email=${formData.email}&phone=${getCleanedPhone(
@@ -114,11 +114,14 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
         <h2>
           Você ganhou:
           <br />
-          <br /> ACESSO VITALÍCIO AO TREINAMENTO
+          <br />{" "}
+          <span style={{ lineHeight: "2.5rem" }}>
+            ACESSO VITALÍCIO AO TREINAMENTO
+          </span>
         </h2>
         <h4>
-          Preencha seus dados, finalize sua compra nos próximos 10 minutos e
-          garanta seu acesso vitalício!
+          Finalize sua matrícula nos próximos 10 minutos e garanta seu acesso
+          vitalício!
         </h4>
         <form onSubmit={handleSubmit}>
           <div className="input-box">

@@ -48,11 +48,11 @@ export function Offer2() {
       description: "Incalculável",
       isActive: true,
     },
-    {
-      title: "Acesso Vitalício",
-      description: "Incalculável",
-      isActive: false,
-    },
+    // {
+    //   title: "Acesso Vitalício",
+    //   description: "Incalculável",
+    //   isActive: false,
+    // },
   ];
 
   const total =
@@ -62,37 +62,6 @@ export function Offer2() {
     additionalItems.reduce((acc, item) => {
       return item.isActive ? acc + item.price : acc;
     }, 0);
-
-  const obterDatas = () => {
-    const hoje = new Date();
-    const ontem = new Date(hoje);
-    const anteontem = new Date(hoje);
-
-    ontem.setDate(hoje.getDate() - 1);
-    anteontem.setDate(hoje.getDate() - 2);
-
-    const diaHoje = hoje.getDate();
-    const diaOntem = ontem.getDate();
-    const diaAnteontem = anteontem.getDate();
-
-    const meses = [
-      "janeiro",
-      "fevereiro",
-      "março",
-      "abril",
-      "maio",
-      "junho",
-      "julho",
-      "agosto",
-      "setembro",
-      "outubro",
-      "novembro",
-      "dezembro",
-    ];
-    const mesAtual = meses[hoje.getMonth()];
-
-    return `${diaAnteontem}, ${diaOntem} e ${diaHoje} de ${mesAtual}`;
-  };
 
   return (
     <>
@@ -138,20 +107,20 @@ export function Offer2() {
             </div>
             <div className="guarantee_access">
               <h1 className="card-offer__price">
-                <p style={{ fontSize: "22px" }}>12x de</p>39,72
+                <p style={{ fontSize: "22px" }}>12x de</p>19,72
               </h1>
               <p className="card-offer__price__all">
                 {" "}
                 ou{" "}
                 <span style={{ fontWeight: "bold", color: "white" }}>
-                  397
+                  197
                 </span>{" "}
                 à vista
               </p>
               <p style={{ fontWeight: "bold", color: "white" }}>MAS CALMA...</p>
               <p>
-                Estamos no mês da BLACK FRIDAY e preparamos um PRESENTE ESPECIAL
-                para VOCÊ!
+                Estamos no mês do NATAL e preparamos um PRESENTE ESPECIAL para
+                VOCÊ!
               </p>
 
               <button
@@ -167,9 +136,9 @@ export function Offer2() {
                 />
               )}
 
-              <p>
+              {/* <p>
                 *Válido para os dias: <strong>{obterDatas()}</strong>
-              </p>
+              </p> */}
             </div>
             <img
               className="cards-accept"

@@ -140,8 +140,8 @@ export function Offer() {
               </p>
               <p style={{ fontWeight: "bold", color: "white" }}>MAS CALMA...</p>
               <p>
-                Estamos no mês da BLACK FRIDAY e preparamos um PRESENTE ESPECIAL
-                para VOCÊ!
+                Estamos no mês do NATAL e preparamos um PRESENTE ESPECIAL para
+                VOCÊ!
               </p>
 
               <button
