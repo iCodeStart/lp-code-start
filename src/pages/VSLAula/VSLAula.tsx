@@ -45,7 +45,7 @@ export function VSLAula() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowButton(true); // Mostra o botão após 5 segundos
-    }, 5000);
+    }, 1200000);
 
     return () => clearTimeout(timer); // Limpa o timer se o componente for desmontado
   }, []);
