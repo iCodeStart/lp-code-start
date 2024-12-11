@@ -71,7 +71,7 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
 
   const openPaymentLink = () => {
     let url = "";
-    if (isPrincipalOffer === "1") {
+    if (isPrincipalOffer === "1" || isPrincipalOffer === "3") {
       url = `https://pay.kiwify.com.br/TABlI0t?coupon=CODESTART50&name=${
         formData.nome
       }&email=${formData.email}&phone=${getCleanedPhone(
