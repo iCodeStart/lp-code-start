@@ -13,6 +13,7 @@ interface ModalOfferProps {
 }
 
 const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
+  console.log("isPrincipalOffer", isPrincipalOffer);
   const { mutate } = useSendDataToExcel();
   const isMobile = useIsMobile();
   const location = useLocation();
@@ -48,7 +49,6 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
       nome: formattedName,
       telefone: cleanedPhone,
     };
-    console.log("dataToSend", dataToSend);
     mutate(dataToSend, {
       onSuccess: () => {
         trackingClickButton();
@@ -71,7 +71,7 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
 
   const openPaymentLink = () => {
     let url = "";
-    if (isPrincipalOffer === "2") {
+    if (isPrincipalOffer === "1") {
       url = `https://pay.kiwify.com.br/TABlI0t?coupon=CODESTART50&name=${
         formData.nome
       }&email=${formData.email}&phone=${getCleanedPhone(
