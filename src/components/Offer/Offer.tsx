@@ -87,7 +87,7 @@ export function Offer() {
           </span>
 
           <div className="card-offer">
-            <p className="title-card-offer">Especial Natal:</p>
+            <p className="title-card-offer">Especial de 2025:</p>
             {courses.map((course, index) => (
               <LineOffer
                 key={index}
@@ -140,8 +140,8 @@ export function Offer() {
               </p>
               <p style={{ fontWeight: "bold", color: "white" }}>MAS CALMA...</p>
               <p>
-                Estamos no mês do NATAL e preparamos um PRESENTE ESPECIAL para
-                VOCÊ!
+                Para começar o ano do jeito certo preparamos um PRESENTE
+                ESPECIAL para VOCÊ!
               </p>
 
               <button
