@@ -8,6 +8,7 @@ export function Offer2() {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const courses = [
+    { title: "Lógica de Programação", price: 59, isActive: true },
     { title: "HTML/CSS", price: 129, isActive: true },
     { title: "Git/Github", price: 129, isActive: true },
     { title: "Javascript", price: 147, isActive: true },
@@ -26,7 +27,7 @@ export function Offer2() {
     {
       title: "Projetos reais",
       price: 197,
-      isActive: false,
+      isActive: true,
     },
     { title: "Suporte exclusivo para alunos", price: 97, isActive: true },
     {
