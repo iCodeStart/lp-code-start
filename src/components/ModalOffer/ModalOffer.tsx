@@ -78,7 +78,7 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
         formData.telefone
       )}&src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`;
     } else {
-      url = `https://pay.kiwify.com.br/vhZP9Nm?coupon=CODESTART50&name=${
+      url = `https://pay.kiwify.com.br/UQJFF4d?coupon=CODESTART50&name=${
         formData.nome
       }&email=${formData.email}&phone=${getCleanedPhone(
         formData.telefone
