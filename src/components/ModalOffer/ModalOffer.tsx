@@ -72,13 +72,13 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
   const openPaymentLink = () => {
     let url = "";
     if (isPrincipalOffer === "1" || isPrincipalOffer === "3") {
-      url = `https://pay.kiwify.com.br/TABlI0t?coupon=CODESTART50&name=${
+      url = `https://pay.kiwify.com.br/lUu5q4t?coupon=CODESTART50&name=${
         formData.nome
       }&email=${formData.email}&phone=${getCleanedPhone(
         formData.telefone
       )}&src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`;
     } else {
-      url = `https://pay.kiwify.com.br/UQJFF4d?coupon=CODESTART50&name=${
+      url = `https://pay.kiwify.com.br/KHsxFT7?coupon=CODESTART50&name=${
         formData.nome
       }&email=${formData.email}&phone=${getCleanedPhone(
         formData.telefone
