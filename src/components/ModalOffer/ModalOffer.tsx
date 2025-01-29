@@ -1,7 +1,7 @@
 import { useState } from "react";
-import ReactGA from "react-ga4";
+//import ReactGA from "react-ga4";
 import InputMask from "react-input-mask";
-import { DataExcel, useSendDataToExcel } from "../../queries";
+import { DataExcel } from "../../queries";
 import useIsMobile from "../../utils/useIsMobile";
 import { useLocation } from "react-router-dom";
 
@@ -14,7 +14,7 @@ interface ModalOfferProps {
 
 const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
   console.log("isPrincipalOffer", isPrincipalOffer);
-  const { mutate } = useSendDataToExcel();
+  //const { mutate } = useSendDataToExcel();
   const isMobile = useIsMobile();
   const location = useLocation();
   const [formData, setFormData] = useState<DataExcel>({
@@ -23,7 +23,7 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
     telefone: "",
   });
   const [isLoading, setIsLoading] = useState(false);
-  const numberForm = isPrincipalOffer;
+  //const numberForm = isPrincipalOffer;
   const params = new URLSearchParams(location.search);
   const srcParam = params.get("src");
   const utmSource = params.get("utm_source");
@@ -31,38 +31,40 @@ const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
   const utmCampaign = params.get("utm_campaign");
   const utmContent = params.get("utm_content");
 
-  function trackingClickButton() {
-    ReactGA.event({
-      category: "offer",
-      action: "clique-botao-offer",
-      label: "quero-me-inscrever-inferior",
-    });
-  }
+  // function trackingClickButton() {
+  //   ReactGA.event({
+  //     category: "offer",
+  //     action: "clique-botao-offer",
+  //     label: "quero-me-inscrever-inferior",
+  //   });
+  // }
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     setIsLoading(true);
     e.preventDefault();
-    const cleanedPhone = getCleanedPhone(formData.telefone);
-    const formattedName = `${numberForm}-${formData.nome}`;
-    const dataToSend = {
-      ...formData,
-      nome: formattedName,
-      telefone: cleanedPhone,
-    };
-    mutate(dataToSend, {
-      onSuccess: () => {
-        trackingClickButton();
-        openPaymentLink();
-        setFormData({ nome: "", email: "", telefone: "" });
-        setTimeout(() => {
-          setIsLoading(false);
-        }, 3000);
-      },
-      onError: () => {
-        alert("Erro ao enviar o cupom.");
-        setIsLoading(false);
-      },
-    });
+    // const cleanedPhone = getCleanedPhone(formData.telefone);
+    // const formattedName = `${numberForm}-${formData.nome}`;
+    // const dataToSend = {
+    //   ...formData,
+    //   nome: formattedName,
+    //   telefone: cleanedPhone,
+    // };
+    openPaymentLink();
+    setFormData({ nome: "", email: "", telefone: "" });
+    // mutate(dataToSend, {
+    //   onSuccess: () => {
+    //     trackingClickButton();
+    //     openPaymentLink();
+    //     setFormData({ nome: "", email: "", telefone: "" });
+    //     setTimeout(() => {
+    //       setIsLoading(false);
+    //     }, 3000);
+    //   },
+    //   onError: () => {
+    //     alert("Erro ao enviar o cupom.");
+    //     setIsLoading(false);
+    //   },
+    // });
   };
 
   const getCleanedPhone = (phone: string) => {
