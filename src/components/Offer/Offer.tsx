@@ -1,12 +1,12 @@
 import { LineOffer } from "./LineOffer";
-import { useState } from "react";
-import ModalOffer from "../ModalOffer/ModalOffer";
+
+import useIsMobile from "../../utils/useIsMobile";
 
 import "./Offer.styles.scss";
 import { Chip } from "../Chip";
 
 export function Offer() {
-  const [isModalOpen, setModalOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   const courses = [
     { title: "Lógica de Programação", price: 59 },
@@ -34,6 +34,10 @@ export function Offer() {
     },
     {
       title: "Certificado validado",
+      description: "Incalculável",
+    },
+    {
+      title: "Acesso Vitalício",
       description: "Incalculável",
     },
   ];
@@ -71,6 +75,11 @@ export function Offer() {
     const mesAtual = meses[hoje.getMonth()];
 
     return `${diaAnteontem}, ${diaOntem} e ${diaHoje} de ${mesAtual}`;
+  };
+
+  const openPaymentLink = () => {
+    const url = "https://pay.kiwify.com.br/lUu5q4t?coupon=CODESTART50";
+    window.open(url, `${isMobile ? "_self" : "_blank"}`, "noreferrer");
   };
 
   return (
@@ -139,24 +148,24 @@ export function Offer() {
                 </span>{" "}
                 à vista
               </p>
-              <p style={{ fontWeight: "bold", color: "white" }}>MAS CALMA...</p>
+              {/* <p style={{ fontWeight: "bold", color: "white" }}>MAS CALMA...</p>
               <p>
                 Para começar o ano do jeito certo preparamos um PRESENTE
                 ESPECIAL para VOCÊ!
-              </p>
+              </p> */}
 
               <button
                 className="offer_button"
-                onClick={() => setModalOpen(true)}
+                onClick={() => openPaymentLink()}
               >
-                QUERO VER MEU PRESENTE
+                Quero acessar agora
               </button>
-              {isModalOpen && (
+              {/* {isModalOpen && (
                 <ModalOffer
                   isPrincipalOffer={"1"}
                   onClose={() => setModalOpen(!isModalOpen)}
                 />
-              )}
+              )} */}
 
               <p>
                 *Válido para os dias: <strong>{obterDatas()}</strong>

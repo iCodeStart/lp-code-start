@@ -1,11 +1,11 @@
 import { LineOffer } from "./LineOffer";
-import { useState } from "react";
-import ModalOffer from "../ModalOffer/ModalOffer";
+
+import useIsMobile from "../../utils/useIsMobile";
 
 import "./Offer2.styles.scss";
 
 export function Offer2() {
-  const [isModalOpen, setModalOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   const courses = [
     { title: "Lógica de Programação", price: 59, isActive: true },
@@ -49,11 +49,11 @@ export function Offer2() {
       description: "Incalculável",
       isActive: true,
     },
-    // {
-    //   title: "Acesso Vitalício",
-    //   description: "Incalculável",
-    //   isActive: false,
-    // },
+    {
+      title: "Acesso Vitalício",
+      description: "Incalculável",
+      isActive: true,
+    },
   ];
 
   const total =
@@ -63,6 +63,11 @@ export function Offer2() {
     additionalItems.reduce((acc, item) => {
       return item.isActive ? acc + item.price : acc;
     }, 0);
+
+  const openPaymentLink = () => {
+    const url = "https://pay.kiwify.com.br/KHsxFT7?coupon=CODESTART50";
+    window.open(url, `${isMobile ? "_self" : "_blank"}`, "noreferrer");
+  };
 
   return (
     <>
@@ -118,24 +123,24 @@ export function Offer2() {
                 </span>{" "}
                 à vista
               </p>
-              <p style={{ fontWeight: "bold", color: "white" }}>MAS CALMA...</p>
+              {/* <p style={{ fontWeight: "bold", color: "white" }}>MAS CALMA...</p>
               <p>
                 Para começar o ano do jeito certo preparamos um PRESENTE
                 ESPECIAL para VOCÊ!
-              </p>
+              </p> */}
 
               <button
                 className="offer_button"
-                onClick={() => setModalOpen(true)}
+                onClick={() => openPaymentLink()}
               >
-                QUERO VER MEU PRESENTE
+                Quero acessar agora
               </button>
-              {isModalOpen && (
+              {/* {isModalOpen && (
                 <ModalOffer
                   isPrincipalOffer={"2"}
                   onClose={() => setModalOpen(!isModalOpen)}
                 />
-              )}
+              )} */}
 
               {/* <p>
                 *Válido para os dias: <strong>{obterDatas()}</strong>
