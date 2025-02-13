@@ -281,10 +281,6 @@ export function DevCash() {
           </p>
         </div>
       </div>
-
-      {/* Required Script */}
-      <script>let nextUpsellURL = ""; let nextDownsellURL = "";</script>
-      <script src="https://kiwify-snippets.netlify.app/upsell/upsell.min.js"></script>
     </div>
   );
 }
