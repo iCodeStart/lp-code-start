@@ -27,6 +27,17 @@ export function DevCash() {
     }
   }, []);
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://kiwify-snippets.netlify.app/upsell/upsell.min.js";
+    script.async = true;
+    document.body.appendChild(script);
+  
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
 
   const styles = {
     container: {
