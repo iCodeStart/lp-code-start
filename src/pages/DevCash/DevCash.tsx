@@ -10,31 +10,21 @@ import { useEffect } from "react";
 export function DevCash() {
 
   useEffect(() => {
-    const addUpsellContainer = () => {
-      if (!document.getElementById("kiwify-upsell-container")) {
-        const e = document.createElement("div");
-        e.id = "kiwify-upsell-container";
-        e.className = "kw-z-[1000000]";
-        document.body.appendChild(e);
-      }
-    };
+    const scriptVars = document.createElement("script");
+    scriptVars.innerHTML = `
+      let nextUpsellURL = "";
+      let nextDownsellURL = "";
+    `;
+    document.body.appendChild(scriptVars);
+    
+    const scriptUpsell = document.createElement("script");
+    scriptUpsell.src = "https://kiwify-snippets.netlify.app/upsell/upsell.min.js";
+    scriptUpsell.async = true;
+    document.body.appendChild(scriptUpsell);
 
-    if (document.readyState === "complete") {
-      addUpsellContainer();
-    } else {
-      window.addEventListener("load", addUpsellContainer);
-      return () => window.removeEventListener("load", addUpsellContainer);
-    }
-  }, []);
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://kiwify-snippets.netlify.app/upsell/upsell.min.js";
-    script.async = true;
-    document.body.appendChild(script);
-  
     return () => {
-      document.body.removeChild(script);
+      document.body.removeChild(scriptVars);
+      document.body.removeChild(scriptUpsell);
     };
   }, []);
 
