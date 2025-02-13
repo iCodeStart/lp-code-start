@@ -16,7 +16,7 @@ export function DevCash() {
       let nextDownsellURL = "";
     `;
     document.body.appendChild(scriptVars);
-    
+  
     const scriptUpsell = document.createElement("script");
     scriptUpsell.src = "https://kiwify-snippets.netlify.app/upsell/upsell.min.js";
     scriptUpsell.async = true;
