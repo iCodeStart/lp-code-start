@@ -5,8 +5,29 @@ import {
   Brain,
   CheckCircle2,
 } from "lucide-react";
+import { useEffect } from "react";
 
 export function DevCash() {
+
+  useEffect(() => {
+    const addUpsellContainer = () => {
+      if (!document.getElementById("kiwify-upsell-container")) {
+        const e = document.createElement("div");
+        e.id = "kiwify-upsell-container";
+        e.className = "kw-z-[1000000]";
+        document.body.appendChild(e);
+      }
+    };
+
+    if (document.readyState === "complete") {
+      addUpsellContainer();
+    } else {
+      window.addEventListener("load", addUpsellContainer);
+      return () => window.removeEventListener("load", addUpsellContainer);
+    }
+  }, []);
+
+
   const styles = {
     container: {
       minHeight: "100vh",
