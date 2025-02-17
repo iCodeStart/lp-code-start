@@ -243,11 +243,11 @@ export function DevCash() {
             <div style={{ marginBottom: "1.5rem" }}>
               <p style={{ fontSize: "1.125rem", color: "#999" }}>
                 De{" "}
-                <span style={{ textDecoration: "line-through" }}>R$ 397</span>{" "}
+                <span style={{ textDecoration: "line-through" }}>R$ 297</span>{" "}
                 por apenas:
               </p>
               <p style={styles.price}>R$ 47</p>
-              <p style={{ color: "#999" }}>ou 12x de R$ 5,08</p>
+              <p style={{ color: "#999" }}>ou 11x de R$ 5,08</p>
             </div>
             <p
               style={{
