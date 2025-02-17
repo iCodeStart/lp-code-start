@@ -1,10 +1,4 @@
-import {
-  GraduationCap,
-  DollarSign,
-  Clock,
-  Brain,
-  CheckCircle2,
-} from "lucide-react";
+import { GraduationCap, DollarSign, Clock, CheckCircle2 } from "lucide-react";
 import { useEffect } from "react";
 
 export function DevCash() {
@@ -199,14 +193,14 @@ export function DevCash() {
             </p>
           </div>
 
-          <div style={styles.benefitCard}>
+          {/* <div style={styles.benefitCard}>
             <Brain style={{ ...styles.icon, color: "#00C0D7" }} />
             <h3 style={styles.benefitTitle}>Mindset Profissional</h3>
             <p style={styles.benefitText}>
               Desenvolva a mentalidade certa para se posicionar no mercado e
               conquistar clientes mesmo sendo iniciante.
             </p>
-          </div>
+          </div> */}
 
           <div style={styles.benefitCard}>
             <GraduationCap style={{ ...styles.icon, color: "#00C0D7" }} />
@@ -222,12 +216,27 @@ export function DevCash() {
           <h2 style={styles.priceTitle}>O Que Você Vai Receber no Dev Cash:</h2>
           <div style={styles.featureList}>
             {[
-              "Veja tudo na prática: acompanhe um projeto real, do primeiro contato à entrega.",
-              "Negocie e feche contratos lucrativos: estratégias para conversar com clientes e conquistar projetos.",
-              "Precifique com segurança: saiba como valorizar seu trabalho e aumentar seus ganhos.",
-              "Receba de verdade: entenda como organizar pagamentos e garantir seu lucro.",
-              "Técnicas de negociação para desenvolvedores iniciantes",
-              "Use as ferramentas certas: reduza tempo de produção e entregue mais valor.",
+              "Introdução",
+              "Overview da Plataforma",
+              "Criando a nossa conta na plataforma",
+              "Completando o perfil de forma estratégica",
+              "Preenchendo o Onboarding",
+              "Procurando Projeto da forma certa",
+              "Mostrando o resultado da proposta",
+              "Codando o Projeto (Parte 1)",
+              "Codando o Projeto (Parte 2)",
+              "Codando o Projeto (Parte 3)",
+              "Hospedando o nosso projeto",
+              "Entregando o projeto para o cliente",
+              "Configurando o saque",
+              "Dados de faturamento",
+
+              // "Veja tudo na prática: acompanhe um projeto real, do primeiro contato à entrega.",
+              // "Negocie e feche contratos lucrativos: estratégias para conversar com clientes e conquistar projetos.",
+              // "Precifique com segurança: saiba como valorizar seu trabalho e aumentar seus ganhos.",
+              // "Receba de verdade: entenda como organizar pagamentos e garantir seu lucro.",
+              // "Técnicas de negociação para desenvolvedores iniciantes",
+              // "Use as ferramentas certas: reduza tempo de produção e entregue mais valor.",
             ].map((item, index) => (
               <div key={index} style={styles.featureItem}>
                 <CheckCircle2 style={styles.checkIcon} />
