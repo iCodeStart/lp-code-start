@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { DevCash, Home, VSLAula } from "./pages";
+import { DevCash, Home, SummaryContent, VSLAula } from "./pages";
 
 export const routes = createBrowserRouter([
   {
@@ -13,5 +13,9 @@ export const routes = createBrowserRouter([
   {
     path: "/dev-cash",
     element: <DevCash />,
+  },
+  {
+    path: "/summary-content",
+    element: <SummaryContent />,
   },
 ]);

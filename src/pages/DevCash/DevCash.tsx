@@ -8,7 +8,6 @@ import {
 import { useEffect } from "react";
 
 export function DevCash() {
-
   useEffect(() => {
     const scriptVars = document.createElement("script");
     scriptVars.innerHTML = `
@@ -16,9 +15,10 @@ export function DevCash() {
       let nextDownsellURL = "";
     `;
     document.body.appendChild(scriptVars);
-  
+
     const scriptUpsell = document.createElement("script");
-    scriptUpsell.src = "https://kiwify-snippets.netlify.app/upsell/upsell.min.js";
+    scriptUpsell.src =
+      "https://kiwify-snippets.netlify.app/upsell/upsell.min.js";
     scriptUpsell.async = true;
     document.body.appendChild(scriptUpsell);
 
@@ -27,7 +27,6 @@ export function DevCash() {
       document.body.removeChild(scriptUpsell);
     };
   }, []);
-
 
   const styles = {
     container: {
@@ -247,8 +246,8 @@ export function DevCash() {
                 <span style={{ textDecoration: "line-through" }}>R$ 397</span>{" "}
                 por apenas:
               </p>
-              <p style={styles.price}>R$ 197</p>
-              <p style={{ color: "#999" }}>ou 12x de R$ 19,70</p>
+              <p style={styles.price}>R$ 47</p>
+              <p style={{ color: "#999" }}>ou 12x de R$ 5,08</p>
             </div>
             <p
               style={{
