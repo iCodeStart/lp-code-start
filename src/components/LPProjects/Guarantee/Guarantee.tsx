@@ -24,7 +24,7 @@ export function Guarantee() {
           <span style={{ color: "#00bcd3" }}>365 DIAS</span>
         </h1>
         <p>
-          Simples: se dentro de 1 ano você assistir todas as nossas aulas (100%) e não conseguir
+          Simples: se você assistir 100% das nossas aulas e após assitir tudo, dentro de 1 ano você não conseguir
           a sua vaga de programador...
         </p>
         <p style={{ fontSize: "24px" }}>
