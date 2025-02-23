@@ -11,3 +11,4 @@ export * from "./Testimonials";
 export * from "./WorldProgram";
 export * from "./Contact";
 export * from "./Offer2";
+export * from "./SpotlightCard";
