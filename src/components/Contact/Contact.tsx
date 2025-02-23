@@ -1,4 +1,4 @@
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
 import "./Contact.styles.scss";
 
 const Contact = () => {

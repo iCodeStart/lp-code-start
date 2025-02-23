@@ -1,4 +1,6 @@
-import { FaBook, FaCheckCircle, FaUserGraduate } from "react-icons/fa";
+import { FaBook  } from "@react-icons/all-files/fa/FaBook";
+import { FaCheckCircle } from "@react-icons/all-files/fa/FaCheckCircle";
+import { FaUserGraduate  } from "@react-icons/all-files/fa/FaUserGraduate";
 import "./Dashboard.styles.scss";
 import { CounterCard } from "./components";
 
