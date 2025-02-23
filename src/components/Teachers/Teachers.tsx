@@ -1,11 +1,15 @@
 import { Chip } from "../Chip";
 import { Teacher } from "./Teacher/Teacher";
 import "./Teachers.styles.scss";
-import ModalOffer from "../ModalOffer/ModalOffer";
-import { useState } from "react";
+import useIsMobile from "../../utils/useIsMobile";
 
 export function Teachers() {
-  const [isModalOpen, setModalOpen] = useState(false);
+  const isMobile = useIsMobile()
+  const openPaymentLink = () => {
+    const url = "https://pay.kiwify.com.br/TABlI0t?coupon=CODESTART50";
+    window.open(url, `${isMobile ? "_self" : "_blank"}`, "noreferrer");
+  };
+
   const arrayTeachers = [
     {
       img: "./AlanFoto.jpg",
@@ -43,17 +47,17 @@ export function Teachers() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <button
           className="offer_button"
-          onClick={() => setModalOpen(!isModalOpen)}
+          onClick={openPaymentLink}
         >
           Quero ser programador
         </button>
       </div>
-      {isModalOpen && (
+      {/* {isModalOpen && (
         <ModalOffer
           isPrincipalOffer={"1"}
           onClose={() => setModalOpen(!isModalOpen)}
         />
-      )}
+      )} */}
     </div>
   );
 }
