@@ -14,13 +14,13 @@ export const courses = [
         title: "Treinamento Code Start",
         description:
           "Lógica de programação, HTML, CSS, JavaScript, Bootstrap, React, Node, etc...",
-        duration: "200h",
+        duration: "65h",
         icon: <MonitorSmartphone className="w-6 h-6" />,
         level: "Iniciante",
         image:
           "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=2072",
         rating: 4.9,
-        lessons: 168,
+        lessons: 380,
         isComingSoon: false,
       },
     ],
@@ -31,13 +31,13 @@ export const courses = [
       {
         title: "Dev Cash",
         description: "Aprenda a monetizar suas habilidades como programador",
-        duration: "25h",
+        duration: "3h",
         icon: <DollarSign className="w-6 h-6" />,
         level: "Todos os níveis",
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdxPmWwIF6CKfD5LWe5UbXnpVPL1H4ubtlEg&s",
         rating: 5.0,
-        lessons: 20,
+        lessons: 18,
         isComingSoon: false,
       },
     ],
