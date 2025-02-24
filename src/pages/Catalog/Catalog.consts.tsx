@@ -30,7 +30,7 @@ export const courses = [
     items: [
       {
         title: "Dev Cash",
-        description: "Aprenda a monetizar suas habilidades como programador",
+        description: "Aprenda a como se tornar um Dev Freelancer Profissional e monetizar suas habilidades como programador",
         duration: "3h",
         icon: <DollarSign className="w-6 h-6" />,
         level: "Todos os níveis",
