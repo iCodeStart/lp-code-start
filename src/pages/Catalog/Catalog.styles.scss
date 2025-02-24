@@ -79,6 +79,10 @@ body {
 // Main content styles
 .main {
   padding: 4rem 0;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
 }
 
 .section {
