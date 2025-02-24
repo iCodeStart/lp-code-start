@@ -11,14 +11,14 @@ export function Dashboard() {
         <CounterCard
           title="Aulas"
           //endValue={223}
-          endValue={303}
+          endValue={384}
           icon={<FaBook size={50} color="#007bff" />}
           showPlus={true}
         />
 
         <CounterCard
           title="Alunos"
-          endValue={327}
+          endValue={523}
           icon={<FaUserGraduate size={50} color="#28a745" />}
           showPlus={true}
         />
