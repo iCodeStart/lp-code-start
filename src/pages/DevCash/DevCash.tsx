@@ -217,8 +217,8 @@ export function DevCash() {
           <div style={styles.featureList}>
             {[
               "Introdução",
-              "Overview da Plataforma",
-              "Criando a nossa conta na plataforma",
+              "Overview das Plataformas de Freelancer",
+              "Criando a nossa Conta",
               "Completando o perfil de forma estratégica",
               "Preenchendo o Onboarding",
               "Procurando Projeto da forma certa",
