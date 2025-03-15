@@ -50,6 +50,10 @@ function Catalog() {
       return (window.location.href =
         "https://pay.kiwify.com.br/6xb0tlP/?src=catalog");
     }
+    if (title === "React") {
+      return (window.location.href =
+        "https://pay.kiwify.com.br/Ct7b3Pk/?src=catalog");
+    }
     window.location.href = "https://www.icodestart.com/?src=catalog";
   };
 

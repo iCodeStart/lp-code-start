@@ -30,7 +30,8 @@ export const courses = [
     items: [
       {
         title: "Dev Cash",
-        description: "Aprenda a como se tornar um Dev Freelancer Profissional e monetizar suas habilidades como programador",
+        description:
+          "Aprenda a como se tornar um Dev Freelancer Profissional e monetizar suas habilidades como programador",
         duration: "3h",
         icon: <DollarSign className="w-6 h-6" />,
         level: "Todos os níveis",
@@ -83,15 +84,16 @@ export const courses = [
     items: [
       {
         title: "React",
-        description: "Fundamentos, Hooks, Context API ",
-        duration: "35h",
+        description:
+          "Fundamentos do React, React Hooks, Context API, Axios, React Query, Projetos práticos ",
+        duration: "40h",
         icon: <Code2 className="w-6 h-6" />,
-        level: "intermediário",
+        level: "Básico-intermediário",
         image:
           "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=2070",
         rating: 4.9,
-        lessons: 28,
-        isComingSoon: true,
+        lessons: 121,
+        isComingSoon: false,
       },
       {
         title: "React Avançado",
