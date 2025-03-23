@@ -1,0 +1,92 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.transformation {
+  padding: $spacing-lg 0;
+  background-color: lighten($background-dark, 5%);
+
+  &__content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+
+    .intro-text {
+      margin-bottom: $spacing-lg;
+      
+      .highlight {
+        color: $primary-color;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: $spacing-sm;
+
+        @include responsiveMobile($breakpoint-md) {
+          font-size: 1.3rem;
+        }
+      }
+
+      p {
+        color: $text-gray;
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+    }
+
+    .problem-statement {
+      margin-bottom: $spacing-lg;
+      
+      p {
+        color: $text-gray;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: $spacing-md;
+      }
+
+      .error-message {
+        color: $text-light;
+        font-weight: 600;
+      }
+    }
+
+    h2 {
+      font-size: $font-size-h2;
+      margin-bottom: $spacing-lg;
+      color: $text-light;
+    }
+  }
+
+  .benefits {
+    display: grid;
+    gap: $spacing-md;
+    max-width: 800px;
+    margin: 0 auto;
+
+    @include responsive($breakpoint-md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .benefit-item {
+    background: rgba($background-dark, 0.5);
+    padding: $spacing-md;
+    border-radius: 12px;
+    border: 1px solid rgba($primary-color, 0.1);
+    transition: $transition-base;
+
+    &:hover {
+      transform: translateY(-5px);
+      border-color: rgba($primary-color, 0.3);
+    }
+
+    .check-icon {
+      font-size: 24px;
+      margin-bottom: $spacing-sm;
+      display: block;
+    }
+
+    p {
+      color: $text-gray;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@mixin button-primary {
+  background-color: $primary-color;
+  color: $background-dark;
+  padding: $spacing-sm $spacing-md;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: $transition-base;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba($primary-color, 0.3);
+  }
+}
+
+@mixin responsive($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin responsiveMobile($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}

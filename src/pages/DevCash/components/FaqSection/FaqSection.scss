@@ -1,0 +1,89 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.faq {
+  padding: $spacing-lg 0;
+  background-color: lighten($background-dark, 2%);
+
+  &__content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: $spacing-lg;
+      color: $text-light;
+      text-align: center;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: $primary-color;
+        margin: $spacing-sm auto 0;
+        border-radius: 2px;
+      }
+
+      @include responsiveMobile($breakpoint-md) {
+        font-size: $font-size-h2;
+      }
+    }
+  }
+
+  .faq-items {
+    .faq-item {
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 12px;
+      margin-bottom: $spacing-md;
+      cursor: pointer;
+      transition: $transition-base;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .question {
+        padding: $spacing-md;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+          color: $text-light;
+          font-size: 1.1rem;
+          margin: 0;
+        }
+
+        .arrow {
+          color: $primary-color;
+          font-size: 0.8rem;
+          transition: transform 0.3s ease;
+        }
+      }
+
+      .answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+
+        p {
+          color: $text-gray;
+          font-size: 1rem;
+          line-height: 1.6;
+          padding: 0 $spacing-md $spacing-md;
+        }
+      }
+
+      &.open {
+        .arrow {
+          transform: rotate(180deg);
+        }
+
+        .answer {
+          max-height: 200px;
+        }
+      }
+    }
+  }
+}

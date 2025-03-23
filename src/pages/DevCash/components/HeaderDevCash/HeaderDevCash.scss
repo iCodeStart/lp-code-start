@@ -1,0 +1,63 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.header-dev-cash {
+  min-height: 100vh;
+  @include flex-center;
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    rgba($background-dark, 0.9),
+    rgba($background-dark, 0.7)
+  );
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=2000&q=80') center/cover;
+    z-index: -1;
+    filter: brightness(0.3);
+  }
+
+  &__content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: $spacing-lg 0;
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: $spacing-lg;
+      line-height: 40px;
+
+      @include responsiveMobile($breakpoint-md) {
+        font-size: $font-size-h1;
+      }
+      
+      .highlight {
+        color: $primary-color;
+      }
+    }
+
+    h2 {
+      color: $text-gray;
+      margin-bottom: $spacing-lg;
+      font-size: 24px;
+      font-weight: 400;
+
+      @include responsiveMobile($breakpoint-md) {
+        font-size: $font-size-h2;
+      }
+    }
+
+    .button-primary {
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+  }
+}

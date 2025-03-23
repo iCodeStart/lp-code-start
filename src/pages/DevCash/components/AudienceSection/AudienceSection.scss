@@ -1,0 +1,105 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.audience {
+  padding: $spacing-lg 0;
+  background-color: lighten($background-dark, 2%);
+
+  &__content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: $spacing-lg;
+      color: $text-light;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: $primary-color;
+        margin: $spacing-sm auto 0;
+        border-radius: 2px;
+      }
+
+      @include responsiveMobile($breakpoint-md) {
+        font-size: $font-size-h2;
+      }
+    }
+  }
+
+  .ideal-profiles {
+    margin-bottom: $spacing-lg;
+  }
+
+  .profile-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: $spacing-md;
+    margin-bottom: $spacing-md;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    transition: $transition-base;
+
+    &:hover {
+      transform: translateX(10px);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .check {
+      font-size: 24px;
+      margin-right: $spacing-md;
+      flex-shrink: 0;
+    }
+
+    p {
+      color: $text-gray;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  }
+
+  .warning {
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: $spacing-md;
+    margin-bottom: $spacing-lg;
+    text-align: left;
+
+    h3 {
+      color: #ff4444;
+      font-size: 1.3rem;
+      margin-bottom: $spacing-md;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        color: $text-gray;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: $spacing-sm;
+        padding-left: $spacing-md;
+        position: relative;
+
+        &::before {
+          content: "❌";
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .button-primary {
+    @include button-primary;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}

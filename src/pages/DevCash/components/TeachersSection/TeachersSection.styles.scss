@@ -1,0 +1,73 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+.teachers-section {
+  margin: 50px auto;
+}
+
+.teachers-section__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.teachers-section__choices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: $spacing-lg auto 0;
+  padding: $spacing-lg;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+
+  @include responsiveMobile($breakpoint-md) {
+    padding: $spacing-lg 2rem;
+  }
+
+  h3 {
+    color: $text-light;
+    font-size: 1.5rem;
+    margin-bottom: $spacing-lg;
+  }
+
+  &-choice-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacing-md;
+    padding: $spacing-md;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    transition: $transition-base;
+    width: 100%;
+
+    &:hover {
+      transform: translateX(10px);
+    }
+
+    .icon {
+      font-size: 1.5rem;
+      margin-right: $spacing-md;
+    }
+
+    p {
+      color: $text-gray;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  }
+
+  &-button-primary {
+    @include button-primary;
+    font-size: 16px;
+    padding: 16px 32px;
+    margin-top: $spacing-lg;
+  }
+}
+
+@media (max-width: 768px) {
+  .teachers-section__content {
+    display: flex;
+    flex-direction: column;
+  }
+}

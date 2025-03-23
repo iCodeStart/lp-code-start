@@ -1,0 +1,56 @@
+@import 'variables';
+@import 'mixins';
+
+// Reset & Base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  background-color: $background-dark;
+  color: $text-light;
+  line-height: 1.6;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $spacing-md;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: $font-size-h1;
+  font-weight: 800;
+  
+  @include responsive($breakpoint-md) {
+    font-size: calc($font-size-h1 * 1.2);
+  }
+}
+
+// Components
+.button-primary {
+  @include button-primary;
+}
+
+.container {
+  @include container;
+}
+
+.section {
+  padding: $spacing-lg 0;
+}
+
+// Animations
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: $transition-base;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

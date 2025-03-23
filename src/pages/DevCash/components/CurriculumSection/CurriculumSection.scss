@@ -1,0 +1,216 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.curriculum {
+  padding: $spacing-lg 0;
+  background: linear-gradient(
+    170deg,
+    $background-dark,
+    lighten($background-dark, 3%),
+    $background-dark
+  );
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba($primary-color, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  &__content {
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: $spacing-lg;
+      color: $text-light;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 800;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: $primary-color;
+        margin: $spacing-sm auto 0;
+        border-radius: 2px;
+      }
+      
+      @include responsiveMobile($breakpoint-md) {
+        font-size: $font-size-h2;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: $primary-color;
+        margin: $spacing-sm auto 0;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .preview-image {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto $spacing-lg;
+    border-radius: 16px;
+    transform: perspective(1000px) rotateX(2deg);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: perspective(1000px) rotateX(0deg) translateY(-5px);
+    }
+  }
+
+  .modules {
+    text-align: left;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba($primary-color, 0.1);
+    border-radius: 16px;
+    padding: $spacing-lg 2rem;
+    margin-bottom: $spacing-lg;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    h3 {
+      color: $text-light;
+      font-size: 24px;
+      margin-bottom: $spacing-lg;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .module-list {
+      list-style: none;
+      counter-reset: module-counter;
+      display: grid;
+      gap: $spacing-md;
+      padding: 0;
+      
+      @include responsive($breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      li {
+        color: $text-gray;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        padding: $spacing-sm $spacing-md $spacing-sm $spacing-lg;
+        position: relative;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.04);
+          transform: translateX(5px);
+          color: $text-light;
+        }
+
+        &::before {
+          counter-increment: module-counter;
+          content: counter(module-counter, decimal-leading-zero);
+          position: absolute;
+          left: $spacing-sm;
+          color: $primary-color;
+          font-weight: 700;
+          font-size: 0.9rem;
+          font-family: monospace;
+        }
+      }
+    }
+  }
+
+  .bonus-section {
+    display: grid;
+    gap: $spacing-lg;
+    margin-bottom: $spacing-lg;
+    
+    @include responsive($breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bonus-card {
+      background: linear-gradient(
+        135deg,
+        rgba($primary-color, 0.1),
+        rgba($primary-color, 0.05)
+      );
+      border: 1px solid rgba($primary-color, 0.2);
+      border-radius: 16px;
+      padding: $spacing-lg;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at top right,
+          rgba($primary-color, 0.2),
+          transparent 70%
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        border-color: rgba($primary-color, 0.4);
+
+        &::before {
+          opacity: 1;
+        }
+      }
+
+      h3 {
+        color: $primary-color;
+        font-size: 1.4rem;
+        margin-bottom: $spacing-md;
+        display: flex;
+        align-items: center;
+        gap: $spacing-sm;
+        font-weight: 700;
+
+        span {
+          font-size: 1.8rem;
+        }
+      }
+
+      p {
+        color: $text-gray;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+
+  .button-primary {
+    @include button-primary;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}

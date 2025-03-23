@@ -13,7 +13,6 @@ interface ModalOfferProps {
 }
 
 const ModalOffer = ({ isPrincipalOffer, onClose }: ModalOfferProps) => {
-  console.log("isPrincipalOffer", isPrincipalOffer);
   //const { mutate } = useSendDataToExcel();
   const isMobile = useIsMobile();
   const location = useLocation();

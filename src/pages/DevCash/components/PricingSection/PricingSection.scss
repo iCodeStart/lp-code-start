@@ -1,0 +1,164 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+.pricing-section {
+  padding: $spacing-lg 0;
+  background-color: $background-dark;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  &__intro {
+    margin-bottom: $spacing-lg;
+  }
+
+  &__title {
+    font-size: 28px;
+    margin-bottom: $spacing-lg;
+    color: $text-light;
+    position: relative;
+    line-height: 28px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: $primary-color;
+      margin: $spacing-sm auto 0;
+      border-radius: 2px;
+    }
+
+    @include responsiveMobile($breakpoint-md) {
+      font-size: $font-size-h2;
+      line-height: $font-size-h2;
+    }
+  }
+
+  &__text {
+    color: $text-gray;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__highlight {
+    color: $primary-color;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__price-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba($primary-color, 0.2);
+    padding: 0 $spacing-md;
+  }
+
+  &__original-price {
+    margin-bottom: $spacing-md;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    span {
+      color: $text-gray;
+      font-size: 2rem;
+      display: block;
+    }
+  }
+
+  &__amount--original {
+    font-size: 2rem;
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+
+  &__current-price {
+    margin-bottom: $spacing-lg;
+
+    span {
+      color: $text-light;
+      font-size: 1.2rem;
+      display: block;
+      margin-bottom: $spacing-sm;
+    }
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__installments .pricing-section__amount--installments {
+    color: $primary-color;
+    font-size: 3rem;
+    font-weight: 800;
+    display: flex;
+    gap: 1rem;
+
+    &-installment{
+      color: $primary-color;
+      font-size: 2rem;
+      font-weight: 800;
+      margin-top: 2px;
+    }
+  }
+
+  &__or {
+    color: $text-gray;
+    margin: $spacing-sm 0;
+  }
+
+  &__one-time .pricing-section__amount--one-time {
+    color: $primary-color;
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  &__guarantee {
+    margin-bottom: $spacing-lg;
+    padding: $spacing-md;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+  }
+
+  &__guarantee-seal {
+    width: 180px;
+    height: 180px;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__guarantee-title {
+    color: $text-light;
+    font-size: 1.3rem;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__guarantee-text {
+    color: $text-gray;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: $spacing-sm;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button-primary {
+    @include button-primary;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}

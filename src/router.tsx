@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { DevCash, Home, SummaryContent, VSLAula } from "./pages";
+import { DevCashPrincipalOffer, DevCashUpsell, Home, SummaryContent, VSLAula } from "./pages";
 import Catalog from "./pages/Catalog/Catalog";
 
 export const routes = createBrowserRouter([
@@ -12,8 +12,8 @@ export const routes = createBrowserRouter([
     element: <VSLAula />,
   },
   {
-    path: "/dev-cash",
-    element: <DevCash />,
+    path: "/dev-cash-upsell",
+    element: <DevCashUpsell />,
   },
   {
     path: "/summary-content",
@@ -23,4 +23,8 @@ export const routes = createBrowserRouter([
     path: "/catalog",
     element: <Catalog />,
   },
+  {
+    path: "/dev-cash",
+    element: <DevCashPrincipalOffer/>
+  }
 ]);
