@@ -1,3 +1,4 @@
+import { Whatsapp } from "../../../components/Whatsapp";
 import {
   AudienceSection,
   CurriculumSection,
@@ -28,6 +29,11 @@ export function DevCashPrincipalOffer() {
       <CurriculumSection />
       <TeachersSection />
       <FaqSection />
+      <Whatsapp
+        customMessage={encodeURIComponent(
+          "Olá, gostaria de saber mais sobre o Dev Cash!"
+        )}
+      />
     </>
   );
 }
