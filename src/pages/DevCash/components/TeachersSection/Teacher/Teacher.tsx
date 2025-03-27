@@ -17,7 +17,7 @@ export function Teacher({ img, name, description }: TeacherProps) {
       <h1 className="btn-shine">{name}</h1>
       <h2
         dangerouslySetInnerHTML={{ __html: description }}
-        style={{ textAlign: "center" }}
+        style={{ textAlign: "center", color: "#fff"}}
       />
     </div>
   );
