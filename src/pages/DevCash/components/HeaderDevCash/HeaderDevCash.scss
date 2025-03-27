@@ -34,6 +34,7 @@
       font-size: 40px;
       margin-bottom: $spacing-lg;
       line-height: 40px;
+      color: #ffff;
 
       @include responsiveMobile($breakpoint-md) {
         font-size: $font-size-h1;
