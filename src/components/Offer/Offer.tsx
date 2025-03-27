@@ -129,7 +129,6 @@ export function Offer() {
                 <s
                   style={{
                     textDecorationColor: "#D8D8D8",
-                    color: "#fff"
                   }}
                 >{`R$ ${total},00`}</s>
               </span>
