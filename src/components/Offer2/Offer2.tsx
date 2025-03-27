@@ -102,7 +102,9 @@ export function Offer2() {
             ))}
 
             <div className="card-offer__total">
-              <p>Total</p>
+              <p style={{
+                    color: "#fff"
+                  }}>Total</p>
               <span style={{ color: "red" }}>
                 <s
                   style={{

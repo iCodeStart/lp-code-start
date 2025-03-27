@@ -20,14 +20,6 @@ $border-color: rgba(0, 192, 215, 0.2);
   }
 }
 
-// Global styles
-body {
-  margin: 0;
-  background-color: $background-color;
-  color: $text-color;
-  font-family: system-ui, -apple-system, sans-serif;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;

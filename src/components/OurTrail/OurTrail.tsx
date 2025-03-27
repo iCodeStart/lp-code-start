@@ -99,8 +99,8 @@ export function OurTrail() {
                 <span className="trail_legend" style={{ color: "#00bcd3" }}>
                   <strong>Fase {index + 1}</strong>
                 </span>
-                <h1 style={{ lineHeight: "30px" }}>{info.title}</h1>
-                <p>{info.description}</p>
+                <h1 style={{ color: "#fff", lineHeight: "30px" }}>{info.title}</h1>
+                <p style={{ color: "#fff", fontSize: "20px" }}>{info.description}</p>
               </div>
             </div>
           ))}

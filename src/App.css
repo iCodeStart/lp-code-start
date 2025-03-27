@@ -202,6 +202,7 @@ button {
   font-weight: 400;
   margin-top: 15px;
   text-align: center;
+  color: #fff;
 }
 
 .school_content-text-item {
@@ -228,6 +229,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 50px;
+  color: #fff;
 }
 
 .card-project-active {
@@ -363,6 +365,7 @@ button {
   margin-top: 30px;
   font-size: 24px;
   font-weight: 700;
+  color: #fff;
 }
 
 .card-offer__price {
@@ -380,6 +383,7 @@ button {
 .guarantee_access {
   text-align: center;
   font-size: 24px;
+  color: #fff;
 }
 
 .guarantee_access span {
@@ -491,6 +495,7 @@ button {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: #fff;
 }
 
 .programInfo__title {
@@ -568,6 +573,7 @@ button {
   text-align: center;
   margin: 0 auto;
   line-height: 35px;
+  color:#fff;
 }
 .guarantee-img {
   width: 100px;
@@ -578,8 +584,11 @@ button {
   font-size: 24px;
   display: flex;
   justify-content: center;
+  color: #fff;
 }
-
+.section-title1 {
+  color: #fff;
+}
 @media (max-width: 768px) {
   .hidden-mobile {
     display: none;
@@ -649,6 +658,7 @@ button {
     font-weight: 400;
     margin-top: 15px;
     text-align: center;
+    color: #fff;
   }
   .world-program-list {
     display: flex;
@@ -684,7 +694,7 @@ button {
   .guarantee_access {
     text-align: center;
     font-size: 15px;
-    color: #cccccc;
+    color: #fff;
   }
   .card-offer__price {
     color: #00bcd3;
@@ -703,11 +713,13 @@ button {
   .section-title1 {
     font-size: 22px;
     text-align: center;
+    color: #fff !important;
   }
   .fullstack-trail__text {
     margin-bottom: 40px;
     font-size: 18px;
     display: flex;
     justify-content: center;
+    color: #fff;
   }
 }

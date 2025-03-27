@@ -93,26 +93,6 @@ export function PricingSection({ isUpSell }: PricingSectionProps) {
                 </div>
               </div>
 
-              <div className="pricing-section__guarantee">
-                <img
-                  src="./selo-garantia.png"
-                  alt="Selo de garantia"
-                  className="pricing-section__guarantee-seal"
-                />
-                <h3 className="pricing-section__guarantee-title">
-                  Garantia Incondicional de 7 Dias
-                </h3>
-                <p className="pricing-section__guarantee-text">
-                  O risco é todo nosso! Teste o Dev Cash por 7 dias. Se não
-                  gostar ou achar que não é para você, basta pedir um reembolso
-                  e devolveremos 100% do seu investimento.
-                </p>
-                <p className="pricing-section__guarantee-text">
-                  Mas podemos garantir que, ao colocar o método em prática, você
-                  verá os resultados que deseja.
-                </p>
-              </div>
-
               {isUpSell ? (
                 <>
                   <div style={{ textAlign: "center" }}>
@@ -156,6 +136,27 @@ export function PricingSection({ isUpSell }: PricingSectionProps) {
                   Quero acessar agora!
                 </a>
               )}
+
+              <div className="pricing-section__guarantee">
+                <img
+                  src="./selo-garantia.png"
+                  alt="Selo de garantia"
+                  className="pricing-section__guarantee-seal"
+                />
+                <h3 className="pricing-section__guarantee-title">
+                  Garantia Incondicional de 7 Dias
+                </h3>
+                <p className="pricing-section__guarantee-text">
+                  O risco é todo nosso! Teste o Dev Cash por 7 dias. Se não
+                  gostar ou achar que não é para você, basta pedir um reembolso
+                  e devolveremos 100% do seu investimento.
+                </p>
+                <p className="pricing-section__guarantee-text">
+                  Mas podemos garantir que, ao colocar o método em prática, você
+                  verá os resultados que deseja.
+                </p>
+              </div>
+
             </div>
           </div>
         </div>

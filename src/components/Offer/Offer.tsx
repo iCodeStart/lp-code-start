@@ -122,11 +122,14 @@ export function Offer() {
             ))}
 
             <div className="card-offer__total">
-              <p>Total</p>
+              <p style={{
+                    color: "#fff"
+                  }}>Total</p>
               <span style={{ color: "red" }}>
                 <s
                   style={{
                     textDecorationColor: "#D8D8D8",
+                    color: "#fff"
                   }}
                 >{`R$ ${total},00`}</s>
               </span>
@@ -178,7 +181,7 @@ export function Offer() {
             />
             <div className="guarantee">
               <img src="./seven-days.webp" alt="Garantia de 7 dias" />
-              <p>
+              <p style={{ color: "#fff"}}>
                 Você terá sete dias para experimentar o treinamento sem nenhum
                 compromisso. Se nesse período você achar que tudo isso não vale
                 <strong> pelo menos o dobro do que você pagou</strong>, então
