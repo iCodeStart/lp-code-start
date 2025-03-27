@@ -50,16 +50,22 @@ export const InclusionsSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="bonus">
-            <h3>E ainda…</h3>
-            <ul>
-              <li>
-                Tenha acesso a uma lista com mais de 30 plataformas para
-                freelancers
-              </li>
-              <li>Guia Prático: Como começar na programação do jeito certo</li>
-              <li>Workshop: Como precificar um projeto profissional</li>
-            </ul>
+          <div className="bonus-section">
+            <div className="bonus-card">
+              <h3>
+                <span>🎁</span>
+                Bônus 1
+              </h3>
+              <p>Aprendendo a precificar um projeto profissional</p>
+            </div>
+
+            <div className="bonus-card">
+              <h3>
+                <span>🎁</span>
+                Bônus 2
+              </h3>
+              <p>E-book Code Start (O Guia do programador)</p>
+            </div>
           </div>
         </div>
       </div>
