@@ -59,9 +59,9 @@ export function PricingSection({ isUpSell }: PricingSectionProps) {
                     {isUpSell ? (
                       <span className="pricing-section__amount pricing-section__amount--installments">
                         <span className="pricing-section__amount pricing-section__amount--installments-installment">
-                          11x
+                          12x
                         </span>{" "}
-                        R$5,08
+                        R$9,70
                       </span>
                     ) : (
                       <span className="pricing-section__amount pricing-section__amount--installments">
@@ -77,7 +77,7 @@ export function PricingSection({ isUpSell }: PricingSectionProps) {
                     {isUpSell ? (
                       <>
                         <span className="pricing-section__amount pricing-section__amount--one-time">
-                          R$47
+                          R$97
                         </span>
                         <span>à vista</span>
                       </>
@@ -97,7 +97,7 @@ export function PricingSection({ isUpSell }: PricingSectionProps) {
                 <>
                   <div style={{ textAlign: "center" }}>
                     <button
-                      id="kiwify-upsell-trigger-9eH6J8x"
+                      id="kiwify-upsell-trigger-6xb0tlP"
                       style={{
                         backgroundColor: "#00C0D7",
                         padding: "12px 16px",

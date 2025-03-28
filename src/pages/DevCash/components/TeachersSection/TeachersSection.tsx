@@ -60,7 +60,7 @@ export function TeachersSection( { isUpSell } : TeachersSectionProps) {
                 <>
                   <div style={{ textAlign: "center" }}>
                     <button
-                      id="kiwify-upsell-trigger-9eH6J8x"
+                      id="kiwify-upsell-trigger-6xb0tlP"
                       style={{
                         backgroundColor: "#00C0D7",
                         padding: "12px 16px",
