@@ -24,11 +24,11 @@ export function Home() {
     <>
       <Apresentation />
       <div className="content-container">
+        <School />
         <WorldProgram />
         <IsForYou />
         <Testimonials />
         <OurTrail />
-        <School />
         <FullstackTrail />
         <Projects />
         <Bonus />
