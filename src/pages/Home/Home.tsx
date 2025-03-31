@@ -5,7 +5,6 @@ import {
   Guarantee,
   IsForYou,
   Offer,
-  Offer2,
   OurTrail,
   Projects,
   School,
@@ -33,7 +32,6 @@ export function Home() {
         <Projects />
         <Bonus />
         <Guarantee />
-        <Offer2 />
         <Offer />
         <Reviews />
         <Teachers />
