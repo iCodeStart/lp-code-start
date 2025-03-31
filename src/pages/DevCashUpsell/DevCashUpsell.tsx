@@ -40,8 +40,8 @@ export function DevCashUpsell() {
     <>
       <HeaderDevCash isUpSell/>
       <CongratulationsSection/>
-      <TransformationSection />
       <ProofSection />
+      <TransformationSection />
       <IdentificationSection />
       <MethodSection />
       <EarningsSection />
