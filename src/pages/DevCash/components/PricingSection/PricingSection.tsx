@@ -61,14 +61,14 @@ export function PricingSection({ isUpSell }: PricingSectionProps) {
                         <span className="pricing-section__amount pricing-section__amount--installments-installment">
                           12x
                         </span>{" "}
-                        R$9,70
+                        R$6,70
                       </span>
                     ) : (
                       <span className="pricing-section__amount pricing-section__amount--installments">
                         <span className="pricing-section__amount pricing-section__amount--installments-installment">
                           12x
                         </span>{" "}
-                        R$29,70
+                        R$19,70
                       </span>
                     )}
                   </div>
@@ -77,14 +77,14 @@ export function PricingSection({ isUpSell }: PricingSectionProps) {
                     {isUpSell ? (
                       <>
                         <span className="pricing-section__amount pricing-section__amount--one-time">
-                          R$97
+                          R$67
                         </span>
                         <span>à vista</span>
                       </>
                     ) : (
                       <>
                         <span className="pricing-section__amount pricing-section__amount--one-time">
-                          R$297
+                          R$197
                         </span>
                         <span>à vista</span>
                       </>
@@ -156,7 +156,6 @@ export function PricingSection({ isUpSell }: PricingSectionProps) {
                   verá os resultados que deseja.
                 </p>
               </div>
-
             </div>
           </div>
         </div>
