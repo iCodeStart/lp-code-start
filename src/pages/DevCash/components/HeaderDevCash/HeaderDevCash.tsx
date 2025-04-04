@@ -11,9 +11,8 @@ export function HeaderDevCash({ isUpSell }: HeaderDevCashProps) {
     </h1>
   ) : (
     <h1>
-      Descubra como programadores iniciantes estão fechando seus primeiros
-      trabalhos pagos e faturando{" "}
-      <span className="highlight">R$1.500+ sem CLT!</span>
+      Descubra como pegar projetos enquanto ainda é um programador <span className="highlight">INICIANTE</span> e comece a {" "}
+      <span className="highlight">GANHAR DINHEIRO</span>{" "} enquanto estuda para se desenvolver
     </h1>
   );
 
@@ -23,8 +22,7 @@ export function HeaderDevCash({ isUpSell }: HeaderDevCashProps) {
         <div className="header-dev-cash__content">
           {title}
           <h2>
-            Acesse o protocolo simples e validado para fechar seu primeiro
-            trabalho freelancer nas próximas semanas.
+            Acesse um método testado para fechar seus primeiros projetos como freelancer nos próximos dias.
           </h2>
         </div>
       </div>

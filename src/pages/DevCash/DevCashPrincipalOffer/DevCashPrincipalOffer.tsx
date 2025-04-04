@@ -18,8 +18,8 @@ export function DevCashPrincipalOffer() {
   return (
     <>
       <HeaderDevCash />
-      <ProofSection />
       <TransformationSection />
+      <ProofSection />
       <IdentificationSection />
       <MethodSection />
       <EarningsSection />
