@@ -245,6 +245,7 @@ button {
   margin: 0 auto;
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 
 .card-project {
@@ -262,6 +263,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   flex: 1;
+  margin-bottom: 50px;
 }
 
 .images-projects {
@@ -573,7 +575,7 @@ button {
   text-align: center;
   margin: 0 auto;
   line-height: 35px;
-  color:#fff;
+  color: #fff;
 }
 .guarantee-img {
   width: 100px;

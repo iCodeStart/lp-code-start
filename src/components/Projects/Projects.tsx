@@ -8,7 +8,7 @@ export function Projects() {
   useEffect(() => {
     // Cria um intervalo que atualiza o estado `activeProject` a cada 1 segundo
     const interval = setInterval(() => {
-      setActiveProject((current) => (current === 2 ? 0 : current + 1));
+      setActiveProject((current) => (current === 3 ? 0 : current + 1));
     }, 2000);
 
     // Limpa o intervalo quando o componente é desmontado
@@ -58,6 +58,14 @@ export function Projects() {
             >
               Portfólio Pessoal
             </div>
+            <div
+              className={
+                activeProject === 3 ? "card-project-active" : "card-project"
+              }
+              onClick={() => handleCardClick(3)}
+            >
+              Agenda de Clientes
+            </div>
           </div>
           <div className="images-projects">
             <img
@@ -80,6 +88,13 @@ export function Projects() {
               }
               src="./project-portfolio-pessoal.webp"
               alt="Portfólio Pessoal"
+            />
+            <img
+              className={
+                activeProject === 3 ? "project-img-active" : "project-img"
+              }
+              src="./project-agency.webp"
+              alt="Agenda de Clientes"
             />
           </div>
         </div>
