@@ -1,18 +1,16 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Chip } from "../Chip";
+import './Projects.styles.scss'
 
 export function Projects() {
   const [activeProject, setActiveProject] = useState(0);
 
   useEffect(() => {
-    // Cria um intervalo que atualiza o estado `activeProject` a cada 1 segundo
     const interval = setInterval(() => {
       setActiveProject((current) => (current === 3 ? 0 : current + 1));
     }, 2000);
-
-    // Limpa o intervalo quando o componente é desmontado
-    // para evitar vazamentos de memória
+  
     return () => clearInterval(interval);
   }, []);
 

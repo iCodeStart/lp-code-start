@@ -1,0 +1,55 @@
+.our-trail {
+  margin: 50px auto;
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+}
+.trail-step {
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+.trail-step img {
+  position: relative;
+  z-index: 9999;
+}
+
+
+.card-trail {
+    background-color: #181b20;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .connecting-line {
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    transform: translateX(-50%);
+    width: 2px;
+    background-color: #00bcd3;
+    transition: height 0.5s;
+    z-index: 1;
+  }
+  
+  
+  .active .connecting-line {
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+  
+    .our-trail__content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+      font-size: 15px;
+    }
+}

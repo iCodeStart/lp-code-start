@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Chip } from "../Chip";
+import './OurTrail.styles.scss'
 
 export function OurTrail() {
   const [currentPhase, setCurrentPhase] = useState(1);

@@ -150,11 +150,6 @@ export function Offer() {
                 </span>{" "}
                 à vista
               </p>
-              {/* <p style={{ fontWeight: "bold", color: "white" }}>MAS CALMA...</p>
-              <p>
-                Para começar o ano do jeito certo preparamos um PRESENTE
-                ESPECIAL para VOCÊ!
-              </p> */}
 
               <button
                 className="offer_button"
@@ -162,13 +157,7 @@ export function Offer() {
               >
                 Quero acessar agora
               </button>
-              {/* {isModalOpen && (
-                <ModalOffer
-                  isPrincipalOffer={"1"}
-                  onClose={() => setModalOpen(!isModalOpen)}
-                />
-              )} */}
-
+            
               <p>
                 *Válido para os dias: <strong>{obterDatas()}</strong>
               </p>

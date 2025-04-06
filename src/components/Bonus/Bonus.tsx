@@ -1,5 +1,6 @@
 import { Chip } from "../Chip";
 import { LineBonus } from "./LineBonus";
+import './Bonus.styles.scss'
 
 export function Bonus() {
   const arrayBonus = [

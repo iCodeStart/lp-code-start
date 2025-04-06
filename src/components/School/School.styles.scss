@@ -1,16 +1,48 @@
-.school_content_code-start {
+.school__content {
     display: flex;
-    justify-content: center;
-
-    img{
-        width: 50%;
-    }
+    flex-direction: column;
   }
-@media screen and (max-width: 768px) {
-    .school_content_code-start{
-        img{
-            width: 100%;
-        }
+  
+  .school_content-text-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .school_content-text-item {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    margin: 50px 0;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+
+  
+    .school__content {
+      display: flex;
+      flex-direction: column;
     }
-    
-}
+  
+  
+    .school_content-text-title {
+      font-size: 15px;
+      font-weight: 400;
+      margin-top: 15px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .school_content-text-item {
+      display: flex;
+      gap: 10px;
+      font-size: 15px;
+      margin: 50px 0;
+      justify-content: center;
+    }
+   
+  }
+  

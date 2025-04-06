@@ -1,3 +1,5 @@
+import './LineBonus.styles.scss'
+
 interface LineBonusProps {
   img: string;
   title: string;

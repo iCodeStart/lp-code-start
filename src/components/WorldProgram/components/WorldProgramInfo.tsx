@@ -1,3 +1,5 @@
+import './WorldProgramInfo.styles.scss'
+
 interface WorldProgramInfoProps {
   index: number;
   titleCard: string;

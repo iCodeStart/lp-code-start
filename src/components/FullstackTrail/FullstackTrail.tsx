@@ -1,4 +1,5 @@
 import { Chip } from "../Chip";
+import './FullstackTrail.styles.scss'
 
 export function FullstackTrail() {
   return (

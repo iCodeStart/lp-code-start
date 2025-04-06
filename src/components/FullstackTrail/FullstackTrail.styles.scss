@@ -1,0 +1,41 @@
+.fullstack-trail__text {
+  margin-bottom: 40px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.fullstack-desktop {
+  display: flex;
+  justify-content: center;
+}
+
+.fullstack-desktop img {
+  width: 85%;
+}
+
+.fullstack-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .fullstack-trail__text {
+    margin-bottom: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .fullstack-desktop {
+    display: none;
+  }
+  .fullstack-mobile {
+    display: flex;
+    justify-content: center;
+  }
+  .fullstack-mobile img {
+    width: 100%;
+  }
+}

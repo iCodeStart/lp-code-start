@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
-import { Teacher } from "./Teacher/Teacher";
 import "./TeachersSection.styles.scss";
+import { Teacher } from "../../../../components/Teachers/Teacher";
 
 interface TeachersSectionProps {
   isUpSell?: boolean

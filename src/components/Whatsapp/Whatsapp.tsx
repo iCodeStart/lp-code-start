@@ -1,3 +1,5 @@
+import './Whatsapp.styles.scss'
+
 interface WhatsappProps {
   customMessage?: string
 }
