@@ -1,6 +1,4 @@
 import "./Apresentation.styles.scss";
-//import logo from '../../../../public/logo-code-start.svg'
-
 export function Apresentation() {
   return (
     <div className="content-lp-project-apresentation">
@@ -8,9 +6,6 @@ export function Apresentation() {
         <div className="overlay"></div>
 
         <div className="content-lp-project-apresentation-container">
-          {/* <span className="content-lp-project-apresentation-product-name">
-          MÉTODO AAP
-        </span> */}
           <span className="content-lp-project-apresentation-product-name">
             <img
               style={{ width: "20rem" }}
