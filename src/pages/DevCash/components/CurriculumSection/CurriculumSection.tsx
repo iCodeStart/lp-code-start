@@ -95,7 +95,7 @@ export function CurriculumSection( { isUpSell }: CurriculumSectionProps) {
                 </>
               ) : (
                 <a
-                  href={`https://pay.kiwify.com.br/znm9MjK?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
+                  href={`https://pay.kiwify.com.br/UDQpxnq?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="pricing-section__button-primary"
