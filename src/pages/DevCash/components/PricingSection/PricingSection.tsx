@@ -1,10 +1,12 @@
 import React from "react";
 import "./PricingSection.scss";
 import { useLocation } from "react-router-dom";
+import { Chip } from "../../../../components/Chip";
 
 interface PricingSectionProps {
   isUpSell?: boolean;
 }
+
 export function PricingSection({ isUpSell }: PricingSectionProps) {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
@@ -13,119 +15,219 @@ export function PricingSection({ isUpSell }: PricingSectionProps) {
   const utmMedium = params.get("utm_medium");
   const utmCampaign = params.get("utm_campaign");
   const utmContent = params.get("utm_content");
+
   return (
     <section className="pricing-section">
       <div className="container">
+        <div className="title-container">
+          <Chip label="Investimento" />
+          <h1 className="section-title">
+            <strong>TUDO O QUE VOCÊ PRECISA</strong> EM UM LUGAR SÓ
+          </h1>
+        </div>
+
         <div className="pricing-section__container">
           <div className="pricing-section__content">
-            <div className="pricing-section__intro">
-              <h2 className="pricing-section__title">
-                O que antes era EXCLUSIVO aos devs seniors, agora está a um
-                clique!
-              </h2>
-              <p className="pricing-section__text">
-                Você pode pensar que um treinamento assim custaria R$1.500,00…
-              </p>
-              <p className="pricing-section__text">
-                Mas sabemos como é estar começando e não ter confiança para
-                fechar seu primeiro trabalho pago.
-              </p>
-              <p className="pricing-section__highlight">APENAS HOJE!</p>
-            </div>
-
             <div className="pricing-section__price-card">
+              <div className="pricing-section__what-you-get">
+                {!isUpSell ? (
+                  <>
+                    <h2 className="pricing-section__subtitle">
+                      Recapitulando tudo que você irá receber:
+                    </h2>
+                    <div
+                      className="pricing-section__list pricing-section__list--right"
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "0.5rem",
+                        alignItems: "flex-start",
+                      }}
+                    >
+                      <div>✅ Curso completo de Lógica de Programação</div>
+                      <div>✅ Curso completo de HTML/CSS</div>
+                      <div>✅ Curso completo de Git/Github</div>
+                      <div>✅ Curso completo de Javascript</div>
+                      <div>
+                        ✅ Suporte para tirar dúvidas ao longo do caminho
+                      </div>
+                      <div>✅ Materiais complementares e modelos prontos</div>
+                      <div>✅ Certificado de conclusão</div>
+                    </div>
+                    <p
+                      className="pricing-section__total-value"
+                      style={{
+                        color: "#FF4D4D",
+                        textAlign: "right",
+                        textDecoration: "line-through",
+                        fontSize: "0.95rem",
+                        marginTop: "0.5rem",
+                        display: "flex",
+                        justifyContent: "center",
+                      }}
+                    >
+                      Valor total: R$497
+                    </p>
+                    <hr style={{ margin: "2rem 0", borderColor: "#444" }} />
+                  </>
+                ) : null}
+
+                <h3 className="pricing-section__subtitle">
+                  Acesso ao Dev Cash
+                </h3>
+                <div
+                  className="pricing-section__list pricing-section__list--right"
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.5rem",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <div>✅ Curso completo do Dev Cash</div>
+                </div>
+                <p
+                  className="pricing-section__total-value"
+                  style={{
+                    color: "#FF4D4D",
+                    textAlign: "right",
+                    textDecoration: "line-through",
+                    fontSize: "0.95rem",
+                    marginTop: "0.5rem",
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  Valor total: R$347
+                </p>
+                <hr style={{ margin: "2rem 0", borderColor: "#444" }} />
+                <h3 className="pricing-section__subtitle">
+                  E mais, você também leva de bônus:
+                </h3>
+                <div
+                  className="pricing-section__list pricing-section__list--right"
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.5rem",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <div>
+                    🎁 Lista com mais de 30 plataformas para freelancers
+                    <span
+                      style={{
+                        color: "#FF4D4D",
+                        marginLeft: "0.5rem",
+                        fontSize: "0.9rem",
+                        textDecoration: "line-through",
+                      }}
+                    >
+                      R$97
+                    </span>
+                  </div>
+                  <div>
+                    🎁 Guia Prático: Como começar na programação do jeito certo
+                    <span
+                      style={{
+                        color: "#FF4D4D",
+                        marginLeft: "0.5rem",
+                        fontSize: "0.9rem",
+                        textDecoration: "line-through",
+                      }}
+                    >
+                      R$67
+                    </span>
+                  </div>
+                  <div>
+                    🎁 Workshop: Como precificar um projeto profissional
+                    <span
+                      style={{
+                        color: "#FF4D4D",
+                        marginLeft: "0.5rem",
+                        fontSize: "0.9rem",
+                        textDecoration: "line-through",
+                      }}
+                    >
+                      R$57
+                    </span>
+                  </div>
+                </div>
+                <p
+                  className="pricing-section__total-value"
+                  style={{
+                    color: "#FF4D4D",
+                    textAlign: "right",
+                    textDecoration: "line-through",
+                    fontSize: "0.95rem",
+                    marginTop: "0.5rem",
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  Valor dos bônus: R$221
+                </p>
+              </div>
+
               <div className="pricing-section__original-price">
-                {isUpSell ? (
-                  <>
-                    <span>De</span>
-                    <span className="pricing-section__amount pricing-section__amount--original">
-                      R$ 297,00
-                    </span>
-                  </>
-                ) : (
-                  <>
-                    <span>De</span>
-                    <span className="pricing-section__amount pricing-section__amount--original">
-                      R$697,00
-                    </span>
-                  </>
-                )}
+                <span>Tudo isso deveria custar</span>
+                <span className="pricing-section__amount pricing-section__amount--original">
+                  {isUpSell ? "R$ 297,00" : "R$1.065,00"}
+                </span>
+                <span style={{ lineHeight: "1.5" }}>
+                  Mas hoje você vai ter acesso ao Dev Cash, junto com todos os
+                  bônus,
+                </span>
               </div>
 
               <div className="pricing-section__current-price">
                 <span>Por apenas</span>
                 <div className="pricing-section__options">
                   <div className="pricing-section__installments">
-                    {isUpSell ? (
-                      <span className="pricing-section__amount pricing-section__amount--installments">
-                        <span className="pricing-section__amount pricing-section__amount--installments-installment">
-                          12x
-                        </span>{" "}
-                        R$6,70
-                      </span>
-                    ) : (
-                      <span className="pricing-section__amount pricing-section__amount--installments">
-                        <span className="pricing-section__amount pricing-section__amount--installments-installment">
-                          12x
-                        </span>{" "}
-                        R$9,70
-                      </span>
-                    )}
+                    <span className="pricing-section__amount pricing-section__amount--installments">
+                      <span className="pricing-section__amount pricing-section__amount--installments-installment">
+                        12x
+                      </span>{" "}
+                      {isUpSell ? "R$6,70" : "R$9,70"}
+                    </span>
                   </div>
-                  <span className="pricing-section__or">ou</span>
-                  <div className="pricing-section__one-time">
-                    {isUpSell ? (
-                      <>
-                        <span className="pricing-section__amount pricing-section__amount--one-time">
-                          R$67
-                        </span>
-                        <span>à vista</span>
-                      </>
-                    ) : (
-                      <>
-                        <span className="pricing-section__amount pricing-section__amount--one-time">
-                          R$97
-                        </span>
-                        <span>à vista</span>
-                      </>
-                    )}
-                  </div>
+                  <span className="pricing-section__or">
+                    ou {isUpSell ? "R$67" : "R$97"} à vista
+                  </span>
                 </div>
               </div>
 
               {isUpSell ? (
-                <>
-                  <div style={{ textAlign: "center" }}>
-                    <button
-                      id="kiwify-upsell-trigger-6xb0tlP"
-                      style={{
-                        backgroundColor: "#00C0D7",
-                        padding: "12px 16px",
-                        cursor: "pointer",
-                        color: "#000",
-                        fontWeight: 600,
-                        borderRadius: "4px",
-                        border: "1px solid #00C0D7",
-                        fontSize: "20px",
-                      }}
-                    >
-                      Sim, quero ganhar dinheiro enquanto estudo
-                    </button>
-                    <div
-                      id="kiwify-upsell-cancel-trigger"
-                      style={{
-                        marginTop: "1rem",
-                        cursor: "pointer",
-                        fontSize: "16px",
-                        textDecoration: "underline",
-                        color: "#999",
-                        fontFamily: "sans-serif",
-                      }}
-                    >
-                      Não, eu gostaria de recusar essa oferta
-                    </div>
+                <div style={{ textAlign: "center" }}>
+                  <button
+                    id="kiwify-upsell-trigger-6xb0tlP"
+                    style={{
+                      backgroundColor: "#00C0D7",
+                      padding: "12px 16px",
+                      cursor: "pointer",
+                      color: "#000",
+                      fontWeight: 600,
+                      borderRadius: "4px",
+                      border: "1px solid #00C0D7",
+                      fontSize: "20px",
+                    }}
+                  >
+                    Sim, quero ganhar dinheiro enquanto estudo
+                  </button>
+                  <div
+                    id="kiwify-upsell-cancel-trigger"
+                    style={{
+                      marginTop: "1rem",
+                      cursor: "pointer",
+                      fontSize: "16px",
+                      textDecoration: "underline",
+                      color: "#999",
+                      fontFamily: "sans-serif",
+                    }}
+                  >
+                    Não, eu gostaria de recusar essa oferta
                   </div>
-                </>
+                </div>
               ) : (
                 <a
                   href={`https://pay.kiwify.com.br/UDQpxnq?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}

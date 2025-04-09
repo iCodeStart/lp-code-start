@@ -1,32 +1,32 @@
+import { Apresentation, IsForYou, OurTrail, School } from "../../../components";
+import { FullstackTrail } from "../../../components/FullstackTrail";
 import { Whatsapp } from "../../../components/Whatsapp";
 import {
-  AudienceSection,
-  CurriculumSection,
-  EarningsSection,
   FaqSection,
-  HeaderDevCash,
-  IdentificationSection,
   InclusionsSection,
-  MethodSection,
   PricingSection,
   ProofSection,
   TeachersSection,
-  TransformationSection,
 } from "../components";
 
 export function DevCashPrincipalOffer() {
   return (
     <>
-      <HeaderDevCash />
-      <TransformationSection />
+      {/* <HeaderDevCash /> */}
+      <Apresentation isMainProduct={false} />
+      {/* <TransformationSection /> */}
       <ProofSection />
-      <IdentificationSection />
-      <MethodSection />
+      <IsForYou isMainProduct={false} />
+      {/* <IdentificationSection /> */}
+      <OurTrail isMainProduct={false} />
+      <FullstackTrail isMainProduct={false} />
+      <School isMainProduct={false} />
+      {/* <MethodSection />
       <EarningsSection />
-      <AudienceSection />
+      <AudienceSection /> */}
       <InclusionsSection />
       <PricingSection />
-      <CurriculumSection />
+      {/* <CurriculumSection /> */}
       <TeachersSection />
       <FaqSection />
       <Whatsapp

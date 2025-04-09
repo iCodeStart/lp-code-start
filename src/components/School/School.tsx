@@ -4,34 +4,64 @@ import { MethodItems } from "../LPProjects";
 import { Dashboard } from "../LPProjects/Dashboard";
 import "./School.styles.scss";
 
-export function School() {
+export function School({ isMainProduct = true }) {
+  const labels = {
+    title: isMainProduct
+      ? "Veja tudo que vocé vai ter acesso no AAP"
+      : "Veja tudo que vocé vai ter acesso no Dev Cash",
+    subTitle: isMainProduct
+      ? "Vamos te pegar pelas mãos e te ensinar tudo que você precisa saber, mesmo que vocé nao tenha muito tempo para estudar."
+      : "",
+    contentText: isMainProduct
+      ? "Vamos te pegar pelas mãos e te ensinar tudo que você precisa saber,"
+      : "Vamos te pegar pelas mãos e te mostrar tudo que vocé precisa saber,",
+    strongText: isMainProduct
+      ? " mesmo que vocé nao tenha muito tempo para estudar."
+      : " na prática, com um projeto real de um cliente",
+  };
+
+  const renderVideoOrImage = () => {
+    if (isMainProduct) {
+      return (
+        <div className="school__content">
+          <div className="school__content-text">
+            <div className="school__content-text-item">
+              <LazyLoadVideo videoId="6rORoSMq17I" />
+            </div>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="school__content">
+          <div className="school__content-text">
+            <img
+              src="./mockupdevcash.png"
+              alt="Prévia do conteúdo"
+              className="preview-image"
+            />
+          </div>
+        </div>
+      );
+    }
+  };
+
   return (
     <div className="school">
       <div className="container">
         <div className="title-container">
           <Chip label="Módulos" />
-          <h1 className="section-title">
-            Veja tudo que você vai ter acesso no AAP
-          </h1>
+          <h1 className="section-title">{labels.title}</h1>
         </div>
-        <div className="school__content">
-          <div className="school__content-text">
-            <div className="school_content-text-item">
-              <LazyLoadVideo videoId="6rORoSMq17I" />
-            </div>
-            <p className="school_content-text-title">
-              Vamos te pegar pelas mãos e te ensinar tudo que você precisa
-              saber,{" "}
-              <strong>
-                mesmo que você não tenha muito tempo para estudar.
-              </strong>
-            </p>
 
-            <Dashboard />
-          </div>
-          <MethodItems />
-        </div>
+        {renderVideoOrImage()}
+        <p className="school_content-text-title">
+          {labels.contentText} <strong>{labels.strongText}</strong>
+        </p>
+
+        {isMainProduct && <Dashboard />}
       </div>
+      <MethodItems isMainProduct={isMainProduct} />
     </div>
   );
 }

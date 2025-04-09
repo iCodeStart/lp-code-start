@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Chip } from "../Chip";
-import './OurTrail.styles.scss'
+import "./OurTrail.styles.scss";
 
-export function OurTrail() {
+export function OurTrail({ isMainProduct = true }) {
   const [currentPhase, setCurrentPhase] = useState(1);
   const arrayInfoTrail = useMemo(
     () => [
@@ -35,6 +35,37 @@ export function OurTrail() {
     []
   );
 
+  const arrayInfoTrailDevCash = useMemo(
+    () => [
+      {
+        title: "Fase Despertar",
+        description: "Saia do zero com clareza e direção.",
+      },
+      {
+        title: "Fase Mão na Massa",
+        description:
+          "Você vai colocar a mão no código desde o início, criando soluções simples e úteis — que já podem ser oferecidas como serviços.",
+      },
+      {
+        title: "Primeiros Trabalhos",
+        description:
+          "Vamos te mostrar onde encontrar oportunidades, como montar seu portfólio e como se posicionar para fechar seus primeiros clientes.",
+      },
+      {
+        title: "Fase Aceleração",
+        description:
+          "Você aprende como equilibrar aprendizado e trabalho, aumentando sua renda enquanto continua evoluindo como dev.",
+      },
+      {
+        title: "Prova de Valor",
+        description:
+          "Ao final, você terá um portfólio real, experiência prática e um certificado que comprova o quanto você evoluiu.",
+      },
+    ],
+    []
+  );
+  const arrayTexts = isMainProduct ? arrayInfoTrail : arrayInfoTrailDevCash;
+
   const connectingLineRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -56,7 +87,7 @@ export function OurTrail() {
   }, []);
 
   useEffect(() => {
-    const totalSteps = arrayInfoTrail.length;
+    const totalSteps = arrayTexts.length;
     const heightPerStep = 100 / totalSteps;
     const lineHeight = heightPerStep * (currentPhase - 1);
 
@@ -65,7 +96,7 @@ export function OurTrail() {
         connectingLineRef.current as HTMLDivElement
       ).style.height = `${lineHeight}%`;
     }
-  }, [currentPhase, arrayInfoTrail]);
+  }, [currentPhase, arrayTexts]);
 
   const getIcon = (index: number) => {
     if (index === 0) return "/number1.svg";
@@ -85,7 +116,7 @@ export function OurTrail() {
           </h1>
         </div>
         <div className="our-trail__content">
-          {arrayInfoTrail.map((info, index) => (
+          {arrayTexts.map((info, index) => (
             <div
               key={index}
               className={`trail-step ${
@@ -100,8 +131,12 @@ export function OurTrail() {
                 <span className="trail_legend" style={{ color: "#00bcd3" }}>
                   <strong>Fase {index + 1}</strong>
                 </span>
-                <h1 style={{ color: "#fff", lineHeight: "30px" }}>{info.title}</h1>
-                <p style={{ color: "#fff", fontSize: "20px" }}>{info.description}</p>
+                <h1 style={{ color: "#fff", lineHeight: "30px" }}>
+                  {info.title}
+                </h1>
+                <p style={{ color: "#fff", fontSize: "20px" }}>
+                  {info.description}
+                </p>
               </div>
             </div>
           ))}

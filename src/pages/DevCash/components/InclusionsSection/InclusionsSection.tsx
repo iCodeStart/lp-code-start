@@ -1,13 +1,16 @@
 import React from "react";
 import "./InclusionsSection.scss";
+import { Chip } from "../../../../components/Chip";
 
 export const InclusionsSection: React.FC = () => {
   return (
     <section className="inclusions">
       <div className="container">
+        <div className="title-container">
+          <Chip label="Bônus" />
+          <h1 className="section-title">Você ainda vai ganhar</h1>
+        </div>
         <div className="inclusions__content">
-          <h2>Aprenda na prática como ganhar dinheiro como freelancer</h2>
-
           <p className="intro-text">
             Chega de teoria vazia! No{" "}
             <strong className="project-important-info">Dev Cash</strong>, você
@@ -50,22 +53,16 @@ export const InclusionsSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="bonus-section">
-            <div className="bonus-card">
-              <h3>
-                <span>🎁</span>
-                Bônus 1
-              </h3>
-              <p>Aprendendo a precificar um projeto profissional</p>
-            </div>
-
-            <div className="bonus-card">
-              <h3>
-                <span>🎁</span>
-                Bônus 2
-              </h3>
-              <p>E-book Code Start (O Guia do programador)</p>
-            </div>
+          <div className="bonus">
+            <h3>E ainda…</h3>
+            <ul>
+              <li>
+                Tenha acesso a uma lista com mais de 30 plataformas para
+                freelancers
+              </li>
+              <li>Guia Prático: Como começar na programação do jeito certo</li>
+              <li>Workshop: Como precificar um projeto profissional</li>
+            </ul>
           </div>
         </div>
       </div>

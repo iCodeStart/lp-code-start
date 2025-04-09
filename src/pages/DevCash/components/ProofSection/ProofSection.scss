@@ -1,5 +1,5 @@
-@import '../../../../styles/variables';
-@import '../../../../styles/mixins';
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
 
 .proof {
   padding: $spacing-lg 0;
@@ -9,6 +9,9 @@
   &__content {
     max-width: 1000px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h2 {
       text-align: center;
@@ -17,7 +20,7 @@
       font-size: 28px;
 
       &::after {
-        content: '';
+        content: "";
         display: block;
         width: 80px;
         height: 4px;
@@ -64,7 +67,7 @@
       height: 400px;
       transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
       cursor: pointer;
-      
+
       img {
         width: 100%;
         height: 100%;
@@ -138,7 +141,7 @@
 
     .mobile-item {
       margin-bottom: $spacing-md;
-      
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -149,23 +152,6 @@
         object-fit: cover;
         border-radius: 12px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-      }
-    }
-  }
-
-  .conclusion {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-
-    p {
-      color: $text-gray;
-      font-size: 1.2rem;
-      line-height: 1.6;
-      margin-bottom: $spacing-md;
-
-      &:last-child {
-        margin-bottom: 0;
       }
     }
   }

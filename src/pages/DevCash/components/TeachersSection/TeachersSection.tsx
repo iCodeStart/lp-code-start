@@ -1,19 +1,19 @@
-import { useLocation } from "react-router-dom";
+//import { useLocation } from "react-router-dom";
 import "./TeachersSection.styles.scss";
 import { Teacher } from "../../../../components/Teachers/Teacher";
 
 interface TeachersSectionProps {
-  isUpSell?: boolean
+  isUpSell?: boolean;
 }
 
-export function TeachersSection( { isUpSell } : TeachersSectionProps) {
-  const location = useLocation();
-  const params = new URLSearchParams(location.search);
-  const srcParam = params.get("src");
-  const utmSource = params.get("utm_source");
-  const utmMedium = params.get("utm_medium");
-  const utmCampaign = params.get("utm_campaign");
-  const utmContent = params.get("utm_content");
+export function TeachersSection({ isUpSell }: TeachersSectionProps) {
+  // const location = useLocation();
+  // const params = new URLSearchParams(location.search);
+  // const srcParam = params.get("src");
+  // const utmSource = params.get("utm_source");
+  // const utmMedium = params.get("utm_medium");
+  // const utmCampaign = params.get("utm_campaign");
+  // const utmContent = params.get("utm_content");
   const arrayTeachers = [
     {
       img: "./AlanFoto.jpg",
@@ -43,7 +43,7 @@ export function TeachersSection( { isUpSell } : TeachersSectionProps) {
             );
           })}
         </div>
-        <div className="teachers-section__choices">
+        {/* <div className="teachers-section__choices">
           <h3>Agora você tem duas escolhas…</h3>
           <div className="teachers-section__choices-choice-item">
             <span className="icon">✅</span>
@@ -99,7 +99,7 @@ export function TeachersSection( { isUpSell } : TeachersSectionProps) {
                   QUERO O SEGREDO
                 </a>
               )}
-        </div>
+        </div> */}
       </div>
     </div>
   );

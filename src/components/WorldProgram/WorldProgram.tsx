@@ -2,7 +2,7 @@ import { Chip } from "../Chip";
 import { WorldProgramInfo } from "./components";
 import "./WorldProgram.style.scss";
 
-export function WorldProgram() {
+export function WorldProgram({ isMainProduct = true }) {
   const arrayTexts = [
     {
       title: "R$16.339,29",

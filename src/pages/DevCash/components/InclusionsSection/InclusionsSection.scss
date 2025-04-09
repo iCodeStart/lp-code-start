@@ -1,5 +1,5 @@
-@import '../../../../styles/variables';
-@import '../../../../styles/mixins';
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
 
 .inclusions {
   padding: $spacing-lg 0;
@@ -19,7 +19,7 @@
       color: #fff;
     }
 
-    .project-important-info{
+    .project-important-info {
       color: $primary-color;
     }
 
@@ -29,7 +29,7 @@
       color: $text-light;
 
       &::after {
-        content: '';
+        content: "";
         display: block;
         width: 80px;
         height: 4px;
@@ -48,7 +48,7 @@
     display: grid;
     gap: $spacing-md;
     margin-bottom: $spacing-lg;
-    
+
     @include responsive($breakpoint-md) {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -83,12 +83,11 @@
     }
   }
 
-
   .bonus-section {
     display: grid;
     gap: $spacing-lg;
     margin-bottom: $spacing-lg;
-    
+
     @include responsive($breakpoint-md) {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -107,7 +106,7 @@
       overflow: hidden;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -159,5 +158,40 @@
     @include button-primary;
     font-size: 16px;
     padding: 16px 32px;
+  }
+}
+
+.bonus {
+  background: rgba($primary-color, 0.1);
+  border-radius: 12px;
+  padding: $spacing-md;
+  margin-bottom: $spacing-lg;
+  text-align: left;
+
+  h3 {
+    color: $primary-color;
+    font-size: 1.3rem;
+    margin-bottom: $spacing-md;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      color: $text-gray;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: $spacing-sm;
+      padding-left: $spacing-md;
+      position: relative;
+
+      &::before {
+        content: "🎁";
+        position: absolute;
+        left: 0;
+      }
+    }
   }
 }
