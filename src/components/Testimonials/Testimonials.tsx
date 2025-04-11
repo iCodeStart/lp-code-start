@@ -28,29 +28,47 @@ const TestimonialCard = ({ icon, text, img, videoUrl }: any) => (
   </div>
 );
 
-export function Testimonials() {
-  const testimonials = [
-    {
-      icon: "💰",
-      text: "Ah, tenho medo de gastar meu dinheiro atoa",
-      img: "./novo-depoimento-code-start-1.jpeg",
-    },
-    {
-      icon: "🎯",
-      text: "Ah, tenho medo de não conseguir um emprego",
-      img: "./novo-depoimento-code-start-2.jpeg",
-    },
-    {
-      icon: "📚",
-      text: "Ah, eu já sou mais velho e não consigo aprender programação",
-      img: "./novo-depoimento-code-start-3.jpeg",
-    },
-    {
-      icon: "👨‍👩‍👧‍👦",
-      text: "Ah, eu tenho filho e trabalho fora, não dá mais tempo de estudar",
-      videoUrl: "https://www.youtube.com/embed/s7fjP6fY2NI",
-    },
-  ];
+export function Testimonials({ isMainProduct = true }) {
+  const testimonials = isMainProduct
+    ? [
+        {
+          icon: "💰",
+          text: "Ah, tenho medo de gastar meu dinheiro atoa",
+          img: "./novo-depoimento-code-start-1.jpeg",
+        },
+        {
+          icon: "🎯",
+          text: "Ah, tenho medo de não conseguir um emprego",
+          img: "./novo-depoimento-code-start-2.jpeg",
+        },
+        {
+          icon: "📚",
+          text: "Ah, eu já sou mais velho e não consigo aprender programação",
+          img: "./novo-depoimento-code-start-3.jpeg",
+        },
+        {
+          icon: "👨‍👩‍👧‍👦",
+          text: "Ah, eu tenho filho e trabalho fora, não dá mais tempo de estudar",
+          videoUrl: "https://www.youtube.com/embed/s7fjP6fY2NI",
+        },
+      ]
+    : [
+        {
+          icon: "🧑‍💻",
+          text: "Ah, tenho medo de não dar certo",
+          img: "./depoimentodevcash.jpg",
+        },
+        {
+          icon: "📚",
+          text: "Ah, eu já sou mais velho e não consigo aprender programação",
+          img: "./novo-depoimento-code-start-3.jpeg",
+        },
+        {
+          icon: "💰",
+          text: "Ah, tenho medo de gastar meu dinheiro atoa",
+          img: "./novo-depoimento-code-start-1.jpeg",
+        },
+      ];
   return (
     <>
       <div>

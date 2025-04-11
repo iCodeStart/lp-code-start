@@ -1,4 +1,10 @@
-import { Apresentation, IsForYou, OurTrail, School } from "../../../components";
+import {
+  Apresentation,
+  IsForYou,
+  OurTrail,
+  School,
+  Testimonials,
+} from "../../../components";
 import { FullstackTrail } from "../../../components/FullstackTrail";
 import { Whatsapp } from "../../../components/Whatsapp";
 import {
@@ -17,6 +23,7 @@ export function DevCashPrincipalOffer() {
       {/* <TransformationSection /> */}
       <ProofSection />
       <IsForYou isMainProduct={false} />
+      <Testimonials isMainProduct={false} />
       {/* <IdentificationSection /> */}
       <OurTrail isMainProduct={false} />
       <FullstackTrail isMainProduct={false} />
