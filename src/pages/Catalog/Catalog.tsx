@@ -54,6 +54,10 @@ function Catalog() {
       return (window.location.href =
         "https://pay.kiwify.com.br/Ct7b3Pk/?src=catalog");
     }
+    if (title === "Fundamentos de IA") {
+      return (window.location.href =
+        "https://pay.kiwify.com.br/CQGlsU1/?src=catalog");
+    }
     window.location.href = "https://www.icodestart.com/?src=catalog";
   };
 
@@ -230,7 +234,10 @@ function Catalog() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>© 2025 Code Start. Todos os direitos reservados. - CNPJ: 48.848.520/0001-85</p>
+          <p>
+            © 2025 Code Start. Todos os direitos reservados. - CNPJ:
+            48.848.520/0001-85
+          </p>
         </div>
       </footer>
     </div>

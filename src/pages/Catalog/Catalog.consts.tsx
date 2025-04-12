@@ -74,7 +74,7 @@ export const courses = [
           "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2070",
         rating: 5.0,
         lessons: 25,
-        isComingSoon: true,
+        isComingSoon: false,
       },
     ],
   },
