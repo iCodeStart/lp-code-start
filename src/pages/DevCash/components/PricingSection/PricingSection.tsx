@@ -188,11 +188,11 @@ export function PricingSection({ isUpSell }: PricingSectionProps) {
                       <span className="pricing-section__amount pricing-section__amount--installments-installment">
                         12x
                       </span>{" "}
-                      {isUpSell ? "R$4,70" : "R$9,70"}
+                      {isUpSell ? "R$6,70" : "R$9,70"}
                     </span>
                   </div>
                   <span className="pricing-section__or">
-                    ou {isUpSell ? "R$47" : "R$97"} à vista
+                    ou {isUpSell ? "R$67" : "R$97"} à vista
                   </span>
                 </div>
               </div>
