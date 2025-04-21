@@ -1,30 +1,47 @@
 import { createBrowserRouter } from "react-router-dom";
-import { DevCashPrincipalOffer, DevCashUpsell, Home, SummaryContent, VSLAula } from "./pages";
-import Catalog from "./pages/Catalog/Catalog";
+import { lazy, Suspense } from "react";
+import Spinner from "./components/Spinner";
+
+const Home = lazy(() => import("./pages/Home"));
+const VSLAula = lazy(() => import("./pages/VSLAula"));
+const DevCashUpsell = lazy(() => import("./pages/DevCashUpsell"));
+const SummaryContent = lazy(() => import("./pages/SummaryContent"));
+const Catalog = lazy(() => import("./pages/Catalog/Catalog"));
+const DevCashPrincipalOffer = lazy(
+  () => import("./pages/DevCash/DevCashPrincipalOffer")
+);
+
+const withSuspense = (
+  Component: React.LazyExoticComponent<() => JSX.Element>
+) => (
+  <Suspense fallback={<Spinner />}>
+    <Component />
+  </Suspense>
+);
 
 export const routes = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: withSuspense(Home),
   },
   {
     path: "/aula-gratis",
-    element: <VSLAula />,
+    element: withSuspense(VSLAula),
   },
   {
     path: "/dev-cash-upsell",
-    element: <DevCashUpsell />,
+    element: withSuspense(DevCashUpsell),
   },
   {
     path: "/summary-content",
-    element: <SummaryContent />,
+    element: withSuspense(SummaryContent),
   },
   {
     path: "/catalog",
-    element: <Catalog />,
+    element: withSuspense(Catalog),
   },
   {
     path: "/dev-cash",
-    element: <DevCashPrincipalOffer/>
-  }
+    element: withSuspense(DevCashPrincipalOffer),
+  },
 ]);

@@ -15,7 +15,7 @@ import {
   TeachersSection,
 } from "../components";
 
-export function DevCashPrincipalOffer() {
+const DevCashPrincipalOffer = () => {
   return (
     <>
       {/* <HeaderDevCash /> */}
@@ -43,4 +43,6 @@ export function DevCashPrincipalOffer() {
       />
     </>
   );
-}
+};
+
+export default DevCashPrincipalOffer;

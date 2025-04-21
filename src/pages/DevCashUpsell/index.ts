@@ -1,1 +1,1 @@
-export * from "./DevCashUpsell";
+export { default } from "./DevCashUpsell";

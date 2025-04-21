@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./VSLAula.styles.scss";
 import ModalOffer from "../../components/ModalOffer/ModalOffer";
 
-export function VSLAula() {
+const VSLAula = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [showButton, setShowButton] = useState(false);
 
@@ -111,4 +111,6 @@ export function VSLAula() {
       <img src="./logo-code-start.svg" alt="Logo Code Start" width="120px" />
     </div>
   );
-}
+};
+
+export default VSLAula;

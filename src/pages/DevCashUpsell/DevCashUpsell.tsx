@@ -15,7 +15,7 @@ import {
   TransformationSection,
 } from "../DevCash/components";
 
-export function DevCashUpsell() {
+const DevCashUpsell = () => {
   useEffect(() => {
     const scriptVars = document.createElement("script");
     scriptVars.innerHTML = `
@@ -38,8 +38,8 @@ export function DevCashUpsell() {
 
   return (
     <>
-      <HeaderDevCash isUpSell/>
-      <CongratulationsSection/>
+      <HeaderDevCash isUpSell />
+      <CongratulationsSection />
       <TransformationSection />
       <ProofSection />
       <IdentificationSection />
@@ -47,10 +47,12 @@ export function DevCashUpsell() {
       <EarningsSection />
       <AudienceSection />
       <InclusionsSection />
-      <PricingSection isUpSell/>
-      <CurriculumSection isUpSell/>
-      <TeachersSection isUpSell/>
+      <PricingSection isUpSell />
+      <CurriculumSection isUpSell />
+      <TeachersSection isUpSell />
       <FaqSection />
     </>
   );
-}
+};
+
+export default DevCashUpsell;

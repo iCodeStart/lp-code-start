@@ -1,1 +1,1 @@
-export * from "./SummaryContent";
+export { default } from "./SummaryContent";

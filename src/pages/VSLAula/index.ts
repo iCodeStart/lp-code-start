@@ -1,1 +1,1 @@
-export * from './VSLAula'
+export { default } from "./VSLAula";

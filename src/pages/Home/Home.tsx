@@ -18,7 +18,7 @@ import { FullstackTrail } from "../../components/FullstackTrail";
 import { Reviews } from "../../components/Reviews";
 import { Whatsapp } from "../../components/Whatsapp";
 
-export function Home() {
+const Home = () => {
   return (
     <>
       <Apresentation />
@@ -42,4 +42,6 @@ export function Home() {
       </div>
     </>
   );
-}
+};
+
+export default Home;

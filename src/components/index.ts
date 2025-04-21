@@ -12,3 +12,4 @@ export * from "./WorldProgram";
 export * from "./Contact";
 export * from "./Offer2";
 export * from "./SpotlightCard";
+export * from "./Spinner";

@@ -265,7 +265,7 @@ const styles: { [key: string]: NestedCSSProperties } = {
   },
 };
 
-export function SummaryContent() {
+const SummaryContent = () => {
   return (
     <div style={styles.container}>
       <nav style={styles.nav}>
@@ -390,4 +390,6 @@ export function SummaryContent() {
       </section>
     </div>
   );
-}
+};
+
+export default SummaryContent;
