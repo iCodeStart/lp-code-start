@@ -7,7 +7,7 @@ const Contact = () => {
       "Olá, gostaria de saber mais sobre o Treinamento da Code Start!!!"
     );
     window.open(
-      `https://api.whatsapp.com/send?phone=+5531997506754&text=${defaultMessage}`,
+      `https://api.whatsapp.com/send?phone=+5532998573527&text=${defaultMessage}`,
       "_blank"
     );
   };
