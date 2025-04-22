@@ -11,7 +11,7 @@ export function Whatsapp({ customMessage }: WhatsappProps) {
   return (
     <div className="whatsapp-icon">
       <a
-        href={`https://api.whatsapp.com/send?phone=+5532998573527&text=${
+        href={`https://api.whatsapp.com/send?phone=+5531997506754&text=${
           customMessage || defaultMessage
         }`}
         target="_blank"
