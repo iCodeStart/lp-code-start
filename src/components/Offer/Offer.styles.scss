@@ -93,6 +93,11 @@
   color: #00bcd3;
 }
 
+.section-subtitle {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
 
 @keyframes LUZ {
   70% {
@@ -125,9 +130,7 @@
   justify-content: center;
 }
 
-
 @media (max-width: 768px) {
-  
   .card-offer {
     padding: 20px;
   }
@@ -154,5 +157,4 @@
     font-size: 15px;
     color: #fff;
   }
-
 }

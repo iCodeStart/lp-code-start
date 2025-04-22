@@ -3,9 +3,14 @@ import "./FullstackTrail.styles.scss";
 
 export function FullstackTrail({ isMainProduct = true }) {
   const labels = {
-    title: isMainProduct ? "Nossa trilha fullstack" : "Nossa trilha Dev Cash",
+    title: isMainProduct
+      ? "Como funciona a formaçao Code Start?"
+      : "Nossa trilha Dev Cash",
+    title2: isMainProduct
+      ? "Veja quais tecnologias você vai receber na formaçao"
+      : "",
     subTitle: isMainProduct
-      ? "Voce vai aprender tudo sobre a linguagem mais utilizada pelas empresas, que eh o Javascript"
+      ? "Voce vai aprender tudo sobre a linguagem mais utilizada pelas empresas, que é o Javascript"
       : "Voce vai aprender tudo que precisa para fazer projetos simples e completos",
     img: isMainProduct ? "/roadmapCode.webp" : "/roadmapDevMobile.webp",
     imgMobile: isMainProduct
@@ -18,6 +23,7 @@ export function FullstackTrail({ isMainProduct = true }) {
         <div className="title-container">
           <Chip label="Trilha" />
           <h1 className="section-title">{labels.title}</h1>
+          <h2>{labels.title2}</h2>
         </div>
         <p className="fullstack-trail__text">{labels.subTitle}</p>
         <div className="fullstack-trail__content">

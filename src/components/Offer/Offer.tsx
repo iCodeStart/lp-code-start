@@ -86,10 +86,16 @@ export function Offer() {
     <>
       <div className="offer" id="offer">
         <div className="title-container">
-          <Chip label="Investimento" />
+          <Chip label="Qual o valor do investimento?" />
           <h1 className="section-title">
             <strong>TUDO O QUE VOCÊ PRECISA</strong> EM UM LUGAR SÓ
           </h1>
+          <h3 className="section-subtitle">
+            Temos mais um presente especial para você: O acesso é vitalício,
+            você investe apenas uma vez e tem acesso à formação para sempre!
+          </h3>
+          <h3 className="section-subtitle">Veja mais abaixo 👇</h3>
+          <br />
         </div>
         <div className="container1">
           <span className="pricing1">
@@ -122,9 +128,13 @@ export function Offer() {
             ))}
 
             <div className="card-offer__total">
-              <p style={{
-                    color: "#fff"
-                  }}>Total</p>
+              <p
+                style={{
+                  color: "#fff",
+                }}
+              >
+                Total
+              </p>
               <span style={{ color: "red" }}>
                 <s
                   style={{
@@ -134,11 +144,7 @@ export function Offer() {
               </span>
             </div>
             <div className="guarantee_access">
-              <h4>Esse é o preço original, mas investindo agora você vai...</h4>
-              <h3>
-                Aprender do zero ao profissional, em um só treinamento, 100%
-                online:
-              </h3>
+              <h3>INVISTA UMA VEZ E TENHA ACESSO PARA SEMPRE</h3>
               <h1 className="card-offer__price">
                 <p style={{ fontSize: "22px" }}>12x de</p>29,72
               </h1>
@@ -157,7 +163,7 @@ export function Offer() {
               >
                 Quero acessar agora
               </button>
-            
+
               <p>
                 *Válido para os dias: <strong>{obterDatas()}</strong>
               </p>
@@ -169,7 +175,7 @@ export function Offer() {
             />
             <div className="guarantee">
               <img src="./seven-days.webp" alt="Garantia de 7 dias" />
-              <p style={{ color: "#fff"}}>
+              <p style={{ color: "#fff" }}>
                 Você terá sete dias para experimentar o treinamento sem nenhum
                 compromisso. Se nesse período você achar que tudo isso não vale
                 <strong> pelo menos o dobro do que você pagou</strong>, então
