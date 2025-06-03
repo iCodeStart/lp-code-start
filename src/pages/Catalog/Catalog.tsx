@@ -44,19 +44,19 @@ function Catalog() {
   const handleOnClick = (title: string) => {
     if (title === "Currículo de Elite") {
       return (window.location.href =
-        "https://pay.kiwify.com.br/xgOsT45/?src=catalog");
+        "https://pay.kiwify.com.br/xgOsT45/?src=catalog-curriculo&utm_source=catalog-curriculo");
     }
     if (title === "Dev Cash") {
       return (window.location.href =
-        "https://pay.kiwify.com.br/6xb0tlP/?src=catalog");
+        "https://pay.kiwify.com.br/6xb0tlP/?src=catalogo&utm_source=catalog-dev-cash");
     }
     if (title === "React") {
       return (window.location.href =
-        "https://pay.kiwify.com.br/Ct7b3Pk/?src=catalog");
+        "https://pay.kiwify.com.br/Ct7b3Pk/?src=catalogo&utm_source=catalog-react");
     }
     if (title === "Fundamentos de IA") {
       return (window.location.href =
-        "https://pay.kiwify.com.br/CQGlsU1/?src=catalog");
+        "https://pay.kiwify.com.br/CQGlsU1/?src=catalogo&utm_source=catalog-ia");
     }
     window.location.href = "https://www.icodestart.com/?src=catalog";
   };
