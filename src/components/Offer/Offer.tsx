@@ -146,7 +146,7 @@ export function Offer() {
             <div className="guarantee_access">
               <h3>INVISTA UMA VEZ E TENHA ACESSO PARA SEMPRE</h3>
               <h1 className="card-offer__price">
-                <p style={{ fontSize: "22px" }}>12x de</p>29,72
+                <p style={{ fontSize: "22px" }}>12x de</p>30,72
               </h1>
               <p className="card-offer__price__all">
                 {" "}
