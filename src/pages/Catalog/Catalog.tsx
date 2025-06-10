@@ -58,7 +58,8 @@ function Catalog() {
       return (window.location.href =
         "https://pay.kiwify.com.br/CQGlsU1?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
     }
-    window.location.href = "https://www.icodestart.com/?src=catalog";
+    window.location.href =
+      "https://icodestart.com/?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=";
   };
 
   return (
