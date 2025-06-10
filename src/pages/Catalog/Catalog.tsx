@@ -44,19 +44,19 @@ function Catalog() {
   const handleOnClick = (title: string) => {
     if (title === "Currículo de Elite") {
       return (window.location.href =
-        "https://pay.kiwify.com.br/xgOsT45/?src=catalog-curriculo&utm_source=catalog-curriculo");
+        "https://pay.kiwify.com.br/xgOsT45?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
     }
     if (title === "Dev Cash") {
       return (window.location.href =
-        "https://pay.kiwify.com.br/6xb0tlP/?src=catalogo&utm_source=catalog-dev-cash");
+        "https://pay.kiwify.com.br/6xb0tlP?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
     }
     if (title === "React") {
       return (window.location.href =
-        "https://pay.kiwify.com.br/Ct7b3Pk/?src=catalogo&utm_source=catalog-react");
+        "https://pay.kiwify.com.br/Ct7b3Pk?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
     }
     if (title === "Fundamentos de IA") {
       return (window.location.href =
-        "https://pay.kiwify.com.br/CQGlsU1/?src=catalogo&utm_source=catalog-ia");
+        "https://pay.kiwify.com.br/CQGlsU1?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
     }
     window.location.href = "https://www.icodestart.com/?src=catalog";
   };
