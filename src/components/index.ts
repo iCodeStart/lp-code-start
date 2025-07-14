@@ -1,4 +1,5 @@
 export * from "./Bonus";
+export * from "./BonusIA";
 export * from "./Dashboard";
 export * from "./FAQ";
 export * from "./LPProjects";

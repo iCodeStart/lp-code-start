@@ -12,6 +12,7 @@ import {
   Testimonials,
   WorldProgram,
 } from "../../components";
+import BonusIA from "../../components/BonusIA/BonusIA";
 import Contact from "../../components/Contact/Contact";
 import { Footer } from "../../components/Footer";
 import { FullstackTrail } from "../../components/FullstackTrail";
@@ -31,6 +32,7 @@ const Home = () => {
         <Projects />
         <School />
         <Bonus />
+        <BonusIA />
         <Guarantee />
         <Offer />
         <Reviews />
