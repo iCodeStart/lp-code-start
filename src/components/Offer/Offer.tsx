@@ -78,7 +78,7 @@ export function Offer() {
   };
 
   const openPaymentLink = () => {
-    const url = "https://pay.kiwify.com.br/TABlI0t?coupon=CODESTART50";
+    const url = "https://pay.kiwify.com.br/DsFkN5I?coupon=CODESTART50";
     window.open(url, `${isMobile ? "_self" : "_blank"}`, "noreferrer");
   };
 
