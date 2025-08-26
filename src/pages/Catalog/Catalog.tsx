@@ -44,11 +44,11 @@ function Catalog() {
   const handleOnClick = (title: string) => {
     if (title === "Currículo de Elite") {
       return (window.location.href =
-        "https://pay.kiwify.com.br/xgOsT45?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
+        "https://pay.kiwify.com.br/PGg34AL?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
     }
     if (title === "Dev Cash") {
       return (window.location.href =
-        "https://pay.kiwify.com.br/6xb0tlP?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
+        "https://pay.kiwify.com.br/BbF4QXG?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
     }
     if (title === "React") {
       return (window.location.href =

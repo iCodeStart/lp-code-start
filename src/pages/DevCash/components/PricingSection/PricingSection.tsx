@@ -200,7 +200,7 @@ export function PricingSection({ isUpSell }: PricingSectionProps) {
               {isUpSell ? (
                 <div style={{ textAlign: "center" }}>
                   <button
-                    id="kiwify-upsell-trigger-6xb0tlP"
+                    id="kiwify-upsell-trigger-BbF4QXG"
                     style={{
                       backgroundColor: "#00C0D7",
                       padding: "12px 16px",
@@ -230,7 +230,7 @@ export function PricingSection({ isUpSell }: PricingSectionProps) {
                 </div>
               ) : (
                 <a
-                  href={`https://pay.kiwify.com.br/UDQpxnq?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
+                  href={`https://pay.kiwify.com.br/3G7XOoQ?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="pricing-section__button-primary"

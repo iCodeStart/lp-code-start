@@ -61,52 +61,52 @@ export const courses = [
       },
     ],
   },
-  {
-    category: "Inteligência Artificial",
-    items: [
-      {
-        title: "Fundamentos de IA",
-        description: "Conceitos básicos, tipos de IA e aplicações práticas",
-        duration: "30h",
-        icon: <Brain className="w-6 h-6" />,
-        level: "Iniciante",
-        image:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2070",
-        rating: 5.0,
-        lessons: 25,
-        isComingSoon: false,
-      },
-    ],
-  },
+  // {
+  //   category: "Inteligência Artificial",
+  //   items: [
+  //     {
+  //       title: "Fundamentos de IA",
+  //       description: "Conceitos básicos, tipos de IA e aplicações práticas",
+  //       duration: "30h",
+  //       icon: <Brain className="w-6 h-6" />,
+  //       level: "Iniciante",
+  //       image:
+  //         "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2070",
+  //       rating: 5.0,
+  //       lessons: 25,
+  //       isComingSoon: false,
+  //     },
+  //   ],
+  // },
 
-  {
-    category: "Front-end",
-    items: [
-      {
-        title: "React",
-        description:
-          "Fundamentos do React, React Hooks, Context API, Axios, React Query, Projetos práticos ",
-        duration: "40h",
-        icon: <Code2 className="w-6 h-6" />,
-        level: "Básico-intermediário",
-        image:
-          "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=2070",
-        rating: 4.9,
-        lessons: 121,
-        isComingSoon: false,
-      },
-      {
-        title: "React Avançado",
-        description: " .",
-        duration: "35h",
-        icon: <Code2 className="w-6 h-6" />,
-        level: "Avançado",
-        image:
-          "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=2070",
-        rating: 4.9,
-        lessons: 28,
-        isComingSoon: true,
-      },
-    ],
-  },
+  // {
+  //   category: "Front-end",
+  //   items: [
+  //     {
+  //       title: "React",
+  //       description:
+  //         "Fundamentos do React, React Hooks, Context API, Axios, React Query, Projetos práticos ",
+  //       duration: "40h",
+  //       icon: <Code2 className="w-6 h-6" />,
+  //       level: "Básico-intermediário",
+  //       image:
+  //         "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=2070",
+  //       rating: 4.9,
+  //       lessons: 121,
+  //       isComingSoon: false,
+  //     },
+  //     {
+  //       title: "React Avançado",
+  //       description: " .",
+  //       duration: "35h",
+  //       icon: <Code2 className="w-6 h-6" />,
+  //       level: "Avançado",
+  //       image:
+  //         "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=2070",
+  //       rating: 4.9,
+  //       lessons: 28,
+  //       isComingSoon: true,
+  //     },
+  //   ],
+  // },
 ];
