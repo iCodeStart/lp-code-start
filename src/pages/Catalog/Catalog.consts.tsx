@@ -1,8 +1,6 @@
 import {
-  Code2,
   MonitorSmartphone,
   Database,
-  Brain,
   DollarSign,
 } from "lucide-react";
 
