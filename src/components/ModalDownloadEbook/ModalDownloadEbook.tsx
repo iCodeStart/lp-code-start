@@ -15,7 +15,6 @@ export const ModalDownloadEbook = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
 
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     setIsLoading(true);
     e.preventDefault();
@@ -71,12 +70,13 @@ export const ModalDownloadEbook = () => {
 
   return (
     <div className="modal-download-ebook">
+      <img style={{ width: "20rem" }} src="/logo-code-start.svg" alt="logo" />
       <div className="modal-download-ebook-content">
-          <h2>Você ganhou:</h2>
-          <h4 style={{ lineHeight: "2.5rem" }}>
-            ACESSO AO E-BOOK GUIA DO PROGRAMADOR
-          </h4>
-        <span style={{ fontWeight: "bold"}}>
+        <h2>Você ganhou:</h2>
+        <h4 style={{ lineHeight: "2.5rem" }}>
+          ACESSO AO E-BOOK GUIA DO PROGRAMADOR
+        </h4>
+        <span style={{ fontWeight: "bold" }}>
           Preencha seus dados para ter acesso ao e-book!
         </span>
         <form onSubmit={handleSubmit}>
