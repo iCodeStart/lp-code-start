@@ -1,0 +1,77 @@
+.modal-download-ebook {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000000;
+}
+
+.modal-download-ebook-content {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.9) 9%,
+    rgba(18, 18, 18, 0.8) 40%,
+    rgba(36, 228, 221, 0.8) 97%
+  );
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  width: 420px;
+  max-width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 1010;
+}
+
+.modal-download-ebook-content h2,
+.modal-download-ebook-content h4 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.input-box {
+  position: relative;
+  width: 90%;
+  margin: 15px 0;
+}
+
+.input-box input {
+  width: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px;
+  outline: none;
+}
+
+.input-box input::placeholder {
+  color: #ccc;
+}
+
+button[type="submit"] {
+  width: 60%;
+  height: 45px;
+  background: #24e4dd;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background: #1ec2b5;
+}
+
