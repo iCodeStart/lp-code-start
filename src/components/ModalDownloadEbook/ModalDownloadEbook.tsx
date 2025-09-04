@@ -70,12 +70,12 @@ export const ModalDownloadEbook = () => {
 
   return (
     <div className="modal-download-ebook">
-      <img style={{ width: "15rem" }} src="/logo-code-start.svg" alt="logo" />
       <div className="modal-download-ebook-content">
         <h2>Você ganhou:</h2>
         <h4 style={{ lineHeight: "2.5rem" }}>
           ACESSO AO E-BOOK GUIA DO PROGRAMADOR
         </h4>
+        <img style={{ width: "10rem", margin: "20px auto" }} src="/logo-code-start.svg" alt="logo" />
         <span style={{ fontWeight: "bold" }}>
           Preencha seus dados para ter acesso ao e-book!
         </span>

@@ -17,6 +17,8 @@
     padding: 1rem;
     box-sizing: border-box;
     justify-content:start;
+    height: 100vh;
+    overflow-y: scroll;
   }
 }
 
@@ -37,6 +39,8 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   text-align: center;
   z-index: 1010;
+  display: flex;
+  flex-direction: column;
 
   @media(max-width: 787px) {
     width: fit-content;
