@@ -12,6 +12,12 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+    @media(max-width: 787px) {
+    padding: 1rem;
+    box-sizing: border-box;
+    justify-content:start;
+  }
 }
 
 .modal-download-ebook-content {
@@ -31,6 +37,11 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   text-align: center;
   z-index: 1010;
+
+  @media(max-width: 787px) {
+    width: fit-content;
+    padding: 10px 40px;
+  }
 }
 
 .modal-download-ebook-content h2,
