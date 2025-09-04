@@ -2,21 +2,18 @@ import { useState } from "react";
 import InputMask from "react-input-mask";
 import { DataExcel, useSendDataToExcel } from "../../queries";
 import useIsMobile from "../../utils/useIsMobile";
-import { useLocation } from "react-router-dom";
 
 import "./ModalDownloadEbook.styles.scss";
 
 export const ModalDownloadEbook = () => {
   const { mutate } = useSendDataToExcel();
   const isMobile = useIsMobile();
-  const location = useLocation();
   const [formData, setFormData] = useState<DataExcel>({
     nome: "",
     email: "",
     telefone: "",
   });
   const [isLoading, setIsLoading] = useState(false);
-  const params = new URLSearchParams(location.search);
 
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
