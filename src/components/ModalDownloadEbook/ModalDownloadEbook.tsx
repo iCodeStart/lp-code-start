@@ -5,7 +5,20 @@ import useIsMobile from "../../utils/useIsMobile";
 
 import "./ModalDownloadEbook.styles.scss";
 
-export const ModalDownloadEbook = () => {
+interface ModalDownloadEbookProps {
+  title?: string;
+  subtitle?: string;
+  actionButton?: string;
+  loadingButton?: string;
+  fileName?: string;
+}
+export const ModalDownloadEbook = ({
+  title = "ACESSO AO E-BOOK GUIA DO PROGRAMADOR",
+  subtitle = "Preencha seus dados para ter acesso ao e-book!",
+  actionButton = 'Acessar E-book',
+  loadingButton = 'Recebendo E-book...',
+  fileName = 'ebook-code-start.pdf',
+}: ModalDownloadEbookProps) => {
   const { mutate } = useSendDataToExcel();
   const isMobile = useIsMobile();
   const [formData, setFormData] = useState<DataExcel>({
@@ -46,7 +59,7 @@ export const ModalDownloadEbook = () => {
   };
 
   const openPaymentLink = () => {
-    let url = "/ebook-code-start.pdf";
+    let url = `/${fileName}`;
     window.open(url, `${isMobile ? "_self" : "_blank"}`, "noreferrer");
   };
 
@@ -72,11 +85,15 @@ export const ModalDownloadEbook = () => {
     <div className="modal-download-ebook">
       <div className="modal-download-ebook-content">
         <h4 style={{ lineHeight: "2rem" }}>
-          ACESSO AO E-BOOK GUIA DO PROGRAMADOR
+          {title}
         </h4>
-        <img style={{ width: "10rem", margin: "20px auto" }} src="/logo-code-start.svg" alt="logo" />
+        <img
+          style={{ width: "10rem", margin: "20px auto" }}
+          src="/logo-code-start.svg"
+          alt="logo"
+        />
         <span style={{ fontWeight: "bold" }}>
-          Preencha seus dados para ter acesso ao e-book!
+          {subtitle}
         </span>
         <form onSubmit={handleSubmit}>
           <div className="input-box">
@@ -110,7 +127,7 @@ export const ModalDownloadEbook = () => {
             />
           </div>
           <button type="submit" disabled={isLoading}>
-            {isLoading ? "Recebendo E-book..." : "Acessar E-book"}
+            {isLoading ? loadingButton : actionButton}
           </button>
         </form>
       </div>
