@@ -1,5 +1,5 @@
-import { useState } from "react";
-import InputMask from "react-input-mask";
+import { useState, useRef } from "react"; // 👈 add useRef
+// import InputMask from "react-input-mask"; // 👈 REMOVA esta linha
 import { DataExcel, useSendDataToExcel } from "../../queries";
 import useIsMobile from "../../utils/useIsMobile";
 
@@ -26,29 +26,37 @@ export const ModalDownloadEbook = ({
   const [formData, setFormData] = useState<DataExcel>({
     nome: "",
     email: "",
-    telefone: "",
+    telefone: "", // manter por compat, mas o input vai ser não-controlado
   });
   const [isLoading, setIsLoading] = useState(false);
+
+  // 👇 ref pro input de telefone (não-controlado)
+  const phoneRef = useRef<HTMLInputElement>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
 
-    const cleanedPhone = getCleanedPhone(formData.telefone);
-    const formattedName = `Ebook-${formData.nome}`;
+    // pega o valor direto do DOM (suporta autofill do iOS)
+    const rawPhone = phoneRef.current?.value ?? formData.telefone;
+    const cleanedPhone = getCleanedPhone(rawPhone);
 
+    const formattedName = `Ebook-${formData.nome}`;
     const dataToSend = {
       ...formData,
       nome: formattedName,
-      telefone: cleanedPhone,
+      telefone: cleanedPhone, // sempre dígitos
     };
 
+    // limpa os campos (inclui DOM do tel)
     setFormData({ nome: "", email: "", telefone: "" });
+    if (phoneRef.current) phoneRef.current.value = "";
 
     mutate(dataToSend, {
       onSuccess: () => {
         openPaymentLink();
         setFormData({ nome: "", email: "", telefone: "" });
+        if (phoneRef.current) phoneRef.current.value = "";
         setTimeout(() => setIsLoading(false), 3000);
       },
       onError: () => {
@@ -58,7 +66,31 @@ export const ModalDownloadEbook = ({
     });
   };
 
-  const getCleanedPhone = (phone: string) => phone.replace(/\D/g, "");
+  // limpa TUDO que não é número; remove +55/zeros, limita a 11 dígitos
+  const normalizePhone = (val: string) => {
+    const onlyDigits = val.replace(/\D/g, "");
+    const drop55 = onlyDigits.startsWith("55") && onlyDigits.length >= 12
+      ? onlyDigits.slice(2)
+      : onlyDigits;
+    const dropLeading0 = drop55.startsWith("0") ? drop55.slice(1) : drop55;
+    return dropLeading0.slice(0, 11);
+  };
+
+  const formatPhoneBR = (digits: string) => {
+    if (!digits) return "";
+    if (digits.length <= 10) {
+      // (DD) xxxx-xxxx
+      return digits.replace(/^(\d{0,2})(\d{0,4})(\d{0,4}).*$/, (_, d1, d2, d3) =>
+        `${d1 ? `(${d1}` : ""}${d1?.length === 2 ? ")" : d1 ? "" : ""}${d2 ? ` ${d2}` : ""}${d3 ? `-${d3}` : ""}`.trim()
+      );
+    }
+    // (DD) 9xxxx-xxxx
+    return digits.replace(/^(\d{0,2})(\d{0,5})(\d{0,4}).*$/, (_, d1, d2, d3) =>
+      `${d1 ? `(${d1}` : ""}${d1?.length === 2 ? ")" : d1 ? "" : ""}${d2 ? ` ${d2}` : ""}${d3 ? `-${d3}` : ""}`.trim()
+    );
+  };
+
+  const getCleanedPhone = (phone: string) => normalizePhone(phone); // já retorna dígitos
 
   const openPaymentLink = () => {
     const url = `/${fileName}`;
@@ -67,8 +99,20 @@ export const ModalDownloadEbook = ({
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    // ➜ Removemos formatPhone aqui; deixamos o InputMask fazer seu trabalho
-    setFormData(prev => ({ ...prev, [name]: value }));
+    // nome/email seguem controlados normalmente
+    if (name === "nome" || name === "email") {
+      setFormData(prev => ({ ...prev, [name]: value }));
+    }
+  };
+
+  // sincroniza e formata o telefone vindo de digitação OU autofill
+  const syncPhone = () => {
+    if (!phoneRef.current) return;
+    const digits = normalizePhone(phoneRef.current.value);
+    const formatted = formatPhoneBR(digits);
+    phoneRef.current.value = formatted;
+    // opcional: refletir no state (útil se você exibe em outro lugar)
+    setFormData(prev => ({ ...prev, telefone: formatted }));
   };
 
   return (
@@ -76,7 +120,11 @@ export const ModalDownloadEbook = ({
       <div className="modal-download-ebook-content">
         <h4 style={{ lineHeight: "2rem" }}>{title}</h4>
 
-        <img style={{ width: "10rem", margin: "20px auto" }} src="/logo-code-start.svg" alt="logo" />
+        <img
+          style={{ width: "10rem", margin: "20px auto" }}
+          src="/logo-code-start.svg"
+          alt="logo"
+        />
 
         <span style={{ fontWeight: "bold" }}>{subtitle}</span>
 
@@ -89,6 +137,7 @@ export const ModalDownloadEbook = ({
               value={formData.nome}
               onChange={handleInputChange}
               autoComplete="name"
+              autoCapitalize="words"
               required
             />
           </div>
@@ -106,17 +155,16 @@ export const ModalDownloadEbook = ({
           </div>
 
           <div className="input-box">
-            <InputMask
-              mask="(99) 99999-9999"
-              maskChar={null}
-              name="telefone"
+            <input
+              ref={phoneRef}
               type="tel"
-              inputMode="numeric"
-              autoComplete="tel"
+              name="telefone"
               placeholder="Telefone"
-              value={formData.telefone}
-              onChange={handleInputChange}
-              onBlur={handleInputChange}
+              defaultValue={formData.telefone}  // 👈 NÃO controlado
+              autoComplete="tel"
+              inputMode="numeric"
+              onInput={syncPhone} // digitação
+              onBlur={syncPhone}  // autofill que não dispara input
               required
             />
           </div>
@@ -129,4 +177,3 @@ export const ModalDownloadEbook = ({
     </div>
   );
 };
-
