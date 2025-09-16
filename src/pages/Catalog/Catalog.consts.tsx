@@ -2,6 +2,7 @@ import {
   MonitorSmartphone,
   Database,
   DollarSign,
+  Brain,
 } from "lucide-react";
 
 export const courses = [
@@ -59,23 +60,23 @@ export const courses = [
       },
     ],
   },
-  // {
-  //   category: "Inteligência Artificial",
-  //   items: [
-  //     {
-  //       title: "Fundamentos de IA",
-  //       description: "Conceitos básicos, tipos de IA e aplicações práticas",
-  //       duration: "30h",
-  //       icon: <Brain className="w-6 h-6" />,
-  //       level: "Iniciante",
-  //       image:
-  //         "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2070",
-  //       rating: 5.0,
-  //       lessons: 25,
-  //       isComingSoon: false,
-  //     },
-  //   ],
-  // },
+  {
+    category: "Inteligência Artificial",
+    items: [
+      {
+        title: "Fundamentos de IA",
+        description: "Conceitos básicos, tipos de IA e aplicações práticas",
+        duration: "30h",
+        icon: <Brain className="w-6 h-6" />,
+        level: "Iniciante",
+        image:
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2070",
+        rating: 5.0,
+        lessons: 25,
+        isComingSoon: false,
+      },
+    ],
+  },
 
   // {
   //   category: "Front-end",
