@@ -44,11 +44,11 @@ function Catalog() {
   const handleOnClick = (title: string) => {
     if (title === "Currículo de Elite") {
       return (window.location.href =
-        "https://pay.kiwify.com.br/PGg34AL?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
+        "https://pay.hotmart.com/T101420535G?bid=1758040131777&src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
     }
     if (title === "Dev Cash") {
       return (window.location.href =
-        "https://pay.kiwify.com.br/BbF4QXG?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
+        "https://pay.hotmart.com/K101422879I?off=35prcztd&bid=1758040287221&src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
     }
     if (title === "React") {
       return (window.location.href =
@@ -56,7 +56,7 @@ function Catalog() {
     }
     if (title === "Fundamentos de IA") {
       return (window.location.href =
-        "https://pay.kiwify.com.br/CQGlsU1?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
+        "https://pay.hotmart.com/Y101418593J?off=onjfrr3v&bid=1758040576626&src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=");
     }
     window.location.href =
       "https://icodestart.com/?src=Org_IGBio&utm_source=Org&utm_medium=IGBio&utm_content=&utm_campaign=&utm_term=";
