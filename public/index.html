@@ -131,7 +131,7 @@
     gtag("config", "G-MB4QPP471B");
   </script>
 
-  <!-- <script>
+   <script>
     let prefix = ["https://pay.hotmart.com"];
 
     function getParams() {
@@ -153,51 +153,9 @@
       })
     }();
     console.log('%cScript de rastreamento de vendas desenvolvido pela Comunidade NOD - Dericson Calari e Samuel Choairy', 'font-size:20px;color:yellow;');
-  </script> -->
+  </script> 
 
-  <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const HOTMART_PREFIX = 'https://pay.hotmart.com';
 
-  // Pegue UTMs/param extras da URL atual
-  const srcParams = new URLSearchParams(window.location.search);
-  const outParams = new URLSearchParams();
-
-  // Liste os que você quer propagar
-  const keys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','xcod'];
-
-  // Copia apenas se existir e sem duplicar
-  keys.forEach(k => {
-    if (srcParams.has(k)) outParams.set(k, srcParams.get(k));
-  });
-
-  // sck só com os UTMs que existirem (sem "null")
-  const sckParts = [];
-  if (srcParams.get('utm_source'))   sckParts.push(srcParams.get('utm_source'));
-  if (srcParams.get('utm_medium'))   sckParts.push(srcParams.get('utm_medium'));
-  if (srcParams.get('utm_campaign')) sckParts.push(srcParams.get('utm_campaign'));
-  if (srcParams.get('utm_term'))     sckParts.push(srcParams.get('utm_term'));
-  if (srcParams.get('utm_content'))  sckParts.push(srcParams.get('utm_content'));
-  if (sckParts.length) {
-    outParams.set('sck', encodeURIComponent(sckParts.join('|')));
-  }
-
-  // Aplica nos <a> do Hotmart só uma vez
-  document.querySelectorAll(`a[href^="${HOTMART_PREFIX}"]`).forEach(a => {
-    if (a.dataset.utmBound === '1') return; // já processado
-
-    const url = new URL(a.href);
-
-    // Escreve sem duplicar chaves existentes
-    outParams.forEach((v, k) => {
-      if (!url.searchParams.has(k)) url.searchParams.set(k, v);
-    });
-
-    a.href = url.toString();
-    a.dataset.utmBound = '1';
-  });
-});
-</script>
 
 </head>
 
