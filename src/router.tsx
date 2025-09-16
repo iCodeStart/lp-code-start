@@ -13,6 +13,7 @@ const DevCashPrincipalOffer = lazy(
 
 const DownloadEbook = lazy(() => import("./pages/DownloadEbook/DownloadEbook"));
 const DownloadLinkedinApproach = lazy(() => import("./pages/DownloadLinkedinApproach/DownloadLinkedinApproach"));
+const ThankYou = lazy(() => import('./pages/ThankYou/ThankYou'))
 
 const withSuspense = (
   Component: React.LazyExoticComponent<() => JSX.Element>
@@ -34,6 +35,10 @@ export const routes = createBrowserRouter([
   {
     path: "/dev-cash-upsell",
     element: withSuspense(DevCashUpsell),
+  },
+  {
+    path: "/thank-you",
+    element: withSuspense(ThankYou),
   },
   {
     path: "/summary-content",
