@@ -78,7 +78,7 @@ export function Offer() {
   };
 
   const openPaymentLink = () => {
-    const url = "https://pay.kiwify.com.br/DsFkN5I?coupon=CODESTART50";
+    const url = "https://pay.hotmart.com/Y101419032L?checkoutMode=10&offDiscount=CODESTART50&bid=1757614682436";
     window.open(url, `${isMobile ? "_self" : "_blank"}`, "noreferrer");
   };
 
