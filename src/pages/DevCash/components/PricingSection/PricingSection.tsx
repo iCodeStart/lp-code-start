@@ -2,6 +2,7 @@ import React from "react";
 import "./PricingSection.scss";
 import { useLocation } from "react-router-dom";
 import { Chip } from "../../../../components/Chip";
+import { HotmartSalesFunnel } from "../../../../components/HotmartFunnel/HotmartFunnel";
 
 interface PricingSectionProps {
   isUpSell?: boolean;
@@ -198,36 +199,7 @@ export function PricingSection({ isUpSell }: PricingSectionProps) {
               </div>
 
               {isUpSell ? (
-                <div style={{ textAlign: "center" }}>
-                  <button
-                    id="kiwify-upsell-trigger-BbF4QXG"
-                    style={{
-                      backgroundColor: "#00C0D7",
-                      padding: "12px 16px",
-                      cursor: "pointer",
-                      color: "#000",
-                      fontWeight: 600,
-                      borderRadius: "4px",
-                      border: "1px solid #00C0D7",
-                      fontSize: "20px",
-                    }}
-                  >
-                    Sim, quero ganhar dinheiro enquanto estudo
-                  </button>
-                  <div
-                    id="kiwify-upsell-cancel-trigger"
-                    style={{
-                      marginTop: "1rem",
-                      cursor: "pointer",
-                      fontSize: "16px",
-                      textDecoration: "underline",
-                      color: "#999",
-                      fontFamily: "sans-serif",
-                    }}
-                  >
-                    Não, eu gostaria de recusar essa oferta
-                  </div>
-                </div>
+                <HotmartSalesFunnel />
               ) : (
                 <a
                   href={`https://pay.kiwify.com.br/3G7XOoQ?src=${srcParam}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}`}

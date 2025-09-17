@@ -62,7 +62,8 @@ export function CurriculumSection( { isUpSell }: CurriculumSectionProps) {
 
           {isUpSell ? (
                 <>
-                <div>
+                <div></div>
+                {/* <div>
                     <button
                       id="kiwify-upsell-trigger-BbF4QXG"
                       style={{
@@ -91,7 +92,7 @@ export function CurriculumSection( { isUpSell }: CurriculumSectionProps) {
                     >
                       Não, eu gostaria de recusar essa oferta
                     </div>
-                  </div>
+                  </div> */}
                 </>
               ) : (
                 <a
